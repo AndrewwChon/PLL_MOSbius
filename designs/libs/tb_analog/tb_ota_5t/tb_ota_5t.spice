@@ -1,0 +1,60 @@
+** sch_path: /foss/designs/libs/tb_analog/tb_ota_5t/tb_ota_5t.sch
+**.subckt tb_ota_5t
+x1 vdda out in_p in_n i_bias vssa ota_5t
+**.ends
+
+* expanding   symbol:  libs/core_analog/ota_5t/ota_5t.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/ota_5t/ota_5t.sym
+** sch_path: /foss/designs/libs/core_analog/ota_5t/ota_5t.sch
+.subckt ota_5t vdd out in_p in_n i_bias vss
+*.ipin in_p
+*.ipin in_n
+*.ipin i_bias
+*.ipin vdd
+*.ipin vss
+*.opin out
+XMN_TAIL net2 vss i_bias vss unit_nmos M=2
+XMP_N vdd vdd net1 out unit_pmos M=3
+XMN_DIO i_bias vss i_bias vss unit_nmos M=1
+XMP_P vdd vdd net1 net1 unit_pmos M=3
+XMN_P net1 vss in_p net2 unit_nmos M=1
+XMN_N out vss in_n net2 unit_nmos M=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/unit_nmos/unit_nmos.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/unit_nmos/unit_nmos.sym
+** sch_path: /foss/designs/libs/core_analog/unit_nmos/unit_nmos.sch
+.subckt unit_nmos drain sub gate source
+*.iopin drain
+*.iopin source
+*.iopin sub
+*.iopin gate
+XM1 drain gate source sub nfet_03v3 L=0.5u W=4u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m={M}
+**** begin user architecture code
+
+.param M=1
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  libs/core_analog/unit_pmos/unit_pmos.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/unit_pmos/unit_pmos.sym
+** sch_path: /foss/designs/libs/core_analog/unit_pmos/unit_pmos.sch
+.subckt unit_pmos drain sub gate source
+*.iopin drain
+*.iopin source
+*.iopin sub
+*.iopin gate
+**** begin user architecture code
+
+.param M=1
+
+**** end user architecture code
+XM3 drain gate source sub pfet_03v3 L=0.5u W=5u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m={M}
+.ends
+
+.end

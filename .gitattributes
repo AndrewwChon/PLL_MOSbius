@@ -1,0 +1,18 @@
+# Git attributes file to handle line endings consistently
+# This prevents Windows users from committing CRLF line endings
+# ALL text files will use LF (Unix-style) line endings
+
+# Set default behavior - let Git auto-detect text vs binary, then enforce LF for text
+* text=auto eol=lf
+
+# Explicitly mark binary files to prevent any text processing
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary 
