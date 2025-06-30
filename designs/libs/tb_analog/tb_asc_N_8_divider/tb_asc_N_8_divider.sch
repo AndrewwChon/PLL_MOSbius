@@ -41,5 +41,5 @@ savecurrent=false}
 C {devices/lab_wire.sym} 260 -170 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 180 -290 0 0 {name=p4 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 620 -60 0 0 {name=p1 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 260 -300 0 0 {name=p8 sig_type=std_logic lab=vosc}
+C {devices/lab_wire.sym} 260 -310 0 0 {name=p8 sig_type=std_logic lab=vosc}
 C {libs/core_analog/asc_N_8_divider/asc_N_8_divider.sym} 620 -160 0 0 {name=x1}
