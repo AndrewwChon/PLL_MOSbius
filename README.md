@@ -1,6 +1,6 @@
 ## Overview
 
-This is the repository for the RF_MOSbius team for the 2025 SSCS Chipathon.
+This is the repository for the 2025 SSCS Chipathon RF_MOSbius team.
 
 ## Team
 
