@@ -56,7 +56,7 @@ C {devices/code_shown.sym} 520 -670 0 0 {name=Simulation only_toplevel=false val
 .control
 .save all
 set filetype=raw
-tran 1n 1m
+tran 1n 2m
 write sim_output.raw
 .endc
 "}
