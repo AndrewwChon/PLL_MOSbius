@@ -1,0 +1,15 @@
+** sch_path: /foss/designs/libs/core_analog/unit_nmos/unit_nmos.sch
+**.subckt unit_nmos drain sub gate source
+*.iopin drain
+*.iopin source
+*.iopin sub
+*.iopin gate
+XM1 drain gate source sub nfet_03v3 L=0.5u W=4u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m={M}
+**** begin user architecture code
+
+.param M=1
+
+**** end user architecture code
+**.ends
+.end
