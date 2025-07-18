@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 705d73636fc175e4dcb27705f92f486f248ccb55
 *model = bsim3v3
 *Berkeley Spice Compatibility 
 * Lmin= .35 Lmax= 20 Wmin= .6 Wmax= 20
@@ -64,4 +69,9 @@
 +At= 33000 
 +Ute= -1.5 
 +Ua1= 4.312e-9 Ub1= 6.65e-19  Uc1= 0 
+<<<<<<< HEAD
 +Kt1l=0
+=======
++Kt1l=0
+
+>>>>>>> 705d73636fc175e4dcb27705f92f486f248ccb55

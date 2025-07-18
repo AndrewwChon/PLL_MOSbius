@@ -25,7 +25,11 @@ C {devices/code_shown.sym} 230 -230 0 0 {name=Simulation only_toplevel=false val
 save all
 
 TRAN 1n 200n
+<<<<<<< HEAD
 write ro_vco_tb.raw
+=======
+write tb_ota_5t.raw
+>>>>>>> 705d73636fc175e4dcb27705f92f486f248ccb55
 plot aout dout
 .endc
 "}
@@ -37,7 +41,11 @@ value="
 "}
 C {devices/vsource.sym} -230 50 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/gnd.sym} -230 110 0 0 {name=l1 lab=GND}
+<<<<<<< HEAD
 C {devices/vsource.sym} -230 -60 0 0 {name=V2 value="pwl( 0 0 5n 3.3 100 3.3)" savecurrent=false}
+=======
+C {devices/vsource.sym} -230 -60 0 0 {name=V2 value="pwl( 0 0 10n 3.3 100 3.3)" savecurrent=false}
+>>>>>>> 705d73636fc175e4dcb27705f92f486f248ccb55
 C {devices/lab_wire.sym} -230 0 0 0 {name=p2 sig_type=std_logic lab=vssa}
 C {devices/vsource.sym} -150 -60 0 0 {name=V3 value=1.5 savecurrent=false}
 C {devices/lab_wire.sym} -150 0 0 0 {name=p7 sig_type=std_logic lab=vssa}

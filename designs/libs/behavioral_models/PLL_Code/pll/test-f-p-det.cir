@@ -15,7 +15,11 @@ abridgev1 [1 2 3] [d_sig1 d_sig2 d_d0] adc_vbuf
 ainv1 d_d0 d_d1 invd1
 .model invd1 d_inverter(rise_delay = 1e-10 fall_delay = 1e-10)
 
+<<<<<<< HEAD
 Xfpdet d_sig1 d_sig2 d_U d_Un d_D d_Dn  f-p-det-d-sub
+=======
+Xfpdet d_sig1 d_sig2 d_U d_Un d_D d_Dn  f-p-det
+>>>>>>> 705d73636fc175e4dcb27705f92f486f248ccb55
 
 *.include f-p-det-sub.cir
 .include f-p-det-d-sub.cir
@@ -111,4 +115,8 @@ plot s1 s2+1.2 u1+2.4 d1+3.6 xlimit 140n 200n
 +Kt1l=0
 
 
+<<<<<<< HEAD
 .end
+=======
+.end
+>>>>>>> 705d73636fc175e4dcb27705f92f486f248ccb55
