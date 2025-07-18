@@ -51,12 +51,12 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {devices/code_shown.sym} 660 -910 0 0 {name=Simulation only_toplevel=false value="
+C {devices/code_shown.sym} 580 -910 0 0 {name=Simulation only_toplevel=false value="
 .control
 .save all
 set filetype=raw
-tran 1n 500u
-write sim_output3.raw
+tran 100n 10m
+write sim_output2.raw
 .endc
 "}
 C {devices/vsource.sym} 160 -580 0 0 {name=V1 value=0 savecurrent=false}
@@ -64,7 +64,7 @@ C {devices/gnd.sym} 160 -520 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 160 -690 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} 160 -630 0 0 {name=p2 sig_type=std_logic lab=vssa}
 C {devices/vsource.sym} 240 -690 0 0 {name=V3
-value="PULSE(0 3.3 0 1p 1p 50n 100n)"
+value="PULSE(0 3.3 0 1p 1p 500n 1u)"
 savecurrent=false}
 C {devices/lab_wire.sym} 240 -630 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 160 -750 0 0 {name=p4 sig_type=std_logic lab=vdda}
@@ -80,14 +80,14 @@ C {devices/lab_wire.sym} 1200 -180 0 0 {name=p10 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1200 -440 0 0 {name=p11 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1440 -620 0 0 {name=p12 sig_type=std_logic lab=fout}
 C {devices/lab_wire.sym} 760 -640 0 0 {name=p9 sig_type=std_logic lab=fin}
-C {devices/lab_wire.sym} 1020 -60 0 0 {name=p13 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 740 -320 0 0 {name=p14 sig_type=std_logic lab=mc}
 C {devices/lab_wire.sym} 1100 -620 0 0 {name=p15 sig_type=std_logic lab=a}
-C {devices/lab_wire.sym} 1040 -80 0 0 {name=p16 sig_type=std_logic lab=vdda}
-C {devices/lab_wire.sym} 1100 -140 0 0 {name=p17 sig_type=std_logic lab=vdda}
-C {devices/lab_wire.sym} 1160 -200 0 0 {name=p18 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1140 -180 0 0 {name=p19 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1120 -160 0 0 {name=p20 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1080 -120 0 0 {name=p21 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1060 -100 0 0 {name=p22 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1000 -40 0 0 {name=p23 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1160 -200 0 0 {name=p13 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1100 -140 0 0 {name=p16 sig_type=std_logic lab=vdda}
+C {devices/lab_wire.sym} 1040 -80 0 0 {name=p17 sig_type=std_logic lab=vdda}
+C {devices/lab_wire.sym} 1020 -60 0 0 {name=p18 sig_type=std_logic lab=vdda}
