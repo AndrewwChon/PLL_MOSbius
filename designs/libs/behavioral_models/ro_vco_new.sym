@@ -1,0 +1,34 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+spice_sym_def=".include /foss/designs/libs/behavioral_models/PLL_Code/pll/vco_sub.cir"}
+V {}
+S {}
+E {}
+L 4 30 -10 30 50 {}
+L 4 30 50 120 50 {}
+L 4 120 -10 120 50 {}
+L 4 30 -10 120 -10 {}
+L 4 10 20 30 20 {}
+L 4 120 0 140 0 {}
+L 4 80 -30 80 -10 {}
+L 4 120 40 140 40 {}
+B 5 137.5 -2.5 142.5 2.5 {name=aout
+dir=inout
+sim_pinnumber=1}
+B 5 137.5 37.5 142.5 42.5 {name=dout
+dir=inout
+sim_pinnumber=2}
+B 5 7.5 17.5 12.5 22.5 {name=cont
+dir=inout
+sim_pinnumber=3}
+B 5 77.5 -32.5 82.5 -27.5 {name=dd
+dir=inout
+sim_pinnumber=4}
+T {cont} 30 10 0 0 0.2 0.2 {}
+T {aout} 100 0 0 0 0.2 0.2 {}
+T {dd} 70 -10 0 0 0.2 0.2 {}
+T {@name} 90 -20 0 0 0.2 0.2 {}
+T {dout} 100 30 0 0 0.2 0.2 {}
