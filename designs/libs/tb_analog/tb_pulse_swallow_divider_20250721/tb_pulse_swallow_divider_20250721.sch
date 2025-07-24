@@ -120,25 +120,19 @@ C {devices/lab_wire.sym} 1100 -620 0 0 {name=p15 sig_type=std_logic lab=a}
 C {libs/core_analog/asc_swallow_counter_20250721/asc_swallow_counter_20250721.sym} 1100 -320 0 0 {name=x3}
 C {libs/core_analog/asc_9_bit_counter/asc_9_bit_counter.sym} 1580 -320 0 0 {name=x4}
 C {devices/lab_wire.sym} 1680 -180 0 0 {name=p24 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 1480 -40 0 0 {name=p28 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1520 -80 0 0 {name=p31 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1680 -440 0 0 {name=p34 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1380 -320 0 0 {name=p35 sig_type=std_logic lab=rst}
-C {devices/lab_wire.sym} 1500 -60 0 0 {name=p29 sig_type=std_logic lab=vssa}
 C {libs/core_analog/asc_OR/asc_OR.sym} 1900 -320 0 1 {name=x5}
 C {devices/lab_wire.sym} 1900 -420 0 0 {name=p36 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1900 -200 0 0 {name=p37 sig_type=std_logic lab=vssa}
 C {devices/vsource.sym} 240 -490 0 0 {name=V4
-value="PULSE(0 3.3 0 1p 1p 5n 1)"
+value="PULSE(0 0 0 1p 1p 10n 1)"
 savecurrent=false}
 C {devices/lab_wire.sym} 240 -430 0 0 {name=p38 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 240 -570 0 0 {name=p39 sig_type=std_logic lab=def}
 C {devices/lab_wire.sym} 1340 -300 0 0 {name=p40 sig_type=std_logic lab=def}
 C {devices/lab_wire.sym} 2040 -340 0 0 {name=p41 sig_type=std_logic lab=def}
-C {devices/lab_wire.sym} 1100 -140 0 0 {name=p13 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 1040 -80 0 0 {name=p16 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 1020 -60 0 0 {name=p17 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 1560 -120 0 0 {name=p18 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1540 -100 0 0 {name=p19 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1580 -140 0 0 {name=p20 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1600 -160 0 0 {name=p21 sig_type=std_logic lab=vdda}
@@ -150,3 +144,9 @@ C {devices/lab_wire.sym} 1080 -120 0 0 {name=p27 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1120 -160 0 0 {name=p30 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1140 -180 0 0 {name=p32 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1160 -200 0 0 {name=p33 sig_type=std_logic lab=vdda}
+C {devices/lab_wire.sym} 1560 -120 0 0 {name=p18 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1500 -60 0 0 {name=p28 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1480 -40 0 0 {name=p29 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1100 -140 0 0 {name=p13 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1040 -80 0 0 {name=p16 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1020 -60 0 0 {name=p17 sig_type=std_logic lab=vssa}
