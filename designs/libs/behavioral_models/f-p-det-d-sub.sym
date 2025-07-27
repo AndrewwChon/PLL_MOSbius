@@ -1,0 +1,54 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+spice_sym_def=".include /foss/designs/libs/behavioral_models/PLL_Code/pll/f-p-det-d-sub.cir"}
+V {}
+S {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+spice_sym_def=".include /foss/designs/libs/behavioral_models/PLL_Code/pll/f-p-det-d-sub.cir"}
+E {}
+L 4 80 -40 80 60 {}
+L 4 80 60 180 60 {}
+L 4 180 -40 180 60 {}
+L 4 80 -40 180 -40 {}
+L 4 60 -10 80 -10 {}
+L 4 60 30 80 30 {}
+L 4 180 -20 210 -20 {}
+L 4 210 -20 220 -20 {}
+L 4 180 -0 220 -0 {}
+L 4 180 30 220 30 {}
+L 4 180 50 220 50 {}
+B 5 57.5 -12.5 62.5 -7.5 {name=d_R
+dir=inout
+sim_pinnumber=1
+}
+B 5 57.5 27.5 62.5 32.5 {name=d_V
+dir=inout
+sim_pinnumber=2
+}
+B 5 217.5 -22.5 222.5 -17.5 {name=d_U
+dir=inout
+sim_pinnumber=3
+}
+B 5 217.5 -2.5 222.5 2.5 {name=d_U_
+dir=inout
+sim_pinnumber=4
+}
+B 5 217.5 27.5 222.5 32.5 {name=d_D
+dir=inout
+sim_pinnumber=5
+}
+B 5 217.5 47.5 222.5 52.5 {name=d_D_
+dir=inout
+sim_pinnumber=6
+}
+T {d_R} 80 -10 0 0 0.1 0.1 {}
+T {d_V} 80 30 0 0 0.1 0.1 {}
+T {d_U} 160 -20 0 0 0.1 0.1 {}
+T {d_U_} 160 0 0 0 0.1 0.1 {}
+T {d_D} 160 30 0 0 0.1 0.1 {}
+T {d_D_} 160 50 0 0 0.1 0.1 {}
+T {@name} 140 -50 0 0 0.1 0.1 {}

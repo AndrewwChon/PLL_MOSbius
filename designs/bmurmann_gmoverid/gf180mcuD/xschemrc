@@ -1,0 +1,14 @@
+# Source the PDK xschemrc file
+if {![info exists PDK]} {
+    source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
+}
+
+# Fixing the model path
+set 180MCU_MODELS ${PDK_ROOT}/$env(PDK)/libs.tech/ngspice
+puts stderr "180MCU_MODELS: $180MCU_MODELS"
+
+# Add current directory to xschem library path
+append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
+
+# Store simulation files in local folder
+set local_netlist_dir 1
