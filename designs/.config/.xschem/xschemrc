@@ -1,9 +1,8 @@
 # Source the PDK xschemrc file
 source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
 
-# Override 180MCU_MODELS to point to the correct ngspice directory for gf180mcuD
-# Bug in the PDK xschemrc file, proposing a fix.
-set 180MCU_MODELS ${PDK_ROOT}/gf180mcuD/libs.tech/ngspice
+# Set the library path so that xschem doesn't have to be launched at /foss/designs
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(DESIGNS)
 
-set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:/foss/designs
+set netlist_dir "/foss/designs/simulations"
 

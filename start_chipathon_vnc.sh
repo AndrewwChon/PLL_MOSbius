@@ -28,6 +28,11 @@
 
 # Set the DESIGNS environment variable to the 'designs' subdirectory of the current directory
 export DESIGNS="$(pwd)/designs"
+ENVFILE=".env"
+
+if [ -f "${ENVFILE}" ]; then
+	source "${ENVFILE}"
+fi
 
 if [ -n "${DRY_RUN}" ]; then
 	echo "[INFO] This is a dry run, all commands will be printed to the shell (Commands printed but not executed are marked with $)!"
@@ -47,8 +52,13 @@ fi
 if [ -z ${WEBSERVER_PORT+z} ]; then
 	WEBSERVER_PORT=80
 fi
+
 if [ -z ${VNC_PORT+z} ]; then
 	VNC_PORT=5901
+fi
+
+if [ -z ${JUPYTER_PORT+z} ]; then
+	JUPYTER_PORT=8888
 fi
 
 if [ -z ${DOCKER_USER+z} ]; then
@@ -60,11 +70,11 @@ if [ -z ${DOCKER_IMAGE+z} ]; then
 fi
 
 if [ -z ${DOCKER_TAG+z} ]; then
-	DOCKER_TAG="latest"
+	DOCKER_TAG="chipathon"
 fi
 
 if [ -z ${CONTAINER_NAME+z} ]; then
-	CONTAINER_NAME="iic-osic-tools_xvnc_uid_"$(id -u)
+	CONTAINER_NAME="iic-osic-tools_chipathon_xvnc_uid_"$(id -u)
 fi
 
 if [[ "$OSTYPE" == "linux"* ]]; then
@@ -109,8 +119,13 @@ PARAMS=""
 if [ "$WEBSERVER_PORT" -gt 0 ]; then
 	PARAMS="$PARAMS -p $WEBSERVER_PORT:80"
 fi
+
 if [ "$VNC_PORT" -gt 0 ]; then
 	PARAMS="$PARAMS -p $VNC_PORT:5901"
+fi
+
+if [ "${JUPYTER_PORT}" -gt 0 ]; then
+	PARAMS="$PARAMS -p $JUPYTER_PORT:8888"
 fi
 
 if [ -n "${VNC_PW}" ]; then

@@ -1,0 +1,78 @@
+#!/bin/bash
+
+echo 'Reading User Preferences in /foss/designs/.designinit'
+
+cd /foss/designs
+
+
+export PATH="$DESIGNS/scripts:$PATH"
+
+#==============================================================
+# PDK
+# This script is aliased to `iic-pdk` in the .bashrc file
+# source iic-pdk-script.sh gf180mcuD
+
+#==============================================================
+# Xschem
+# Overwrite the xschemrc file to add /foss/designs to the library path
+# This way you won't have missing symbols when starting xschem from a different directory
+# Overriding .bashrc alias for cp to avoid the -i flag
+\cp -f ./.config/.xschem/xschemrc ~/.xschem/xschemrc
+# mkdir -p /headless/.xschem/simulations
+
+#==============================================================
+# Klayout
+# export KLAYOUT_PATH=/foss/designs/klayout_lib:$KLAYOUT_PATH
+
+alias klayout='klayout -rm $DESIGNS/scripts/klayout_lib_manager.py -geometry 1600x900+100+50 -e'
+
+mkdir -p ~/.klayout/libraries
+
+# loading gf180mcu 9-track height standard cells
+if [ ! -L ~/.klayout/libraries/gf180mcu_fd_sc_mcu9t5v0.gds ]; then
+  ln -s /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/gds/gf180mcu_fd_sc_mcu9t5v0.gds ~/.klayout/libraries/
+fi
+
+# loading gf180mcu 7-track height standard cells
+#if [ ! -L ~/.klayout/libraries/gf180mcu_fd_sc_mcu7t5v0.gds ]; then
+#  ln -s /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds ~/.klayout/libraries/
+#fi
+
+# loading gf180mcu io cells.
+if [ ! -L ~/.klayout/libraries/gf180mcu_fd_io.gds ]; then
+  ln -s /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds ~/.klayout/libraries/
+fi
+
+
+
+#==============================================================
+# GDS3D
+alias GDS3D="GDS3D -p /foss/designs/scripts/GDS3D_gf180mcu.txt -i"
+
+#==============================================================
+# Shell
+# Extend path so you can install local tools
+export PATH="/foss/designs/user_setup/bin:$PATH"
+
+# Show PDK in the prompt
+
+export PS1="\[\e[91m\]PDK: $(echo $PDK)\[\e[0m\] ${PS1}"
+export PS1='\[\e[91m\]PDK: $(echo $PDK) \[\033[0;32m\]\w >\[\033[0;38m\] '
+
+alias grep="grep -i"
+
+if [ ! -f "$HOME/.config/xfce4/.init_done" ]; then
+  if [ -d "/foss/designs/user_config/dot_config_xfce4" ]; then
+    mkdir -p "$HOME/.config/xfce4"
+    cp -r /foss/designs/user_config/dot_config_xfce4/* "$HOME/.config/xfce4"
+    touch "$HOME/.config/xfce4/.init_done"
+  fi
+fi
+
+#==============================================================
+tree() {
+  dir="${1:-.}"
+  depth="${2:-9999}"  # Default is effectively unlimited depth
+  find "$dir" -maxdepth "$depth" -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+}
+#==============================================================

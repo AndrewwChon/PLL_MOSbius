@@ -12,6 +12,7 @@ show_usage() {
 
 # Parse command line arguments
 REMOVE_MODE=false
+SPICE_EXT="net"
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -39,8 +40,8 @@ cd "../libs"
 
 if [ "$REMOVE_MODE" = true ]; then
     echo "Removing all netlist files..."
-    # Find all .spice files and remove them
-    find . -name "*.spice" -type f | while read -r spice_file; do
+    # Find all netlist files and remove them
+    find . -name "*.$SPICE_EXT" -type f | while read -r spice_file; do
         echo "Removing $spice_file..."
         rm "$spice_file"
     done
@@ -56,7 +57,7 @@ else
       echo "Netlisting $sch_file..."
       # Run the xschem command with xvfb-run to prevent GUI from showing
       # Use auto-servernum to avoid conflicts and set screen resolution
-      xschem -b -s -n -q --netlist_path "$dir_path" --netlist_filename "$base_name.spice" "$sch_file"
+      xschem -b -s -n -q --netlist_path "$dir_path" --netlist_filename "$base_name.$SPICE_EXT" "$sch_file"
       #xvfb-run --auto-servernum --server-args="-screen 0 1024x768x24" xschem -rcfile "/headless/.xschem/xschemrc" -b -s -n -q --netlist_path "$dir_path" --netlist_filename "$base_name.spice" "$sch_file"
 
     done
