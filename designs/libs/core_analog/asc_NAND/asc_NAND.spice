@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/libs/core_analog/asc_NAND/asc_NAND.sch
+.subckt asc_NAND VDD OUT A B VSS
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+M1 OUT A net1 VSS nfet_03v3 L=0.5u W=2u nf=1 m=1
+M2 OUT A VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+M3 net1 B VSS VSS nfet_03v3 L=0.5u W=2u nf=1 m=1
+M4 OUT B VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+.ends
