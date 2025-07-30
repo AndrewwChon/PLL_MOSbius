@@ -1,0 +1,36 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 7 10 -100 10 -80 {}
+L 7 130 0 150 0 {}
+L 7 10 80 10 100 {}
+L 7 -60 80 -60 100 {}
+L 7 -80 80 -80 100 {}
+L 7 -150 -30 -130 -30 {}
+L 7 -150 50 -130 50 {}
+L 7 -50 -100 -50 -80 {}
+B 5 7.5 -102.5 12.5 -97.5 {name=vdd dir=inout}
+B 5 147.5 -2.5 152.5 2.5 {name=CP_OUT dir=inout}
+B 5 7.5 97.5 12.5 102.5 {name=vss dir=inout}
+B 5 -62.5 97.5 -57.5 102.5 {name=T1 dir=inout}
+B 5 -82.5 97.5 -77.5 102.5 {name=T2 dir=inout}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=up dir=inout}
+B 5 -152.5 47.5 -147.5 52.5 {name=down dir=inout}
+B 5 -52.5 -102.5 -47.5 -97.5 {name=I_BIAS_100U dir=inout}
+P 4 5 130 -80 -130 -80 -130 80 130 80 130 -80 {}
+T {@symname} -45 -6 0 0 0.3 0.3 {}
+T {@name} 85 -92 0 0 0.2 0.2 {}
+T {vdd} 14 -75 1 0 0.2 0.2 {}
+T {CP_OUT} 125 -4 0 1 0.2 0.2 {}
+T {vss} 14 75 1 1 0.2 0.2 {}
+T {T1} -56 75 1 1 0.2 0.2 {}
+T {T2} -76 75 1 1 0.2 0.2 {}
+T {up} -125 -26 2 1 0.2 0.2 {}
+T {down} -125 54 2 1 0.2 0.2 {}
+T {I_BIAS_100U} -46 -75 1 0 0.2 0.2 {}
