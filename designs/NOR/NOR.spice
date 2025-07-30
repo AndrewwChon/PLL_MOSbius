@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/NOR.sch
+.subckt NOR vdd a b out vss
+*.PININFO vdd:B vss:B a:B b:B out:B
+M1 out a vss vss nfet_03v3 L=0.28u W=0.5u nf=1 m=1
+M2 net1 a vdd vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+M3 out b net1 vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+M4 out b vss vss nfet_03v3 L=0.28u W=0.5u nf=1 m=1
+.ends

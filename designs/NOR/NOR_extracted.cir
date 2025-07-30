@@ -1,0 +1,8 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 29/07/2025 04:46
+
+.SUBCKT NOR vss out a b vdd
+M$1 \$9 a vdd vdd pfet_03v3 L=0.28U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$2 out b \$9 vdd pfet_03v3 L=0.28U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$3 out a vss vss nfet_03v3 L=0.28U W=0.5U AS=0.305P AD=0.305P PS=2.22U PD=2.22U
+M$4 out b vss vss nfet_03v3 L=0.28U W=0.5U AS=0.305P AD=0.305P PS=2.22U PD=2.22U
+.ENDS NOR

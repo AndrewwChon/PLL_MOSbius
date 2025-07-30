@@ -4,13 +4,13 @@ K {}
 V {}
 S {}
 E {}
-N 100 -30 100 50 {lab=#net1}
+N 100 -30 100 50 {lab=A_BAR}
 N 40 -60 40 80 {lab=A}
 N 40 -60 60 -60 {lab=A}
 N 40 80 60 80 {lab=A}
 N 100 -170 100 -90 {lab=VDD}
 N 100 110 100 150 {lab=VSS}
-N 100 0 150 0 {lab=#net1}
+N 100 0 150 0 {lab=A_BAR}
 N -20 -0 40 0 {lab=A}
 N 100 -60 130 -60 {lab=VDD}
 N 130 -110 130 -60 {lab=VDD}
@@ -20,7 +20,7 @@ N 140 80 140 130 {lab=VSS}
 N 100 130 140 130 {lab=VSS}
 C {symbols/nfet_03v3.sym} 80 80 0 0 {name=M11
 L=0.28u
-W=0.22u
+W=1u
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -34,7 +34,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 80 -60 0 0 {name=M12
 L=0.28u
-W=0.5u
+W=2u
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
