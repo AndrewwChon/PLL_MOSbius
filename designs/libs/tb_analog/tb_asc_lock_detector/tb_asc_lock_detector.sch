@@ -55,11 +55,11 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {devices/code_shown.sym} 520 -730 0 0 {name=Simulation only_toplevel=false value="
+C {devices/code_shown.sym} 500 -730 0 0 {name=Simulation only_toplevel=false value="
 .control
-.save all
+.save v(out) v(vref) v(lock) v(vdiv) v(down) v(up) v(vctrl)
 set filetype=raw
-tran 1n 2m
+tran 1n 1.5m
 write sim_output3.raw
 .endc
 "}

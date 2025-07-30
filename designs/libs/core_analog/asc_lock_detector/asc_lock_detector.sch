@@ -40,7 +40,7 @@ N 800 -420 800 -300 {lab=#net4}
 N 800 -420 840 -420 {lab=#net4}
 N 960 -580 960 -540 {lab=vdd}
 N 960 -340 960 -300 {lab=vss}
-N 1100 -440 1180 -440 {lab=#net5}
+N 1100 -440 1180 -440 {lab=lock}
 C {devices/iopin.sym} 100 -580 2 0 {name=p2 lab=vdd}
 C {devices/iopin.sym} 100 -500 2 0 {name=p3 lab=vss}
 C {devices/iopin.sym} 100 -540 2 0 {name=p4 lab=div}
@@ -52,8 +52,6 @@ C {devices/lab_wire.sym} 640 -360 0 0 {name=p45 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 640 -180 0 0 {name=p6 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 640 -700 0 0 {name=p7 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 640 -520 0 0 {name=p8 sig_type=std_logic lab=vss}
-C {libs/core_analog/asc_delay/asc_delay.sym} 440 -600 0 0 {name=x3}
-C {libs/core_analog/asc_delay/asc_delay.sym} 440 -260 0 0 {name=x4}
 C {devices/lab_wire.sym} 440 -160 0 0 {name=p9 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 440 -500 0 0 {name=p10 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 440 -340 0 0 {name=p11 sig_type=std_logic lab=vdd}
@@ -66,3 +64,5 @@ C {libs/core_analog/asc_AND/asc_AND.sym} 960 -440 0 0 {name=x5}
 C {devices/lab_wire.sym} 960 -560 0 0 {name=p17 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 960 -300 0 0 {name=p18 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1180 -440 0 0 {name=p19 sig_type=std_logic lab=lock}
+C {libs/core_analog/asc_delay_1ns/asc_delay_1ns.sym} 440 -600 0 0 {name=x3}
+C {libs/core_analog/asc_delay_1ns/asc_delay_1ns.sym} 440 -260 0 0 {name=x4}
