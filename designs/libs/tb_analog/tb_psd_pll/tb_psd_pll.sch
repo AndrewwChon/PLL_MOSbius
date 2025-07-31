@@ -117,7 +117,7 @@ C {devices/lab_wire.sym} 1000 -760 0 0 {name=p12 sig_type=std_logic lab=down}
 C {libs/core_analog/asc_basic_pump/asc_basic_pump.sym} 1100 -800 0 0 {name=x2}
 C {devices/lab_wire.sym} 1100 -920 0 0 {name=p13 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1100 -660 0 0 {name=p14 sig_type=std_logic lab=vssa}
-C {devices/isource.sym} 960 -910 0 0 {name=I0 value=100u}
+C {devices/isource.sym} 960 -910 0 0 {name=I0 value=1m}
 C {devices/lab_wire.sym} 960 -960 0 0 {name=p16 sig_type=std_logic lab=vdda}
 C {libs/core_analog/CSRVCO/CSRVCO.sym} 1620 -800 0 0 {name=x4}
 C {libs/core_analog/asc_delay/asc_delay.sym} 1960 -800 0 0 {name=x5}
