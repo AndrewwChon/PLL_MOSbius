@@ -43,9 +43,9 @@ N 560 -240 1220 -240 {lab=down}
 N 1220 -320 1220 -240 {lab=down}
 N 1170 -320 1220 -320 {lab=down}
 N 500 -440 540 -440 {lab=ignore1}
-N 500 -200 540 -200 {lab=#net3}
+N 500 -200 540 -200 {lab=ignore2}
 N 540 -440 560 -440 {lab=ignore1}
-N 540 -200 560 -200 {lab=#net3}
+N 540 -200 560 -200 {lab=ignore2}
 C {libs/core_analog/asc_dff_rst/asc_dff_rst.sym} 460 -460 0 0 {name=x1}
 C {libs/core_analog/asc_dff_rst/asc_dff_rst.sym} 460 -220 0 0 {name=x2}
 C {devices/iopin.sym} 180 -440 0 1 {name=p2 lab=vdd}
@@ -74,5 +74,7 @@ C {devices/lab_wire.sym} 840 -260 0 0 {name=p19 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 840 -420 0 0 {name=p20 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 1090 -420 0 0 {name=p21 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 1090 -260 0 0 {name=p22 sig_type=std_logic lab=vss}
-C {devices/lab_wire.sym} 560 -440 0 0 {name=p23 sig_type=std_logic lab=ignore1}
-C {devices/lab_wire.sym} 560 -200 0 0 {name=p24 sig_type=std_logic lab=ignore2}
+C {devices/lab_wire.sym} 550 -440 0 0 {name=p23 sig_type=std_logic lab=ignore1}
+C {devices/lab_wire.sym} 550 -200 0 0 {name=p24 sig_type=std_logic lab=ignore2}
+C {noconn.sym} 560 -440 0 1 {name=l7}
+C {noconn.sym} 560 -200 0 1 {name=l1}

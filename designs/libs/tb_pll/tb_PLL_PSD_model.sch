@@ -4,37 +4,6 @@ K {}
 V {}
 S {}
 E {}
-B 2 -490 40 1460 970 {flags=graph
-y1=0
-ypos1=0.3
-ypos2=2.3
-divy=5
-subdivy=1
-unity=1
-x1=-4.3173385e-05
-x2=1.6826614e-05
-divx=5
-subdivx=1
-xlabmag=0.5
-ylabmag=0.5
-dataset=-1
-unitx=1
-logx=0
-logy=0
-autoload=1
-color="4 5 6 7 8 9 10 4"
-node="div_out
-vco_out
-reference
-up
-dn
-\\"up-dn; up dn -\\"
-\\"blank\\"
-tune"
-rawfile=$netlist_dir/tb_PLL_model.raw
-hilight_wave=4
-digital=1
-y2=3}
 T {Testbench to try out the various Xspice 'behavioral' models of PLL components
 
   * These models have been built assuming a VDD of 3.3V. This is 'hardcoded' in the models  
@@ -211,3 +180,9 @@ value="PULSE(0 3.3 0 1p 1p 50u 1)"
 savecurrent=false}
 C {devices/lab_wire.sym} 40 -210 0 0 {name=p23 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 40 -350 0 0 {name=p26 sig_type=std_logic lab=def}
+C {devices/code_shown.sym} -240 -1170 0 0 {name=Models only_toplevel=false
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+"}
