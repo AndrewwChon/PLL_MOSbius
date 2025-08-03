@@ -87,3 +87,4 @@ C {devices/iopin.sym} 180 -680 0 1 {name=p38 lab=define}
 C {devices/lab_wire.sym} 600 -580 0 0 {name=p39 sig_type=std_logic lab=latchrst}
 C {devices/lab_wire.sym} 980 -620 0 0 {name=p18 sig_type=std_logic lab=latchrst}
 C {libs/core_analog/asc_9_bit_counter/asc_9_bit_counter.sym} 760 -620 0 0 {name=x1}
+C {noconn.sym} 380 -580 1 1 {name=l5}

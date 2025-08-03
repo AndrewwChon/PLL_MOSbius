@@ -35,4 +35,5 @@ C {devices/lab_wire.sym} 640 -360 0 0 {name=p5 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 640 -180 0 0 {name=p6 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 570 -260 0 0 {name=p8 sig_type=std_logic lab=q2b}
 C {devices/iopin.sym} 800 -260 0 0 {name=p9 lab=out}
-C {devices/lab_wire.sym} 740 -300 0 0 {name=p32 sig_type=std_logic lab=ignore}
+C {devices/lab_wire.sym} 730 -300 0 0 {name=p32 sig_type=std_logic lab=ignore}
+C {noconn.sym} 740 -300 0 1 {name=l5}

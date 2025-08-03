@@ -39,7 +39,8 @@ N 1280 -280 1340 -280 {lab=out}
 N 400 -280 420 -280 {lab=ignore1}
 N 420 -280 420 -220 {lab=ignore1}
 N 420 -220 480 -220 {lab=ignore1}
-N 1220 -320 1260 -320 {lab=#net1}
+N 1220 -320 1260 -320 {lab=ignore2}
+N 480 -220 500 -220 {lab=ignore1}
 C {libs/core_analog/asc_dff/asc_dff.sym} 360 -300 0 0 {name=x1}
 C {devices/iopin.sym} 140 -320 0 1 {name=p2 lab=vdd}
 C {devices/iopin.sym} 140 -300 0 1 {name=p3 lab=vss}
@@ -61,4 +62,6 @@ C {devices/lab_wire.sym} 1100 -320 0 0 {name=p14 sig_type=std_logic lab=x}
 C {devices/iopin.sym} 1340 -280 0 0 {name=p15 lab=out}
 C {devices/lab_wire.sym} 760 -300 0 0 {name=p16 sig_type=std_logic lab=y}
 C {devices/lab_wire.sym} 480 -220 0 0 {name=p17 sig_type=std_logic lab=ignore1}
-C {devices/lab_wire.sym} 1260 -320 0 0 {name=p18 sig_type=std_logic lab=ignore2}
+C {devices/lab_wire.sym} 1250 -320 0 0 {name=p18 sig_type=std_logic lab=ignore2}
+C {noconn.sym} 500 -220 0 1 {name=l5}
+C {noconn.sym} 1260 -320 0 1 {name=l1}

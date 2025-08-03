@@ -93,7 +93,7 @@ C {devices/code_shown.sym} 620 -1030 0 0 {name=Simulation only_toplevel=false va
 
 .control
 set filetype=raw
-tran 10n 15m
+tran 10n 5m
 write sim_output15.raw
 .endc
 "}

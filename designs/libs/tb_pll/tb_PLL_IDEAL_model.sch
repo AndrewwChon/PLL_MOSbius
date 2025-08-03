@@ -4,37 +4,6 @@ K {}
 V {}
 S {}
 E {}
-B 2 -490 40 1460 970 {flags=graph
-y1=0
-ypos1=-0.38146365
-ypos2=1.6185364
-divy=5
-subdivy=1
-unity=1
-x1=0.0020023121
-x2=0.0020623121
-divx=5
-subdivx=1
-xlabmag=0.5
-ylabmag=0.5
-dataset=-1
-unitx=1
-logx=0
-logy=0
-autoload=1
-color="4 5 6 7 8 9 10 4"
-node="div_out
-vco_out
-reference
-up
-dn
-\\"up-dn; up dn -\\"
-\\"blank\\"
-tune"
-rawfile=$netlist_dir/tb_PLL_model.raw
-hilight_wave=4
-digital=1
-y2=3}
 T {Testbench to try out the various Xspice 'behavioral' models of PLL components
 
   * These models have been built assuming a VDD of 3.3V. This is 'hardcoded' in the models  
@@ -81,8 +50,8 @@ C {devices/code_shown.sym} -485 -128.75 0 0 {name=Simulation only_toplevel=false
 .control
 
     save all
-    TRAN 1n 2m
-    write tb_PLL_model.raw
+    TRAN 1n 3m
+    write tb_PLL_model3.raw
     
 .endc
 "}
@@ -94,13 +63,13 @@ C {netlist.sym} -507.5 -412.5 0 0 {name=s1 value="
 * see the Vcontrol voltage source
 .param vcontrol = 0.2
 * reference frequency
-.param f_ref = 10e3
+.param f_ref = 100e3
 * divider
 .param divide_factor = 1000
 * loop filter parameters
-.param Ci_filter = 423n
-.param Rz_filter = 14k
-.param Cj_filter = 32.7n
+.param Ci_filter = 50n
+.param Rz_filter = 15k
+.param Cj_filter = 5n
 "}
 C {lab_wire.sym} 1000 -410 0 0 {name=p1 sig_type=std_logic lab=vcontrol
 }

@@ -58,11 +58,13 @@ C {devices/lab_wire.sym} 440 -340 0 0 {name=p11 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 440 -680 0 0 {name=p12 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 300 -600 0 0 {name=p13 sig_type=std_logic lab=div}
 C {devices/lab_wire.sym} 300 -260 0 0 {name=p14 sig_type=std_logic lab=ref}
-C {devices/lab_wire.sym} 760 -260 0 0 {name=p15 sig_type=std_logic lab=ignore2}
-C {devices/lab_wire.sym} 760 -600 0 0 {name=p16 sig_type=std_logic lab=ignore1}
+C {devices/lab_wire.sym} 740 -260 0 0 {name=p15 sig_type=std_logic lab=ignore2}
+C {devices/lab_wire.sym} 740 -600 0 0 {name=p16 sig_type=std_logic lab=ignore1}
 C {libs/core_analog/asc_AND/asc_AND.sym} 960 -440 0 0 {name=x5}
 C {devices/lab_wire.sym} 960 -560 0 0 {name=p17 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 960 -300 0 0 {name=p18 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1180 -440 0 0 {name=p19 sig_type=std_logic lab=lock}
 C {libs/core_analog/asc_delay_1ns/asc_delay_1ns.sym} 440 -600 0 0 {name=x3}
 C {libs/core_analog/asc_delay_1ns/asc_delay_1ns.sym} 440 -260 0 0 {name=x4}
+C {noconn.sym} 760 -600 0 1 {name=l5}
+C {noconn.sym} 760 -260 0 1 {name=l1}
