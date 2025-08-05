@@ -119,30 +119,17 @@ N -40 -400 -40 -340 {lab=vdda}
 N 40 -240 40 -190 {lab=vssa}
 N 40 -360 40 -300 {lab=def}
 C {devices/code_shown.sym} -235 -538.75 0 0 {name=Simulation only_toplevel=false value="
-.control
+.save v(reference) v(UP) v(DN) v(tune) v(div_out) v(vco_out)
 
-    save all
-    TRAN 1n 2m
+.control
+    
+    TRAN 10n 2m
     write tb_PLL_model_ideal.raw
     
 .endc
 "}
 C {gnd.sym} 1170 -720 0 0 {name=l1 lab=GND}
 C {vsource.sym} 1250 -780 0 0 {name=Vcontrol value=\{vcontrol\} savecurrent=false}
-C {netlist.sym} -257.5 -822.5 0 0 {name=s1 value="
-*.param VDD = 3.3
-* control is for tests when opening the loop
-* see the Vcontrol voltage source
-.param vcontrol = 0.2
-* reference frequency
-.param f_ref = 100e3
-* divider
-.param divide_factor = 1000
-* loop filter parameters
-.param Ci_filter = 42.3n
-.param Cj_filter = 3.27n
-.param Rz_filter = 14K
-"}
 C {lab_wire.sym} 1250 -820 0 0 {name=p1 sig_type=std_logic lab=vcontrol
 }
 C {lab_wire.sym} 1680 -850 0 0 {name=p2 sig_type=std_logic lab=vco_out
@@ -207,7 +194,27 @@ C {devices/vsource.sym} -40 -310 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} -40 -250 0 0 {name=p10 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} -40 -370 0 0 {name=p12 sig_type=std_logic lab=vdda}
 C {devices/vsource.sym} 40 -270 0 0 {name=V4
-value="PULSE(0 3.3 0 1p 1p 50u 1)"
+value="PULSE(0 3.3 0 1n 1n 50n 1)"
 savecurrent=false}
 C {devices/lab_wire.sym} 40 -210 0 0 {name=p23 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 40 -350 0 0 {name=p26 sig_type=std_logic lab=def}
+C {netlist.sym} -257.5 -842.5 0 0 {name=s2 value="
+*.param VDD = 3.3
+* control is for tests when opening the loop
+* see the Vcontrol voltage source
+.param vcontrol = 0.2
+* reference frequency
+.param f_ref = 100e3
+* divider
+.param divide_factor = 1000
+* loop filter parameters
+.param Ci_filter = 42.3n
+.param Cj_filter = 3.27n
+.param Rz_filter = 14K
+"}
+C {devices/code_shown.sym} -240 -1180 0 0 {name=Models only_toplevel=false
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+"}
