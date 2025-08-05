@@ -1,0 +1,18 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 05/08/2025 06:22
+
+.SUBCKT xp_programmable_basic_pump VSS
+M$1 \$1 \$1 \$1 VSS nfet_03v3 L=0.5U W=84U AS=36.54P AD=36.54P PS=136.44U
++ PD=136.44U
+M$3 \$4 \$3 \$1 VSS nfet_03v3 L=0.5U W=112U AS=48.72P AD=48.72P PS=181.92U
++ PD=181.92U
+M$7 \$5 \$3 \$1 VSS nfet_03v3 L=0.5U W=56U AS=24.36P AD=24.36P PS=90.96U
++ PD=90.96U
+M$23 \$16 \$3 \$1 VSS nfet_03v3 L=0.5U W=28U AS=12.18P AD=12.18P PS=45.48U
++ PD=45.48U
+M$27 \$17 \$15 \$1 VSS nfet_03v3 L=0.5U W=14U AS=6.09P AD=6.09P PS=22.74U
++ PD=22.74U
+M$31 \$18 \$3 \$1 VSS nfet_03v3 L=0.5U W=14U AS=6.09P AD=6.09P PS=22.74U
++ PD=22.74U
+M$35 \$19 \$15 \$1 VSS nfet_03v3 L=0.5U W=14U AS=6.09P AD=6.09P PS=22.74U
++ PD=22.74U
+.ENDS xp_programmable_basic_pump
