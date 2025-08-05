@@ -144,7 +144,7 @@ m=1
 value=\{Cj_filter\}
 footprint=1206
 device=polarized_capacitor}
-C {title.sym} -410 1050 0 0 {name=l2 author="Peter Kinget"}
+C {title.sym} -170 40 0 0 {name=l2 author="Peter Kinget"}
 C {libs/model_pll/pfd_model.sym} 440 -800 0 0 {name=x1}
 C {libs/model_pll/CP_model.sym} 730 -820 0 0 {name=x2}
 C {libs/model_pll/vco_model.sym} 1460 -840 0 0 {name=x3}

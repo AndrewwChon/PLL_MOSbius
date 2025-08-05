@@ -10,6 +10,13 @@ S1 | S0 | OUT
 0    | 1  | C
 1    | 0  | B
 1    | 1  | A} 260 -820 0 0 0.4 0.4 {}
+T {I do not think the EXOR PD output drives the charge pump, does it?
+Right now up = down when the EXOR is used, that will output no current at all ... 
+
+Remember
+- give all symbol instances a good name xvco, xdiv, xcp, etc. 
+
+-- PK} 1360 -1360 0 0 0.4 0.4 {layer = 7}
 N 320 -960 380 -960 {lab=ref}
 N 460 -1060 460 -1020 {lab=vdd}
 N 460 -900 460 -860 {lab=vss}
@@ -36,8 +43,7 @@ N 1280 -940 1420 -940 {lab=dff_pfd_up}
 N 1200 -920 1260 -920 {lab=xor_out}
 N 1260 -980 1260 -920 {lab=xor_out}
 N 1260 -980 1420 -980 {lab=xor_out}
-N 1260 -920 1300 -920 {lab=xor_out}
-N 1300 -920 1320 -920 {lab=xor_out}
+N 1260 -920 1320 -920 {lab=xor_out}
 N 1320 -920 1320 -700 {lab=xor_out}
 N 1320 -700 1420 -700 {lab=xor_out}
 N 790 -700 900 -700 {lab=xor_div}
@@ -55,12 +61,12 @@ N 1380 -1020 1420 -1020 {lab=ext_pfd_up}
 N 1380 -740 1420 -740 {lab=ext_pfd_down}
 N 1740 -860 1780 -860 {lab=i_cp}
 N 1740 -900 1740 -860 {lab=i_cp}
-N 1550 -960 1680 -960 {lab=up}
+N 1620 -960 1680 -960 {lab=up}
 N 1680 -960 1680 -820 {lab=up}
 N 1680 -820 1780 -820 {lab=up}
 N 1680 -780 1780 -780 {lab=down}
 N 1680 -780 1680 -680 {lab=down}
-N 1550 -680 1680 -680 {lab=down}
+N 1620 -680 1680 -680 {lab=down}
 N 1620 -1000 1620 -960 {lab=up}
 N 1620 -680 1620 -640 {lab=down}
 N 1940 -980 1940 -940 {lab=vdd}
@@ -70,32 +76,24 @@ N 1880 -700 1880 -660 {lab=cp_s2}
 N 1900 -700 1900 -640 {lab=cp_s3}
 N 1920 -700 1920 -620 {lab=cp_s4}
 N 1940 -700 1940 -600 {lab=cp_s5}
-N 3020 -770 3050 -770 {lab=mx_vco_s1}
-N 3020 -750 3050 -750 {lab=mx_vco_s0}
 N 3110 -730 3110 -700 {lab=vss}
 N 3110 -960 3110 -930 {lab=vdd}
-N 3000 -750 3020 -750 {lab=mx_vco_s0}
-N 3000 -770 3020 -770 {lab=mx_vco_s1}
+N 3000 -750 3050 -750 {lab=mx_vco_s0}
+N 3000 -770 3050 -770 {lab=mx_vco_s1}
 N 3020 -880 3050 -880 {lab=ext_vco_out}
 N 2100 -820 2160 -820 {lab=filter_in}
-N 1360 -910 1420 -910 {lab=mx_pfd_s1}
-N 1360 -890 1420 -890 {lab=mx_pfd_s0}
 N 790 -910 860 -910 {lab=mx_pfd_s1}
 N 790 -890 860 -890 {lab=mx_pfd_s0}
 N 790 -630 860 -630 {lab=mx_pfd_s1}
 N 790 -610 860 -610 {lab=mx_pfd_s0}
-N 1360 -630 1420 -630 {lab=mx_pfd_s1}
-N 1360 -610 1420 -610 {lab=mx_pfd_s0}
-N 1350 -630 1360 -630 {lab=mx_pfd_s1}
-N 1350 -610 1360 -610 {lab=mx_pfd_s0}
-N 1350 -890 1360 -890 {lab=mx_pfd_s0}
-N 1350 -910 1360 -910 {lab=mx_pfd_s1}
-N 2590 -770 2620 -770 {lab=mx_vco_s1}
-N 2590 -750 2620 -750 {lab=mx_vco_s0}
+N 1350 -630 1420 -630 {lab=mx_pfd_s1}
+N 1350 -610 1420 -610 {lab=mx_pfd_s0}
+N 1350 -890 1420 -890 {lab=mx_pfd_s0}
+N 1350 -910 1420 -910 {lab=mx_pfd_s1}
+N 2590 -770 2640 -770 {lab=mx_vco_s1}
+N 2590 -750 2640 -750 {lab=mx_vco_s0}
 N 2530 -730 2530 -700 {lab=vss}
 N 2530 -960 2530 -930 {lab=vdd}
-N 2620 -750 2640 -750 {lab=mx_vco_s0}
-N 2620 -770 2640 -770 {lab=mx_vco_s1}
 N 2590 -880 2620 -880 {lab=ext_vco_in}
 N 2400 -820 2460 -820 {lab=filter_out}
 N 2590 -840 2620 -840 {lab=#net1}
@@ -104,7 +102,7 @@ N 2820 -960 2820 -920 {lab=vdd}
 N 2820 -680 2820 -640 {lab=vss}
 N 2590 -800 2700 -800 {lab=csrvco_in}
 N 2940 -800 3050 -800 {lab=csrvco_out}
-N 3180 -820 3280 -820 {lab=vco_out}
+N 3240 -820 3280 -820 {lab=vco_out}
 N 3360 -920 3360 -880 {lab=vdd}
 N 3360 -760 3360 -720 {lab=vss}
 N 3440 -820 3480 -820 {lab=out}
@@ -115,9 +113,9 @@ N 1980 -440 1980 -400 {lab=vdd}
 N 1980 -200 1980 -160 {lab=vss}
 N 1920 -200 1920 -40 {lab=div_swc_s1}
 N 1940 -200 1940 -20 {lab=div_swc_s0}
-N 2060 -300 3240 -300 {lab=div_in}
+N 2780 -300 3240 -300 {lab=div_in}
 N 560 -680 660 -680 {lab=div_out}
-N 560 -300 1700 -300 {lab=div_out}
+N 900 -300 1700 -300 {lab=div_out}
 N 1780 -200 1780 -180 {lab=div_swc_s8}
 N 1800 -200 1800 -160 {lab=div_swc_s7}
 N 1820 -200 1820 -140 {lab=div_swc_s6}
@@ -133,13 +131,17 @@ N 1860 -500 1860 -400 {lab=div_prc_s4}
 N 1880 -520 1880 -400 {lab=div_prc_s3}
 N 1900 -540 1900 -400 {lab=div_prc_s2}
 N 1920 -560 1920 -400 {lab=div_prc_s1}
-N 1940 -560 1940 -400 {lab=div_prc_s0}
 N 3240 -440 3240 -300 {lab=div_in}
 N 560 -680 560 -300 {lab=div_out}
-N 1940 -580 1940 -560 {lab=div_prc_s0}
+N 1940 -580 1940 -400 {lab=div_prc_s0}
 N 900 -300 900 -240 {lab=div_out}
 N 2780 -300 2780 -240 {lab=div_in}
-N 2060 -280 2100 -280 {lab=#net3}
+N 2060 -280 2100 -280 {lab=div_def}
+N 1550 -960 1620 -960 {lab=up}
+N 1550 -680 1620 -680 {lab=down}
+N 3180 -820 3240 -820 {lab=vco_out}
+N 560 -300 900 -300 {lab=div_out}
+N 2060 -300 2780 -300 {lab=div_in}
 C {devices/iopin.sym} 280 -640 0 1 {name=p2 lab=vdd}
 C {devices/iopin.sym} 280 -620 0 1 {name=p3 lab=vss}
 C {devices/iopin.sym} 1620 -1000 1 1 {name=p5 lab=up}
@@ -176,7 +178,7 @@ C {devices/iopin.sym} 1240 -780 1 1 {name=p33 lab=lock}
 C {devices/iopin.sym} 1380 -1020 1 1 {name=p34 lab=ext_pfd_up}
 C {devices/iopin.sym} 1380 -740 1 1 {name=p35 lab=ext_pfd_down}
 C {devices/iopin.sym} 820 -740 1 1 {name=p36 lab=ext_pfd_div}
-C {libs/core_analog/asc_programmable_basic_pump/asc_programmable_basic_pump.sym} 1940 -820 0 0 {name=x8}
+C {libs/core_analog/asc_programmable_basic_pump/asc_programmable_basic_pump.sym} 1940 -820 0 0 {name=xcp}
 C {devices/iopin.sym} 1740 -900 1 1 {name=p20 lab=i_cp}
 C {lab_wire.sym} 1940 -960 0 0 {name=p37 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 2020 -660 0 0 {name=p38 sig_type=std_logic lab=vss}
@@ -214,7 +216,7 @@ C {lab_wire.sym} 2640 -750 0 0 {name=p61 sig_type=std_logic lab=mx_vco_s0}
 C {devices/iopin.sym} 2620 -880 1 1 {name=p62 lab=ext_vco_in}
 C {noconn.sym} 2620 -840 0 1 {name=l5}
 C {noconn.sym} 3020 -840 0 0 {name=l1}
-C {libs/core_analog/CSRVCO/CSRVCO.sym} 2820 -800 0 0 {name=x11}
+C {libs/core_analog/CSRVCO/CSRVCO.sym} 2820 -800 0 0 {name=xvco}
 C {lab_wire.sym} 2820 -640 0 0 {name=p63 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 2820 -940 0 0 {name=p64 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 940 -980 0 0 {name=p65 sig_type=std_logic lab=xor_ref}
@@ -233,7 +235,7 @@ C {lab_wire.sym} 3360 -720 0 0 {name=p76 sig_type=std_logic lab=vss}
 C {libs/core_analog/asc_delay/asc_delay.sym} 3240 -520 1 0 {name=x13}
 C {lab_wire.sym} 3320 -520 1 0 {name=p77 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 3140 -520 1 0 {name=p78 sig_type=std_logic lab=vss}
-C {libs/core_analog/asc_FM_pulse_swallow_divider_def/asc_FM_pulse_swallow_divider_def.sym} 1880 -300 0 0 {name=x14}
+C {libs/core_analog/asc_FM_pulse_swallow_divider_def/asc_FM_pulse_swallow_divider_def.sym} 1880 -300 0 0 {name=xdiv}
 C {lab_wire.sym} 1980 -160 0 0 {name=p79 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1980 -420 0 0 {name=p80 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 3210 -820 0 1 {name=p81 sig_type=std_logic lab=vco_out}
