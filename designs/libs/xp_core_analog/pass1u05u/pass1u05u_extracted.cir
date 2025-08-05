@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 29/07/2025 04:22
+* Extracted by KLayout with GF180MCU LVS runset on : 05/08/2025 04:24
 
 .SUBCKT pass1u05u vss clkn ind ins vdd clkp
 M$1 ins clkp ind vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
