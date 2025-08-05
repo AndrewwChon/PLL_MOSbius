@@ -1,6 +1,7 @@
 {
   "qw_core_analog_NOR": "/foss/designs/libs/qw_core_analog/NOR/NOR.gds",
   "qw_core_analog_SRlatch": "/foss/designs/libs/qw_core_analog/SRLATCH/SRlatch.gds",
+  "xp_core_analog_asc_dff_rst": "/foss/designs/libs/xp_core_analog/asc_dff_rst_with_layout/asc_dff_rst.gds",
   "xp_core_analog_asc_NAND": "/foss/designs/libs/xp_core_analog/asc_NAND_with_layout/asc_NAND.gds",
   "xp_core_analog_inv1u05u": "/foss/designs/libs/xp_core_analog/inv1u05u_with_layout/inv1u05u.gds",
   "xp_core_analog_ota_5t": "/foss/designs/libs/xp_core_analog/ota_5t/ota_5t.gds",
