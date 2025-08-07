@@ -1,0 +1,25 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 05/08/2025 06:04
+
+.SUBCKT asc_XNOR VSS|vss VDD|vdd out A|in B|in OUT VSS
+M$1 VDD|vdd A|in out VDD|vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U
++ PD=7.3U
+M$2 VDD|vdd B|in out VDD|vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U
++ PD=7.3U
+M$3 \$19 out OUT VDD|vdd pfet_03v3 L=0.5U W=6U AS=3.9P AD=3.9P PS=13.3U PD=13.3U
+M$4 \$26 A|in VDD|vdd VDD|vdd pfet_03v3 L=0.5U W=6U AS=3.9P AD=3.9P PS=13.3U
++ PD=13.3U
+M$5 OUT B|in \$26 VDD|vdd pfet_03v3 L=0.5U W=6U AS=3.9P AD=3.9P PS=13.3U
++ PD=13.3U
+M$6 VDD|vdd out \$19 VDD|vdd pfet_03v3 L=0.5U W=6U AS=3.9P AD=3.9P PS=13.3U
++ PD=13.3U
+M$7 VSS|vss A|in out VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U
++ PD=3.22U
+M$8 \$5 out VSS|vss VSS nfet_03v3 L=0.5U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$9 OUT A|in \$5 VSS nfet_03v3 L=0.5U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$10 \$6 B|in VSS|vss VSS nfet_03v3 L=0.5U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$11 OUT out \$6 VSS nfet_03v3 L=0.5U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$12 VSS|vss B|in out VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U
++ PD=3.22U
+.ENDS asc_XNOR
