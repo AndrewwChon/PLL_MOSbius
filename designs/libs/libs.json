@@ -1,12 +1,14 @@
 {
+  "core_analog_asc_XNOR": "/foss/designs/libs/core_analog/asc_XNOR/asc_XNOR.gds",
   "qw_core_analog_NOR": "/foss/designs/libs/qw_core_analog/NOR/NOR.gds",
   "qw_core_analog_SRlatch": "/foss/designs/libs/qw_core_analog/SRLATCH/SRlatch.gds",
   "xp_core_analog_asc_dff_rst": "/foss/designs/libs/xp_core_analog/asc_dff_rst_with_layout/asc_dff_rst.gds",
   "xp_core_analog_asc_NAND": "/foss/designs/libs/xp_core_analog/asc_NAND_with_layout/asc_NAND.gds",
-  "xp_core_analog_inv1u05u": "/foss/designs/libs/xp_core_analog/inv1u05u_with_layout/inv1u05u.gds",
+  "xp_core_analog_inv1u05u": "/foss/designs/libs/xp_core_analog/inv1u05u/inv1u05u.gds",
   "xp_core_analog_ota_5t": "/foss/designs/libs/xp_core_analog/ota_5t/ota_5t.gds",
-  "xp_core_analog_pass1u05u": "/foss/designs/libs/xp_core_analog/pass1u05u_with_layout/pass1u05u.gds",
+  "xp_core_analog_pass1u05u": "/foss/designs/libs/xp_core_analog/pass1u05u/pass1u05u.gds",
   "xp_core_analog_unit_nmos": "/foss/designs/libs/xp_core_analog/unit_nmos/unit_nmos.gds",
   "xp_core_analog_unit_pmos": "/foss/designs/libs/xp_core_analog/unit_pmos/unit_pmos.gds",
+  "xp_core_analog_xp_3_1_MUX": "/foss/designs/libs/xp_core_analog/xp_3_1_MUX/xp_3_1_MUX.gds",
   "xp_core_analog_xp_programmable_basic_pump": "/foss/designs/libs/xp_core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.gds"
 }
