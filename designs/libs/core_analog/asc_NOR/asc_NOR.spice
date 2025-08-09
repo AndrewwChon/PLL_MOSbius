@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sch
+.subckt asc_NOR VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+M1 OUT A VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+M2 OUT B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+M3 OUT B net1 VDD pfet_03v3 L=0.5u W=6u nf=1 m=1
+M4 net1 A VDD VDD pfet_03v3 L=0.5u W=6u nf=1 m=1
+.ends
