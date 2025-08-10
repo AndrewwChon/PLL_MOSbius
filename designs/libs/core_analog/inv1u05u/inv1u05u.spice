@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
+.subckt inv1u05u in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+M1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
