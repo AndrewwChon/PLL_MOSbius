@@ -1,61 +1,34 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 08/08/2025 05:40
+* Extracted by KLayout with GF180MCU LVS runset on : 10/08/2025 02:32
 
-.SUBCKT asc_dff_rst vdd ins clkn|clkp|out clkn|clkp|in|out in|ind|ins A|B|out
-+ B|ind|ins ins|out A|ind|out clk|in in|rst Qb|in vss Q|out D
-M$1 vdd A|ind|out ins vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U
-+ PD=7.3U
-M$2 ins A|B|out vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
-M$3 clkn|clkp|in|out clk|in vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P
-+ PS=7.3U PD=7.3U
-M$4 clkn|clkp|out clkn|clkp|in|out vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P
-+ AD=1.95P PS=7.3U PD=7.3U
-M$5 vdd in|rst A|B|out vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U
-+ PD=7.3U
-M$6 vdd Qb|in ins|out vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U
-+ PD=7.3U
-M$7 ins clkn|clkp|in|out in|ind|ins vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P
-+ PS=7.3U PD=7.3U
-M$8 ins|out clkn|clkp|out B|ind|ins vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P
-+ PS=7.3U PD=7.3U
-M$9 in|ind|ins clkn|clkp|out \$49 vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P
-+ PS=7.3U PD=7.3U
-M$10 B|ind|ins clkn|clkp|in|out A|ind|out vdd pfet_03v3 L=0.5U W=3U AS=1.95P
-+ AD=1.95P PS=7.3U PD=7.3U
-M$11 \$49 D vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
-M$12 A|ind|out in|ind|ins vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P
-+ PS=7.3U PD=7.3U
-M$13 Q|out Qb|in vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
-M$14 vdd B|ind|ins Qb|in vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U
-+ PD=7.3U
-M$15 Qb|in A|B|out vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U
-+ PD=7.3U
-M$16 ins clkn|clkp|out in|ind|ins vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P
-+ PS=3.22U PD=3.22U
-M$17 ins|out clkn|clkp|in|out B|ind|ins vss nfet_03v3 L=0.5U W=1U AS=0.61P
-+ AD=0.61P PS=3.22U PD=3.22U
-M$18 clkn|clkp|in|out clk|in vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P
-+ PS=3.22U PD=3.22U
-M$19 clkn|clkp|out clkn|clkp|in|out vss vss nfet_03v3 L=0.5U W=1U AS=0.61P
-+ AD=0.61P PS=3.22U PD=3.22U
-M$20 vss in|rst A|B|out vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U
-+ PD=3.22U
-M$21 vss Qb|in ins|out vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U
-+ PD=3.22U
-M$22 \$32 A|ind|out ins vss nfet_03v3 L=0.5U W=2U AS=1.22P AD=1.22P PS=5.22U
-+ PD=5.22U
-M$23 vss A|B|out \$32 vss nfet_03v3 L=0.5U W=2U AS=1.22P AD=1.22P PS=5.22U
-+ PD=5.22U
-M$24 \$48 B|ind|ins vss vss nfet_03v3 L=0.5U W=2U AS=1.22P AD=1.22P PS=5.22U
-+ PD=5.22U
-M$25 Qb|in A|B|out \$48 vss nfet_03v3 L=0.5U W=2U AS=1.22P AD=1.22P PS=5.22U
-+ PD=5.22U
-M$26 \$49 D vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
-M$27 A|ind|out in|ind|ins vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P
-+ PS=3.22U PD=3.22U
-M$28 Q|out Qb|in vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U
-+ PD=3.22U
-M$29 in|ind|ins clkn|clkp|in|out \$49 vss nfet_03v3 L=0.5U W=1U AS=0.61P
-+ AD=0.61P PS=3.22U PD=3.22U
-M$30 B|ind|ins clkn|clkp|out A|ind|out vss nfet_03v3 L=0.5U W=1U AS=0.61P
-+ AD=0.61P PS=3.22U PD=3.22U
+.SUBCKT asc_dff_rst VDD Q clk rst Qb VSS D
+M$1 \$15 clk VDD VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$2 \$3 \$15 \$2 VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$3 VDD \$18 \$3 VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$4 \$3 \$4 VDD VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$5 VDD rst \$4 VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$6 \$6 \$17 \$5 VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$7 VDD Qb \$6 VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$8 Q Qb VDD VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$9 \$17 \$15 VDD VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$10 \$54 D VDD VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$11 \$2 \$17 \$54 VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$12 \$18 \$2 VDD VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$13 \$5 \$15 \$18 VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$14 VDD \$5 Qb VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$15 Qb \$4 VDD VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$16 \$15 clk VSS VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$17 \$3 \$17 \$2 VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$18 \$31 \$18 \$3 VSS nfet_03v3 L=0.5U W=2U AS=0.87P AD=0.87P PS=4.74U PD=4.74U
+M$20 \$31 \$4 VSS VSS nfet_03v3 L=0.5U W=2U AS=0.87P AD=0.87P PS=4.74U PD=4.74U
+M$22 VSS rst \$4 VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$23 \$6 \$15 \$5 VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$24 VSS Qb \$6 VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$25 Q Qb VSS VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$26 \$17 \$15 VSS VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$27 \$54 D VSS VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$28 \$2 \$15 \$54 VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$29 \$18 \$2 VSS VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$30 \$5 \$17 \$18 VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$31 \$40 \$5 VSS VSS nfet_03v3 L=0.5U W=2U AS=0.87P AD=0.87P PS=4.74U PD=4.74U
+M$33 \$40 \$4 Qb VSS nfet_03v3 L=0.5U W=2U AS=0.87P AD=0.87P PS=4.74U PD=4.74U
 .ENDS asc_dff_rst
