@@ -6,9 +6,7 @@ M8 net7 upb vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=1
 M10 net6 vss vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=1
 x1 up vdd upb vss inv1u05u
 x2 net3 vss s1 net8 s1b vdd pass1u05u
-x3 net8 vss s1b vdd s1 vdd pass1u05u
 x4 iref vss s1 net5 s1b vdd pass1u05u
-x5 net5 vss s1b vss s1 vdd pass1u05u
 x6 s1 vdd s1b vss inv1u05u
 x7 s2 vdd s2b vss inv1u05u
 x8 s3 vdd s3b vss inv1u05u
@@ -16,22 +14,16 @@ x9 s4 vdd s4b vss inv1u05u
 M12 out net10 net9 vss nfet_03v3 L=0.5u W=7.0u nf=2 m=2
 M14 net11 upb vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=2
 x12 net3 vss s2 net12 s2b vdd pass1u05u
-x13 net12 vss s2b vdd s2 vdd pass1u05u
 x14 iref vss s2 net10 s2b vdd pass1u05u
-x15 net10 vss s2b vss s2 vdd pass1u05u
 M16 out net14 net13 vss nfet_03v3 L=0.5u W=7.0u nf=2 m=4
 M18 net15 upb vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=4
 x16 net3 vss s3 net16 s3b vdd pass1u05u
-x17 net16 vss s3b vdd s3 vdd pass1u05u
 x18 iref vss s3 net14 s3b vdd pass1u05u
-x19 net14 vss s3b vss s3 vdd pass1u05u
 M19 out net20 net19 vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=8
 M20 out net18 net17 vss nfet_03v3 L=0.5u W=7.0u nf=2 m=8
 M22 net19 upb vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=8
 x20 net3 vss s4 net20 s4b vdd pass1u05u
-x21 net20 vss s4b vdd s4 vdd pass1u05u
 x22 iref vss s4 net18 s4b vdd pass1u05u
-x23 net18 vss s4b vss s4 vdd pass1u05u
 M2 iref iref net1 vss nfet_03v3 L=0.5u W=7.0u nf=2 m=1
 M9 net3 net3 net6 vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=1
 M1 out net8 net7 vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=1
@@ -45,6 +37,19 @@ M7 net9 down vss vss nfet_03v3 L=0.5u W=7.0u nf=2 m=2
 M13 net13 down vss vss nfet_03v3 L=0.5u W=7.0u nf=2 m=4
 M17 net17 down vss vss nfet_03v3 L=0.5u W=7.0u nf=2 m=8
 M23 vss vss vss vss nfet_03v3 L=0.5u W=7.0u nf=2 m=6
+M24 vss vss vss vss nfet_03v3 L=0.5u W=7.0u nf=2 m=6
+M26 net5 s1b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M29 net8 s1 vdd vdd pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M33 vdd vdd vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=4
+M34 vdd vdd vdd vdd pfet_03v3 L=0.5u W=7.0u nf=1 m=6
+M35 vdd vdd vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=4
+M36 vdd vdd vdd vdd pfet_03v3 L=0.5u W=7.0u nf=1 m=6
+M25 net10 s2b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M27 net14 s3b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M28 net18 s4b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M30 net12 s2 vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=1
+M31 net16 s3 vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=1
+M32 net20 s4 vdd vdd pfet_03v3 L=0.5u W=7.0u nf=6 m=1
 .ends
 
 * expanding   symbol:  libs/core_analog/inv1u05u/inv1u05u.sym # of pins=4
@@ -52,7 +57,7 @@ M23 vss vss vss vss nfet_03v3 L=0.5u W=7.0u nf=2 m=6
 ** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
 .subckt inv1u05u in vdd out vss
 *.PININFO in:B out:B vss:B vdd:B
-M1 out in vdd vdd pfet_03v3 L=0.5u W=1.0u nf=3 m=1
+M1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
 M2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
 .ends
 
@@ -62,7 +67,7 @@ M2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
 ** sch_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sch
 .subckt pass1u05u ind vss clkn ins clkp vdd
 *.PININFO ind:B ins:B clkn:B clkp:B vdd:B vss:B
-M1 ind clkp ins vdd pfet_03v3 L=0.5u W=1.0u nf=3 m=1
+M1 ind clkp ins vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
 M2 ind clkn ins vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
 .ends
 
