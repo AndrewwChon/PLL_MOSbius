@@ -99,7 +99,6 @@ value="PULSE(0 3.3 80n 1p 1p 100n 200n)"
 savecurrent=false}
 C {devices/lab_wire.sym} 1080 -350 0 0 {name=p24 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1080 -490 0 0 {name=p25 sig_type=std_logic lab=vi}
-C {libs/core_analog/asc_AND_9/asc_AND_9.sym} 1640 -380 0 0 {name=x1}
 C {devices/lab_wire.sym} 1440 -420 0 0 {name=p26 sig_type=std_logic lab=vc}
 C {devices/lab_wire.sym} 1440 -400 0 0 {name=p27 sig_type=std_logic lab=vd}
 C {devices/lab_wire.sym} 1440 -380 0 0 {name=p28 sig_type=std_logic lab=ve}
@@ -116,3 +115,4 @@ savecurrent=false}
 C {devices/vsource.sym} 880 -210 0 0 {name=V10
 value="PULSE(0 3.3 70n 1p 1p 100n 200n)"
 savecurrent=false}
+C {libs/core_analog/asc_AND_9_20250809/asc_AND_9_20250809.sym} 1640 -380 0 0 {name=x1}

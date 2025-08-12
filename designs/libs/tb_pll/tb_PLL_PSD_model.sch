@@ -91,7 +91,7 @@ C {devices/code_shown.sym} -235 -538.75 0 0 {name=Simulation only_toplevel=false
 .control
 
     save all
-    TRAN 1n 2m
+    TRAN 1n 1.5m
     write tb_PLL_model_ideal.raw
     
 .endc
@@ -150,7 +150,6 @@ C {libs/model_pll/CP_model.sym} 730 -820 0 0 {name=x2}
 C {libs/model_pll/vco_model.sym} 1460 -840 0 0 {name=x3}
 C {devices/lab_wire.sym} 1380 -420 0 0 {name=p15 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1380 -160 0 0 {name=p22 sig_type=std_logic lab=vssa}
-C {libs/core_analog/asc_FM_pulse_swallow_divider_def/asc_FM_pulse_swallow_divider_def.sym} 1280 -300 0 0 {name=x4}
 C {devices/lab_wire.sym} 1500 -280 0 0 {name=p27 sig_type=std_logic lab=def}
 C {devices/lab_wire.sym} 1340 -180 0 0 {name=p28 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1320 -160 0 0 {name=p29 sig_type=std_logic lab=vssa}
@@ -186,3 +185,4 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
+C {libs/core_analog/asc_FM_dual_programmable_psd_def/asc_FM_dual_programmable_psd_def.sym} 1280 -300 0 0 {}

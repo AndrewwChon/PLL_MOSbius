@@ -1,0 +1,18 @@
+** sch_path: /foss/designs/libs/core_analog/asc_SR_latch/asc_SR_latch.sch
+.subckt asc_SR_latch R S Qb VDD VSS Q
+*.PININFO VDD:B VSS:B S:B R:B Qb:B Q:B
+x1 VDD VSS Q R Qb asc_NOR
+x2 VDD VSS Qb Q S asc_NOR
+.ends
+
+* expanding   symbol:  libs/core_analog/asc_NOR/asc_NOR.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sym
+** sch_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sch
+.subckt asc_NOR VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+M1 OUT A VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+M2 OUT B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+M3 OUT B net1 VDD pfet_03v3 L=0.5u W=6u nf=1 m=1
+M4 net1 A VDD VDD pfet_03v3 L=0.5u W=6u nf=1 m=1
+.ends
+
