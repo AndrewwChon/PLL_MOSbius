@@ -1,0 +1,39 @@
+** sch_path: /foss/designs/Book-on-gm-ID-design/starter_files_open_source_tools/gf180mcuD/noisetest_nfet_03v3.sch
+**.subckt noisetest_nfet_03v3
+vg g GND DC 0.75 AC 1
+vd d GND 0.9
+vsb GND b {vbx}
+Hn n GND vd 1
+XM1 d g GND b nfet_03v3 L={lx} W={wx} nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+**** begin user architecture code
+
+
+.param wx=5u lx=0.28u vbx=0
+.save all
+.save @m.xm1.m0[gm]
+.save @m.xm1.m0[id]
+
+.control
+set wr_vecnames
+noise v(n) vg dec 10 1 1e11 1
+noise v(n) vg lin  1 1 1 1
+echo $plots
+write noisetest_nfet_03v3.raw noise1.all
+
+setplot noise3
+display
+print onoise_spectrum
+print onoise.m.xm1.m0.1overf
+print onoise.m.xm1.m0.id
+.endc
+
+
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
