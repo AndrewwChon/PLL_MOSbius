@@ -4,6 +4,38 @@ K {}
 V {}
 S {}
 E {}
+B 2 910 -1830 2100 -1020 {flags=graph
+y1=-0.5
+y2=3.5
+ypos1=-0.5
+ypos2=3.5
+divy=5
+subdivy=1
+unity=1
+x1=1.2656601e-06
+x2=1.4470184e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="gaten
+gatep
+vb1
+vb2
+fout
+foutb"
+color="4 5 6 7 8 9"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+rawfile=$netlist_dir/RVCO_0812.raw
+autoload=1
+hilight_wave=-1
+digital=0
+legend=1
+rainbow=0
+sim_type=tran}
 N 980 -590 1130 -590 {lab=osci}
 N 1190 -770 1190 -740 {lab=vss}
 N 1190 -660 1190 -630 {lab=vdd}
@@ -18,10 +50,9 @@ N 1470 -690 1470 -650 {lab=vdd}
 N 1470 -530 1470 -490 {lab=vss}
 N 1510 -620 1550 -620 {lab=q}
 N 1510 -560 1550 -560 {lab=qb}
-N 830 -910 830 -890 {lab=GND}
-N 830 -1000 830 -970 {lab=vdd}
-N 890 -910 890 -890 {lab=GND}
-N 890 -1000 890 -970 {lab=vss}
+N 820 -1100 820 -1070 {lab=vdd}
+N 820 -920 820 -900 {lab=GND}
+N 820 -1010 820 -980 {lab=vss}
 N 1030 -590 1030 -530 {lab=osci}
 N 1130 -670 1130 -590 {lab=osci}
 N 1130 -670 1150 -670 {lab=osci}
@@ -67,7 +98,7 @@ N 1640 -490 1760 -490 {lab=vdd}
 N 1760 -490 1760 -470 {lab=vdd}
 N 1870 -410 1900 -410 {lab=foutb}
 N 1560 -410 1590 -410 {lab=qb}
-N 200 -400 300 -400 {lab=#net5}
+N 200 -400 300 -400 {lab=gaten}
 N 340 -370 340 -340 {lab=vss}
 N 340 -340 700 -340 {lab=vss}
 N 700 -370 700 -340 {lab=vss}
@@ -79,19 +110,19 @@ N 350 -400 350 -340 {lab=vss}
 N 700 -400 710 -400 {lab=vss}
 N 710 -400 710 -340 {lab=vss}
 N 700 -340 710 -340 {lab=vss}
-N 340 -490 340 -430 {lab=#net6}
-N 520 -490 520 -430 {lab=#net7}
+N 340 -490 340 -430 {lab=#net5}
+N 520 -490 520 -430 {lab=#net6}
 N 340 -520 350 -520 {lab=vss}
 N 520 -520 530 -520 {lab=vss}
 N 700 -490 710 -490 {lab=vss}
-N 280 -440 280 -400 {lab=#net5}
-N 280 -440 640 -440 {lab=#net5}
-N 640 -440 640 -400 {lab=#net5}
-N 640 -400 660 -400 {lab=#net5}
-N 460 -400 480 -400 {lab=#net5}
-N 460 -440 460 -400 {lab=#net5}
-N 520 -630 520 -550 {lab=#net8}
-N 560 -780 660 -780 {lab=#net8}
+N 280 -440 280 -400 {lab=gaten}
+N 280 -440 640 -440 {lab=gaten}
+N 640 -440 640 -400 {lab=gaten}
+N 640 -400 660 -400 {lab=gaten}
+N 460 -400 480 -400 {lab=gaten}
+N 460 -440 460 -400 {lab=gaten}
+N 520 -630 520 -550 {lab=gatep}
+N 560 -780 660 -780 {lab=gatep}
 N 500 -780 520 -780 {lab=vdd}
 N 500 -840 500 -780 {lab=vdd}
 N 500 -840 720 -840 {lab=vdd}
@@ -101,8 +132,8 @@ N 700 -840 700 -810 {lab=vdd}
 N 520 -840 520 -810 {lab=vdd}
 N 510 -690 520 -690 {lab=vdd}
 N 700 -690 710 -690 {lab=vdd}
-N 600 -780 600 -620 {lab=#net8}
-N 520 -620 600 -620 {lab=#net8}
+N 600 -780 600 -620 {lab=gatep}
+N 520 -620 600 -620 {lab=gatep}
 N 340 -630 340 -550 {lab=vmir}
 N 340 -840 340 -690 {lab=vdd}
 N 340 -840 500 -840 {lab=vdd}
@@ -118,8 +149,8 @@ N 830 -340 970 -340 {lab=vss}
 N 970 -400 970 -340 {lab=vss}
 N 960 -400 970 -400 {lab=vss}
 N 960 -370 960 -340 {lab=vss}
-N 640 -440 780 -440 {lab=#net5}
-N 900 -440 920 -440 {lab=#net5}
+N 640 -440 780 -440 {lab=gaten}
+N 900 -440 920 -440 {lab=gaten}
 N 960 -750 960 -430 {lab=vb2}
 N 960 -840 960 -810 {lab=vdd}
 N 840 -840 960 -840 {lab=vdd}
@@ -137,24 +168,24 @@ N 710 -340 830 -340 {lab=vss}
 N 820 -370 820 -340 {lab=vss}
 N 820 -400 830 -400 {lab=vss}
 N 830 -400 830 -340 {lab=vss}
-N 780 -440 900 -440 {lab=#net5}
-N 920 -440 920 -400 {lab=#net5}
+N 780 -440 900 -440 {lab=gaten}
+N 920 -440 920 -400 {lab=gaten}
 N 760 -400 780 -400 {lab=vb1}
 N 760 -460 760 -400 {lab=vb1}
 N 760 -460 820 -460 {lab=vb1}
-N 640 -780 640 -740 {lab=#net8}
-N 640 -740 780 -740 {lab=#net8}
-N 780 -780 780 -740 {lab=#net8}
-N 700 -460 700 -430 {lab=#net9}
+N 640 -780 640 -740 {lab=gatep}
+N 640 -740 780 -740 {lab=gatep}
+N 780 -780 780 -740 {lab=gatep}
+N 700 -460 700 -430 {lab=#net7}
 N 300 -560 480 -560 {lab=vb1}
 N 700 -600 700 -580 {lab=osci}
 N 700 -590 760 -590 {lab=osci}
 N 690 -630 700 -630 {lab=vdd}
 N 690 -550 700 -550 {lab=vss}
-N 520 -660 520 -630 {lab=#net8}
-N 520 -750 520 -720 {lab=#net10}
+N 520 -660 520 -630 {lab=gatep}
+N 520 -750 520 -720 {lab=#net8}
 N 560 -690 660 -690 {lab=vb2}
-N 700 -750 700 -720 {lab=#net11}
+N 700 -750 700 -720 {lab=#net9}
 N 480 -560 620 -560 {lab=vb1}
 N 620 -560 620 -490 {lab=vb1}
 N 620 -490 660 -490 {lab=vb1}
@@ -165,9 +196,16 @@ N 160 -800 160 -770 {lab=vin}
 N 230 -800 230 -770 {lab=iref}
 N 230 -710 230 -690 {lab=GND}
 N 140 -370 140 -340 {lab=iref}
-N 230 -450 230 -400 {lab=#net5}
-N 230 -600 230 -510 {lab=vmir}
+N 230 -450 230 -400 {lab=gaten}
 N 760 -590 980 -590 {lab=osci}
+N 250 -340 340 -340 {lab=vss}
+N 760 -240 830 -240 {lab=vss}
+N 830 -240 860 -240 {lab=vss}
+N 860 -340 860 -240 {lab=vss}
+N 960 -850 1050 -850 {lab=vdd}
+N 960 -850 960 -830 {lab=vdd}
+N 1050 -790 1050 -760 {lab=vb2}
+N 1020 -760 1050 -760 {lab=vb2}
 C {lab_wire.sym} 1190 -640 2 0 {name=p4 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1190 -420 2 0 {name=p5 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1190 -540 0 1 {name=p6 sig_type=std_logic lab=vss}
@@ -178,21 +216,15 @@ C {lab_wire.sym} 1470 -680 0 0 {name=p12 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1470 -500 2 1 {name=p13 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1540 -620 0 1 {name=p14 sig_type=std_logic lab=q}
 C {lab_wire.sym} 1540 -560 0 1 {name=p15 sig_type=std_logic lab=qb}
-C {vsource.sym} 830 -940 0 0 {name=V1 value=3.3 savecurrent=false}
-C {gnd.sym} 830 -890 0 0 {name=l3 lab=GND}
-C {vsource.sym} 890 -940 0 0 {name=V2 value=0 savecurrent=false}
-C {gnd.sym} 890 -890 0 0 {name=l4 lab=GND}
-C {lab_wire.sym} 830 -990 0 0 {name=p18 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 890 -990 0 0 {name=p19 sig_type=std_logic lab=vss}
+C {vsource.sym} 820 -1040 0 0 {name=V1 value=\{VDD\} savecurrent=false}
+C {vsource.sym} 820 -950 0 0 {name=V2 value=0 savecurrent=false}
+C {gnd.sym} 820 -900 0 0 {name=l4 lab=GND}
+C {lab_wire.sym} 820 -1090 0 0 {name=p18 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 820 -1000 0 0 {name=p19 sig_type=std_logic lab=vss}
 C {parax_cap.sym} 1030 -520 0 0 {name=C1 gnd=0 value=1p m=1}
-C {devices/code_shown.sym} 1970 -820 0 0 {name=Models only_toplevel=false
-format="tcleval( @value )"
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-"}
 C {devices/code_shown.sym} 1970 -720 0 0 {name=Simulation only_toplevel=false value="
-.param par_vth=0 par_k=0 par_l=0 par_w=0 par_leff=0 par_weff=0 p_sqrtarea=0 var_k=0 var_vth=0
+* .param par_vth=0 par_k=0 par_l=0 par_w=0 par_leff=0 par_weff=0 p_sqrtarea=0 var_k=0 var_vth=0
+.param VDD = 3.3 Vtune = \{VDD/2\} 
 .control
 save all
 
@@ -209,7 +241,7 @@ alter @V1[PULSE] = [ 0 3.3 5n 1n 1n 49.998u 100u 0 ]
 
 ** Simulation settings
 
-tran 1n 100u
+tran .1n 10u
 
 write RVCO_0812.raw
 .endc
@@ -517,7 +549,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 690 -550 0 0 {name=p53 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 690 -630 0 0 {name=p54 sig_type=std_logic lab=vdd}
-C {vsource.sym} 160 -740 0 0 {name=V6 value=2 savecurrent=false}
+C {vsource.sym} 160 -740 0 0 {name=V6 value=\{Vtune\} savecurrent=false}
 C {gnd.sym} 160 -690 0 0 {name=l8 lab=GND}
 C {lab_wire.sym} 160 -790 0 1 {name=p60 sig_type=std_logic lab=vin}
 C {lab_wire.sym} 200 -600 0 0 {name=p63 sig_type=std_logic lab=vmir}
@@ -531,7 +563,7 @@ L=25e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
-C {devices/code_shown.sym} 340 -270 0 0 {name=MODELS1 only_toplevel=true
+C {devices/code_shown.sym} 1950 -1040 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -542,3 +574,24 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
+C {lab_wire.sym} 430 -440 0 0 {name=p17 sig_type=std_logic lab=gaten}
+C {lab_wire.sym} 570 -620 0 0 {name=p55 sig_type=std_logic lab=gatep}
+C {capa-2.sym} 250 -370 0 0 {name=C3
+m=1
+value=10p
+footprint=1206
+device=polarized_capacitor}
+C {capa-2.sym} 1050 -820 0 0 {name=C4
+m=1
+value=10p
+footprint=1206
+device=polarized_capacitor}
+C {capa-2.sym} 760 -270 0 0 {name=C5
+m=1
+value=10p
+footprint=1206
+device=polarized_capacitor}
+C {launcher.sym} 2280 -1690 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/RVCO_0812.raw tran"
+}

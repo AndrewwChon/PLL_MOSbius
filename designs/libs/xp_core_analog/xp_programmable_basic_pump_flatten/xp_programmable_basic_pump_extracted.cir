@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 12/08/2025 06:02
+* Extracted by KLayout with GF180MCU LVS runset on : 12/08/2025 22:56
 
 .SUBCKT xp_programmable_basic_pump VSS out down iref VDD s1 s2 s3 s4 up
 M$1 VDD s1 \$37 VDD pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U

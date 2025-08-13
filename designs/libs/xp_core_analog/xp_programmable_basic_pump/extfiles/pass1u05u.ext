@@ -1,4 +1,4 @@
-timestamp 1583573076
+timestamp 1583574685
 version 8.3
 tech gf180mcuD
 style ngspice()
@@ -30,54 +30,54 @@ node "m1_3449_n2217#" 0 8.16424 3449 -2217 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "VDD" 0 319.756 3496 -1380 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 141000 1540 0 0 0 0 0 0 0 0
 node "w_3278_n1667#" 2287 381.096 3278 -1667 nw 127032 1546 0 0 40000 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "a_3346_n3131#" 0 0 3346 -3131 ppd 0 0 0 0 0 0 40000 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_3449_n2217#" "m1_3718_n2217#" 3.82791
 cap "VSS" "VDD" 13.0968
-cap "ins" "VDD" 2.8907
-cap "VSS" "ind" 8.46744
+cap "m1_3449_n2217#" "w_3278_n1667#" 0.0357358
 cap "ins" "ind" 142.24
-cap "VDD" "ind" 2.87664
+cap "w_3278_n1667#" "m1_3718_n2217#" 0.0285886
+cap "m1_3449_n2217#" "m1_3718_n2217#" 3.82791
+cap "ind" "VDD" 2.87664
+cap "ins" "VDD" 2.8907
 cap "VSS" "w_3278_n1667#" 0.755352
 cap "VSS" "m1_3449_n2217#" 0.25194
+cap "VSS" "m1_3718_n2217#" 0.201552
+cap "w_3278_n1667#" "ind" 0.631806
+cap "m1_3449_n2217#" "ind" 2.14015
 cap "ins" "w_3278_n1667#" 0.631806
 cap "ins" "m1_3449_n2217#" 0.425053
-cap "VSS" "m1_3718_n2217#" 0.201552
+cap "ind" "m1_3718_n2217#" 0.0170433
 cap "ins" "m1_3718_n2217#" 1.9297
 cap "w_3278_n1667#" "VDD" 74.2693
 cap "m1_3449_n2217#" "VDD" 0.34449
 cap "m1_3718_n2217#" "VDD" 0.275592
-cap "w_3278_n1667#" "ind" 0.631806
-cap "m1_3449_n2217#" "ind" 2.14015
-cap "m1_3718_n2217#" "ind" 0.0170433
-cap "m1_3449_n2217#" "w_3278_n1667#" 0.0357358
+cap "VSS" "ind" 8.46744
 cap "ins" "VSS" 8.46976
-cap "w_3278_n1667#" "m1_3718_n2217#" 0.0285886
-cap "via_dev_1/m1_0_0#" "via_dev_0/m1_0_0#" -3.33812
-cap "via_dev_0/m1_0_0#" "clkn" 21.2479
-cap "via_dev_1/m1_0_0#" "via_dev$36_2/m1_0_0#" 0.0935299
+cap "via_dev$36_2/m1_0_0#" "pfet_0/w_n180_n88#" 10.9217
 cap "pfet_0/w_n180_n88#" "via_dev_0/m1_0_0#" 5.02391
-cap "clkp" "via_dev_1/m1_0_0#" 1.90056
-cap "via_dev_0/m1_0_0#" "via_dev$36_2/m1_0_0#" 16.6434
-cap "via_dev$36_2/m1_0_0#" "clkn" 12.3807
-cap "clkp" "via_dev_0/m1_0_0#" 0.717363
-cap "via_dev_1/m1_0_0#" "via_dev$36_0/m1_0_0#" 0.059081
-cap "clkp" "clkn" 114.773
-cap "via_dev_0/m1_0_0#" "via_dev$36_0/m1_0_0#" 16.5954
-cap "via_dev$36_0/m1_0_0#" "clkn" 12.5989
-cap "pfet_0/w_n180_n88#" "via_dev$36_2/m1_0_0#" 10.9217
-cap "pfet_0/w_n180_n88#" "clkp" 0.32101
-cap "clkp" "via_dev$36_2/m1_0_0#" 14.3472
-cap "pfet_0/w_n180_n88#" "via_dev$36_0/m1_0_0#" 10.9454
-cap "via_dev$36_2/m1_0_0#" "via_dev$36_0/m1_0_0#" 3.76805
 cap "clkp" "via_dev$36_0/m1_0_0#" 14.6694
-cap "pfet_0/w_n180_n88#" "via_dev_1/m1_0_0#" 22.518
-cap "via_dev_1/m1_0_0#" "via_dev$36_2/m1_0_0#" 20.3629
-cap "pfet_0/w_n180_n88#" "clkp" 15.2028
-cap "pfet_0/w_n180_n88#" "via_dev$36_0/m1_0_0#" 1.56633
-cap "via_dev_1/m1_0_0#" "clkp" 18.4708
-cap "pfet_0/w_n180_n88#" "via_dev$36_2/m1_0_0#" 1.56633
-cap "via_dev_1/m1_0_0#" "via_dev$36_0/m1_0_0#" 20.318
-cap "clkn" "via_dev_1/m1_0_0#" 0.209073
+cap "via_dev$36_2/m1_0_0#" "via_dev$36_0/m1_0_0#" 3.76805
+cap "via_dev$36_0/m1_0_0#" "via_dev_0/m1_0_0#" 16.5954
+cap "clkn" "via_dev$36_0/m1_0_0#" 12.5989
+cap "via_dev$36_2/m1_0_0#" "clkp" 14.3472
+cap "clkp" "via_dev_0/m1_0_0#" 0.717363
+cap "via_dev$36_0/m1_0_0#" "via_dev_1/m1_0_0#" 0.059081
+cap "clkp" "clkn" 114.773
+cap "clkp" "via_dev_1/m1_0_0#" 1.90056
+cap "via_dev$36_0/m1_0_0#" "pfet_0/w_n180_n88#" 10.9454
+cap "via_dev$36_2/m1_0_0#" "via_dev_0/m1_0_0#" 16.6434
+cap "clkp" "pfet_0/w_n180_n88#" 0.32101
+cap "via_dev$36_2/m1_0_0#" "clkn" 12.3807
+cap "clkn" "via_dev_0/m1_0_0#" 21.2479
+cap "via_dev$36_2/m1_0_0#" "via_dev_1/m1_0_0#" 0.0935299
+cap "via_dev_0/m1_0_0#" "via_dev_1/m1_0_0#" -3.33812
+cap "via_dev_1/m1_0_0#" "clkn" 0.209073
 cap "via_dev_1/m1_0_0#" "via_dev_0/m1_0_0#" -3.33812
+cap "clkp" "pfet_0/w_n180_n88#" 15.2028
+cap "via_dev$36_2/m1_0_0#" "via_dev_1/m1_0_0#" 20.3629
+cap "via_dev$36_0/m1_0_0#" "pfet_0/w_n180_n88#" 1.56633
+cap "clkp" "via_dev_1/m1_0_0#" 18.4708
+cap "pfet_0/w_n180_n88#" "via_dev_1/m1_0_0#" 22.518
+cap "via_dev$36_0/m1_0_0#" "via_dev_1/m1_0_0#" 20.318
+cap "via_dev$36_2/m1_0_0#" "pfet_0/w_n180_n88#" 1.56633
 merge "via_dev$36_2/m1_0_0#" "via_dev$36_3/m1_0_0#" -449.829 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17936 -992 -19200 -960 0 0 0 0 0 0
 merge "via_dev$36_3/m1_0_0#" "pfet_0/a_138_0#"
 merge "pfet_0/a_138_0#" "m1_3718_n2217#"
