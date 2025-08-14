@@ -71,7 +71,6 @@ N 620 -260 620 -220 {lab=vdda}
 N 640 -260 640 -220 {lab=vssa}
 N 660 -260 660 -220 {lab=vssa}
 N 680 -260 680 -220 {lab=vssa}
-N 700 -260 700 -220 {lab=vssa}
 C {devices/code_shown.sym} -485 -118.75 0 0 {name=Simulation only_toplevel=false value="
 .control
 
@@ -143,11 +142,10 @@ value="
 C {devices/lab_wire.sym} 280 -440 0 0 {name=p10 sig_type=std_logic lab=vdda}
 C {devices/isource.sym} 520 -550 0 0 {name=I0 value=100u}
 C {devices/lab_wire.sym} 520 -600 0 0 {name=p16 sig_type=std_logic lab=vdda}
-C {libs/core_analog/asc_programmable_basic_pump/asc_programmable_basic_pump.sym} 700 -380 0 0 {name=x2}
 C {devices/lab_wire.sym} 700 -520 0 0 {name=p12 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 780 -220 0 0 {name=p11 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 700 -220 0 0 {name=p13 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 680 -220 0 0 {name=p14 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 660 -220 0 0 {name=p15 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 640 -220 0 0 {name=p17 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 620 -240 0 0 {name=p18 sig_type=std_logic lab=vdda}
+C {libs/xp_core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sym} 670 -400 0 0 {name=x2}

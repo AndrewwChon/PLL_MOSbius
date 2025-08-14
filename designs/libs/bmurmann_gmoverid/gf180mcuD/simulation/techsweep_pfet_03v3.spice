@@ -1,0 +1,86 @@
+** sch_path: /foss/designs/libs/bmurmann_gmoverid/gf180mcuD/techsweep_pfet_03v3.sch
+**.subckt techsweep_pfet_03v3
+XM1 d g 0 b pfet_03v3 L={lx} W={wx} nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+Hn 0 n vd 1
+vg 0 g DC 0.9 AC 1
+vd 0 d 0.9
+vb 0 b 0
+**** begin user architecture code
+
+
+.param wx=20u lx=0.28u
+.noise v(n) vg lin 1 1 1 1
+
+.control
+option numdgt = 3
+set wr_singlescale
+set wr_vecnames
+
+compose l_vec  values 0.28u 0.29u
++ 0.3u 0.4u 0.5u 0.6u 0.7u 0.8u 0.9u 1u 2u 3u
+compose vg_vec start= 0 stop=3.301  step=25m
+compose vd_vec start= 0 stop=3.301  step=25m
+compose vb_vec start= 0 stop=-0.4 step=-0.2
+
+foreach var1 $&l_vec
+  alterparam lx=$var1
+  reset
+  foreach var2 $&vg_vec
+    alter vg $var2
+    foreach var3 $&vd_vec
+      alter vd $var3
+      foreach var4 $&vb_vec
+        alter vb $var4
+        run
+        wrdata techsweep_pfet_03v3.txt noise1.all
+        destroy all
+        set appendwrite
+        unset set wr_vecnames
+      end
+    end
+  end
+end
+unset appendwrite
+
+alterparam lx=0.28u
+reset
+op
+show
+write techsweep_pfet_03v3.raw
+.endc
+
+
+
+
+.save @m.xm1.m0[capbd]
+.save @m.xm1.m0[capbs]
+.save @m.xm1.m0[cdd]
+.save @m.xm1.m0[cgb]
+.save @m.xm1.m0[cgd]
+.save @m.xm1.m0[cgdo]
+.save @m.xm1.m0[cgg]
+.save @m.xm1.m0[cgs]
+.save @m.xm1.m0[cgso]
+.save @m.xm1.m0[css]
+.save @m.xm1.m0[gds]
+.save @m.xm1.m0[gm]
+.save @m.xm1.m0[gmbs]
+.save @m.xm1.m0[id]
+.save @m.xm1.m0[l]
+.save @m.xm1.m0[vth]
+.save @vb[dc]
+.save @vd[dc]
+.save @vg[dc]
+.save onoise.m.xm1.m0.id
+.save onoise.m.xm1.m0.1overf
+.save g d b n
+
+
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+**** end user architecture code
+**.ends
+.end

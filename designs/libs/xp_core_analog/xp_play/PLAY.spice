@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/libs/xp_core_analog/xp_play/PLAY.sch
+.subckt PLAY VSS G S
+*.PININFO VSS:B G:B S:B
+M2 S G VSS VSS nfet_03v3 L=0.5u W=7.0u nf=2 m=1
+M1 S G VSS VSS nfet_03v3 L=0.5u W=7.0u nf=2 m=1
+.ends
