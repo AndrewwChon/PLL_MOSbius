@@ -91,7 +91,7 @@ C {devices/code_shown.sym} -235 -538.75 0 0 {name=Simulation only_toplevel=false
 .control
 
     save all
-    TRAN 1n 1.5m
+    TRAN 1n 1m
     write tb_PLL_model_ideal.raw
     
 .endc
@@ -185,4 +185,4 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {libs/core_analog/asc_FM_dual_programmable_psd_def/asc_FM_dual_programmable_psd_def.sym} 1280 -300 0 0 {}
+C {libs/core_analog/asc_FM_dual_programmable_psd_def/asc_FM_dual_programmable_psd_def.sym} 1280 -300 0 0 {name=x4}

@@ -28,23 +28,16 @@ N 700 -520 700 -380 {lab=d7}
 N 680 -520 680 -360 {lab=d8}
 N 660 -520 660 -340 {lab=d9}
 N 860 -520 860 -480 {lab=vss}
-N 940 -620 980 -620 {lab=latchrst}
+N 940 -620 980 -620 {lab=rst}
 N 860 -760 860 -720 {lab=vdd}
 N 760 -760 760 -720 {lab=a}
-N 520 -580 560 -580 {lab=latchrst}
+N 520 -580 560 -580 {lab=rst}
 N 520 -620 600 -620 {lab=set}
 N 480 -700 480 -660 {lab=vdd}
 N 480 -540 480 -500 {lab=vss}
 N 380 -620 440 -620 {lab=mc}
 N 380 -580 440 -580 {lab=ignore}
-N 520 -340 560 -340 {lab=latchrst}
-N 560 -340 600 -340 {lab=latchrst}
-N 420 -260 420 -220 {lab=vss}
-N 420 -460 420 -420 {lab=vdd}
-N 280 -360 320 -360 {lab=rst}
-N 280 -320 320 -320 {lab=define}
-N 180 -680 200 -680 {lab=define}
-N 560 -580 600 -580 {lab=latchrst}
+N 560 -580 600 -580 {lab=rst}
 C {devices/iopin.sym} 180 -780 0 1 {name=p2 lab=vdd}
 C {devices/iopin.sym} 180 -760 0 1 {name=p3 lab=vss}
 C {devices/iopin.sym} 180 -700 0 1 {name=p6 lab=rst}
@@ -77,14 +70,7 @@ C {devices/lab_wire.sym} 480 -500 0 0 {name=p30 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 480 -680 0 0 {name=p31 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 430 -580 0 0 {name=p32 sig_type=std_logic lab=ignore}
 C {devices/lab_wire.sym} 410 -620 0 0 {name=p33 sig_type=std_logic lab=mc}
-C {libs/core_analog/asc_OR/asc_OR.sym} 420 -340 0 0 {name=x3}
-C {devices/lab_wire.sym} 600 -340 0 0 {name=p28 sig_type=std_logic lab=latchrst}
-C {devices/lab_wire.sym} 420 -220 0 0 {name=p34 sig_type=std_logic lab=vss}
-C {devices/lab_wire.sym} 420 -440 0 0 {name=p35 sig_type=std_logic lab=vdd}
-C {devices/lab_wire.sym} 310 -360 0 0 {name=p36 sig_type=std_logic lab=rst}
-C {devices/lab_wire.sym} 310 -320 0 0 {name=p37 sig_type=std_logic lab=define}
-C {devices/iopin.sym} 180 -680 0 1 {name=p38 lab=define}
-C {devices/lab_wire.sym} 600 -580 0 0 {name=p39 sig_type=std_logic lab=latchrst}
-C {devices/lab_wire.sym} 980 -620 0 0 {name=p18 sig_type=std_logic lab=latchrst}
+C {devices/lab_wire.sym} 600 -580 0 0 {name=p39 sig_type=std_logic lab=rst}
+C {devices/lab_wire.sym} 980 -620 0 0 {name=p18 sig_type=std_logic lab=rst}
 C {noconn.sym} 380 -580 1 1 {name=l5}
 C {libs/core_analog/asc_9_bit_counter_20250809/asc_9_bit_counter_20250809.sym} 760 -620 0 0 {name=x1}
