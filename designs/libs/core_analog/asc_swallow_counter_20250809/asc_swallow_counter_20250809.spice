@@ -1,0 +1,162 @@
+** sch_path: /foss/designs/libs/core_analog/asc_swallow_counter_20250809/asc_swallow_counter_20250809.sch
+.subckt asc_swallow_counter_20250809 mc d9 d8 d7 d6 d5 d4 d3 d2 d1 vss rst vdd a
+*.PININFO vdd:B vss:B rst:B a:B mc:B d2:B d1:B d3:B d5:B d4:B d6:B d8:B d7:B d9:B
+x2 rst set ignore vdd vss mc asc_SR_latch
+* noconn ignore
+x1 set d9 d8 d7 d6 d5 d4 d3 d2 d1 vss rst vdd a asc_9_bit_counter_20250809
+.ends
+
+* expanding   symbol:  libs/core_analog/asc_SR_latch/asc_SR_latch.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/asc_SR_latch/asc_SR_latch.sym
+** sch_path: /foss/designs/libs/core_analog/asc_SR_latch/asc_SR_latch.sch
+.subckt asc_SR_latch R S Qb VDD VSS Q
+*.PININFO VDD:B VSS:B S:B R:B Qb:B Q:B
+x1 VDD VSS Q R Qb asc_NOR
+x2 VDD VSS Qb Q S asc_NOR
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_9_bit_counter_20250809/asc_9_bit_counter_20250809.sym # of pins=14
+** sym_path: /foss/designs/libs/core_analog/asc_9_bit_counter_20250809/asc_9_bit_counter_20250809.sym
+** sch_path: /foss/designs/libs/core_analog/asc_9_bit_counter_20250809/asc_9_bit_counter_20250809.sch
+.subckt asc_9_bit_counter_20250809 done d9 d8 d7 d6 d5 d4 d3 d2 d1 vss rst vdd a
+*.PININFO a:B vdd:B vss:B done:B d1:B d2:B d3:B d4:B d5:B d6:B d7:B d8:B d9:B rst:B
+x19 vdd vss A1 net10 OUT1 asc_XNOR
+x20 vdd vss B net11 OUT2 asc_XNOR
+x21 vdd vss C net12 OUT3 asc_XNOR
+x22 vdd vss D net13 OUT4 asc_XNOR
+x23 vdd vss E net14 OUT5 asc_XNOR
+x24 vdd vss F net15 OUT6 asc_XNOR
+x25 vdd vss G net16 OUT7 asc_XNOR
+x26 vdd vss H net17 OUT8 asc_XNOR
+x27 vdd vss I net18 OUT9 asc_XNOR
+x1 a net1 net1 vdd vss OUT1 rst asc_dff_rst
+x3 OUT1 net2 net2 vdd vss OUT2 rst asc_dff_rst
+x5 OUT2 net3 net3 vdd vss OUT3 rst asc_dff_rst
+x7 OUT3 net4 net4 vdd vss OUT4 rst asc_dff_rst
+x9 OUT4 net5 net5 vdd vss OUT5 rst asc_dff_rst
+x11 OUT5 net6 net6 vdd vss OUT6 rst asc_dff_rst
+x13 OUT6 net7 net7 vdd vss OUT7 rst asc_dff_rst
+x15 OUT7 net8 net8 vdd vss OUT8 rst asc_dff_rst
+x17 OUT8 net9 net9 vdd vss OUT9 rst asc_dff_rst
+x2 vdd vss done A1 B C D E F G H I asc_AND_9_20250809
+x4 d1 vdd net10 vss inv1u05u
+x6 d2 vdd net11 vss inv1u05u
+x8 d3 vdd net12 vss inv1u05u
+x10 d4 vdd net13 vss inv1u05u
+x12 d5 vdd net14 vss inv1u05u
+x14 d6 vdd net15 vss inv1u05u
+x16 d7 vdd net16 vss inv1u05u
+x18 d8 vdd net17 vss inv1u05u
+x28 d9 vdd net18 vss inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_NOR/asc_NOR.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sym
+** sch_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sch
+.subckt asc_NOR VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+M1 OUT A VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+M2 OUT B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+M3 OUT B net1 VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+M4 net1 A VDD VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_XNOR/asc_XNOR.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_XNOR/asc_XNOR.sym
+** sch_path: /foss/designs/libs/core_analog/asc_XNOR/asc_XNOR.sch
+.subckt asc_XNOR VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+M1 OUT A net1 VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+M2 OUT B net3 VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+M3 net1 Bb VSS VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+M4 net3 A VDD VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+M5 OUT Ab net2 VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+M6 OUT Bb net4 VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+M7 net2 B VSS VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+M8 net4 Ab VDD VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+x1 A VDD Ab VSS inv1u05u
+x2 B VDD Bb VSS inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_dff_rst/asc_dff_rst.sym # of pins=7
+** sym_path: /foss/designs/libs/core_analog/asc_dff_rst/asc_dff_rst.sym
+** sch_path: /foss/designs/libs/core_analog/asc_dff_rst/asc_dff_rst.sch
+.subckt asc_dff_rst clk D Qb vdd vss Q rst
+*.PININFO clk:B vdd:B vss:B D:B Q:B Qb:B rst:B
+x1 net3 vdd net2 vss inv1u05u
+x2 clk vdd clkb vss inv1u05u
+x3 net1 vss clkb net3 clka vdd pass1u05u
+x5 net3 vss clka net6 clkb vdd pass1u05u
+x6 net2 vss clka net5 clkb vdd pass1u05u
+x8 Qb vdd net4 vss inv1u05u
+x9 net5 vss clkb net4 clka vdd pass1u05u
+x10 clkb vdd clka vss inv1u05u
+x11 D vdd net1 vss inv1u05u
+x12 Qb vdd Q vss inv1u05u
+x13 rst vdd rstb vss inv1u05u
+x4 vdd net6 net2 rstb vss asc_NAND
+x7 vdd Qb rstb net5 vss asc_NAND
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_AND_9_20250809/asc_AND_9_20250809.sym # of pins=12
+** sym_path: /foss/designs/libs/core_analog/asc_AND_9_20250809/asc_AND_9_20250809.sym
+** sch_path: /foss/designs/libs/core_analog/asc_AND_9_20250809/asc_AND_9_20250809.sch
+.subckt asc_AND_9_20250809 VDD VSS OUT A B C D E F G H I
+*.PININFO VDD:B VSS:B B:B A:B D:B C:B F:B E:B H:B G:B I:B OUT:B
+x3 VDD OUT net7 I VSS asc_AND
+x1 VDD net3 A B VSS asc_NAND
+x2 VDD net4 C D VSS asc_NAND
+x4 VDD net1 E F VSS asc_NAND
+x5 VDD net2 G H VSS asc_NAND
+x8 VDD VSS net6 net1 net2 asc_NOR
+x9 VDD VSS net5 net3 net4 asc_NOR
+x6 VDD net7 net5 net6 VSS asc_AND
+.ends
+
+
+* expanding   symbol:  libs/core_analog/inv1u05u/inv1u05u.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
+.subckt inv1u05u in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+M1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/pass1u05u/pass1u05u.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sch
+.subckt pass1u05u ind vss clkn ins clkp vdd
+*.PININFO ind:B ins:B clkn:B clkp:B vdd:B vss:B
+M1 ind clkp ins vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 ind clkn ins vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_NAND/asc_NAND.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_NAND/asc_NAND.sym
+** sch_path: /foss/designs/libs/core_analog/asc_NAND/asc_NAND.sch
+.subckt asc_NAND VDD OUT A B VSS
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+M1 OUT A net1 VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+M2 OUT A VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+M3 net1 B VSS VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+M4 OUT B VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_AND/asc_AND.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_AND/asc_AND.sym
+** sch_path: /foss/designs/libs/core_analog/asc_AND/asc_AND.sch
+.subckt asc_AND VDD OUT A B VSS
+*.PININFO VDD:B A:B B:B VSS:B OUT:B
+x1 VDD net1 A B VSS asc_NAND
+x2 net1 VDD OUT VSS inv1u05u
+.ends
+
