@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=10e-6
+x1=1.1713935e-05
+x2=2.1713937e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -228,7 +228,7 @@ alter @V1[PULSE] = [ 0 3.3 5n 1n 1n 49.998u 100u 0 ]
 
 tran 1n 10u
 
-write RVCO_0812.raw
+write RVCO_0814.raw
 .endc
 "}
 C {lab_wire.sym} 1090 -590 0 0 {name=p10 sig_type=std_logic lab=osci}
