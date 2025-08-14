@@ -4,6 +4,30 @@ K {}
 V {}
 S {}
 E {}
+B 2 730 -1450 1530 -1050 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=10e-6
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=""
+dataset=-1
+unitx=1
+logx=0
+logy=0
+autoload=0
+digital=0
+legend=1
+rawfile=$netlist_dir/RVCO_0812.raw
+sim_type=tran}
 N 980 -590 1130 -590 {lab=osci}
 N 1190 -770 1190 -740 {lab=vss}
 N 1190 -660 1190 -630 {lab=vdd}
@@ -123,15 +147,15 @@ N 900 -440 920 -440 {lab=#net5}
 N 960 -750 960 -430 {lab=vb2}
 N 960 -840 960 -810 {lab=vdd}
 N 840 -840 960 -840 {lab=vdd}
-N 940 -780 960 -780 {lab=vdd}
-N 940 -840 940 -780 {lab=vdd}
-N 1000 -780 1020 -780 {lab=vb2}
-N 1020 -780 1020 -720 {lab=vb2}
-N 960 -720 1020 -720 {lab=vb2}
+N 960 -780 980 -780 {lab=vdd}
+N 980 -840 980 -780 {lab=vdd}
+N 900 -780 920 -780 {lab=vb2}
+N 900 -780 900 -720 {lab=vb2}
+N 900 -720 960 -720 {lab=vb2}
 N 720 -840 840 -840 {lab=vdd}
 N 820 -840 820 -810 {lab=vdd}
-N 820 -780 840 -780 {lab=vdd}
-N 840 -840 840 -780 {lab=vdd}
+N 800 -780 820 -780 {lab=vdd}
+N 800 -840 800 -780 {lab=vdd}
 N 820 -750 820 -430 {lab=vb1}
 N 710 -340 830 -340 {lab=vss}
 N 820 -370 820 -340 {lab=vss}
@@ -142,9 +166,6 @@ N 920 -440 920 -400 {lab=#net5}
 N 760 -400 780 -400 {lab=vb1}
 N 760 -460 760 -400 {lab=vb1}
 N 760 -460 820 -460 {lab=vb1}
-N 640 -780 640 -740 {lab=#net8}
-N 640 -740 780 -740 {lab=#net8}
-N 780 -780 780 -740 {lab=#net8}
 N 700 -460 700 -430 {lab=#net9}
 N 300 -560 480 -560 {lab=vb1}
 N 700 -600 700 -580 {lab=osci}
@@ -160,14 +181,16 @@ N 620 -560 620 -490 {lab=vb1}
 N 620 -490 660 -490 {lab=vb1}
 N 740 -630 760 -630 {lab=qnot}
 N 740 -550 760 -550 {lab=qb}
-N 160 -710 160 -690 {lab=GND}
+N 160 -710 160 -690 {lab=vss}
 N 160 -800 160 -770 {lab=vin}
 N 230 -800 230 -770 {lab=iref}
-N 230 -710 230 -690 {lab=GND}
+N 230 -710 230 -690 {lab=vss}
 N 140 -370 140 -340 {lab=iref}
-N 230 -450 230 -400 {lab=#net5}
-N 230 -600 230 -510 {lab=vmir}
 N 760 -590 980 -590 {lab=osci}
+N 960 -840 980 -840 {lab=vdd}
+N 860 -780 900 -780 {lab=vb2}
+N 240 -400 240 -320 {lab=#net5}
+N 240 -320 240 -300 {lab=#net5}
 C {lab_wire.sym} 1190 -640 2 0 {name=p4 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1190 -420 2 0 {name=p5 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1190 -540 0 1 {name=p6 sig_type=std_logic lab=vss}
@@ -185,12 +208,6 @@ C {gnd.sym} 890 -890 0 0 {name=l4 lab=GND}
 C {lab_wire.sym} 830 -990 0 0 {name=p18 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 890 -990 0 0 {name=p19 sig_type=std_logic lab=vss}
 C {parax_cap.sym} 1030 -520 0 0 {name=C1 gnd=0 value=1p m=1}
-C {devices/code_shown.sym} 1970 -820 0 0 {name=Models only_toplevel=false
-format="tcleval( @value )"
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-"}
 C {devices/code_shown.sym} 1970 -720 0 0 {name=Simulation only_toplevel=false value="
 .param par_vth=0 par_k=0 par_l=0 par_w=0 par_leff=0 par_weff=0 p_sqrtarea=0 var_k=0 var_vth=0
 .control
@@ -209,7 +226,7 @@ alter @V1[PULSE] = [ 0 3.3 5n 1n 1n 49.998u 100u 0 ]
 
 ** Simulation settings
 
-tran 1n 100u
+tran 1n 10u
 
 write RVCO_0812.raw
 .endc
@@ -443,7 +460,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 980 -780 0 1 {name=M12
+C {symbols/pfet_03v3.sym} 940 -780 0 0 {name=M12
 L=0.5u
 W=10u
 nf=1
@@ -457,10 +474,10 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_wire.sym} 980 -720 0 1 {name=p51 sig_type=std_logic lab=vb2}
-C {symbols/pfet_03v3.sym} 800 -780 0 0 {name=M13
+C {lab_wire.sym} 940 -720 0 0 {name=p51 sig_type=std_logic lab=vb2}
+C {symbols/pfet_03v3.sym} 840 -780 0 1 {name=M13
 L=0.5u
-W=40u
+W=10u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -518,20 +535,12 @@ spiceprefix=X
 C {lab_wire.sym} 690 -550 0 0 {name=p53 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 690 -630 0 0 {name=p54 sig_type=std_logic lab=vdd}
 C {vsource.sym} 160 -740 0 0 {name=V6 value=2 savecurrent=false}
-C {gnd.sym} 160 -690 0 0 {name=l8 lab=GND}
 C {lab_wire.sym} 160 -790 0 1 {name=p60 sig_type=std_logic lab=vin}
 C {lab_wire.sym} 200 -600 0 0 {name=p63 sig_type=std_logic lab=vmir}
 C {isource.sym} 230 -740 0 0 {name=I0 value=200u}
 C {lab_wire.sym} 230 -790 0 1 {name=p64 sig_type=std_logic lab=iref}
-C {gnd.sym} 230 -690 0 0 {name=l11 lab=GND}
 C {lab_wire.sym} 140 -350 2 0 {name=p65 sig_type=std_logic lab=iref}
-C {symbols/cap_mim_2p0fF.sym} 230 -480 0 0 {name=C2
-W=20e-6
-L=25e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {devices/code_shown.sym} 340 -270 0 0 {name=MODELS1 only_toplevel=true
+C {devices/code_shown.sym} 1960 -920 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -542,3 +551,6 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
+C {parax_cap.sym} 240 -290 0 0 {name=C2 gnd=0 value=1p m=1}
+C {lab_wire.sym} 160 -700 2 0 {name=p17 sig_type=std_logic lab=vss}
+C {lab_wire.sym} 230 -700 2 0 {name=p55 sig_type=std_logic lab=vss}
