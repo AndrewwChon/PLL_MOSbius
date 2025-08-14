@@ -74,11 +74,10 @@ C {devices/lab_wire.sym} 880 -360 0 0 {name=p3 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 580 -500 0 0 {name=p12 sig_type=std_logic lab=fout}
 C {devices/lab_wire.sym} 1000 -500 0 0 {name=p9 sig_type=std_logic lab=fin}
 C {devices/vsource.sym} 240 -490 0 0 {name=V4
-value="PULSE(0 0 0 1p 1p 5n 1)"
+value="PULSE(0 3.3 0 1p 1p 5n 1)"
 savecurrent=false}
 C {devices/lab_wire.sym} 240 -430 0 0 {name=p38 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 240 -570 0 0 {name=p39 sig_type=std_logic lab=def}
-C {libs/core_analog/asc_FM_pulse_swallow_divider_def/asc_FM_pulse_swallow_divider_def.sym} 780 -500 0 0 {name=x1}
 C {devices/lab_wire.sym} 1000 -480 0 0 {name=p5 sig_type=std_logic lab=def}
 C {devices/lab_wire.sym} 840 -380 0 0 {name=p6 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 820 -360 0 0 {name=p10 sig_type=std_logic lab=vssa}
@@ -98,3 +97,5 @@ C {devices/lab_wire.sym} 740 -720 0 0 {name=p23 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 720 -740 0 0 {name=p24 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 700 -760 0 0 {name=p26 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 680 -780 0 0 {name=p27 sig_type=std_logic lab=vdda}
+C {libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sym} 780 -500 0 0 {name=x1}
+C {noconn.sym} 560 -500 0 1 {name=l5}
