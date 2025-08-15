@@ -20,8 +20,7 @@ N 240 -320 240 -280 {lab=vdd}
 N 240 -190 240 -180 {lab=vss}
 N 240 -130 240 -120 {lab=vdd}
 N 240 -30 240 10 {lab=vss}
-C {NOR.sym} 260 -240 0 0 {name=x1}
-C {NOR.sym} 260 -80 0 0 {name=x2}
+C {libs/qw_core_analog/NOR.sym} 260 -240 0 0 {name=x1}
 C {iopin.sym} 120 -260 0 1 {name=p1 lab=s}
 C {iopin.sym} 120 -60 0 1 {name=p2 lab=r}
 C {iopin.sym} 500 -240 0 0 {name=p3 lab=q}
@@ -30,3 +29,4 @@ C {iopin.sym} 240 -320 0 0 {name=p5 lab=vdd}
 C {iopin.sym} 240 10 0 0 {name=p6 lab=vss}
 C {lab_wire.sym} 240 -180 2 0 {name=p7 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 240 -130 0 1 {name=p8 sig_type=std_logic lab=vdd}
+C {libs/qw_core_analog/NOR.sym} 260 -80 0 0 {name=x2}
