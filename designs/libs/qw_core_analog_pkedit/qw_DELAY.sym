@@ -1,0 +1,25 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -40 -20 -40 20 {}
+L 4 -40 20 10 -0 {}
+L 4 -40 -20 10 -0 {}
+L 4 -10 -20 -10 20 {}
+L 4 -10 20 40 0 {}
+L 4 -10 -20 40 0 {}
+B 5 -12.5 -22.5 -7.5 -17.5 {name=vdd dir=inout}
+B 5 -42.5 -2.5 -37.5 2.5 {name=in dir=inout}
+B 5 37.5 -2.5 42.5 2.5 {name=out dir=inout}
+B 5 -12.5 17.5 -7.5 22.5 {name=vss dir=inout}
+T {qw_delay} -24 -6 0 0 0.2 0.2 {}
+T {@name} 35 -32 0 0 0.2 0.2 {}
+T {vdd} 15 -24 0 1 0.2 0.2 {}
+T {in} -45 -14 0 1 0.2 0.2 {}
+T {out} 55 -14 0 1 0.2 0.2 {}
+T {vss} 15 16 0 1 0.2 0.2 {}
