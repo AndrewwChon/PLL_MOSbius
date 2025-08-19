@@ -50,7 +50,7 @@ C {devices/code_shown.sym} -485 -128.75 0 0 {name=Simulation only_toplevel=false
 .control
 
     save all
-    TRAN 1n 3m
+    TRAN 1n 1.5m
     write tb_PLL_model3.raw
     
 .endc
