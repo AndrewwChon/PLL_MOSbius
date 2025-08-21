@@ -17,7 +17,7 @@ C {devices/vsource.sym} 80 -170 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/gnd.sym} 80 -110 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 80 -280 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} 80 -220 0 0 {name=p2 sig_type=std_logic lab=vssa}
-C {devices/vsource.sym} 160 -280 0 0 {name=V3 value=3.3 savecurrent=false}
+C {devices/vsource.sym} 160 -280 0 0 {name=V3 value=2.5 savecurrent=false}
 C {devices/lab_wire.sym} 160 -220 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 160 -340 0 0 {name=p8 sig_type=std_logic lab=vctrl}
 C {devices/code_shown.sym} 60 -570 0 0 {name=Models only_toplevel=false

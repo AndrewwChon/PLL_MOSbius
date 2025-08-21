@@ -17,6 +17,7 @@ N 400 -120 440 -120 {lab=up}
 N 400 -80 440 -80 {lab=down}
 N 340 -180 340 -140 {lab=vdda}
 N 340 -60 340 -20 {lab=vssa}
+N 340 -140 340 -130 {lab=vdda}
 C {devices/code_shown.sym} 60 -490 0 0 {name=Models only_toplevel=false
 format="tcleval( @value )"
 value="
@@ -42,7 +43,7 @@ C {devices/lab_wire.sym} 200 -230 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 120 -350 0 0 {name=p4 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 200 -370 0 0 {name=p8 sig_type=std_logic lab=vref}
 C {devices/vsource.sym} 460 -290 0 0 {name=V4
-value="PULSE(0 3.3 75n 1p 1p 50n 100n)"
+value="PULSE(0 3.3 75n 1p 1p 3n 100n)"
 savecurrent=false}
 C {devices/lab_wire.sym} 460 -230 0 0 {name=p1 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 460 -370 0 0 {name=p3 sig_type=std_logic lab=vdiv}
