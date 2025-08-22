@@ -111,7 +111,7 @@ C {devices/code_shown.sym} 140 -1230 0 0 {name=Simulation only_toplevel=false va
 
 .control
 set filetype=raw
-tran 1n 250u
+tran 1n 150u
 write sim_output16.raw
 .endc
 "}
@@ -145,12 +145,12 @@ C {devices/lab_wire.sym} 1460 -800 0 0 {name=p24 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 1820 -800 0 0 {name=p25 sig_type=std_logic lab=vco_out}
 C {devices/capa.sym} 1280 -750 0 0 {name=C1
 m=1
-value=400p
+value=200p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 1380 -730 0 0 {name=C2
 m=1
-value=40p
+value=20p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 1380 -600 0 0 {name=p1 sig_type=std_logic lab=vssa}
@@ -189,7 +189,6 @@ C {devices/lab_wire.sym} 280 -590 0 0 {name=p26 sig_type=std_logic lab=def}
 C {libs/core_analog/asc_delay/asc_delay.sym} 1800 -480 1 0 {name=x6}
 C {devices/lab_wire.sym} 1700 -480 1 0 {name=p46 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1880 -480 1 0 {name=p47 sig_type=std_logic lab=vdda}
-C {libs/core_analog/CSRVCO_20250818/CSRVCO_20250818.sym} 1620 -800 0 0 {name=x4}
 C {libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sym} 1280 -300 0 0 {name=x3}
 C {libs/core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sym} 950 -820 0 0 {name=x2}
 C {devices/lab_wire.sym} 980 -940 0 0 {name=p13 sig_type=std_logic lab=vdda
@@ -214,3 +213,4 @@ C {devices/lab_wire.sym} 800 -240 0 0 {name=p60 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 680 -160 0 0 {name=p61 sig_type=std_logic lab=up1}
 C {devices/lab_wire.sym} 960 -160 0 0 {name=p62 sig_type=std_logic lab=up2}
 C {libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym} 800 -160 0 0 {name=x8}
+C {libs/core_analog/CSRVCO_20250821/CSRVCO_20250821.sym} 1620 -800 0 0 {name=x4}
