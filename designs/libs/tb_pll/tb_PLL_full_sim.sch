@@ -37,21 +37,21 @@ N 1280 -800 1280 -780 {lab=vctrl}
 N 1320 -200 1320 -170 {lab=vssa}
 N 1320 -170 1320 -160 {lab=vssa}
 N 1300 -200 1300 -160 {lab=vssa}
-N 1280 -200 1280 -160 {lab=vdda}
+N 1280 -200 1280 -160 {lab=vssa}
 N 1260 -200 1260 -160 {lab=vssa}
 N 1240 -200 1240 -160 {lab=vssa}
-N 1220 -200 1220 -160 {lab=vdda}
+N 1220 -200 1220 -160 {lab=vssa}
 N 1180 -200 1180 -170 {lab=vssa}
 N 1180 -170 1180 -160 {lab=vssa}
-N 1200 -200 1200 -160 {lab=vdda}
+N 1200 -200 1200 -160 {lab=vssa}
 N 1180 -160 1180 -60 {lab=vssa}
 N 1180 -60 1180 -40 {lab=vssa}
 N 1180 -40 1180 -20 {lab=vssa}
-N 1200 -160 1200 -40 {lab=vdda}
-N 1220 -160 1220 -60 {lab=vdda}
+N 1200 -160 1200 -40 {lab=vssa}
+N 1220 -160 1220 -60 {lab=vssa}
 N 1240 -160 1240 -80 {lab=vssa}
 N 1260 -160 1260 -100 {lab=vssa}
-N 1280 -160 1280 -120 {lab=vdda}
+N 1280 -160 1280 -120 {lab=vssa}
 N 1300 -160 1300 -140 {lab=vssa}
 N 1340 -200 1340 -180 {lab=vssa}
 N 1460 -300 1500 -300 {lab=div_in}
@@ -111,7 +111,7 @@ C {devices/code_shown.sym} 140 -1230 0 0 {name=Simulation only_toplevel=false va
 
 .control
 set filetype=raw
-tran 1n 250u
+tran 1n 150u
 write sim_output16.raw
 .endc
 "}
@@ -145,7 +145,7 @@ C {devices/lab_wire.sym} 1460 -800 0 0 {name=p24 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 1820 -800 0 0 {name=p25 sig_type=std_logic lab=vco_out}
 C {devices/capa.sym} 1280 -750 0 0 {name=C1
 m=1
-value=400p
+value=800p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 1380 -730 0 0 {name=C2
@@ -166,11 +166,8 @@ C {devices/lab_wire.sym} 1500 -280 0 0 {name=p27 sig_type=std_logic lab=def}
 C {devices/lab_wire.sym} 1340 -180 0 0 {name=p28 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1320 -160 0 0 {name=p29 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1300 -140 0 0 {name=p30 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 1280 -120 0 0 {name=p31 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1260 -100 0 0 {name=p32 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1240 -80 0 0 {name=p33 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 1220 -60 0 0 {name=p34 sig_type=std_logic lab=vdda}
-C {devices/lab_wire.sym} 1200 -40 0 0 {name=p35 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1180 -20 0 0 {name=p36 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1340 -420 0 0 {name=p37 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1320 -440 0 0 {name=p38 sig_type=std_logic lab=vssa}
@@ -189,7 +186,6 @@ C {devices/lab_wire.sym} 280 -590 0 0 {name=p26 sig_type=std_logic lab=def}
 C {libs/core_analog/asc_delay/asc_delay.sym} 1800 -480 1 0 {name=x6}
 C {devices/lab_wire.sym} 1700 -480 1 0 {name=p46 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 1880 -480 1 0 {name=p47 sig_type=std_logic lab=vdda}
-C {libs/core_analog/CSRVCO_20250818/CSRVCO_20250818.sym} 1620 -800 0 0 {name=x4}
 C {libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sym} 1280 -300 0 0 {name=x3}
 C {libs/core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sym} 950 -820 0 0 {name=x2}
 C {devices/lab_wire.sym} 980 -940 0 0 {name=p13 sig_type=std_logic lab=vdda
@@ -214,3 +210,7 @@ C {devices/lab_wire.sym} 800 -240 0 0 {name=p60 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 680 -160 0 0 {name=p61 sig_type=std_logic lab=up1}
 C {devices/lab_wire.sym} 960 -160 0 0 {name=p62 sig_type=std_logic lab=up2}
 C {libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym} 800 -160 0 0 {name=x8}
+C {devices/lab_wire.sym} 1280 -120 0 0 {name=p31 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1220 -60 0 0 {name=p34 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 1200 -40 0 0 {name=p35 sig_type=std_logic lab=vssa}
+C {libs/core_analog/CSRVCO_20250821/CSRVCO_20250821.sym} 1620 -800 0 0 {name=x4}
