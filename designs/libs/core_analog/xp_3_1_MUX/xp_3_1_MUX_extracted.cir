@@ -1,0 +1,29 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 05/08/2025 17:35
+
+.SUBCKT xp_3_1_MUX S0|clkn|clkp|in S1|clkn|clkp|in VSS|vss clkn|clkp|out
++ A_1|ind ind|ins B_1|ind OUT_1|ins C_1|ind VDD|vdd VSS
+M$1 ind|ins clkn|clkp|out A_1|ind VDD|vdd pfet_03v3 L=0.5U W=3U AS=1.95P
++ AD=1.95P PS=7.3U PD=7.3U
+M$2 ind|ins S0|clkn|clkp|in B_1|ind VDD|vdd pfet_03v3 L=0.5U W=3U AS=1.95P
++ AD=1.95P PS=7.3U PD=7.3U
+M$3 OUT_1|ins clkn|clkp|out ind|ins VDD|vdd pfet_03v3 L=0.5U W=3U AS=1.95P
++ AD=1.95P PS=7.3U PD=7.3U
+M$4 OUT_1|ins S1|clkn|clkp|in C_1|ind VDD|vdd pfet_03v3 L=0.5U W=3U AS=1.95P
++ AD=1.95P PS=7.3U PD=7.3U
+M$5 clkn|clkp|out S0|clkn|clkp|in VDD|vdd VDD|vdd pfet_03v3 L=0.5U W=3U
++ AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$6 clkn|clkp|out S1|clkn|clkp|in VDD|vdd VDD|vdd pfet_03v3 L=0.5U W=3U
++ AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$7 clkn|clkp|out S0|clkn|clkp|in VSS|vss VSS nfet_03v3 L=0.5U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$8 clkn|clkp|out S1|clkn|clkp|in VSS|vss VSS nfet_03v3 L=0.5U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$9 ind|ins S0|clkn|clkp|in A_1|ind VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$10 ind|ins clkn|clkp|out B_1|ind VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$11 OUT_1|ins S1|clkn|clkp|in ind|ins VSS nfet_03v3 L=0.5U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$12 OUT_1|ins clkn|clkp|out C_1|ind VSS nfet_03v3 L=0.5U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+.ENDS xp_3_1_MUX

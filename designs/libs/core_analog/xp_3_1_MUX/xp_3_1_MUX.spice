@@ -1,0 +1,30 @@
+** sch_path: /foss/designs/libs/xp_core_analog/xp_3_1_MUX/xp_3_1_MUX.sch
+.subckt xp_3_1_MUX A_1 VDD VSS S0 S1 B_1 OUT_1 C_1
+*.PININFO A_1:B B_1:B C_1:B OUT_1:B VDD:B VSS:B S0:B S1:B
+x2 B_1 VSS S0_B net1 S0 VDD pass1u05u
+x1 A_1 VSS S0 net1 S0_B VDD pass1u05u
+x3 net1 VSS S1 OUT_1 S1_B VDD pass1u05u
+x4 C_1 VSS S1_B OUT_1 S1 VDD pass1u05u
+x7 S1 VDD S1_B VSS inv1u05u
+x5 S0 VDD S0_B VSS inv1u05u
+.ends
+
+* expanding   symbol:  libs/core_analog/pass1u05u/pass1u05u.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sch
+.subckt pass1u05u ind vss clkn ins clkp vdd
+*.PININFO ind:B ins:B clkn:B clkp:B vdd:B vss:B
+XM1 ind clkp ins vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 ind clkn ins vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/inv1u05u/inv1u05u.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
+.subckt inv1u05u in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+XM1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+

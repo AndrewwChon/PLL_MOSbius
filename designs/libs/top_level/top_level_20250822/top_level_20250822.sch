@@ -15,12 +15,6 @@ T {9-bit Binary Swallow Counter Control} 1700 -230 0 0 0.3 0.3 {}
 T {External reset to define divider state} 2030 -270 0 0 0.3 0.3 {}
 T {Control for Programmable
 Charge Pump. 1x, 2x, 4x, 8x} 2090 -740 0 0 0.3 0.3 {}
-T {div_ext_s0 | Result
-0 | Closed (internal div)
-1 | Open   (external div)} 1250 -500 0 0 0.4 0.4 {}
-T {div_ext_s0 | Result
-0 | Closed (internal div)
-1 | Open   (external div)} 2310 -500 0 0 0.4 0.4 {}
 N 320 -960 380 -960 {lab=ref}
 N 460 -1060 460 -1020 {lab=vdd}
 N 460 -900 460 -860 {lab=vss}
@@ -36,27 +30,12 @@ N 1480 -820 1480 -790 {lab=vdd}
 N 790 -660 1000 -660 {lab=dff_pfd_div}
 N 1100 -780 1100 -740 {lab=vdd}
 N 1100 -620 1100 -580 {lab=vss}
-N 1100 -840 1100 -800 {lab=vss}
-N 1100 -1040 1100 -1000 {lab=vdd}
 N 1200 -660 1420 -660 {lab=dff_pfd_down}
 N 1200 -720 1240 -720 {lab=lock}
 N 1240 -780 1240 -720 {lab=lock}
 N 1200 -700 1280 -700 {lab=dff_pfd_up}
 N 1280 -940 1280 -700 {lab=dff_pfd_up}
 N 1280 -940 1420 -940 {lab=dff_pfd_up}
-N 1200 -920 1260 -920 {lab=xor_out}
-N 1260 -980 1260 -920 {lab=xor_out}
-N 1260 -980 1420 -980 {lab=xor_out}
-N 1260 -920 1300 -920 {lab=xor_out}
-N 1300 -920 1320 -920 {lab=xor_out}
-N 1320 -920 1320 -700 {lab=xor_out}
-N 1320 -700 1420 -700 {lab=xor_out}
-N 790 -700 900 -700 {lab=xor_div}
-N 900 -900 900 -700 {lab=xor_div}
-N 900 -900 1000 -900 {lab=xor_div}
-N 790 -980 960 -980 {lab=xor_ref}
-N 960 -980 960 -940 {lab=xor_ref}
-N 960 -940 1000 -940 {lab=xor_ref}
 N 790 -940 940 -940 {lab=dff_pfd_ref}
 N 940 -940 940 -700 {lab=dff_pfd_ref}
 N 940 -700 1000 -700 {lab=dff_pfd_ref}
@@ -119,7 +98,7 @@ N 1980 -440 1980 -400 {lab=vdd}
 N 1980 -200 1980 -160 {lab=vss}
 N 1920 -200 1920 -40 {lab=div_swc_s1}
 N 1940 -200 1940 -20 {lab=div_swc_s0}
-N 560 -680 660 -680 {lab=div_out}
+N 560 -680 660 -680 {lab=#net3}
 N 1780 -200 1780 -180 {lab=div_swc_s8}
 N 1800 -200 1800 -160 {lab=div_swc_s7}
 N 1820 -200 1820 -140 {lab=div_swc_s6}
@@ -136,11 +115,11 @@ N 1880 -520 1880 -400 {lab=div_prc_s3}
 N 1900 -540 1900 -400 {lab=div_prc_s2}
 N 1920 -560 1920 -400 {lab=div_prc_s1}
 N 1940 -560 1940 -400 {lab=div_prc_s0}
-N 3620 -440 3620 -300 {lab=div_in}
-N 560 -680 560 -300 {lab=div_out}
+N 3620 -440 3620 -300 {lab=#net4}
+N 560 -680 560 -300 {lab=#net3}
 N 1940 -580 1940 -560 {lab=div_prc_s0}
-N 900 -300 900 -240 {lab=div_out}
-N 3160 -300 3160 -240 {lab=div_in}
+N 900 -300 900 -240 {lab=#net3}
+N 3160 -300 3160 -240 {lab=#net4}
 N 2060 -280 2100 -280 {lab=div_def}
 N 1100 -740 1100 -720 {lab=vdd}
 N 1000 -700 1040 -700 {lab=dff_pfd_ref}
@@ -164,25 +143,25 @@ N 1620 -1200 1620 -1160 {lab=up}
 N 1840 -960 2040 -960 {lab=up_post}
 N 2040 -960 2040 -820 {lab=up_post}
 N 2040 -820 2140 -820 {lab=up_post}
-N 1300 -420 1300 -380 {lab=vdd}
-N 1300 -220 1300 -180 {lab=vss}
-N 360 -240 360 -200 {lab=vdd}
-N 360 -80 360 -40 {lab=vss}
-N 460 -140 500 -140 {lab=div_ext_s0b}
-N 240 -140 280 -140 {lab=div_ext_s0}
-N 1340 -220 1340 -180 {lab=div_ext_s0b}
-N 1340 -420 1340 -380 {lab=div_ext_s0}
-N 2380 -420 2380 -380 {lab=vdd}
-N 2380 -220 2380 -180 {lab=vss}
-N 2420 -220 2420 -180 {lab=div_ext_s0b}
-N 2420 -420 2420 -380 {lab=div_ext_s0}
-N 2060 -300 2340 -300 {lab=int_div_in}
-N 2500 -300 3620 -300 {lab=div_in}
-N 1420 -300 1700 -300 {lab=int_div_out}
-N 560 -300 1260 -300 {lab=div_out}
+N 2060 -300 2340 -300 {lab=#net4}
+N 2500 -300 3620 -300 {lab=#net4}
+N 1420 -300 1700 -300 {lab=#net3}
+N 560 -300 1260 -300 {lab=#net3}
 N 3680 -520 3720 -520 {lab=vdd}
 N 3520 -520 3560 -520 {lab=vss}
 N 2130 -780 2140 -780 {lab=down_post}
+N 2340 -300 2500 -300 {lab=#net4}
+N 1260 -300 1420 -300 {lab=#net3}
+N 960 -160 1000 -160 {lab=vdd}
+N 800 -160 840 -160 {lab=vss}
+N 900 -80 900 -40 {lab=div_out}
+N 3220 -160 3260 -160 {lab=vdd}
+N 3060 -160 3100 -160 {lab=vss}
+N 3160 -80 3160 -40 {lab=div_in}
+N 790 -980 820 -980 {lab=#net5}
+N 790 -700 820 -700 {lab=#net6}
+N 1380 -980 1420 -980 {lab=#net7}
+N 1380 -700 1420 -700 {lab=#net8}
 C {devices/iopin.sym} 280 -640 0 1 {name=p2 lab=vdd}
 C {devices/iopin.sym} 280 -620 0 1 {name=p3 lab=vss}
 C {devices/iopin.sym} 1620 -1200 1 1 {name=p5 lab=up}
@@ -209,11 +188,8 @@ C {lab_wire.sym} 1480 -840 0 1 {name=p22 sig_type=std_logic lab=vss}
 C {libs/xp_core_analog/xp_3_1_MUX/xp_3_1_MUX.sym} 1180 -680 0 0 {name=xmux_down}
 C {lab_wire.sym} 1480 -800 0 1 {name=p25 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1480 -560 0 1 {name=p26 sig_type=std_logic lab=vss}
-C {libs/core_analog/asc_XOR/asc_XOR.sym} 1100 -920 0 0 {name=xpfd_xor}
-C {lab_wire.sym} 1100 -800 0 0 {name=p29 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1100 -580 0 0 {name=p30 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1100 -760 0 0 {name=p31 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 1100 -1020 0 0 {name=p32 sig_type=std_logic lab=vdd}
 C {devices/iopin.sym} 1240 -780 1 1 {name=p33 lab=lock}
 C {devices/iopin.sym} 1380 -1020 1 1 {name=p34 lab=ext_pfd_up}
 C {devices/iopin.sym} 1380 -740 1 1 {name=p35 lab=ext_pfd_down}
@@ -225,7 +201,6 @@ C {devices/iopin.sym} 280 -460 0 1 {name=p39 lab=cp_s1}
 C {devices/iopin.sym} 280 -440 0 1 {name=p40 lab=cp_s2}
 C {devices/iopin.sym} 280 -420 0 1 {name=p41 lab=cp_s3}
 C {devices/iopin.sym} 280 -400 0 1 {name=p42 lab=cp_s4}
-C {devices/iopin.sym} 280 -360 0 1 {name=p43 lab=div_ext_s0}
 C {lab_wire.sym} 2220 -680 0 0 {name=p44 sig_type=std_logic lab=cp_s1}
 C {lab_wire.sym} 2240 -660 0 0 {name=p45 sig_type=std_logic lab=cp_s2}
 C {lab_wire.sym} 2260 -640 0 0 {name=p46 sig_type=std_logic lab=cp_s3}
@@ -256,13 +231,10 @@ C {noconn.sym} 3000 -840 0 1 {name=l5}
 C {noconn.sym} 3400 -840 0 0 {name=l1}
 C {lab_wire.sym} 3200 -640 0 0 {name=p63 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 3200 -940 0 0 {name=p64 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 940 -980 0 0 {name=p65 sig_type=std_logic lab=xor_ref}
 C {lab_wire.sym} 940 -940 0 0 {name=p66 sig_type=std_logic lab=dff_pfd_ref}
-C {lab_wire.sym} 900 -700 0 0 {name=p67 sig_type=std_logic lab=xor_div}
 C {lab_wire.sym} 900 -660 0 0 {name=p68 sig_type=std_logic lab=dff_pfd_div}
 C {lab_wire.sym} 1280 -700 0 0 {name=p69 sig_type=std_logic lab=dff_pfd_up}
 C {lab_wire.sym} 1300 -660 0 0 {name=p70 sig_type=std_logic lab=dff_pfd_down}
-C {lab_wire.sym} 1270 -920 0 0 {name=p71 sig_type=std_logic lab=xor_out}
 C {lab_wire.sym} 630 -960 0 0 {name=p72 sig_type=std_logic lab=ref_buff}
 C {lab_wire.sym} 3060 -800 0 0 {name=p73 sig_type=std_logic lab=csrvco_in}
 C {lab_wire.sym} 3410 -800 0 0 {name=p74 sig_type=std_logic lab=csrvco_out}
@@ -307,8 +279,8 @@ C {lab_wire.sym} 1880 -80 0 0 {name=p116 sig_type=std_logic lab=div_swc_s3}
 C {lab_wire.sym} 1900 -60 0 0 {name=p117 sig_type=std_logic lab=div_swc_s2}
 C {lab_wire.sym} 1920 -40 0 0 {name=p118 sig_type=std_logic lab=div_swc_s1}
 C {lab_wire.sym} 1940 -20 0 0 {name=p119 sig_type=std_logic lab=div_swc_s0}
-C {devices/iopin.sym} 900 -240 3 1 {name=p120 lab=div_out}
-C {devices/iopin.sym} 3160 -240 3 1 {name=p121 lab=div_in}
+C {devices/iopin.sym} 900 -40 3 1 {name=p120 lab=div_out}
+C {devices/iopin.sym} 3160 -40 3 1 {name=p121 lab=div_in}
 C {devices/iopin.sym} 2100 -280 2 1 {name=p122 lab=div_def}
 C {libs/core_analog/asc_PFD_DFF/asc_PFD_DFF.sym} 1100 -680 0 0 {name=xpfd}
 C {noconn.sym} 1200 -720 0 0 {name=l2}
@@ -328,23 +300,6 @@ C {libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym} 1760 -960 0 0 {
 C {libs/core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sym} 2270 -840 0 0 {name=xcp}
 C {libs/core_analog/CSRVCO_20250821/CSRVCO_20250821.sym} 3200 -800 0 0 {name=xvco_csr}
 C {libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sym} 1880 -300 0 0 {name=xdiv}
-C {libs/core_analog/pass1u05u/pass1u05u.sym} 1340 -300 0 0 {name=xtg_out}
-C {libs/core_analog/inv1u05u/inv1u05u.sym} 360 -140 0 0 {name=xinv_divs0}
-C {lab_wire.sym} 360 -220 0 0 {name=p48 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 1300 -400 0 0 {name=p77 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 360 -40 0 0 {name=p78 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 1300 -180 0 0 {name=p129 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 260 -140 0 0 {name=p130 sig_type=std_logic lab=div_ext_s0}
-C {lab_wire.sym} 480 -140 0 1 {name=p131 sig_type=std_logic lab=div_ext_s0b}
-C {lab_wire.sym} 1340 -180 0 1 {name=p132 sig_type=std_logic lab=div_ext_s0b}
-C {lab_wire.sym} 1340 -400 0 1 {name=p133 sig_type=std_logic lab=div_ext_s0}
-C {libs/core_analog/pass1u05u/pass1u05u.sym} 2420 -300 0 0 {name=xtg_in}
-C {lab_wire.sym} 2380 -400 0 0 {name=p134 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 2380 -180 0 0 {name=p135 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 2420 -180 0 1 {name=p136 sig_type=std_logic lab=div_ext_s0b}
-C {lab_wire.sym} 2420 -400 0 1 {name=p137 sig_type=std_logic lab=div_ext_s0}
-C {lab_wire.sym} 1560 -300 0 1 {name=p138 sig_type=std_logic lab=int_div_out}
-C {lab_wire.sym} 2120 -300 0 1 {name=p139 sig_type=std_logic lab=int_div_in}
 C {lab_wire.sym} 1640 -960 0 0 {name=p140 sig_type=std_logic lab=up_pre}
 C {lab_wire.sym} 1940 -960 0 0 {name=p141 sig_type=std_logic lab=up_post}
 C {lab_wire.sym} 1940 -680 0 0 {name=p142 sig_type=std_logic lab=down_post}
@@ -352,3 +307,15 @@ C {lab_wire.sym} 1640 -680 0 0 {name=p143 sig_type=std_logic lab=down_pre}
 C {libs/core_analog/asc_delay/asc_delay.sym} 3620 -520 1 0 {name=xbuf_div}
 C {lab_wire.sym} 3700 -520 1 0 {name=p144 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 3520 -520 1 0 {name=p145 sig_type=std_logic lab=vss}
+C {lab_wire.sym} 980 -160 1 0 {name=p43 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 800 -160 1 0 {name=p48 sig_type=std_logic lab=vss}
+C {libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym} 900 -160 1 0 {name=xbuf_divo}
+C {lab_wire.sym} 3240 -160 1 0 {name=p77 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 3060 -160 1 0 {name=p78 sig_type=std_logic lab=vss}
+C {libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym} 3160 -160 1 0 {name=xbuf_divi}
+C {noconn.sym} 1380 -700 0 0 {name=l3}
+C {noconn.sym} 1380 -980 0 0 {name=l4}
+C {noconn.sym} 820 -980 0 1 {name=l6}
+C {noconn.sym} 820 -700 0 1 {name=l7}
+C {lab_wire.sym} 1540 -300 0 0 {name=p29 sig_type=std_logic lab=int_div_out}
+C {lab_wire.sym} 2300 -300 0 0 {name=p32 sig_type=std_logic lab=int_div_in}

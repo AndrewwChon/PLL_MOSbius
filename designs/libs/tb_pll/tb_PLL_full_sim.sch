@@ -37,21 +37,21 @@ N 1280 -800 1280 -780 {lab=vctrl}
 N 1320 -200 1320 -170 {lab=vssa}
 N 1320 -170 1320 -160 {lab=vssa}
 N 1300 -200 1300 -160 {lab=vssa}
-N 1280 -200 1280 -160 {lab=vssa}
+N 1280 -200 1280 -160 {lab=vdda}
 N 1260 -200 1260 -160 {lab=vssa}
 N 1240 -200 1240 -160 {lab=vssa}
-N 1220 -200 1220 -160 {lab=vssa}
+N 1220 -200 1220 -160 {lab=vdda}
 N 1180 -200 1180 -170 {lab=vssa}
 N 1180 -170 1180 -160 {lab=vssa}
-N 1200 -200 1200 -160 {lab=vssa}
+N 1200 -200 1200 -160 {lab=vdda}
 N 1180 -160 1180 -60 {lab=vssa}
 N 1180 -60 1180 -40 {lab=vssa}
 N 1180 -40 1180 -20 {lab=vssa}
-N 1200 -160 1200 -40 {lab=vssa}
-N 1220 -160 1220 -60 {lab=vssa}
+N 1200 -160 1200 -40 {lab=vdda}
+N 1220 -160 1220 -60 {lab=vdda}
 N 1240 -160 1240 -80 {lab=vssa}
 N 1260 -160 1260 -100 {lab=vssa}
-N 1280 -160 1280 -120 {lab=vssa}
+N 1280 -160 1280 -120 {lab=vdda}
 N 1300 -160 1300 -140 {lab=vssa}
 N 1340 -200 1340 -180 {lab=vssa}
 N 1460 -300 1500 -300 {lab=div_in}
@@ -145,12 +145,12 @@ C {devices/lab_wire.sym} 1460 -800 0 0 {name=p24 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 1820 -800 0 0 {name=p25 sig_type=std_logic lab=vco_out}
 C {devices/capa.sym} 1280 -750 0 0 {name=C1
 m=1
-value=800p
+value=1n
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 1380 -730 0 0 {name=C2
 m=1
-value=40p
+value=50p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 1380 -600 0 0 {name=p1 sig_type=std_logic lab=vssa}
@@ -210,7 +210,7 @@ C {devices/lab_wire.sym} 800 -240 0 0 {name=p60 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 680 -160 0 0 {name=p61 sig_type=std_logic lab=up1}
 C {devices/lab_wire.sym} 960 -160 0 0 {name=p62 sig_type=std_logic lab=up2}
 C {libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym} 800 -160 0 0 {name=x8}
-C {devices/lab_wire.sym} 1280 -120 0 0 {name=p31 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 1220 -60 0 0 {name=p34 sig_type=std_logic lab=vssa}
-C {devices/lab_wire.sym} 1200 -40 0 0 {name=p35 sig_type=std_logic lab=vssa}
 C {libs/core_analog/CSRVCO_20250821/CSRVCO_20250821.sym} 1620 -800 0 0 {name=x4}
+C {devices/lab_wire.sym} 1280 -120 0 0 {name=p31 sig_type=std_logic lab=vdda}
+C {devices/lab_wire.sym} 1220 -60 0 0 {name=p34 sig_type=std_logic lab=vdda}
+C {devices/lab_wire.sym} 1200 -40 0 0 {name=p35 sig_type=std_logic lab=vdda}
