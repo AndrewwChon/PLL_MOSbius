@@ -100,12 +100,6 @@ N 880 -160 960 -160 {lab=up2}
 N 640 -160 720 -160 {lab=up1}
 N 800 -260 800 -220 {lab=vdda}
 N 800 -100 800 -60 {lab=vssa}
-C {devices/code_shown.sym} 140 -1030 0 0 {name=Models only_toplevel=false
-format="tcleval( @value )"
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-"}
 C {devices/code_shown.sym} 140 -1230 0 0 {name=Simulation only_toplevel=false value="
 .save v(vctrl) v(vco_out) v(vref) v(up1) v(up2) v(down1) v(down2) v(vdiv) v(x2.upb) v(div_in)
 
@@ -210,7 +204,15 @@ C {devices/lab_wire.sym} 800 -240 0 0 {name=p60 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 680 -160 0 0 {name=p61 sig_type=std_logic lab=up1}
 C {devices/lab_wire.sym} 960 -160 0 0 {name=p62 sig_type=std_logic lab=up2}
 C {libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym} 800 -160 0 0 {name=x8}
-C {libs/core_analog/CSRVCO_20250821/CSRVCO_20250821.sym} 1620 -800 0 0 {name=x4}
 C {devices/lab_wire.sym} 1280 -120 0 0 {name=p31 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1220 -60 0 0 {name=p34 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1200 -40 0 0 {name=p35 sig_type=std_logic lab=vdda}
+C {libs/core_analog/CSRVCO_20250823/CSRVCO_20250823.sym} 1620 -800 0 0 {name=x4}
+C {devices/code_shown.sym} 140 -1040 0 0 {name=Models only_toplevel=false
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+"}

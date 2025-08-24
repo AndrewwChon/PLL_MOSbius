@@ -101,12 +101,12 @@ N 1160 -30 1160 -20 {lab=vssa}
 N 1260 -180 1260 -120 {lab=tune}
 N 1260 -60 1260 -20 {lab=vssa}
 N 1160 -20 1260 -20 {lab=vssa}
-C {devices/code_shown.sym} 55 -328.75 0 0 {name=Simulation only_toplevel=false value="
-.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.int_div_out) v(xtop.int_div_in) v(xtop.dff_pfd_ref) v(xtop.dff_pfd_up)
+C {devices/code_shown.sym} 45 61.25 0 0 {name=Simulation only_toplevel=false value="
+.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.int_div_out) v(xtop.int_div_in) v(xtop.dff_pfd_ref) v(xtop.dff_pfd_up) v(xtop.up_pre) v(xtop.up_post) v(xtop.down_pre) v(xtop.down_post)
 
 .control
 set filetype=raw
-tran 1n 60u
+tran 1n 200u
 write tb_top_level_20250822.raw
 .endc
 "}
@@ -126,7 +126,6 @@ C {netlist.sym} 62.5 -722.5 0 0 {name=s1 value="
 .param Rz_filter = 10k
 .param Cj_filter = 50p
 "}
-C {sqwsource.sym} 630 -410 0 0 {name=Vreference vhi=\{VDD\} freq=\{f_ref\}}
 C {lab_wire.sym} 700 -460 0 0 {name=p4 sig_type=std_logic lab=reference}
 C {devices/vsource.sym} 520 -410 0 0 {name=Vssa value=0 savecurrent=false}
 C {devices/gnd.sym} 520 -350 0 0 {name=l4 lab=GND}
@@ -194,3 +193,6 @@ device=polarized_capacitor}
 C {lab_wire.sym} 1240 -20 0 0 {name=p12 sig_type=std_logic lab=vssa}
 C {noconn.sym} 1360 -560 2 0 {name=l11}
 C {libs/top_level/top_level_20250822/top_level_20250822.sym} 1040 -560 0 0 {name=xtop}
+C {devices/vsource.sym} 630 -410 0 0 {name=V3
+value="PULSE(0 3.3 5u 5n 5n 5u 10u)"
+savecurrent=false}
