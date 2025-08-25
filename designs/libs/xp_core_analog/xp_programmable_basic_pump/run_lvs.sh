@@ -58,6 +58,7 @@ echo PDK_ROOT is $PDK_ROOT
 echo PDK is $PDK
 
 magic -dnull -noconsole -rcfile $PDK_ROOT/$PDK/libs.tech/magic/$PDK.magicrc << EOF
+gds flatglob via_dev*
 gds read $CELL_NAME
 load $CELL_NAME
 select top cell
