@@ -4,7 +4,7 @@ This is the repository for the 2025 SSCS Chipathon RF_MOSbius team.
 
 ## Team
 
-Xianglin Pu, Qizhe Wu, Jingde He, Andrew Chon
+Xianglin Pu, Qizhe Wu, Jingde Hu, Andrew Chon
 - Graduate Students of the Analog and RF Integrated Circuits Research Lab at Columbia University in the City of New York
 
 ## IIC-OSIC-TOOLS Design Project Template (GlobalFoundries 180nm)
