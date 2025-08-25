@@ -60,15 +60,15 @@ N 1160 -300 1180 -300 {lab=#net1}
 N 1220 -610 1220 -290 {lab=vb2}
 N 1220 -700 1220 -670 {lab=vdd}
 N 1100 -700 1220 -700 {lab=vdd}
-N 1200 -640 1220 -640 {lab=vdd}
-N 1200 -700 1200 -640 {lab=vdd}
-N 1260 -640 1280 -640 {lab=vb2}
-N 1280 -640 1280 -580 {lab=vb2}
-N 1220 -580 1280 -580 {lab=vb2}
+N 1220 -640 1240 -640 {lab=vdd}
+N 1240 -700 1240 -640 {lab=vdd}
+N 1160 -640 1180 -640 {lab=vb2}
+N 1160 -640 1160 -580 {lab=vb2}
+N 1160 -580 1220 -580 {lab=vb2}
 N 980 -700 1100 -700 {lab=vdd}
 N 1080 -700 1080 -670 {lab=vdd}
-N 1080 -640 1100 -640 {lab=vdd}
-N 1100 -700 1100 -640 {lab=vdd}
+N 1060 -640 1080 -640 {lab=vdd}
+N 1060 -700 1060 -640 {lab=vdd}
 N 1080 -610 1080 -290 {lab=vb1}
 N 970 -200 1090 -200 {lab=vss}
 N 1080 -230 1080 -200 {lab=vss}
@@ -79,9 +79,6 @@ N 1180 -300 1180 -260 {lab=#net1}
 N 1020 -260 1040 -260 {lab=vb1}
 N 1020 -320 1020 -260 {lab=vb1}
 N 1020 -320 1080 -320 {lab=vb1}
-N 900 -640 900 -600 {lab=#net4}
-N 900 -600 1040 -600 {lab=#net4}
-N 1040 -640 1040 -600 {lab=#net4}
 N 960 -320 960 -290 {lab=#net5}
 N 560 -420 740 -420 {lab=vb1}
 N 960 -460 960 -440 {lab=out}
@@ -116,6 +113,8 @@ N 480 -620 480 -600 {lab=GND}
 N 400 -230 400 -200 {lab=iref}
 N 490 -310 490 -260 {lab=#net1}
 N 490 -460 490 -370 {lab=vmir}
+N 1120 -640 1160 -640 {lab=vb2}
+N 1220 -700 1240 -700 {lab=vdd}
 C {libs/qw_core_analog/OTAforChargePump/OTAforChargePump.sym} 400 -260 0 0 {name=x1}
 C {symbols/nfet_03v3.sym} 580 -260 0 0 {name=M5
 L=0.5u
@@ -288,7 +287,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1240 -640 0 1 {name=M12
+C {symbols/pfet_03v3.sym} 1200 -640 0 0 {name=M12
 L=0.5u
 W=10u
 nf=1
@@ -302,10 +301,10 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_wire.sym} 1240 -580 0 1 {name=p13 sig_type=std_logic lab=vb2}
-C {symbols/pfet_03v3.sym} 1060 -640 0 0 {name=M13
+C {lab_wire.sym} 1200 -580 0 0 {name=p13 sig_type=std_logic lab=vb2}
+C {symbols/pfet_03v3.sym} 1100 -640 0 1 {name=M13
 L=0.5u
-W=40u
+W=10u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -379,7 +378,7 @@ C {gnd.sym} 280 -600 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 160 -700 0 1 {name=p20 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 220 -700 0 1 {name=p21 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 280 -700 0 1 {name=p22 sig_type=std_logic lab=vin}
-C {devices/code_shown.sym} 1360 -670 0 0 {name=Simulation only_toplevel=false value="
+C {devices/code_shown.sym} 1370 -1220 0 0 {name=Simulation only_toplevel=false value="
 .control
 save all
 

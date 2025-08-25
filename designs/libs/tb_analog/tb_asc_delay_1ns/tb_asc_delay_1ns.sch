@@ -41,4 +41,4 @@ C {devices/lab_wire.sym} 520 -240 0 0 {name=p1 sig_type=std_logic lab=vin}
 C {devices/lab_wire.sym} 740 -240 0 0 {name=p3 sig_type=std_logic lab=vout}
 C {devices/lab_wire.sym} 620 -140 0 0 {name=p5 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 620 -320 0 0 {name=p6 sig_type=std_logic lab=vdda}
-C {libs/core_analog/asc_delay_1ns/asc_delay_1ns.sym} 620 -240 0 0 {name=x1}
+C {libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym} 620 -240 0 0 {name=x1}

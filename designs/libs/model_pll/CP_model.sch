@@ -29,7 +29,7 @@ C {netlist.sym} -300 -350 0 0 {name=s1 value="
 * In single-ended applications, connect the OUTn to ground or VSS
 * and the OUTp to the loop filter
 
-.param ICP = 1m
+.param ICP = 100u
 .param VDD = 3.3
 .param Gm_CP = \{ICP/VDD\}
 

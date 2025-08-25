@@ -1,0 +1,36 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"}
+V {}
+S {}
+E {}
+L 4 -80 -40 -80 40 {}
+L 4 -80 40 80 40 {}
+L 4 80 -40 80 40 {}
+L 4 -80 -40 80 -40 {}
+L 4 -120 -20 -80 -20 {}
+L 4 -120 20 -80 20 {}
+L 4 80 -0 120 -0 {}
+L 4 0 -80 0 -40 {}
+L 4 0 40 0 80 {}
+B 5 -2.5 -82.5 2.5 -77.5 {name=vdd
+dir=inout}
+B 5 -2.5 77.5 2.5 82.5 {name=vss
+dir=inout}
+B 5 117.5 -2.5 122.5 2.5 {name=out
+dir=inout}
+B 5 -122.5 -22.5 -117.5 -17.5 {name=in
+dir=inout}
+B 5 -122.5 17.5 -117.5 22.5 {name=mc
+dir=inout}
+T {@name} 35 -57 0 0 0.2 0.2 {}
+T {cell:@symname} -75 44 0 0 0.2 0.2 {}
+T {Dual-Modulus Prescaler} -65 -16 0 0 0.2 0.2 {}
+T {2 / 3} -15 4 0 0 0.2 0.2 {}
+T {vdd} -25 -76 0 0 0.2 0.2 {}
+T {vss} -25 64 0 0 0.2 0.2 {}
+T {in} -115 -36 0 0 0.2 0.2 {}
+T {mc} -115 4 0 0 0.2 0.2 {}
+T {out} 95 -16 0 0 0.2 0.2 {}
