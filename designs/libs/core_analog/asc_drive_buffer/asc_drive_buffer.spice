@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/libs/core_analog/asc_drive_buffer/asc_drive_buffer.sch
+.subckt asc_drive_buffer in vss out vdd
+*.PININFO in:B out:B vss:B vdd:B
+M1 net1 in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 net1 in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M3 net2 net1 vdd vdd pfet_03v3 L=0.5u W=12.0u nf=1 m=1
+M4 net2 net1 vss vss nfet_03v3 L=0.5u W=4.0u nf=1 m=1
+M5 net3 net2 vdd vdd pfet_03v3 L=0.5u W=48.0u nf=4 m=1
+M6 net3 net2 vss vss nfet_03v3 L=0.5u W=16.0u nf=4 m=1
+M7 out net3 vdd vdd pfet_03v3 L=0.5u W=96.0u nf=8 m=1
+M8 out net3 vss vss nfet_03v3 L=0.5u W=32.0u nf=8 m=1
+.ends
