@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 24/08/2025 22:14
+* Extracted by KLayout with GF180MCU LVS runset on : 25/08/2025 04:04
 
 .SUBCKT CSRVCO_20250823 vss vosc vctrl vdd
 M$1 \$47 \$1 vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U

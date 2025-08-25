@@ -1,0 +1,70 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell nfet in circuit asc_mim_cap_lvs_test (0)(1 instance)
+Flattening unmatched subcell cap_mim$1 in circuit asc_mim_cap_lvs_test (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: asc_mim_cap_lvs_test            |Circuit 2: asc_mim_cap_lvs_test            
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+cap_mim_2f0_m4m5_noshield (2)              |(no matching element)                      
+(no matching element)                      |cap_mim_2f0fF (2)                          
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 5 **Mismatch**             |Number of nets: 4 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: asc_mim_cap_lvs_test            |Circuit 2: asc_mim_cap_lvs_test            
+
+---------------------------------------------------------------------------------------
+Net: nfet_0/VSUBS                          |Net: net2                                  
+  nfet_03v3/4 = 1                          |  nfet_03v3/(1|3) = 1                      
+                                           |  cap_mim_2f0fF/1 = 1                      
+                                           |                                           
+Net: m5_n376_69#                           |Net: net1                                  
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/1 = 1                      
+                                           |                                           
+Net: vss                                   |Net: vss                                   
+  cap_mim_2f0_m4m5_noshield/2 = 2          |  nfet_03v3/4 = 1                          
+                                           |  cap_mim_2f0fF/2 = 2                      
+                                           |                                           
+Net: m5_500_69#                            |(no matching net)                          
+  nfet_03v3/(1|3) = 1                      |                                           
+  cap_mim_2f0_m4m5_noshield/1 = 1          |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: asc_mim_cap_lvs_test            |Circuit 2: asc_mim_cap_lvs_test            
+
+---------------------------------------------------------------------------------------
+Instance: cap_mim$1_0/cap_mim_2f0_m4m5_nos |Instance: cap_mim_2f0fF:C2                 
+  1 = 2                                    |  1 = 2                                    
+  2 = 2                                    |  2 = 3                                    
+                                           |                                           
+Instance: cap_mim$1_1/cap_mim_2f0_m4m5_nos |Instance: cap_mim_2f0fF:C4                 
+  1 = 2                                    |  1 = 2                                    
+  2 = 2                                    |  2 = 3                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: asc_mim_cap_lvs_test            |Circuit 2: asc_mim_cap_lvs_test            
+-------------------------------------------|-------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_mim_cap_lvs_test and asc_mim_cap_lvs_test are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.
