@@ -1,0 +1,70 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 24/08/2025 22:14
+
+.SUBCKT CSRVCO_20250823 vss vosc vctrl vdd
+M$1 \$47 \$1 vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$2 vosc \$47 vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$3 vdd vdd vdd vdd pfet_03v3 L=0.5U W=30U AS=19.5P AD=19.5P PS=62.6U PD=62.6U
+M$4 vdd \$38 \$38 vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U PD=31.3U
+M$5 \$70 \$38 vdd vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U PD=31.3U
+M$6 \$71 \$38 vdd vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U PD=31.3U
+M$7 \$72 \$38 vdd vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U PD=31.3U
+M$8 \$73 \$38 vdd vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U PD=31.3U
+M$9 \$74 \$38 vdd vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U PD=31.3U
+M$10 \$75 \$38 vdd vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U
++ PD=31.3U
+M$11 \$76 \$38 vdd vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U
++ PD=31.3U
+M$12 \$42 \$1 \$70 vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U
++ PD=31.3U
+M$13 \$43 \$42 \$71 vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U
++ PD=31.3U
+M$14 \$44 \$43 \$72 vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U
++ PD=31.3U
+M$15 \$45 \$44 \$73 vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U
++ PD=31.3U
+M$16 \$46 \$45 \$74 vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U
++ PD=31.3U
+M$17 \$2 \$46 \$75 vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U
++ PD=31.3U
+M$18 \$1 \$2 \$76 vdd pfet_03v3 L=0.5U W=15U AS=9.75P AD=9.75P PS=31.3U PD=31.3U
+M$20 \$47 \$1 vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$21 vosc \$47 vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$22 vss vss vss vss nfet_03v3 L=0.5U W=10U AS=6.1P AD=6.1P PS=22.44U PD=22.44U
+M$23 vss vctrl \$38 vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$24 \$4 vctrl vss vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$25 \$15 vctrl vss vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$26 \$16 vctrl vss vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$27 \$7 vctrl vss vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$28 \$39 vctrl vss vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$29 \$40 vctrl vss vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$30 \$41 vctrl vss vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$31 \$42 \$1 \$17 vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$32 \$43 \$42 \$5 vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$33 \$44 \$43 \$18 vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$34 \$45 \$44 \$7 vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$35 \$46 \$45 \$39 vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$36 \$2 \$46 \$40 vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+M$37 \$1 \$2 \$41 vss nfet_03v3 L=0.5U W=5U AS=3.05P AD=3.05P PS=11.22U
++ PD=11.22U
+C$39 \$1 \$8 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
+C$40 \$2 \$9 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
+C$41 \$46 \$11 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
+C$42 \$42 \$14 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
+C$43 \$43 \$13 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
+C$44 \$44 \$12 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
+C$45 \$45 \$10 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
+.ENDS CSRVCO_20250823

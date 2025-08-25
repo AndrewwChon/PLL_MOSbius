@@ -1,0 +1,314 @@
+timestamp 1583953711
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use inv1u05u inv1u05u_0 1 0 -3177 0 -1 -669
+use inv1u05u inv1u05u_1 1 0 -3177 0 1 885
+use pass1u05u pass1u05u_0 1 0 -2599 0 -1 -3051
+use pass1u05u pass1u05u_1 1 0 -3399 0 -1 -3051
+use pass1u05u pass1u05u_2 1 0 -2599 0 1 3267
+use pass1u05u pass1u05u_3 1 0 -3399 0 1 3267
+port "B_1" 6 -916 -873 -916 -873 m3
+port "C_1" 7 -926 -224 -926 -224 m3
+port "OUT_1" 8 1325 144 1325 144 m3
+port "A_1" 5 -900 1046 -900 1046 m3
+port "VSS" 2 -310 97 -310 97 m1
+port "S1" 4 -915 -520 -915 -520 m1
+port "S0" 3 -888 750 -888 750 m1
+port "VDD" 1 -232 1895 -232 1895 m1
+node "B_1" 2 136.703 -916 -873 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20160 648 92400 2454 0 0 0 0
+node "C_1" 2 274.48 -926 -224 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20160 648 159520 4132 0 0 0 0
+node "OUT_1" 1 161.082 1325 144 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77112 2004 37200 1074 0 0 0 0
+node "m2_239_n464#" 1 61.2699 239 -464 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77112 2004 0 0 0 0 0 0
+node "m2_239_883#" 1 96.2195 239 883 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62000 1440 0 0 0 0 0 0
+node "A_1" 2 164.494 -900 1046 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20160 648 90960 2418 0 0 0 0
+node "VSS" 1 1057.7 -310 97 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 677468 4608 0 0 0 0 0 0 0 0
+node "S1" 6 646.942 -915 -520 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 142992 4118 132640 3632 124480 3272 0 0 0 0
+node "m1_n432_n1290#" 6 1114.02 -432 -1290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120824 3564 297440 7596 0 0 0 0 0 0
+node "m1_n432_776#" 4 390.128 -432 776 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 142740 4006 94240 2516 0 0 0 0 0 0
+node "S0" 5 732.168 -888 750 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 139834 4040 124164 3422 60560 1674 0 0 0 0
+node "VDD" 6 2499.69 -232 1895 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1247521 9518 357460 7460 38400 1280 0 0 0 0
+node "w_n792_n1621#" 1981 6099.27 -792 -1621 nw 2033091 6040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n792_824#" 1981 6099.27 -792 824 nw 2033091 6040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "OUT_1" "S1" 79.0274
+cap "C_1" "w_n792_824#" 16.7856
+cap "VDD" "C_1" 72.7275
+cap "w_n792_n1621#" "S1" 300.199
+cap "m1_n432_776#" "C_1" 61.1662
+cap "B_1" "VDD" 114.776
+cap "m1_n432_776#" "B_1" 0.061805
+cap "S1" "m2_239_883#" 28.6249
+cap "m1_n432_n1290#" "w_n792_824#" 54.7237
+cap "m1_n432_n1290#" "VDD" 183.679
+cap "S0" "m2_239_n464#" 103.849
+cap "OUT_1" "m2_239_n464#" 0.885631
+cap "m1_n432_n1290#" "m1_n432_776#" 32.4867
+cap "A_1" "S1" 0.0553304
+cap "w_n792_n1621#" "m2_239_n464#" 5.26075
+cap "S0" "VSS" 324.534
+cap "OUT_1" "VSS" 183.032
+cap "S1" "C_1" 363.565
+cap "w_n792_n1621#" "VSS" 13.6574
+cap "B_1" "S1" 189.875
+cap "VDD" "w_n792_824#" 633.561
+cap "m2_239_n464#" "m2_239_883#" 8.19587
+cap "m1_n432_776#" "w_n792_824#" 164.006
+cap "m1_n432_776#" "VDD" 65.1611
+cap "m1_n432_n1290#" "S1" 284.441
+cap "m2_239_883#" "VSS" 5.86729
+cap "A_1" "VSS" 8.81438
+cap "OUT_1" "S0" 0.375358
+cap "C_1" "m2_239_n464#" 55.485
+cap "w_n792_n1621#" "S0" 80.9801
+cap "OUT_1" "w_n792_n1621#" 11.4051
+cap "C_1" "VSS" 104.153
+cap "S1" "w_n792_824#" 38.5512
+cap "VDD" "S1" 175.228
+cap "B_1" "VSS" 1.71166
+cap "m1_n432_776#" "S1" 605.866
+cap "m1_n432_n1290#" "m2_239_n464#" 5.29801
+cap "m1_n432_n1290#" "VSS" 97.1612
+cap "A_1" "S0" 82.7957
+cap "w_n792_n1621#" "m2_239_883#" 0.716752
+cap "A_1" "w_n792_n1621#" 0.0951581
+cap "C_1" "S0" 106.715
+cap "OUT_1" "C_1" 55.6787
+cap "m2_239_n464#" "w_n792_824#" 0.299116
+cap "m1_n432_776#" "m2_239_n464#" 309.893
+cap "B_1" "S0" 10.6161
+cap "w_n792_n1621#" "C_1" 17.1117
+cap "VSS" "w_n792_824#" 5.57985
+cap "VDD" "VSS" 89.4923
+cap "A_1" "m2_239_883#" 19.0373
+cap "B_1" "w_n792_n1621#" 152.839
+cap "m1_n432_776#" "VSS" 222.01
+cap "m1_n432_n1290#" "S0" 9.91609
+cap "m1_n432_n1290#" "OUT_1" 376.351
+cap "C_1" "m2_239_883#" 5.32754
+cap "m1_n432_n1290#" "w_n792_n1621#" 422.488
+cap "A_1" "C_1" 29.5875
+cap "S1" "m2_239_n464#" 8.64156
+cap "S0" "w_n792_824#" 62.2552
+cap "VDD" "S0" 223.407
+cap "OUT_1" "w_n792_824#" 11.6497
+cap "OUT_1" "VDD" 1.17315
+cap "m1_n432_776#" "S0" 629.856
+cap "m1_n432_776#" "OUT_1" 2.0965
+cap "S1" "VSS" 257.919
+cap "B_1" "C_1" 38.8861
+cap "VDD" "w_n792_n1621#" 605.628
+cap "m1_n432_776#" "w_n792_n1621#" 43.2767
+cap "m1_n432_n1290#" "C_1" 10.3284
+cap "m1_n432_n1290#" "B_1" 50.5617
+cap "m2_239_883#" "w_n792_824#" 91.2459
+cap "VDD" "m2_239_883#" 10.0677
+cap "m1_n432_776#" "m2_239_883#" 46.7133
+cap "A_1" "w_n792_824#" 153.583
+cap "m2_239_n464#" "VSS" 147.724
+cap "A_1" "VDD" 115.722
+cap "A_1" "m1_n432_776#" 21.2102
+cap "S1" "S0" 133.198
+cap "inv1u05u_1/out" "inv1u05u_0/in" 3.17531
+cap "inv1u05u_1/in" "pass1u05u_1/ind" 165.829
+cap "inv1u05u_0/out" "inv1u05u_1/out" 5.8151
+cap "pass1u05u_1/ins" "pass1u05u_1/ind" 9.40481
+cap "inv1u05u_0/VSS" "inv1u05u_0/in" 7.52502
+cap "inv1u05u_1/out" "pass1u05u_0/ind" 0.244232
+cap "inv1u05u_0/VSS" "inv1u05u_0/out" -1.66374
+cap "inv1u05u_0/VDD" "inv1u05u_0/in" -47.3127
+cap "inv1u05u_0/out" "inv1u05u_0/VDD" -102.836
+cap "inv1u05u_0/VDD" "pass1u05u_0/ind" 0.0617219
+cap "pass1u05u_1/ind" "pass1u05u_0/ins" 1.41006
+cap "inv1u05u_1/in" "inv1u05u_0/in" -16.9392
+cap "pass1u05u_1/ins" "inv1u05u_0/in" 69.6878
+cap "inv1u05u_1/in" "inv1u05u_0/out" 102.491
+cap "pass1u05u_1/ins" "inv1u05u_0/out" 57.4284
+cap "inv1u05u_0/VSS" "inv1u05u_1/out" -8.24964
+cap "pass1u05u_3/ind" "inv1u05u_0/out" 0.0428032
+cap "inv1u05u_1/out" "inv1u05u_0/VDD" -16.2158
+cap "inv1u05u_1/in" "pass1u05u_0/ind" -0.409173
+cap "pass1u05u_1/ins" "pass1u05u_0/ind" 31.5559
+cap "pass1u05u_1/ind" "inv1u05u_0/in" 69.362
+cap "pass1u05u_1/ind" "inv1u05u_0/out" 134.264
+cap "inv1u05u_0/VSS" "inv1u05u_0/VDD" -10.7303
+cap "inv1u05u_1/in" "inv1u05u_1/out" -87.2548
+cap "inv1u05u_0/in" "pass1u05u_0/ins" 0.00330157
+cap "pass1u05u_1/ind" "pass1u05u_0/ind" 1.63728
+cap "inv1u05u_0/out" "pass1u05u_0/ins" 0.692919
+cap "pass1u05u_1/ins" "inv1u05u_1/out" 63.8136
+cap "inv1u05u_1/in" "inv1u05u_0/VSS" -2.98125
+cap "pass1u05u_1/ind" "inv1u05u_1/out" 2.90672
+cap "pass1u05u_1/ins" "inv1u05u_0/VSS" -0.111912
+cap "inv1u05u_0/out" "inv1u05u_0/in" 129.361
+cap "inv1u05u_1/in" "inv1u05u_0/VDD" -33.2538
+cap "pass1u05u_1/ins" "inv1u05u_0/VDD" 43.6983
+cap "pass1u05u_0/ind" "inv1u05u_0/in" -0.516786
+cap "inv1u05u_0/VSS" "pass1u05u_1/ind" 0.172751
+cap "inv1u05u_0/out" "pass1u05u_0/ind" 0.749631
+cap "pass1u05u_1/ind" "inv1u05u_0/VDD" -37.0316
+cap "pass1u05u_1/ins" "inv1u05u_1/in" -9.87247
+cap "inv1u05u_0/in" "inv1u05u_0/VSS" -3.3481
+cap "inv1u05u_1/out" "pass1u05u_0/ind" 2.06481
+cap "pass1u05u_1/ind" "inv1u05u_0/out" -2.92523
+cap "inv1u05u_0/out" "inv1u05u_0/in" -89.4122
+cap "pass1u05u_0/ins" "inv1u05u_0/in" -2.89398
+cap "inv1u05u_0/out" "inv1u05u_0/VSS" -8.24964
+cap "pass1u05u_0/ins" "inv1u05u_0/VSS" -0.111912
+cap "pass1u05u_0/ins" "inv1u05u_0/out" 266.098
+cap "pass1u05u_1/ins" "inv1u05u_0/in" 24.0218
+cap "inv1u05u_0/in" "inv1u05u_0/VDD" -64.3946
+cap "inv1u05u_1/out" "inv1u05u_0/in" -0.377043
+cap "inv1u05u_0/in" "pass1u05u_0/ind" 202.577
+cap "pass1u05u_1/ind" "pass1u05u_0/ind" 0.151828
+cap "inv1u05u_0/VSS" "inv1u05u_0/VDD" -3.21028
+cap "inv1u05u_0/out" "inv1u05u_0/VDD" -97.5449
+cap "pass1u05u_1/ins" "inv1u05u_0/out" 1.18847
+cap "pass1u05u_0/ind" "inv1u05u_0/VSS" -0.017593
+cap "pass1u05u_0/ins" "inv1u05u_0/VDD" -8.68695
+cap "inv1u05u_1/in" "inv1u05u_0/in" -2.47629
+cap "inv1u05u_0/out" "pass1u05u_0/ind" 60.9851
+cap "inv1u05u_1/out" "inv1u05u_0/out" 3.21632
+cap "inv1u05u_1/out" "pass1u05u_0/ins" 0.323661
+cap "pass1u05u_0/ins" "pass1u05u_0/ind" -4.76856
+cap "inv1u05u_1/in" "inv1u05u_0/out" 0.905747
+cap "pass1u05u_1/ind" "inv1u05u_0/in" 2.12423
+cap "pass1u05u_1/ins" "pass1u05u_0/ind" 31.4366
+cap "pass1u05u_0/ind" "inv1u05u_0/VDD" 34.8548
+cap "inv1u05u_1/out" "inv1u05u_0/VDD" 1.33227e-15
+cap "pass1u05u_1/ind" "inv1u05u_0/out" 10.9354
+cap "pass1u05u_1/ins" "inv1u05u_0/VDD" -14.3697
+cap "inv1u05u_0/VSS" "inv1u05u_1/in" 16.4336
+cap "inv1u05u_0/VSS" "pass1u05u_1/ins" -3.94928
+cap "inv1u05u_0/in" "inv1u05u_1/out" 1.33731
+cap "pass1u05u_0/ind" "inv1u05u_0/in" 6.29327
+cap "inv1u05u_1/in" "pass1u05u_0/ins" 0.696387
+cap "pass1u05u_3/ind" "inv1u05u_0/VDD" -15.3255
+cap "inv1u05u_0/out" "inv1u05u_0/VDD" 3.43698
+cap "pass1u05u_1/ind" "inv1u05u_0/VDD" -1.4201
+cap "inv1u05u_0/VSS" "pass1u05u_3/ind" 7.15986
+cap "pass1u05u_0/ind" "inv1u05u_1/out" 7.21424
+cap "inv1u05u_0/VSS" "inv1u05u_0/out" 3.30907
+cap "pass1u05u_1/ind" "inv1u05u_0/VSS" 5.68744
+cap "inv1u05u_0/in" "inv1u05u_1/in" 11.7694
+cap "inv1u05u_0/in" "pass1u05u_1/ins" 2.36906
+cap "pass1u05u_3/ind" "pass1u05u_0/ins" 0.564092
+cap "inv1u05u_1/out" "inv1u05u_1/in" 140.114
+cap "pass1u05u_0/ind" "inv1u05u_1/in" 1.62157
+cap "inv1u05u_0/VSS" "inv1u05u_0/VDD" -15.0986
+cap "pass1u05u_1/ins" "inv1u05u_1/out" 233.139
+cap "inv1u05u_0/in" "pass1u05u_3/ind" -0.0285903
+cap "pass1u05u_0/ind" "pass1u05u_1/ins" 9.67164
+cap "pass1u05u_1/ind" "inv1u05u_0/in" 0.0400357
+cap "pass1u05u_0/ind" "pass1u05u_3/ind" 3.09716
+cap "pass1u05u_1/ins" "inv1u05u_1/in" -0.641924
+cap "inv1u05u_0/out" "inv1u05u_1/out" 4.16437
+cap "pass1u05u_3/ind" "inv1u05u_1/out" 91.3329
+cap "pass1u05u_1/ind" "inv1u05u_1/out" 1.09765
+cap "pass1u05u_0/ind" "inv1u05u_0/out" 10.5955
+cap "pass1u05u_0/ind" "pass1u05u_1/ind" 28.9279
+cap "inv1u05u_0/in" "inv1u05u_0/VDD" 4.47863
+cap "inv1u05u_0/in" "inv1u05u_0/VSS" 6.13864
+cap "pass1u05u_3/ind" "inv1u05u_1/in" 194.529
+cap "inv1u05u_0/out" "inv1u05u_1/in" 8.39359
+cap "inv1u05u_1/out" "inv1u05u_0/VDD" -49.768
+cap "pass1u05u_0/ind" "inv1u05u_0/VDD" -4.9774
+cap "pass1u05u_1/ind" "inv1u05u_1/in" 46.7615
+cap "pass1u05u_3/ind" "pass1u05u_1/ins" -9.28699
+cap "pass1u05u_1/ind" "pass1u05u_1/ins" 1.2186
+cap "pass1u05u_1/ins" "inv1u05u_0/out" 0.569202
+cap "inv1u05u_0/VSS" "inv1u05u_1/out" -17.4547
+cap "pass1u05u_0/ind" "inv1u05u_0/VSS" 15.6712
+cap "inv1u05u_1/out" "pass1u05u_0/ins" 0.244742
+cap "inv1u05u_0/VDD" "inv1u05u_1/in" 0.374158
+cap "pass1u05u_3/ind" "inv1u05u_0/out" 0.726202
+cap "pass1u05u_1/ind" "pass1u05u_3/ind" 6.12159
+cap "inv1u05u_0/out" "pass1u05u_1/ins" 5.73539
+cap "inv1u05u_0/in" "pass1u05u_0/ind" 9.07805
+cap "inv1u05u_0/out" "pass1u05u_0/ind" 5.76452
+cap "inv1u05u_1/out" "pass1u05u_1/ins" 5.61734
+cap "inv1u05u_1/out" "pass1u05u_0/ind" 8.89707
+cap "inv1u05u_0/out" "inv1u05u_0/in" -96.7219
+cap "pass1u05u_1/ins" "inv1u05u_0/VDD" -9.90381
+cap "inv1u05u_0/VDD" "pass1u05u_0/ind" -3.63856
+cap "inv1u05u_0/in" "inv1u05u_1/in" 1.54407
+cap "inv1u05u_1/out" "inv1u05u_0/in" 0.679297
+cap "inv1u05u_1/out" "inv1u05u_0/out" 0.599183
+cap "pass1u05u_1/ins" "inv1u05u_0/VSS" 3.27688
+cap "inv1u05u_0/in" "inv1u05u_0/VDD" -14.683
+cap "inv1u05u_0/VSS" "pass1u05u_0/ind" -2.88202
+cap "inv1u05u_0/out" "inv1u05u_0/VDD" -34.7487
+cap "pass1u05u_0/ins" "pass1u05u_1/ins" 1.2186
+cap "inv1u05u_1/out" "inv1u05u_0/VDD" -0.0525127
+cap "pass1u05u_0/ins" "pass1u05u_0/ind" -22.3487
+cap "pass1u05u_0/ind" "pass1u05u_1/ind" 0.614378
+cap "inv1u05u_0/out" "inv1u05u_0/VSS" -12.2072
+cap "inv1u05u_0/in" "inv1u05u_0/VSS" -17.2506
+cap "pass1u05u_0/ins" "inv1u05u_0/in" 7.74831
+cap "pass1u05u_0/ins" "inv1u05u_0/out" 236.066
+cap "inv1u05u_0/VSS" "inv1u05u_0/VDD" -17.9791
+cap "pass1u05u_0/ins" "inv1u05u_1/out" 0.516521
+cap "pass1u05u_0/ins" "inv1u05u_0/VDD" -15.8682
+cap "pass1u05u_1/ins" "pass1u05u_0/ind" 7.73949
+cap "pass1u05u_0/ins" "inv1u05u_0/VSS" -5.18555
+cap "inv1u05u_0/in" "pass1u05u_1/ins" 189.441
+cap "pass1u05u_0/clkn" "inv1u05u_1/VDD" 0.114826
+cap "pass1u05u_1/ins" "inv1u05u_1/VDD" 40.3823
+cap "inv1u05u_1/out" "inv1u05u_1/VDD" 32.9545
+cap "inv1u05u_1/in" "pass1u05u_3/ind" 8.49222
+cap "inv1u05u_1/out" "pass1u05u_0/clkn" 0.482522
+cap "inv1u05u_1/in" "inv1u05u_1/VDD" 8.11858
+cap "pass1u05u_0/ins" "pass1u05u_3/ind" 0.520676
+cap "inv1u05u_1/out" "inv1u05u_1/in" 1.18695
+cap "inv1u05u_0/VSS" "inv1u05u_1/VDD" -6.87129
+cap "inv1u05u_1/VDD" "pass1u05u_3/ind" -16.931
+cap "pass1u05u_0/clkn" "pass1u05u_3/ind" 0.663121
+cap "pass1u05u_1/ins" "pass1u05u_3/ind" 4.64783
+cap "inv1u05u_1/out" "pass1u05u_3/ind" 71.7378
+cap "inv1u05u_1/VDD" "pass1u05u_1/ins" 37.8784
+cap "inv1u05u_1/VDD" "pass1u05u_0/ins" -0.35993
+cap "inv1u05u_1/VDD" "pass1u05u_0/clkn" -1.3726
+cap "inv1u05u_0/VSS" "inv1u05u_1/VDD" -3.21028
+cap "inv1u05u_1/VDD" "pass1u05u_2/clkn" -1.94779
+cap "pass1u05u_0/clkn" "inv1u05u_1/out" 0.482522
+merge "pass1u05u_2/clkn" "pass1u05u_0/clkp" -261.116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23408 -1072 0 0 0 0 0 0 0 0
+merge "pass1u05u_0/clkp" "inv1u05u_0/in"
+merge "inv1u05u_0/in" "S1"
+merge "pass1u05u_3/ins" "pass1u05u_1/ins" -711.53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35784 -1524 0 0 0 0 0 0
+merge "pass1u05u_1/ins" "m2_239_n464#"
+merge "m2_239_n464#" "pass1u05u_2/ind"
+merge "pass1u05u_2/ind" "m2_239_883#"
+merge "pass1u05u_3/clkn" "pass1u05u_1/clkp" -386.447 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21888 -1032 0 0 0 0 0 0 0 0
+merge "pass1u05u_1/clkp" "inv1u05u_1/in"
+merge "inv1u05u_1/in" "S0"
+merge "pass1u05u_3/VSS" "pass1u05u_2/VSS" -2353.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -881640 -9612 0 0 0 0 0 0 0 0
+merge "pass1u05u_2/VSS" "pass1u05u_1/VSS"
+merge "pass1u05u_1/VSS" "pass1u05u_0/VSS"
+merge "pass1u05u_0/VSS" "inv1u05u_1/VSS"
+merge "inv1u05u_1/VSS" "inv1u05u_0/VSS"
+merge "inv1u05u_0/VSS" "VSUBS"
+merge "VSUBS" "VSS"
+merge "pass1u05u_3/VDD" "pass1u05u_2/VDD" -11569.6 -3257808 -18588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -846000 -9240 0 0 0 0 0 0 0 0
+merge "pass1u05u_2/VDD" "inv1u05u_1/VDD"
+merge "inv1u05u_1/VDD" "pass1u05u_3/pfet$1_0/w_n180_n88#"
+merge "pass1u05u_3/pfet$1_0/w_n180_n88#" "pass1u05u_2/pfet$1_0/w_n180_n88#"
+merge "pass1u05u_2/pfet$1_0/w_n180_n88#" "inv1u05u_1/pfet_0/w_n180_n88#"
+merge "inv1u05u_1/pfet_0/w_n180_n88#" "w_n792_824#"
+merge "w_n792_824#" "pass1u05u_1/VDD"
+merge "pass1u05u_1/VDD" "pass1u05u_0/VDD"
+merge "pass1u05u_0/VDD" "inv1u05u_0/VDD"
+merge "inv1u05u_0/VDD" "VDD"
+merge "VDD" "w_n792_n1621#"
+merge "pass1u05u_2/clkp" "pass1u05u_0/clkn" -358.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26592 -1144 0 0 0 0 0 0 0 0
+merge "pass1u05u_0/clkn" "inv1u05u_0/out"
+merge "inv1u05u_0/out" "m1_n432_n1290#"
+merge "pass1u05u_0/ind" "C_1" -289.569 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11928 -452 0 0 0 0 0 0
+merge "pass1u05u_3/clkp" "pass1u05u_1/clkn" -368.989 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17632 -920 0 0 0 0 0 0 0 0
+merge "pass1u05u_1/clkn" "inv1u05u_1/out"
+merge "inv1u05u_1/out" "m1_n432_776#"
+merge "pass1u05u_2/ins" "pass1u05u_0/ins" -254.342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18984 -788 0 0 0 0 0 0
+merge "pass1u05u_0/ins" "OUT_1"
+merge "pass1u05u_3/ind" "A_1" -252.029 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19908 -642 0 0 0 0 0 0
+merge "pass1u05u_1/ind" "B_1" -227.719 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15540 -538 0 0 0 0 0 0

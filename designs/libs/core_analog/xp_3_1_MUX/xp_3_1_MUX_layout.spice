@@ -1,0 +1,37 @@
+* NGSPICE file created from xp_3_1_MUX.ext - technology: gf180mcuD
+
+.subckt nfet$1 a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt pfet$1 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt pass1u05u VDD clkp VSS clkn ind ins
+Xnfet$1_0 clkn ind ins VSS nfet$1
+Xpfet$1_0 VDD ind ins clkp pfet$1
+.ends
+
+.subckt pfet w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt nfet a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt inv1u05u VDD in VSS out
+Xpfet_0 VDD VDD out in pfet
+Xnfet_0 in VSS out VSS nfet
+.ends
+
+.subckt xp_3_1_MUX VDD VSS S0 S1 A_1 B_1 C_1 OUT_1
+Xpass1u05u_0 VDD S1 VSS inv1u05u_0/out C_1 OUT_1 pass1u05u
+Xpass1u05u_1 VDD S0 VSS inv1u05u_1/out B_1 pass1u05u_3/ins pass1u05u
+Xpass1u05u_2 VDD inv1u05u_0/out VSS S1 pass1u05u_3/ins OUT_1 pass1u05u
+Xpass1u05u_3 VDD inv1u05u_1/out VSS S0 A_1 pass1u05u_3/ins pass1u05u
+Xinv1u05u_0 VDD S1 VSS inv1u05u_0/out inv1u05u
+Xinv1u05u_1 VDD S0 VSS inv1u05u_1/out inv1u05u
+.ends
+

@@ -20,11 +20,13 @@ C {devices/lab_wire.sym} 80 -220 0 0 {name=p2 sig_type=std_logic lab=vssa}
 C {devices/vsource.sym} 160 -280 0 0 {name=V3 value=1.65 savecurrent=false}
 C {devices/lab_wire.sym} 160 -220 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 160 -340 0 0 {name=p8 sig_type=std_logic lab=vctrl}
-C {devices/code_shown.sym} 60 -570 0 0 {name=Models only_toplevel=false
+C {devices/code_shown.sym} 50 -570 0 0 {name=Models only_toplevel=false
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
 C {devices/lab_wire.sym} 360 -220 0 0 {name=p1 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 80 -340 0 0 {name=p4 sig_type=std_logic lab=vdda}
@@ -43,4 +45,4 @@ tran 10p 1u
 write sim_rvco.raw
 .endc
 "}
-C {libs/core_analog/CSRVCO_20250820/CSRVCO_20250820.sym} 520 -220 0 0 {name=x1}
+C {libs/core_analog/CSRVCO_20250823/CSRVCO_20250823.sym} 520 -220 0 0 {name=x1}

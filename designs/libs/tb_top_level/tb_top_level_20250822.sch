@@ -85,8 +85,6 @@ N 1320 -600 1470 -600 {lab=def}
 N 1120 -280 1120 -260 {lab=tune}
 N 1320 -460 1370 -460 {lab=div_in}
 N 1320 -440 1370 -440 {lab=div_out}
-N 740 -500 740 -480 {lab=vssa}
-N 740 -480 760 -480 {lab=vssa}
 N 700 -560 760 -560 {lab=vdda}
 N 1100 -860 1100 -840 {lab=#net1}
 N 1120 -860 1120 -840 {lab=#net2}
@@ -103,13 +101,13 @@ N 1160 -30 1160 -20 {lab=vssa}
 N 1260 -180 1260 -120 {lab=tune}
 N 1260 -60 1260 -20 {lab=vssa}
 N 1160 -20 1260 -20 {lab=vssa}
-C {devices/code_shown.sym} 55 -328.75 0 0 {name=Simulation only_toplevel=false value="
-.save v(tune) v(out) v(reference) v(up) v(down) v(div_out) v(div_in)
+C {devices/code_shown.sym} 45 61.25 0 0 {name=Simulation only_toplevel=false value="
+.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.int_div_out) v(xtop.int_div_in) v(xtop.dff_pfd_ref) v(xtop.dff_pfd_up) v(xtop.up_pre) v(xtop.up_post) v(xtop.down_pre) v(xtop.down_post)
 
 .control
 set filetype=raw
-tran 1n 150u
-write tb_top_level_20250821.raw
+tran 1n 200u
+write tb_top_level_20250822.raw
 .endc
 "}
 C {netlist.sym} 62.5 -722.5 0 0 {name=s1 value="
@@ -124,11 +122,10 @@ C {netlist.sym} 62.5 -722.5 0 0 {name=s1 value="
 * divider
 .param divide_factor = 1000
 * loop filter parameters
-.param Ci_filter = 800p
+.param Ci_filter = 1n
 .param Rz_filter = 10k
-.param Cj_filter = 40p
+.param Cj_filter = 50p
 "}
-C {sqwsource.sym} 630 -410 0 0 {name=Vreference vhi=\{VDD\} freq=\{f_ref\}}
 C {lab_wire.sym} 700 -460 0 0 {name=p4 sig_type=std_logic lab=reference}
 C {devices/vsource.sym} 520 -410 0 0 {name=Vssa value=0 savecurrent=false}
 C {devices/gnd.sym} 520 -350 0 0 {name=l4 lab=GND}
@@ -169,7 +166,6 @@ C {lab_wire.sym} 730 -440 0 0 {name=p17 sig_type=std_logic lab=biasn_cp}
 C {lab_wire.sym} 1370 -440 0 0 {name=p20 sig_type=std_logic lab=div_out}
 C {lab_wire.sym} 1370 -460 0 0 {name=p21 sig_type=std_logic lab=div_in}
 C {lab_wire.sym} 740 -610 0 0 {name=p22 sig_type=std_logic lab=vssa}
-C {libs/top_level/top_level_20250821/top_level_20250821.sym} 1040 -560 0 0 {name=xtop}
 C {noconn.sym} 1100 -860 1 0 {name=l2}
 C {noconn.sym} 1120 -860 1 0 {name=l1}
 C {noconn.sym} 1140 -860 1 0 {name=l3}
@@ -196,3 +192,7 @@ footprint=1206
 device=polarized_capacitor}
 C {lab_wire.sym} 1240 -20 0 0 {name=p12 sig_type=std_logic lab=vssa}
 C {noconn.sym} 1360 -560 2 0 {name=l11}
+C {libs/top_level/top_level_20250822/top_level_20250822.sym} 1040 -560 0 0 {name=xtop}
+C {devices/vsource.sym} 630 -410 0 0 {name=V3
+value="PULSE(0 3.3 5u 5n 5n 5u 10u)"
+savecurrent=false}
