@@ -1,0 +1,15 @@
+* NGSPICE file created from inv1u05u.ext - technology: gf180mcuD
+
+.subckt nfet a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt pfet$1 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt inv1u05u VDD in VSS out
+Xnfet_0 in VSS out VSS nfet
+Xpfet$1_0 VDD VDD out in pfet$1
+.ends
+

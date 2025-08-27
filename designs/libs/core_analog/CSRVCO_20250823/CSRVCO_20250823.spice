@@ -1,39 +1,39 @@
 ** sch_path: /foss/designs/libs/core_analog/CSRVCO_20250823/CSRVCO_20250823.sch
 .subckt CSRVCO_20250823 vctrl vdd vss vosc
 *.PININFO vdd:B vss:B vosc:B vctrl:B
-M1 net8 net21 net1 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M2 net8 net21 net9 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M3 net16 net8 net2 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M4 net16 net8 net10 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M5 net17 net16 net3 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M6 net17 net16 net11 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M7 net18 net17 net4 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M8 net18 net17 net12 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M9 net19 net18 net5 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M10 net19 net18 net13 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M11 net20 net19 net6 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M12 net20 net19 net14 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M13 net21 net20 net7 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M14 net21 net20 net15 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M15 net1 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M16 net9 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M17 net2 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M18 net10 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M19 net3 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M20 net11 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M21 net4 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M22 net12 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M23 net5 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M24 net13 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M25 net6 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M26 net14 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M27 net7 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M28 net15 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
-M29 net22 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
-M30 net22 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM1 net8 net21 net1 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM2 net8 net21 net9 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM3 net16 net8 net2 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM4 net16 net8 net10 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM5 net17 net16 net3 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM6 net17 net16 net11 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM7 net18 net17 net4 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM8 net18 net17 net12 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM9 net19 net18 net5 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM10 net19 net18 net13 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM11 net20 net19 net6 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM12 net20 net19 net14 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM13 net21 net20 net7 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM14 net21 net20 net15 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM15 net1 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM16 net9 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM17 net2 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM18 net10 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM19 net3 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM20 net11 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM21 net4 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM22 net12 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM23 net5 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM24 net13 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM25 net6 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM26 net14 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM27 net7 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM28 net15 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM29 net22 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM30 net22 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
 x1 net21 vss vosc vdd asc_delay
-M31 vss vss vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=2
-M32 vdd vdd vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=2
+XM31 vss vss vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=2
+XM32 vdd vdd vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=2
 XC1 net8 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
 XC2 net16 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
 XC3 net17 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
@@ -58,7 +58,7 @@ x2 net1 vdd out vss inv1u05u
 ** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
 .subckt inv1u05u in vdd out vss
 *.PININFO in:B out:B vss:B vdd:B
-M1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
-M2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
 .ends
 

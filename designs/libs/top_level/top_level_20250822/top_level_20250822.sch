@@ -168,7 +168,6 @@ C {devices/iopin.sym} 1620 -1200 1 1 {name=p5 lab=up}
 C {devices/iopin.sym} 1620 -440 3 1 {name=p6 lab=down}
 C {devices/iopin.sym} 320 -960 0 1 {name=p1 lab=ref}
 C {devices/iopin.sym} 3860 -820 0 0 {name=p4 lab=out}
-C {libs/core_analog/asc_delay/asc_delay.sym} 460 -960 0 0 {name=xbuf_ref}
 C {lab_wire.sym} 460 -1040 0 0 {name=p7 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 460 -860 0 0 {name=p8 sig_type=std_logic lab=vss}
 C {libs/xp_core_analog/xp_3_1_MUX/xp_3_1_MUX.sym} 1030 -960 0 1 {name=xmux_ref}
@@ -298,7 +297,6 @@ C {lab_wire.sym} 1720 -1080 3 0 {name=p128 sig_type=std_logic lab=vss}
 C {libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym} 1620 -1080 3 0 {name=xbuf_up}
 C {libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym} 1760 -960 0 0 {name=xdrive_up}
 C {libs/core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sym} 2270 -840 0 0 {name=xcp}
-C {libs/core_analog/CSRVCO_20250821/CSRVCO_20250821.sym} 3200 -800 0 0 {name=xvco_csr}
 C {libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sym} 1880 -300 0 0 {name=xdiv}
 C {lab_wire.sym} 1640 -960 0 0 {name=p140 sig_type=std_logic lab=up_pre}
 C {lab_wire.sym} 1940 -960 0 0 {name=p141 sig_type=std_logic lab=up_post}
@@ -319,3 +317,5 @@ C {noconn.sym} 820 -980 0 1 {name=l6}
 C {noconn.sym} 820 -700 0 1 {name=l7}
 C {lab_wire.sym} 1540 -300 0 0 {name=p29 sig_type=std_logic lab=int_div_out}
 C {lab_wire.sym} 2300 -300 0 0 {name=p32 sig_type=std_logic lab=int_div_in}
+C {libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym} 460 -960 0 0 {name=x1}
+C {libs/core_analog/CSRVCO_20250823/CSRVCO_20250823.sym} 3200 -800 0 0 {name=x3}

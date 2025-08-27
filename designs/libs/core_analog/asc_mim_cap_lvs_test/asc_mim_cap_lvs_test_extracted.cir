@@ -1,7 +1,7 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 25/08/2025 18:55
+* Extracted by KLayout with GF180MCU LVS runset on : 26/08/2025 02:53
 
-.SUBCKT asc_mim_cap_lvs_test vss vin
-M$1 \$3 vin \$2 vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
-C$2 vss \$2 1e-13 cap_mim_2f0_m4m5_noshield A=50P P=30U
-C$3 vss \$3 1e-13 cap_mim_2f0_m4m5_noshield A=50P P=30U
+.SUBCKT asc_mim_cap_lvs_test VSS S D VIN
+M$1 D VIN S VSS nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+C$2 S \$7 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
+C$3 D \$8 1e-13 cap_mim_2f0_m5m6_noshield A=50P P=30U
 .ENDS asc_mim_cap_lvs_test

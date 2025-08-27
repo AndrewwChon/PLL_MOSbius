@@ -32,7 +32,7 @@ C {devices/gnd.sym} 140 -80 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 140 -250 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} 140 -190 0 0 {name=p2 sig_type=std_logic lab=vssa}
 C {devices/vsource.sym} 220 -250 0 0 {name=V3
-value="PULSE(0 3.3 25n 1p 1p 25n 50n)"
+value="PULSE(0 3.3 25n 500p 500p 25n 50n)"
 savecurrent=false}
 C {devices/lab_wire.sym} 220 -190 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 140 -310 0 0 {name=p4 sig_type=std_logic lab=vdda}
@@ -41,4 +41,4 @@ C {devices/lab_wire.sym} 520 -240 0 0 {name=p1 sig_type=std_logic lab=vin}
 C {devices/lab_wire.sym} 740 -240 0 0 {name=p3 sig_type=std_logic lab=vout}
 C {devices/lab_wire.sym} 620 -140 0 0 {name=p5 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 620 -320 0 0 {name=p6 sig_type=std_logic lab=vdda}
-C {libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym} 620 -240 0 0 {name=x1}
+C {libs/core_analog/asc_delay_LD/asc_delay_LD.sym} 620 -240 0 0 {name=x1}
