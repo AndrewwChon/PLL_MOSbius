@@ -1,50 +1,18 @@
-## Overview
+## DRC
 
-This is the repository for the 2025 SSCS Chipathon RF_MOSbius team.
+Open Klayout (Terminal Emulator -> 'klayout')  
+Click 'gf180mcu PDK' -> 'Load PDK Options'  
+Change Varient: 'gf180mcu PDK' -> Klayout DRC Options -> Varient Options -> D  
+Click 'Run Klayout DRC'  
 
-## Team
+## LVS
 
-Xianglin Pu, Qizhe Wu, Jingde He, Andrew Chon
-- Graduate Students of the Analog and RF Integrated Circuits Research Lab at Columbia University in the City of New York
-
-## IIC-OSIC-TOOLS Design Project Template (GlobalFoundries 180nm)
-
-This repository is made from the project template for the IIC-OSIC-TOOLS (https://github.com/iic-jku/IIC-OSIC-TOOLS) analog design workflow, preconfigured for the GlobalFoundries 180nm PDK (gf180mcuD).
-
-## Library Structure Conventions
-
-The project follows specific naming conventions for organizing design libraries under `/designs/libs/`:
-
-### Directory Structure
-```
-/designs/libs/
-├── core_*/          # Design libraries (core functionality)
-├── tb_*/            # Testbench libraries
-└── ...
-```
-
-### Naming Conventions
-- **`core_*`**: Design libraries containing your core circuit implementations
-- **`tb_*`**: Testbench libraries containing simulation and verification setups
-
-### File Organization
-Within each library directory:
-- Each cell should have its own subdirectory: `/designs/libs/library_name/cell_name/`
-- Files within a cell directory should be prefixed with the cell name (e.g., `cell_name.sch`, `cell_name.sym`)
-- **Exception**: Testbench directories (starting with `tb_`) are exempt from the file naming prefix requirement
-
-### Validation
-Use the provided sanity check script to validate your library structure:
-```bash
-cd designs/CI
-./library_check.sh
-```
-
-This script verifies:
-- Proper directory hierarchy (no files at inappropriate levels)
-- Correct file naming conventions for design libraries
-- Exempts testbench libraries from strict naming requirements
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+In Xschem, click 'Simulation' -> 'LVS' -> 'LVS netlist + Top level is a .subskt'  
+A spice file will now be generated as {YOUR_TOP_CELLNAME}.spice  
+Open the spice file and change transistor devices from M# to XM#  
+Move the spice file to the folder containing the .gds file  
+Copy the run_lvs.sh script and the setup file in this 'tutorials' folder to the folder containing the .spice and .gds file  
+Open Terminal Emulator and 'cd' into the folder  
+Run 'chmod +x run_lvs.sh'  
+Run './run_lvs.sh {YOUR_TOP_CELLNAME}'  
+LVS clean layouts will result in a 'Circuits match uniquely' message. HOWEVER, be careful, as the 'Circuits match uniquely' message may pop up WITH a 'Property errors found' message which indicates a mismatch between spice and gds transistor / mim_caps / etc SIZES.
