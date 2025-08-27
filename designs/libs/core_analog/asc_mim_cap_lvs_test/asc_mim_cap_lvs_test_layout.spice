@@ -1,16 +1,20 @@
 * NGSPICE file created from asc_mim_cap_lvs_test.ext - technology: gf180mcuD
 
+.subckt cap_mim$2 D VSS
+X0 D VSS cap_mim_2f0_m4m5_noshield c_width=10u c_length=5u
+.ends
+
 .subckt nfet a_38_n60# a_n84_0# a_138_0# VSUBS
 X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
 .ends
 
-.subckt cap_mim$1 m4_n120_n120# m4_0_0#
-X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=10u c_length=5u
+.subckt cap_mim$1 S VSS
+X0 S VSS cap_mim_2f0_m4m5_noshield c_width=10u c_length=5u
 .ends
 
-.subckt asc_mim_cap_lvs_test vss vin
-Xnfet_0 vin m5_n376_69# m5_500_69# nfet_0/VSUBS nfet
-Xcap_mim$1_0 vss m5_500_69# cap_mim$1
-Xcap_mim$1_1 vss m5_n376_69# cap_mim$1
+.subckt asc_mim_cap_lvs_test VSS VIN
+Xcap_mim$2_0 cap_mim$2_0/D VSS cap_mim$2
+Xnfet_0 VIN cap_mim$1_0/S cap_mim$2_0/D VSS nfet
+Xcap_mim$1_0 cap_mim$1_0/S VSS cap_mim$1
 .ends
 

@@ -1,0 +1,78 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
+Flattening unmatched subcell pfet in circuit CSRVCO_20250823 (0)(2 instances)
+Flattening unmatched subcell pfet$1 in circuit CSRVCO_20250823 (0)(15 instances)
+Flattening unmatched subcell pfet$2 in circuit CSRVCO_20250823 (0)(2 instances)
+Flattening unmatched subcell nfet$1 in circuit CSRVCO_20250823 (0)(15 instances)
+Flattening unmatched subcell nfet in circuit CSRVCO_20250823 (0)(2 instances)
+Flattening unmatched subcell cap_mim$1 in circuit CSRVCO_20250823 (0)(7 instances)
+Flattening unmatched subcell nfet$2 in circuit CSRVCO_20250823 (0)(2 instances)
+Flattening unmatched subcell asc_delay in circuit CSRVCO_20250823 (1)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit CSRVCO_20250823 (1)(2 instances)
+
+Class CSRVCO_20250823 (0):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: CSRVCO_20250823                 |Circuit 2: CSRVCO_20250823                 
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (19->18)                         |pfet_03v3 (19->18)                         
+nfet_03v3 (19->18)                         |nfet_03v3 (19->18)                         
+cap_mim_2f0_m4m5_noshield (7)              |cap_mim_2f0fF (7)                          
+Number of devices: 43                      |Number of devices: 43                      
+Number of nets: 27                         |Number of nets: 27                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: CSRVCO_20250823                 |Circuit 2: CSRVCO_20250823                 
+-------------------------------------------|-------------------------------------------
+vctrl                                      |vctrl                                      
+vss                                        |vss                                        
+vosc                                       |vosc                                       
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes CSRVCO_20250823 and CSRVCO_20250823 are equivalent.
+
+Final result: Circuits match uniquely.
+.

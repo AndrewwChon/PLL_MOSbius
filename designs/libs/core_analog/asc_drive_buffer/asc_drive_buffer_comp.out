@@ -1,0 +1,63 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pfet$4 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$2 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$3 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$1 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$3 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$1 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$4 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$2 in circuit asc_drive_buffer (0)(1 instance)
+
+Class asc_drive_buffer (0):  Merged 20 parallel devices.
+Subcircuit summary:
+Circuit 1: asc_drive_buffer                |Circuit 2: asc_drive_buffer                
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (14->4)                          |pfet_03v3 (4)                              
+nfet_03v3 (14->4)                          |nfet_03v3 (4)                              
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: asc_drive_buffer                |Circuit 2: asc_drive_buffer                
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+out                                        |out                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_drive_buffer and asc_drive_buffer are equivalent.
+
+Final result: Circuits match uniquely.
+.

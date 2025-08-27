@@ -132,12 +132,6 @@ C {devices/gnd.sym} 520 -350 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} 520 -520 0 0 {name=Vdda value="PWL (0 0 1n 0 10n \{VDD\})" savecurrent=false}
 C {devices/lab_wire.sym} 520 -460 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 520 -580 0 0 {name=p8 sig_type=std_logic lab=vdda}
-C {devices/code_shown.sym} 70 -850 0 0 {name=Models only_toplevel=false
-format="tcleval( @value )"
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-"}
 C {lab_wire.sym} 1360 -640 0 0 {name=p1 sig_type=std_logic lab=down
 }
 C {lab_wire.sym} 1360 -660 0 0 {name=p2 sig_type=std_logic lab=up
@@ -196,3 +190,11 @@ C {libs/top_level/top_level_20250822/top_level_20250822.sym} 1040 -560 0 0 {name
 C {devices/vsource.sym} 630 -410 0 0 {name=V3
 value="PULSE(0 3.3 5u 5n 5n 5u 10u)"
 savecurrent=false}
+C {devices/code_shown.sym} 60 -870 0 0 {name=Models1 only_toplevel=false
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+"}

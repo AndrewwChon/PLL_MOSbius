@@ -1,0 +1,78 @@
+* NGSPICE file created from CSRVCO_20250823.ext - technology: gf180mcuD
+
+.subckt pfet w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt pfet$1 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=9.75p pd=31.3u as=9.75p ps=31.3u w=15u l=0.5u
+.ends
+
+.subckt pfet$2 w_n180_n88# a_38_n60# a_n92_0# a_138_0#
+X0 a_138_0# a_38_n60# a_n92_0# w_n180_n88# pfet_03v3 ad=9.75p pd=31.3u as=9.75p ps=31.3u w=15u l=0.5u
+.ends
+
+.subckt nfet$1 a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=3.05p pd=11.22u as=3.05p ps=11.22u w=5u l=0.5u
+.ends
+
+.subckt nfet a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt cap_mim$1 m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=10u c_length=5u
+.ends
+
+.subckt nfet$2 a_n84_0# a_38_n132# a_138_0# VSUBS
+X0 a_138_0# a_38_n132# a_n84_0# VSUBS nfet_03v3 ad=3.05p pd=11.22u as=3.05p ps=11.22u w=5u l=0.5u
+.ends
+
+.subckt CSRVCO_20250823 vctrl vosc vdd vss
+Xpfet_0 vdd vdd vosc m1_n8380_274# pfet
+Xpfet$1_10 vdd m1_n14208_3657# m1_n10810_266# m1_n11296_266# pfet$1
+Xpfet$1_6 vdd vdd m1_n12750_2729# m1_n16019_266# pfet$1
+Xpfet_1 vdd vdd m1_n8380_274# m1_n11916_1270# pfet
+Xpfet$1_11 vdd m1_n12264_2422# m1_n11916_1270# m1_n9352_266# pfet$1
+Xpfet$1_7 vdd vdd m1_n15180_4275# m1_n16019_266# pfet$1
+Xpfet$1_8 vdd m1_n13236_3035# m1_n9838_266# m1_n10324_266# pfet$1
+Xpfet$1_12 vdd m1_n14693_3963# m1_n11296_266# m1_n11782_266# pfet$1
+Xpfet$1_9 vdd m1_n12750_2729# m1_n9352_266# m1_n9838_266# pfet$1
+Xpfet$1_13 vdd m1_n13722_3340# m1_n10324_266# m1_n10810_266# pfet$1
+Xpfet$1_14 vdd m1_n15180_4275# m1_n11782_266# m1_n11916_1270# pfet$1
+Xpfet$2_0 vdd vdd vdd vdd pfet$2
+Xpfet$2_1 vdd vdd vdd vdd pfet$2
+Xnfet$1_0 m1_n9838_266# m1_n12754_674# m1_n9352_266# vss nfet$1
+Xnfet$1_1 vctrl vss m1_n12268_985# vss nfet$1
+Xnfet$1_10 m1_n9352_266# m1_n12268_985# m1_n11916_1270# vss nfet$1
+Xnfet$1_11 m1_n11916_1270# m1_n15245_186# m1_n11782_266# vss nfet$1
+Xnfet$1_2 vctrl vss m1_n14283_186# vss nfet$1
+Xnfet$1_12 m1_n11782_266# m1_n14765_186# m1_n11296_266# vss nfet$1
+Xnfet$1_3 vctrl vss m1_n13794_186# vss nfet$1
+Xnfet$1_13 m1_n11296_266# m1_n14283_186# m1_n10810_266# vss nfet$1
+Xnfet$1_4 vctrl vss m1_n13240_368# vss nfet$1
+Xnfet_0 m1_n8380_274# vss vosc vss nfet
+Xnfet$1_14 m1_n10810_266# m1_n13794_186# m1_n10324_266# vss nfet$1
+Xnfet$1_5 vctrl vss m1_n12754_674# vss nfet$1
+Xnfet_1 m1_n11916_1270# vss m1_n8380_274# vss nfet
+Xnfet$1_6 vctrl m1_n16019_266# vss vss nfet$1
+Xnfet$1_8 vctrl vss m1_n14765_186# vss nfet$1
+Xnfet$1_7 vctrl vss m1_n15245_186# vss nfet$1
+Xnfet$1_9 m1_n10324_266# m1_n13240_368# m1_n9838_266# vss nfet$1
+Xcap_mim$1_0 vss m1_n11296_266# cap_mim$1
+Xcap_mim$1_1 vss m1_n10810_266# cap_mim$1
+Xcap_mim$1_2 vss m1_n10324_266# cap_mim$1
+Xcap_mim$1_3 vss m1_n11916_1270# cap_mim$1
+Xpfet$1_0 vdd vdd m1_n12264_2422# m1_n16019_266# pfet$1
+Xcap_mim$1_4 vss m1_n9352_266# cap_mim$1
+Xpfet$1_1 vdd vdd m1_n14208_3657# m1_n16019_266# pfet$1
+Xcap_mim$1_5 vss m1_n9838_266# cap_mim$1
+Xpfet$1_2 vdd vdd m1_n13722_3340# m1_n16019_266# pfet$1
+Xpfet$1_3 vdd m1_n16019_266# vdd m1_n16019_266# pfet$1
+Xcap_mim$1_6 vss m1_n11782_266# cap_mim$1
+Xpfet$1_4 vdd vdd m1_n13236_3035# m1_n16019_266# pfet$1
+Xnfet$2_0 vss vss vss vss nfet$2
+Xpfet$1_5 vdd vdd m1_n14693_3963# m1_n16019_266# pfet$1
+Xnfet$2_1 vss vss vss vss nfet$2
+.ends
+

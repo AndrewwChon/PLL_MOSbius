@@ -1,0 +1,77 @@
+* NGSPICE file created from asc_drive_buffer.ext - technology: gf180mcuD
+
+.subckt pfet$4 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt pfet$2 a_1158_0# a_750_0# a_1058_n136# a_546_0# a_1262_n136# a_1566_0# a_954_0#
++ w_n180_n88# a_854_n136# a_n92_0# a_446_n136# a_650_n136# a_342_0# a_1466_n136# a_138_0#
++ a_38_n136# a_1362_0# a_242_n136#
+X0 a_1362_0# a_1262_n136# a_1158_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X1 a_954_0# a_854_n136# a_750_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X2 a_1566_0# a_1466_n136# a_1362_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=3.12p ps=12.52u w=12u l=0.5u
+X3 a_342_0# a_242_n136# a_138_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X4 a_546_0# a_446_n136# a_342_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X5 a_1158_0# a_1058_n136# a_954_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X6 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=7.8p ps=25.3u w=12u l=0.5u
+X7 a_750_0# a_650_n136# a_546_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+.ends
+
+.subckt nfet$3 a_750_0# a_546_0# a_446_n60# a_242_n60# a_38_n60# a_n84_0# a_342_0#
++ a_138_0# a_650_n60# VSUBS
+X0 a_342_0# a_242_n60# a_138_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X1 a_546_0# a_446_n60# a_342_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X2 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=2.44p ps=9.22u w=4u l=0.5u
+X3 a_750_0# a_650_n60# a_546_0# VSUBS nfet_03v3 ad=2.44p pd=9.22u as=1.04p ps=4.52u w=4u l=0.5u
+.ends
+
+.subckt nfet$1 a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=2.44p pd=9.22u as=2.44p ps=9.22u w=4u l=0.5u
+.ends
+
+.subckt pfet$3 a_750_0# a_546_0# w_n180_n88# a_n92_0# a_446_n136# a_650_n136# a_342_0#
++ a_138_0# a_38_n136# a_242_n136#
+X0 a_342_0# a_242_n136# a_138_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X1 a_546_0# a_446_n136# a_342_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X2 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=7.8p ps=25.3u w=12u l=0.5u
+X3 a_750_0# a_650_n136# a_546_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=3.12p ps=12.52u w=12u l=0.5u
+.ends
+
+.subckt pfet$1 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=7.8p ps=25.3u w=12u l=0.5u
+.ends
+
+.subckt nfet$4 a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt nfet$2 a_1158_0# a_750_0# a_546_0# a_446_n60# a_242_n60# a_1566_0# a_954_0#
++ a_1466_n60# a_1262_n60# a_38_n60# a_n84_0# a_1058_n60# a_854_n60# a_342_0# a_138_0#
++ a_650_n60# a_1362_0# VSUBS
+X0 a_954_0# a_854_n60# a_750_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X1 a_1566_0# a_1466_n60# a_1362_0# VSUBS nfet_03v3 ad=2.44p pd=9.22u as=1.04p ps=4.52u w=4u l=0.5u
+X2 a_342_0# a_242_n60# a_138_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X3 a_546_0# a_446_n60# a_342_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X4 a_1158_0# a_1058_n60# a_954_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X5 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=2.44p ps=9.22u w=4u l=0.5u
+X6 a_750_0# a_650_n60# a_546_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X7 a_1362_0# a_1262_n60# a_1158_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+.ends
+
+.subckt asc_drive_buffer vss in vdd out
+Xpfet$4_0 vdd vdd m1_3466_n454# in pfet$4
+Xpfet$2_0 out out m1_4274_n1060# vdd m1_4274_n1060# out vdd vdd m1_4274_n1060# out
++ m1_4274_n1060# m1_4274_n1060# out m1_4274_n1060# vdd m1_4274_n1060# vdd m1_4274_n1060#
++ pfet$2
+Xnfet$3_0 m1_4274_n1060# vss m1_4002_n1060# m1_4002_n1060# m1_4002_n1060# m1_4274_n1060#
++ m1_4274_n1060# vss m1_4002_n1060# vss nfet$3
+Xnfet$1_0 m1_3466_n454# vss m1_4002_n1060# vss nfet$1
+Xpfet$3_0 m1_4274_n1060# vdd vdd m1_4274_n1060# m1_4002_n1060# m1_4002_n1060# m1_4274_n1060#
++ vdd m1_4002_n1060# m1_4002_n1060# pfet$3
+Xpfet$1_0 vdd vdd m1_4002_n1060# m1_3466_n454# pfet$1
+Xnfet$4_0 in vss m1_3466_n454# vss nfet$4
+Xnfet$2_0 out out vss m1_4274_n1060# m1_4274_n1060# out vss m1_4274_n1060# m1_4274_n1060#
++ m1_4274_n1060# out m1_4274_n1060# m1_4274_n1060# out vss m1_4274_n1060# vss vss
++ nfet$2
+.ends
+
