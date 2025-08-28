@@ -1,0 +1,47 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 28/08/2025 02:44
+
+.SUBCKT asc_pulse_ex vss out in vdd
+M$1 \$12 in vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$2 \$2 \$12 vdd vdd pfet_03v3 L=0.5U W=12U AS=7.8P AD=7.8P PS=25.3U PD=25.3U
+M$3 vdd \$2 \$3 vdd pfet_03v3 L=0.5U W=48U AS=17.16P AD=17.16P PS=62.86U
++ PD=62.86U
+M$7 vdd \$3 \$34 vdd pfet_03v3 L=0.5U W=96U AS=29.64P AD=29.64P PS=112.94U
++ PD=112.94U
+M$15 \$13 \$34 vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$16 \$4 \$13 vdd vdd pfet_03v3 L=0.5U W=12U AS=7.8P AD=7.8P PS=25.3U PD=25.3U
+M$17 vdd \$4 \$5 vdd pfet_03v3 L=0.5U W=48U AS=17.16P AD=17.16P PS=62.86U
++ PD=62.86U
+M$21 vdd \$5 \$35 vdd pfet_03v3 L=0.5U W=96U AS=29.64P AD=29.64P PS=112.94U
++ PD=112.94U
+M$29 \$14 \$35 vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$30 \$6 \$14 vdd vdd pfet_03v3 L=0.5U W=12U AS=7.8P AD=7.8P PS=25.3U PD=25.3U
+M$31 vdd \$6 \$7 vdd pfet_03v3 L=0.5U W=48U AS=17.16P AD=17.16P PS=62.86U
++ PD=62.86U
+M$35 vdd \$7 \$36 vdd pfet_03v3 L=0.5U W=96U AS=29.64P AD=29.64P PS=112.94U
++ PD=112.94U
+M$43 \$37 in vdd vdd pfet_03v3 L=0.5U W=6U AS=2.73P AD=2.73P PS=10.82U PD=10.82U
+M$45 \$37 \$36 \$15 vdd pfet_03v3 L=0.5U W=6U AS=2.73P AD=2.73P PS=10.82U
++ PD=10.82U
+M$47 out \$15 vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$48 \$2 \$12 vss vss nfet_03v3 L=0.5U W=4U AS=2.44P AD=2.44P PS=9.22U PD=9.22U
+M$49 vss \$2 \$3 vss nfet_03v3 L=0.5U W=16U AS=5.56P AD=5.56P PS=22.78U
++ PD=22.78U
+M$53 vss \$3 \$34 vss nfet_03v3 L=0.5U W=32U AS=9.72P AD=9.72P PS=40.86U
++ PD=40.86U
+M$61 \$4 \$13 vss vss nfet_03v3 L=0.5U W=4U AS=2.44P AD=2.44P PS=9.22U PD=9.22U
+M$62 vss \$4 \$5 vss nfet_03v3 L=0.5U W=16U AS=5.56P AD=5.56P PS=22.78U
++ PD=22.78U
+M$66 vss \$5 \$35 vss nfet_03v3 L=0.5U W=32U AS=9.72P AD=9.72P PS=40.86U
++ PD=40.86U
+M$74 \$6 \$14 vss vss nfet_03v3 L=0.5U W=4U AS=2.44P AD=2.44P PS=9.22U PD=9.22U
+M$75 vss \$6 \$7 vss nfet_03v3 L=0.5U W=16U AS=5.56P AD=5.56P PS=22.78U
++ PD=22.78U
+M$79 vss \$7 \$36 vss nfet_03v3 L=0.5U W=32U AS=9.72P AD=9.72P PS=40.86U
++ PD=40.86U
+M$87 \$12 in vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$88 \$13 \$34 vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$89 \$14 \$35 vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$90 vss in \$15 vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$91 \$15 \$36 vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$92 out \$15 vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+.ENDS asc_pulse_ex

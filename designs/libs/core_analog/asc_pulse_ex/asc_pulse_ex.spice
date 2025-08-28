@@ -1,0 +1,56 @@
+** sch_path: /foss/designs/libs/core_analog/asc_pulse_ex/asc_pulse_ex.sch
+.subckt asc_pulse_ex in vss out vdd
+*.PININFO in:B vss:B vdd:B out:B
+x1 in vss net1 vdd asc_drive_buffer
+x2 net1 vss net2 vdd asc_drive_buffer
+x3 net2 vss net3 vdd asc_drive_buffer
+x5 vdd vss out in net3 asc_OR
+.ends
+
+* expanding   symbol:  libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym
+** sch_path: /foss/designs/libs/core_analog/asc_drive_buffer/asc_drive_buffer.sch
+.subckt asc_drive_buffer in vss out vdd
+*.PININFO in:B out:B vss:B vdd:B
+M1 net1 in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 net1 in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M3 net2 net1 vdd vdd pfet_03v3 L=0.5u W=12.0u nf=1 m=1
+M4 net2 net1 vss vss nfet_03v3 L=0.5u W=4.0u nf=1 m=1
+M5 net3 net2 vdd vdd pfet_03v3 L=0.5u W=48.0u nf=4 m=1
+M6 net3 net2 vss vss nfet_03v3 L=0.5u W=16.0u nf=4 m=1
+M7 out net3 vdd vdd pfet_03v3 L=0.5u W=96.0u nf=8 m=1
+M8 out net3 vss vss nfet_03v3 L=0.5u W=32.0u nf=8 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_OR/asc_OR.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_OR/asc_OR.sym
+** sch_path: /foss/designs/libs/core_analog/asc_OR/asc_OR.sch
+.subckt asc_OR VDD VSS OUT A B
+*.PININFO VDD:B A:B B:B VSS:B OUT:B
+x1 VDD VSS net1 A B asc_NOR
+x2 net1 VDD OUT VSS inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_NOR/asc_NOR.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sym
+** sch_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sch
+.subckt asc_NOR VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+M1 OUT A VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+M2 OUT B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+M3 OUT B net1 VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+M4 net1 A VDD VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/inv1u05u/inv1u05u.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
+.subckt inv1u05u in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+M1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
