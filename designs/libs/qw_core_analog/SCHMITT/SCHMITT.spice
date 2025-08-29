@@ -1,0 +1,10 @@
+** sch_path: /foss/designs/libs/qw_core_analog/SCHMITT/SCHMITT.sch
+.subckt SCHMITT IN OUT VDD VSS
+*.PININFO OUT:B IN:B VDD:B VSS:B
+XM1 OUT IN net1 VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+XM2 OUT IN net2 VDD pfet_03v3 L=0.28u W=4u nf=1 m=1
+XM3 net2 IN VDD VDD pfet_03v3 L=0.28u W=4u nf=1 m=1
+XM4 net1 IN VSS VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+XM5 VSS OUT net2 VDD pfet_03v3 L=0.28u W=2u nf=1 m=1
+XM6 VDD OUT net1 VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+.ends

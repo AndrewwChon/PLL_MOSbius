@@ -689,12 +689,12 @@ device=resistor
 m=1}
 C {capa-2.sym} 900 -180 0 0 {name=C1
 m=1
-value=10p
+value=1p
 footprint=1206
 device=polarized_capacitor}
 C {capa-2.sym} 1240 -940 0 0 {name=C5
 m=1
-value=10p
+value=1p
 footprint=1206
 device=polarized_capacitor}
 C {lab_wire.sym} 1300 -880 0 1 {name=p22 sig_type=std_logic lab=vb2}
@@ -719,7 +719,7 @@ C {lab_wire.sym} 2140 -210 0 0 {name=p50 sig_type=std_logic lab=gaten}
 C {lab_wire.sym} 2560 -210 0 0 {name=p51 sig_type=std_logic lab=gaten}
 C {capa-2.sym} 1240 -210 0 0 {name=C6
 m=1
-value=10p
+value=1p
 footprint=1206
 device=polarized_capacitor}
 C {lab_wire.sym} 1780 -470 2 1 {name=p53 sig_type=std_logic lab=vss}

@@ -1,0 +1,6 @@
+# Source the PDK xschemrc file
+source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
+
+# Set the library path so that xschem doesn't have to be launched at /foss/designs
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(DESIGNS)
+
