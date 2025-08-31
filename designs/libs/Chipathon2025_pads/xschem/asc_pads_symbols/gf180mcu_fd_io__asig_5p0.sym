@@ -1,0 +1,42 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=io
+format="@spiceprefix@name @pinlist @model"
+lvs_format="@spiceprefix@name @pinlist @model"
+template="name=IO1
+model=gf180mcu_fd_io__asig_5p0
+spiceprefix=X
+"}
+V {}
+S {}
+E {}
+L 4 -30 -20 -20 -40 {}
+L 4 -20 -40 -10 -20 {}
+L 4 -30 -20 -10 -20 {}
+L 4 -20 -20 -20 0 {}
+L 4 -20 0 -20 20 {}
+L 4 -30 20 -10 20 {}
+L 4 -20 40 -10 20 {}
+L 4 -30 20 -20 40 {}
+L 4 -30 -40 -10 -40 {}
+L 4 -30 40 -10 40 {}
+L 4 -20 -60 -20 -40 {}
+L 4 -20 40 -20 60 {}
+L 7 -20 -80 -20 -60 {}
+L 7 20 -80 20 -60 {}
+L 7 20 60 20 80 {}
+L 7 -20 60 -20 80 {}
+B 5 77.5 -2.5 82.5 2.5 {name=ASIG5V dir=inout sim_pinnumber=1}
+B 5 -22.5 -82.5 -17.5 -77.5 {name=DVDD dir=inout sim_pinnumber=2}
+B 5 -22.5 77.5 -17.5 82.5 {name=DVSS dir=inout
+sim_pinnumber=3}
+B 5 17.5 -82.5 22.5 -77.5 {name=VDD dir=inout sim_pinnumber=4}
+B 5 17.5 77.5 22.5 82.5 {name=VSS dir=inout sim_pinnumber=5}
+P 4 5 80 -60 -80 -60 -80 60 80 60 80 -60 {}
+T {@symname} -47.5 -16 0 0 0.15 0.15 {}
+T {@name} 55 -72 0 0 0.2 0.2 {}
+T {DVSS} -55 54 2 1 0.2 0.2 {}
+T {DVDD} -25 -54 0 1 0.2 0.2 {}
+T {VSS} 15 54 2 1 0.2 0.2 {}
+T {VDD} 35 -54 0 1 0.2 0.2 {}
+T {ASIG5V} 75 -4 0 1 0.2 0.2 {}
