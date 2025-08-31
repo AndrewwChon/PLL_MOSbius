@@ -1,0 +1,22 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 30/08/2025 05:41
+
+.SUBCKT Ncomp_flat vss iref out inp inn vdd
+M$1 vdd vdd vdd vdd pfet_03v3 L=0.28U W=20U AS=7.95P AD=7.95P PS=31.36U
++ PD=31.36U
+M$3 out \$10 vdd vdd pfet_03v3 L=0.28U W=40U AS=12P AD=12P PS=49.6U PD=49.6U
+M$7 \$10 \$14 vdd vdd pfet_03v3 L=0.28U W=20U AS=6P AD=6P PS=24.8U PD=24.8U
+M$11 \$14 \$14 vdd vdd pfet_03v3 L=0.28U W=20U AS=6P AD=6P PS=24.8U PD=24.8U
+M$41 vss vss vss vss nfet_03v3 L=0.28U W=4U AS=2.02P AD=2.02P PS=8.02U PD=8.02U
+M$42 iref iref vss vss nfet_03v3 L=0.28U W=16U AS=4.72P AD=4.72P PS=20.72U
++ PD=20.72U
+M$46 \$5 iref vss vss nfet_03v3 L=0.28U W=16U AS=4.72P AD=4.72P PS=20.72U
++ PD=20.72U
+M$50 out iref vss vss nfet_03v3 L=0.28U W=16U AS=4.44P AD=4.44P PS=20.44U
++ PD=20.44U
+M$67 \$5 \$5 \$5 vss nfet_03v3 L=0.28U W=16U AS=5.14P AD=5.14P PS=23.14U
++ PD=23.14U
+M$71 \$14 inn \$5 vss nfet_03v3 L=0.28U W=8U AS=2.64P AD=2.64P PS=10.64U
++ PD=10.64U
+M$73 \$10 inp \$5 vss nfet_03v3 L=0.28U W=8U AS=2.64P AD=2.64P PS=10.64U
++ PD=10.64U
+.ENDS Ncomp_flat

@@ -167,17 +167,17 @@ N 1280 -440 1300 -440 {lab=c2b}
 N 1100 -160 1120 -160 {lab=c2}
 N 1200 -160 1220 -160 {lab=c2b}
 N 1160 -320 1160 -310 {lab=osci}
-N 1160 -250 1160 -240 {lab=#net4}
+N 1160 -250 1160 -240 {lab=vss}
 N 870 -200 890 -200 {lab=vss}
 N 1010 -200 1030 -200 {lab=vdd}
 N 890 -160 910 -160 {lab=c1}
 N 990 -160 1010 -160 {lab=c1b}
-N 950 -250 950 -240 {lab=#net5}
+N 950 -250 950 -240 {lab=vss}
 N 650 -200 670 -200 {lab=vss}
 N 790 -200 810 -200 {lab=vdd}
 N 670 -160 690 -160 {lab=c0}
 N 770 -160 790 -160 {lab=c0b}
-N 730 -250 730 -240 {lab=#net6}
+N 730 -250 730 -240 {lab=vss}
 N 660 -320 1140 -320 {lab=osci}
 N 730 -320 730 -310 {lab=osci}
 N 950 -320 950 -310 {lab=osci}
@@ -192,13 +192,16 @@ N 540 -440 560 -440 {lab=c0}
 N 740 -440 760 -440 {lab=c0b}
 N 420 -570 840 -570 {lab=vdd}
 N 420 -570 420 -450 {lab=vdd}
-N 1160 -240 1160 -220 {lab=#net4}
+N 1160 -240 1160 -220 {lab=vss}
 N 1160 -100 1160 -70 {lab=vss}
-N 950 -240 950 -220 {lab=#net5}
+N 950 -240 950 -220 {lab=vss}
 N 950 -100 950 -70 {lab=vss}
 N 730 -70 860 -70 {lab=vss}
 N 730 -100 730 -70 {lab=vss}
-N 730 -240 730 -220 {lab=#net6}
+N 730 -240 730 -220 {lab=vss}
+N 1160 -220 1160 -100 {lab=vss}
+N 950 -220 950 -100 {lab=vss}
+N 730 -220 730 -100 {lab=vss}
 C {devices/code_shown.sym} 2350 -560 0 0 {name=Simulation only_toplevel=false value="
 
 .param VDD = 3.3
@@ -219,7 +222,7 @@ let vstep = 0.1
 foreach VINVAL 2.1 2.2
     alterparam Vtune = $VINVAL
     reset
-    tran 10p 200n
+    tran 10p 2u
 end
 
 write VCO0818.raw
@@ -365,6 +368,3 @@ C {lab_wire.sym} 640 -370 2 1 {name=p77 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 640 -510 0 0 {name=p78 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 550 -440 0 0 {name=p79 sig_type=std_logic lab=c0}
 C {lab_wire.sym} 750 -440 0 1 {name=p80 sig_type=std_logic lab=c0b}
-C {TG/TG.sym} 1160 -160 1 0 {name=x16}
-C {TG/TG.sym} 950 -160 1 0 {name=x8}
-C {TG/TG.sym} 730 -160 1 0 {name=x12}
