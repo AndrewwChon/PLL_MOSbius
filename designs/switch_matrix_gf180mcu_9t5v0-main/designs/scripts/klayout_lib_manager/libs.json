@@ -1,0 +1,5 @@
+{
+  "gf180mcu_fd_sc_mcu7t5v0": "example_libs/gf180mcu_fd_sc_mcu7t5v0.gds",
+  "gf180mcu_fd_sc_mcu9t5v0": "example_libs/gf180mcu_fd_sc_mcu9t5v0.gds",
+  "gf180mcu_fd_io":  "example_libs/gf180mcu_fd_io.gds"
+}

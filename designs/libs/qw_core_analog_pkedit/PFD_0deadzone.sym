@@ -1,0 +1,26 @@
+v {xschem version=3.4.7 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -76.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -72 0 0 0.2 0.2 {}
+P 4 5 130 -60 -130 -60 -130 60 130 60 130 -60 {}
+B 5 147.5 -52.5 152.5 -47.5 {name=VDD dir=inout}
+L 7 130 -50 150 -50 {}
+T {VDD} 125 -54 0 1 0.2 0.2 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=CLKref dir=inout}
+L 7 130 -30 150 -30 {}
+T {CLKref} 125 -34 0 1 0.2 0.2 {}
+B 5 147.5 -12.5 152.5 -7.5 {name=UP dir=inout}
+L 7 130 -10 150 -10 {}
+T {UP} 125 -14 0 1 0.2 0.2 {}
+B 5 147.5 7.5 152.5 12.5 {name=CLKvco dir=inout}
+L 7 130 10 150 10 {}
+T {CLKvco} 125 6 0 1 0.2 0.2 {}
+B 5 147.5 27.5 152.5 32.5 {name=DOWN dir=inout}
+L 7 130 30 150 30 {}
+T {DOWN} 125 26 0 1 0.2 0.2 {}
+B 5 147.5 47.5 152.5 52.5 {name=VSS dir=inout}
+L 7 130 50 150 50 {}
+T {VSS} 125 46 0 1 0.2 0.2 {}

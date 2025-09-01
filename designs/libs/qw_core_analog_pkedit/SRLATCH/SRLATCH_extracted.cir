@@ -1,0 +1,12 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 29/07/2025 05:44
+
+.SUBCKT SRLATCH vss qb q s r vdd
+M$1 \$20 qb vdd vdd pfet_03v3 L=0.28U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$2 q r \$20 vdd pfet_03v3 L=0.28U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$3 \$19 s vdd vdd pfet_03v3 L=0.28U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$4 qb q \$19 vdd pfet_03v3 L=0.28U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$5 q qb vss vss nfet_03v3 L=0.28U W=0.5U AS=0.305P AD=0.305P PS=2.22U PD=2.22U
+M$6 q r vss vss nfet_03v3 L=0.28U W=0.5U AS=0.305P AD=0.305P PS=2.22U PD=2.22U
+M$7 qb s vss vss nfet_03v3 L=0.28U W=0.5U AS=0.305P AD=0.305P PS=2.22U PD=2.22U
+M$8 qb q vss vss nfet_03v3 L=0.28U W=0.5U AS=0.305P AD=0.305P PS=2.22U PD=2.22U
+.ENDS SRLATCH

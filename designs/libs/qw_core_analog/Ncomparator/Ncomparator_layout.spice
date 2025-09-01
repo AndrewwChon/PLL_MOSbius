@@ -1,0 +1,92 @@
+* NGSPICE file created from Ncomparator.ext - technology: gf180mcuD
+
+.subckt pfet a_28_n136# a_254_0# a_188_n136# w_n180_n88# a_348_n136# a_414_0# a_n92_0#
++ a_94_0# a_574_0# a_508_n136#
+X0 a_254_0# a_188_n136# a_94_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_574_0# a_508_n136# a_414_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X2 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+X3 a_414_0# a_348_n136# a_254_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+.ends
+
+.subckt nfet$2 a_254_0# a_n84_0# a_94_0# a_190_460# a_30_460# VSUBS
+X0 a_254_0# a_190_460# a_94_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_94_0# a_30_460# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt pfet$2 a_254_0# a_348_560# w_n180_n88# a_414_0# a_n92_0# a_94_0# a_574_0#
++ a_508_560# a_188_560# a_28_560#
+X0 a_254_0# a_188_560# a_94_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_574_0# a_508_560# a_414_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X2 a_94_0# a_28_560# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+X3 a_414_0# a_348_560# a_254_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+.ends
+
+.subckt nfet$3 a_n84_0# a_94_0# a_30_460# VSUBS
+X0 a_94_0# a_30_460# a_n84_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt nfet$1 a_1054_0# a_734_0# a_254_0# a_350_460# a_830_460# a_894_0# a_990_460#
++ a_1214_0# a_414_0# a_n84_0# a_94_0# a_510_460# a_190_460# a_574_0# a_670_460# a_1150_460#
++ a_30_460# VSUBS
+X0 a_734_0# a_670_460# a_574_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_254_0# a_190_460# a_94_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X2 a_574_0# a_510_460# a_414_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X3 a_1054_0# a_990_460# a_894_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X4 a_894_0# a_830_460# a_734_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X5 a_94_0# a_30_460# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+X6 a_414_0# a_350_460# a_254_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X7 a_1214_0# a_1150_460# a_1054_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+.ends
+
+.subckt nfet a_254_0# a_350_460# a_414_0# a_n84_0# a_94_0# a_510_460# a_190_460# a_574_0#
++ a_30_460# VSUBS
+X0 a_254_0# a_190_460# a_94_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_574_0# a_510_460# a_414_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+X2 a_94_0# a_30_460# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+X3 a_414_0# a_350_460# a_254_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+.ends
+
+.subckt pfet$1 a_28_n136# a_254_0# a_188_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_254_0# a_188_n136# a_94_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+.ends
+
+.subckt Ncomparator iref vss vdd inn inp out
+Xpfet_0 m1_1242_549# vdd m1_1242_549# vdd m1_1242_549# m1_570_1653# vdd m1_570_1653#
++ vdd m1_1242_549# pfet
+Xnfet$2_2 m1_506_n191# m1_506_n191# m1_570_1653# inp inp vss nfet$2
+Xpfet_1 m1_1242_549# vdd m1_1242_549# vdd m1_1242_549# m1_1242_549# vdd m1_1242_549#
++ vdd m1_1242_549# pfet
+Xnfet$2_3 m1_506_n191# m1_506_n191# m1_1242_549# inn inn vss nfet$2
+Xpfet_2 m1_1242_549# vdd m1_1242_549# vdd m1_1242_549# m1_570_1653# vdd m1_570_1653#
++ vdd m1_1242_549# pfet
+Xpfet_3 m1_1242_549# vdd m1_1242_549# vdd m1_1242_549# m1_1242_549# vdd m1_1242_549#
++ vdd m1_1242_549# pfet
+Xpfet$2_0 vdd m1_570_1653# vdd out vdd out vdd m1_570_1653# m1_570_1653# m1_570_1653#
++ pfet$2
+Xpfet$2_1 vdd m1_570_1653# vdd out vdd out vdd m1_570_1653# m1_570_1653# m1_570_1653#
++ pfet$2
+Xpfet$2_2 vdd m1_570_1653# vdd out vdd out vdd m1_570_1653# m1_570_1653# m1_570_1653#
++ pfet$2
+Xpfet$2_3 vdd m1_570_1653# vdd out vdd out vdd m1_570_1653# m1_570_1653# m1_570_1653#
++ pfet$2
+Xnfet$3_0 vss vss vss vss nfet$3
+Xnfet$3_1 vss vss vss vss nfet$3
+Xnfet$1_0 out out vss iref iref vss iref vss out vss out iref iref vss iref iref iref
++ vss nfet$1
+Xnfet_0 vss iref m1_506_n191# vss m1_506_n191# iref iref vss iref vss nfet
+Xnfet_2 m1_506_n191# m1_506_n191# m1_506_n191# m1_506_n191# m1_506_n191# m1_506_n191#
++ m1_506_n191# m1_506_n191# m1_506_n191# vss nfet
+Xnfet_1 vss iref iref vss iref iref iref vss iref vss nfet
+Xnfet_3 m1_506_n191# m1_506_n191# m1_506_n191# m1_506_n191# m1_506_n191# m1_506_n191#
++ m1_506_n191# m1_506_n191# m1_506_n191# vss nfet
+Xnfet_4 vss iref iref vss iref iref iref vss iref vss nfet
+Xnfet_5 vss iref m1_506_n191# vss m1_506_n191# iref iref vss iref vss nfet
+Xpfet$1_0 vdd vdd vdd vdd vdd vdd pfet$1
+Xpfet$1_1 vdd vdd vdd vdd vdd vdd pfet$1
+Xpfet$1_3 vdd vdd vdd vdd vdd vdd pfet$1
+Xpfet$1_2 vdd vdd vdd vdd vdd vdd pfet$1
+Xnfet$2_0 m1_506_n191# m1_506_n191# m1_570_1653# inp inp vss nfet$2
+Xnfet$2_1 m1_506_n191# m1_506_n191# m1_1242_549# inn inn vss nfet$2
+.ends
+
