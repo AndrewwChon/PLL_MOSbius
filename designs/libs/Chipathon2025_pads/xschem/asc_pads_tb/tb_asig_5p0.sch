@@ -37,6 +37,10 @@ N 640 -320 640 -240 {lab=VSS}
 N 440 -240 560 -240 {lab=VDD}
 N 560 -380 560 -240 {lab=VDD}
 N 560 -420 560 -380 {lab=VDD}
+N 360 -240 440 -240 {lab=VDD}
+N 360 -320 360 -240 {lab=VDD}
+N 440 -420 440 -280 {lab=VSS}
+N 440 -280 640 -280 {lab=VSS}
 C {vsource.sym} 440 -170 0 0 {name=V2 value=3.3 savecurrent=false}
 C {vsource.sym} 640 -170 0 0 {name=V4 value=0 savecurrent=false}
 C {lab_wire.sym} 440 -240 0 0 {name=p2 sig_type=std_logic lab=VDD}
@@ -63,6 +67,8 @@ C {devices/code_shown.sym} 1540 -550 0 0 {name=s1
 only_toplevel=false
 value="
 
+.options method=gear
+
 .control
 set filetype=raw
 tran 1n 1u
@@ -80,5 +86,9 @@ C {libs/Chipathon2025_pads/xschem/asc_pads_symbols/gf180mcu_fd_io__asig_5p0.sym}
 C {libs/core_analog/CSRVCO_20250823/CSRVCO_20250823.sym} 1080 -200 0 0 {name=x1}
 C {libs/Chipathon2025_pads/xschem/asc_pads_symbols/gf180mcu_fd_io__dvss.sym} 640 -400 3 1 {name=IO2
 model=gf180mcu_fd_io__dvss
+spiceprefix=X
+}
+C {libs/Chipathon2025_pads/xschem/asc_pads_symbols/gf180mcu_fd_io__dvdd.sym} 360 -400 3 1 {name=IO3
+model=gf180mcu_fd_io__dvdd
 spiceprefix=X
 }
