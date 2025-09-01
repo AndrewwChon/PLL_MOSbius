@@ -1,0 +1,16 @@
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sch
+.subckt swmatrix_Tgate control T2 T1 VDDd VSSd enable
+*.PININFO T1:B T2:B VDDd:B VSSd:B control:I enable:I
+M1 T1 gated_control T2 VSSd nfet_03v3 L=0.28u W=mn_w nf=6 m=1
+M2 T1 gated_controlb T2 VDDd pfet_03v3 L=0.28u W=mp_w nf=6 m=1
+x1 gated_control gated_controlb VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x2 control enable net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 net1 gated_control VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+**** begin user architecture code
+
+
+.param mn_w=24u
+.param mp_w=72u
+
+**** end user architecture code
+.ends

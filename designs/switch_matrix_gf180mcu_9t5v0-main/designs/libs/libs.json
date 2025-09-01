@@ -1,0 +1,5 @@
+{
+  "core_analog_unit_nmos": "/foss/designs/libs/core_analog/unit_nmos/unit_nmos.gds",
+  "core_analog_unit_pmos": "/foss/designs/libs/core_analog/unit_pmos/unit_pmos.gds",
+  "core_analog_nmos_array": "/foss/designs/libs/core_analog/nmos_array/nmos_array.gds"
+}

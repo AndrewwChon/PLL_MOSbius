@@ -1,0 +1,64 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pfet in circuit Ncomp_flat (0)(4 instances)
+Flattening unmatched subcell nfet$2 in circuit Ncomp_flat (0)(4 instances)
+Flattening unmatched subcell pfet$2 in circuit Ncomp_flat (0)(4 instances)
+Flattening unmatched subcell nfet$3 in circuit Ncomp_flat (0)(2 instances)
+Flattening unmatched subcell nfet$1 in circuit Ncomp_flat (0)(1 instance)
+Flattening unmatched subcell nfet in circuit Ncomp_flat (0)(6 instances)
+Flattening unmatched subcell pfet$1 in circuit Ncomp_flat (0)(4 instances)
+
+Class Ncomp_flat (0):  Merged 71 parallel devices.
+Subcircuit summary:
+Circuit 1: Ncomp_flat                      |Circuit 2: Ncomp_flat                      
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (40->4)                          |pfet_03v3 (12->4)                          
+nfet_03v3 (42->7)                          |nfet_03v3 (13->7)                          
+Number of devices: 11                      |Number of devices: 11                      
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Ncomp_flat                      |Circuit 2: Ncomp_flat                      
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+vss                                        |vss                                        
+inn                                        |inn                                        
+inp                                        |inp                                        
+vdd                                        |vdd                                        
+iref                                       |iref                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Ncomp_flat and Ncomp_flat are equivalent.
+
+Final result: Circuits match uniquely.
+.

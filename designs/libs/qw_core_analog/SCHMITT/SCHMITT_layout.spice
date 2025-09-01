@@ -1,0 +1,27 @@
+* NGSPICE file created from SCHMITT.ext - technology: gf180mcuD
+
+.subckt pfet a_28_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=2.6p pd=9.3u as=2.6p ps=9.3u w=4u l=0.28u
+.ends
+
+.subckt nfet$1 a_n84_0# a_94_0# a_30_460# VSUBS
+X0 a_94_0# a_30_460# a_n84_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt pfet$3 a_28_460# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_460# a_n92_0# w_n180_n88# pfet_03v3 ad=1.3p pd=5.3u as=1.3p ps=5.3u w=2u l=0.28u
+.ends
+
+.subckt nfet$2 a_30_n132# a_n84_0# a_94_0# VSUBS
+X0 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt SCHMITT IN OUT VDD VSS
+Xpfet_0 IN VDD m1_596_1544# OUT pfet
+Xpfet_1 IN VDD VDD m1_596_1544# pfet
+Xnfet$1_0 VSS m1_592_402# IN VSS nfet$1
+Xnfet$1_1 m1_592_402# OUT IN VSS nfet$1
+Xpfet$3_0 OUT VDD m1_596_1544# VSS pfet$3
+Xnfet$2_0 OUT m1_592_402# VDD VSS nfet$2
+.ends
+

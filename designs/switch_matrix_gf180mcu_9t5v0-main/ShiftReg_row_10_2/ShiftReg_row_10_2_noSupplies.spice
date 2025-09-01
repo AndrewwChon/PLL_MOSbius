@@ -1,0 +1,24 @@
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_10_2/ShiftReg_row_10_2.sch
+.subckt ShiftReg_row_10_2 Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] D_in PHI_1 PHI_2
+*.PININFO PHI_1:I PHI_2:I D_in:I Q[1:10]:O
+xFF[1] D_in Q[1] PHI_1 PHI_2 DFF_2phase_1
+xFF[2] Q[1] Q[2] PHI_1 PHI_2 DFF_2phase_1
+xFF[3] Q[2] Q[3] PHI_1 PHI_2 DFF_2phase_1
+xFF[4] Q[3] Q[4] PHI_1 PHI_2 DFF_2phase_1
+xFF[5] Q[4] Q[5] PHI_1 PHI_2 DFF_2phase_1
+xFF[6] Q[5] Q[6] PHI_1 PHI_2 DFF_2phase_1
+xFF[7] Q[6] Q[7] PHI_1 PHI_2 DFF_2phase_1
+xFF[8] Q[7] Q[8] PHI_1 PHI_2 DFF_2phase_1
+xFF[9] Q[8] Q[9] PHI_1 PHI_2 DFF_2phase_1
+xFF[10] Q[9] Q[10] PHI_1 PHI_2 DFF_2phase_1
+.ends
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sym # of pins=4
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sch
+.subckt DFF_2phase_1 D Q PHI_1 PHI_2
+*.PININFO D:I PHI_1:I PHI_2:I Q:O
+xmain D PHI_1 out_m VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+xsecondary out_m PHI_2 Q VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+.ends
+
