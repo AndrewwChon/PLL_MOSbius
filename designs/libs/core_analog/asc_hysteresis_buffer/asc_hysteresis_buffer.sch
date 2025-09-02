@@ -76,7 +76,7 @@ N 20 -400 180 -400 {lab=vdd}
 N 360 100 540 100 {lab=vdd}
 N 540 60 540 100 {lab=vdd}
 N 540 -120 540 -60 {lab=vss}
-N 460 -260 460 -0 {lab=#net2}
+N 440 -260 440 0 {lab=#net2}
 N 620 -260 620 -0 {lab=#net3}
 C {symbols/pfet_03v3.sym} 160 -320 0 0 {name=M1
 L=0.5u
@@ -194,4 +194,4 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {libs/core_analog/asc_delay/asc_delay.sym} 540 0 2 0 {name=x1}
+C {libs/core_analog/inv1u05u/inv1u05u.sym} 540 0 2 0 {name=x1}
