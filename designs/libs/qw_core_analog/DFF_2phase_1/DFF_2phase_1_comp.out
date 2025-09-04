@@ -1,0 +1,79 @@
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_05v0 are black boxes.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_05v0 and nfet_05v0 are equivalent.
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_05v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_05v0 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (8)                              |nfet_05v0 (8)                              
+pfet_05v0 (8)                              |pfet_05v0 (8)                              
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+E                                          |E                                          
+D                                          |D                                          
+Q                                          |Q                                          
+VPW                                        |VPW                                        
+VNW                                        |VNW                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__latq_1 and gf180mcu_fd_sc_mcu9t5v0__latq_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
+-------------------------------------------|-------------------------------------------
+gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        |gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
+-------------------------------------------|-------------------------------------------
+VDDd                                       |VDDd                                       
+VSSd                                       |VSSd                                       
+D                                          |D                                          
+PHI_1                                      |PHI_1                                      
+PHI_2                                      |PHI_2                                      
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DFF_2phase_1 and DFF_2phase_1 are equivalent.
+
+Final result: Circuits match uniquely.
+.

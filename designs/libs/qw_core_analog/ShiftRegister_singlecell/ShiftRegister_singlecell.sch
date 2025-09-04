@@ -33,7 +33,7 @@ N 710 -550 720 -540 {lab=vss}
 N 720 -540 720 -520 {lab=vss}
 N 610 -440 640 -440 {lab=en}
 N 610 -420 640 -420 {lab=def}
-N 760 -510 820 -510 {lab=out}
+N 760 -510 820 -510 {lab=q}
 C {vsource.sym} 160 -150 0 0 {name=V1 value=0 savecurrent=false}
 C {gnd.sym} 160 -80 0 0 {name=l1 lab=GND}
 C {vsource.sym} 160 -250 0 0 {name=V2 value=3.3 savecurrent=false}
@@ -89,8 +89,8 @@ C {lab_wire.sym} 360 -300 0 0 {name=p20 sig_type=std_logic lab=en}
 C {vsource.sym} 440 -250 0 0 {name=V6 value=3.3 savecurrent=false}
 C {lab_wire.sym} 440 -200 0 0 {name=p21 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 440 -300 0 0 {name=p22 sig_type=std_logic lab=def}
-C {Register_unitcell/Register_unitcell.sym} 700 -460 0 0 {name=x1}
 C {lab_wire.sym} 620 -440 0 0 {name=p15 sig_type=std_logic lab=en}
 C {lab_wire.sym} 620 -420 0 0 {name=p16 sig_type=std_logic lab=def}
 C {noconn.sym} 820 -510 0 1 {name=l2}
 C {lab_wire.sym} 790 -510 0 1 {name=p17 sig_type=std_logic lab=q}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 700 -460 0 0 {name=x3}
