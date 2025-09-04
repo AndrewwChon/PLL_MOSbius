@@ -1,6 +1,5 @@
-** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0-main/DFF_2phase_1/DFF_2phase_1.sch
-.include /foss/designs/switch_matrix_gf180mcu_9t5v0-main/gf180mcu_fd_sc_mcu9t5v0.spice
-.subckt DFF_2phase_1 D Q PHI_1 PHI_2 VDDd VSSd
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0-main/DFF_flatten/DFF_flatten.sch
+.subckt DFF_flatten D Q PHI_1 PHI_2 VDDd VSSd
 *.PININFO D:I PHI_1:I PHI_2:I Q:O VDDd:B VSSd:B
 * noconn VSSd
 * noconn VDDd

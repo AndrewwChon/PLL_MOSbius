@@ -95,70 +95,60 @@ N 2090 -360 2090 -260 {lab=out[8]}
 N 2310 -360 2310 -260 {lab=out[9]}
 N 2530 -360 2530 -260 {lab=out[10]}
 N 370 -410 400 -410 {lab=d}
-C {Register_unitcell/Register_unitcell.sym} 460 -360 0 0 {name=x1}
 C {lab_wire.sym} 380 -390 0 0 {name=p1 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 380 -370 0 0 {name=p2 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 380 -340 0 0 {name=p3 sig_type=std_logic lab=en}
 C {lab_wire.sym} 380 -320 0 0 {name=p4 sig_type=std_logic lab=default[1]}
 C {lab_wire.sym} 440 -440 0 0 {name=p5 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 480 -440 0 1 {name=p6 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 680 -360 0 0 {name=x2}
 C {lab_wire.sym} 600 -390 0 0 {name=p7 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 600 -370 0 0 {name=p8 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 600 -340 0 0 {name=p9 sig_type=std_logic lab=en}
 C {lab_wire.sym} 600 -320 0 0 {name=p10 sig_type=std_logic lab=default[2]}
 C {lab_wire.sym} 660 -440 0 0 {name=p11 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 700 -440 0 1 {name=p12 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 900 -360 0 0 {name=x3}
 C {lab_wire.sym} 820 -390 0 0 {name=p13 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 820 -370 0 0 {name=p14 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 820 -340 0 0 {name=p15 sig_type=std_logic lab=en}
 C {lab_wire.sym} 820 -320 0 0 {name=p16 sig_type=std_logic lab=default[3]}
 C {lab_wire.sym} 880 -440 0 0 {name=p17 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 920 -440 0 1 {name=p18 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 1120 -360 0 0 {name=x4}
 C {lab_wire.sym} 1040 -390 0 0 {name=p19 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 1040 -370 0 0 {name=p20 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 1040 -340 0 0 {name=p21 sig_type=std_logic lab=en}
 C {lab_wire.sym} 1040 -320 0 0 {name=p22 sig_type=std_logic lab=default[4]}
 C {lab_wire.sym} 1100 -440 0 0 {name=p23 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 1140 -440 0 1 {name=p24 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 1340 -360 0 0 {name=x5}
 C {lab_wire.sym} 1260 -390 0 0 {name=p25 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 1260 -370 0 0 {name=p26 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 1260 -340 0 0 {name=p27 sig_type=std_logic lab=en}
 C {lab_wire.sym} 1260 -320 0 0 {name=p28 sig_type=std_logic lab=default[5]}
 C {lab_wire.sym} 1320 -440 0 0 {name=p29 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 1360 -440 0 1 {name=p30 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 1560 -360 0 0 {name=x6}
 C {lab_wire.sym} 1480 -390 0 0 {name=p31 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 1480 -370 0 0 {name=p32 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 1480 -340 0 0 {name=p33 sig_type=std_logic lab=en}
 C {lab_wire.sym} 1480 -320 0 0 {name=p34 sig_type=std_logic lab=default[6]}
 C {lab_wire.sym} 1540 -440 0 0 {name=p35 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 1580 -440 0 1 {name=p36 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 1780 -360 0 0 {name=x7}
 C {lab_wire.sym} 1700 -390 0 0 {name=p37 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 1700 -370 0 0 {name=p38 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 1700 -340 0 0 {name=p39 sig_type=std_logic lab=en}
 C {lab_wire.sym} 1700 -320 0 0 {name=p40 sig_type=std_logic lab=default[7]}
 C {lab_wire.sym} 1760 -440 0 0 {name=p41 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 1800 -440 0 1 {name=p42 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 2000 -360 0 0 {name=x8}
 C {lab_wire.sym} 1920 -390 0 0 {name=p43 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 1920 -370 0 0 {name=p44 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 1920 -340 0 0 {name=p45 sig_type=std_logic lab=en}
 C {lab_wire.sym} 1920 -320 0 0 {name=p46 sig_type=std_logic lab=default[8]}
 C {lab_wire.sym} 1980 -440 0 0 {name=p47 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 2020 -440 0 1 {name=p48 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 2220 -360 0 0 {name=x9}
 C {lab_wire.sym} 2140 -390 0 0 {name=p49 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 2140 -370 0 0 {name=p50 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 2140 -340 0 0 {name=p51 sig_type=std_logic lab=en}
 C {lab_wire.sym} 2140 -320 0 0 {name=p52 sig_type=std_logic lab=default[9]}
 C {lab_wire.sym} 2200 -440 0 0 {name=p53 sig_type=std_logic lab=VDDd}
 C {lab_wire.sym} 2240 -440 0 1 {name=p54 sig_type=std_logic lab=VSSd}
-C {Register_unitcell/Register_unitcell.sym} 2440 -360 0 0 {name=x10}
 C {lab_wire.sym} 2360 -390 0 0 {name=p55 sig_type=std_logic lab=phi1}
 C {lab_wire.sym} 2360 -370 0 0 {name=p56 sig_type=std_logic lab=phi2}
 C {lab_wire.sym} 2360 -340 0 0 {name=p57 sig_type=std_logic lab=en}
@@ -186,3 +176,13 @@ C {lab_wire.sym} 380 -410 0 0 {name=p78 sig_type=std_logic lab=d}
 C {iopin.sym} 180 -360 0 1 {name=p79 lab=d}
 C {iopin.sym} 180 -340 0 1 {name=p80 lab=q}
 C {iopin.sym} 180 -320 0 1 {name=p81 lab=out[1:10]}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 460 -360 0 0 {name=x11}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 680 -360 0 0 {name=x1}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 900 -360 0 0 {name=x2}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 1120 -360 0 0 {name=x3}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 1340 -360 0 0 {name=x4}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 1560 -360 0 0 {name=x5}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 1780 -360 0 0 {name=x6}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 2000 -360 0 0 {name=x7}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 2220 -360 0 0 {name=x8}
+C {libs/qw_core_analog/Register_unitcell/Register_unitcell.sym} 2440 -360 0 0 {name=x9}
