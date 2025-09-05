@@ -108,7 +108,7 @@ C {devices/code_shown.sym} 225 -238.75 0 0 {name=Simulation only_toplevel=false 
 
 .control
 set filetype=raw
-tran 1n 100u
+tran 1n 200u
 write tb_top_level_20250826.raw
 .endc
 "}
