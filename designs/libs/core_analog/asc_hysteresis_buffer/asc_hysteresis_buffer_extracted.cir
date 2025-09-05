@@ -1,0 +1,18 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 02/09/2025 04:54
+
+.SUBCKT asc_hysteresis_buffer vss in vdd out
+M$1 \$5 in vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$2 \$2 \$3 vdd vdd pfet_03v3 L=0.5U W=3U AS=1.95P AD=1.95P PS=7.3U PD=7.3U
+M$3 \$2 \$5 vdd vdd pfet_03v3 L=0.5U W=12U AS=7.8P AD=7.8P PS=25.3U PD=25.3U
+M$4 vdd \$2 \$3 vdd pfet_03v3 L=0.5U W=48U AS=17.16P AD=17.16P PS=62.86U
++ PD=62.86U
+M$8 vdd \$3 out vdd pfet_03v3 L=0.5U W=96U AS=29.64P AD=29.64P PS=112.94U
++ PD=112.94U
+M$16 \$5 in vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$17 \$2 \$5 vss vss nfet_03v3 L=0.5U W=4U AS=2.44P AD=2.44P PS=9.22U PD=9.22U
+M$18 vss \$2 \$3 vss nfet_03v3 L=0.5U W=16U AS=5.56P AD=5.56P PS=22.78U
++ PD=22.78U
+M$22 \$2 \$3 vss vss nfet_03v3 L=0.5U W=1U AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$23 vss \$3 out vss nfet_03v3 L=0.5U W=32U AS=9.72P AD=9.72P PS=40.86U
++ PD=40.86U
+.ENDS asc_hysteresis_buffer

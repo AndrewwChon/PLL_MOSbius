@@ -103,6 +103,8 @@ N 1440 -360 1440 -320 {lab=vssa}
 N 1340 -320 1440 -320 {lab=vssa}
 C {devices/code_shown.sym} 225 -238.75 0 0 {name=Simulation only_toplevel=false value="
 .save v(tune) v(out) v(reference) v(up) v(down) v(xtop.int_div_out) v(xtop.int_div_in) v(xtop.dff_pfd_ref) v(xtop.dff_pfd_up) v(xtop.up_pre) v(xtop.up_post) v(xtop.down_pre) v(xtop.down_post) v(lock)
+.save v(xtop.xpfd.x1.rst) v(xtop.xpfd.x1.net2) v(xtop.xpfd.x1.net3) v(xtop.xpfd.x1.net4) v(xtop.xpfd.x1.net6)
+.save v(xtop.xpfd.x1.net5) v(xtop.xpfd.x1.Qb) v(xtop.xpfd.x1.clka) v(xtop.xpfd.x1.clkb)
 
 .control
 set filetype=raw
@@ -187,7 +189,7 @@ device=polarized_capacitor}
 C {lab_wire.sym} 1420 -320 0 0 {name=p12 sig_type=std_logic lab=vssa}
 C {noconn.sym} 1540 -860 2 0 {name=l11}
 C {devices/vsource.sym} 810 -710 0 0 {name=V3
-value="PULSE(0 3.3 5u 5n 5n 5u 10u)"
+value="PULSE(0 3.3 5u 10n 10n 5u 10u)"
 savecurrent=false}
 C {devices/code_shown.sym} 240 -1170 0 0 {name=Models1 only_toplevel=false
 format="tcleval( @value )"
