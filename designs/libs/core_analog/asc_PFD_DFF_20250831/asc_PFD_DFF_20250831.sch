@@ -15,7 +15,7 @@ N 500 -480 540 -480 {lab=up}
 N 100 -600 120 -600 {lab=up}
 N 100 -580 120 -580 {lab=down}
 N 360 -240 420 -240 {lab=vdd}
-N 360 -200 420 -200 {lab=fdiv}
+N 360 -200 420 -200 {lab=phi2d}
 N 480 -400 480 -360 {lab=vss}
 N 440 -400 440 -360 {lab=rst}
 N 460 -320 460 -280 {lab=vdd}
@@ -53,6 +53,16 @@ N 280 -440 360 -440 {lab=phi1r}
 N 280 -480 340 -480 {lab=phi2r}
 N 340 -480 340 -420 {lab=phi2r}
 N 340 -420 420 -420 {lab=phi2r}
+N -140 -240 -100 -240 {lab=fdiv}
+N 200 -220 240 -220 {lab=vdd}
+N 200 -180 240 -180 {lab=vss}
+N 200 -200 280 -200 {lab=phi2d}
+N 200 -240 260 -240 {lab=phi1d}
+N 280 -200 360 -200 {lab=phi2d}
+N 260 -240 280 -240 {lab=phi1d}
+N 280 -240 300 -240 {lab=phi1d}
+N 300 -240 300 -180 {lab=phi1d}
+N 300 -180 420 -180 {lab=phi1d}
 C {devices/iopin.sym} 100 -720 0 1 {name=p2 lab=vdd}
 C {devices/iopin.sym} 100 -700 0 1 {name=p3 lab=vss}
 C {devices/iopin.sym} 100 -660 0 1 {name=p1 lab=fref}
@@ -66,7 +76,6 @@ C {devices/lab_wire.sym} 460 -300 0 0 {name=p9 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 480 -360 0 0 {name=p10 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 480 -120 0 0 {name=p11 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} -40 -480 0 0 {name=p12 sig_type=std_logic lab=fref}
-C {devices/lab_wire.sym} 380 -200 0 0 {name=p13 sig_type=std_logic lab=fdiv}
 C {devices/lab_wire.sym} 400 -340 0 0 {name=p14 sig_type=std_logic lab=rst}
 C {devices/lab_wire.sym} 560 -480 0 0 {name=p15 sig_type=std_logic lab=up}
 C {devices/lab_wire.sym} 560 -240 0 0 {name=p16 sig_type=std_logic lab=down}
@@ -89,4 +98,10 @@ C {devices/lab_wire.sym} 320 -460 0 0 {name=p25 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 320 -420 0 0 {name=p26 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 380 -440 0 0 {name=p27 sig_type=std_logic lab=phi1r}
 C {devices/lab_wire.sym} 380 -420 0 0 {name=p28 sig_type=std_logic lab=phi2r}
-C {libs/core_analog/asc_dff_rst/asc_dff_rst.sym} 460 -220 0 0 {name=x2}
+C {libs/core_analog/qw_NOLclk/qw_NOLclk.sym} 50 -210 0 0 {name=x7}
+C {devices/lab_wire.sym} 240 -220 0 0 {name=p30 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 240 -180 0 0 {name=p31 sig_type=std_logic lab=vss}
+C {devices/lab_wire.sym} -120 -240 0 0 {name=p32 sig_type=std_logic lab=fdiv}
+C {libs/core_analog/asc_dff_rst_20250831/asc_dff_rst_20250831.sym} 460 -220 0 0 {name=x2}
+C {devices/lab_wire.sym} 280 -240 0 0 {name=p29 sig_type=std_logic lab=phi1d}
+C {devices/lab_wire.sym} 280 -200 0 0 {name=p33 sig_type=std_logic lab=phi2d}
