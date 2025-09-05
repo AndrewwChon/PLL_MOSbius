@@ -1,0 +1,122 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pfet$6 in circuit inv1u05u (0)(1 instance)
+Flattening unmatched subcell nfet$4 in circuit inv1u05u (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: inv1u05u                        |Circuit 2: inv1u05u                        
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv1u05u                        |Circuit 2: inv1u05u                        
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+VDD                                        |vdd                                        
+VSS                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv1u05u and inv1u05u are equivalent.
+Flattening unmatched subcell pfet$7 in circuit pass1u05u (0)(1 instance)
+Flattening unmatched subcell nfet$6 in circuit pass1u05u (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: pass1u05u                       |Circuit 2: pass1u05u                       
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pass1u05u                       |Circuit 2: pass1u05u                       
+-------------------------------------------|-------------------------------------------
+ins                                        |ins                                        
+ind                                        |ind                                        
+clkp                                       |clkp                                       
+VDD                                        |vdd                                        
+clkn                                       |clkn                                       
+VSS                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pass1u05u and pass1u05u are equivalent.
+Flattening unmatched subcell nfet$2 in circuit xp_programmable_basic_pump (0)(16 instances)
+Flattening unmatched subcell pfet$3 in circuit xp_programmable_basic_pump (0)(26 instances)
+Flattening unmatched subcell nfet$1$1 in circuit xp_programmable_basic_pump (0)(16 instances)
+Flattening unmatched subcell pfet$4 in circuit xp_programmable_basic_pump (0)(4 instances)
+Flattening unmatched subcell pfet$2 in circuit xp_programmable_basic_pump (0)(24 instances)
+Flattening unmatched subcell nfet$5 in circuit xp_programmable_basic_pump (0)(4 instances)
+Flattening unmatched subcell pfet$1$1 in circuit xp_programmable_basic_pump (0)(6 instances)
+Flattening unmatched subcell nfet$2$1 in circuit xp_programmable_basic_pump (0)(14 instances)
+
+Class xp_programmable_basic_pump (0):  Merged 284 parallel devices.
+Subcircuit summary:
+Circuit 1: xp_programmable_basic_pump      |Circuit 2: xp_programmable_basic_pump      
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (96->17)                         |nfet_03v3 (50->17)                         
+pfet_03v3 (220->15)                        |pfet_03v3 (60->15)                         
+inv1u05u (4)                               |inv1u05u (4)                               
+pass1u05u (8)                              |pass1u05u (8)                              
+Number of devices: 44                      |Number of devices: 44                      
+Number of nets: 34                         |Number of nets: 34                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: xp_programmable_basic_pump      |Circuit 2: xp_programmable_basic_pump      
+-------------------------------------------|-------------------------------------------
+iref                                       |iref                                       
+out                                        |out                                        
+vdd                                        |vdd                                        
+up                                         |up                                         
+s4                                         |s4                                         
+s2                                         |s2                                         
+s3                                         |s3                                         
+s1                                         |s1                                         
+down                                       |down                                       
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes xp_programmable_basic_pump and xp_programmable_basic_pump are equivalent.
+
+Final result: Circuits match uniquely.
+.

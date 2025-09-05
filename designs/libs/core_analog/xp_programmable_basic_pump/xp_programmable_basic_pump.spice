@@ -1,0 +1,68 @@
+** sch_path: /foss/designs/libs/core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sch
+.subckt xp_programmable_basic_pump vdd out vss s4 s3 s2 s1 down up iref
+*.PININFO vdd:B vss:B up:B down:B iref:B out:B s3:B s4:B s1:B s2:B
+XM6 out net5 net4 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM8 net7 up VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=1
+XM10 net6 vss VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=1
+x2 net3 vss s1 net8 s1b vdd pass1u05u
+x4 iref vss s1 net5 s1b vdd pass1u05u
+x6 s1 vdd s1b vss inv1u05u
+x7 s2 vdd s2b vss inv1u05u
+x8 s3 vdd s3b vss inv1u05u
+x9 s4 vdd s4b vss inv1u05u
+XM12 out net10 net9 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=2
+XM14 net11 up VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=2
+x12 net3 vss s2 net12 s2b vdd pass1u05u
+x14 iref vss s2 net10 s2b vdd pass1u05u
+XM16 out net14 net13 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=4
+XM18 net15 up VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=4
+x16 net3 vss s3 net16 s3b vdd pass1u05u
+x18 iref vss s3 net14 s3b vdd pass1u05u
+XM19 out net20 net19 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=8
+XM20 out net18 net17 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=8
+XM22 net19 up VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=8
+x20 net3 vss s4 net20 s4b vdd pass1u05u
+x22 iref vss s4 net18 s4b vdd pass1u05u
+XM2 iref iref net1 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM9 net3 net3 net6 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=1
+XM1 out net8 net7 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=1
+XM11 out net12 net11 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=2
+XM15 out net16 net15 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=4
+XM3 net1 vdd vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM4 net2 vdd vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM5 net3 iref net2 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM21 net4 down vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM7 net9 down vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=2
+XM13 net13 down vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=4
+XM17 net17 down vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=8
+XM23 vss vss vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=12
+XM26 net5 s1b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM29 net8 s1 VDD VDD pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM34 VDD VDD VDD VDD pfet_03v3 L=0.5u W=7.0u nf=1 m=24
+XM25 net10 s2b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM27 net14 s3b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM28 net18 s4b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM30 net12 s2 VDD VDD pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM31 net16 s3 VDD VDD pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM32 net20 s4 VDD VDD pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+* expanding   symbol:  libs/core_analog/pass1u05u/pass1u05u.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sch
+.subckt pass1u05u ind vss clkn ins clkp vdd
+*.PININFO ind:B ins:B clkn:B clkp:B vdd:B vss:B
+XM1 ind clkp ins vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 ind clkn ins vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/inv1u05u/inv1u05u.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
+.subckt inv1u05u in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+XM1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
