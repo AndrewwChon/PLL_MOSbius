@@ -6,7 +6,6 @@ S {}
 E {}
 N 330 -100 360 -100 {lab=OUT_bot}
 N 380 -240 380 -190 {lab=OUT_top_d}
-N -50 -320 100 -320 {lab=CLKB}
 N 730 -300 781.25 -300 {lab=#net1}
 N 730 -170 781.25 -170 {lab=#net2}
 N 1451.25 -220 1451.25 -170 {lab=OUT_bot_d}
@@ -60,14 +59,11 @@ N -20 -150 30 -150 {lab=CLKbuf}
 N -240 -320 -60 -320 {lab=CLKB}
 N 220 -380 220 -360 {lab=VDDd}
 N 220 -240 220 -220 {lab=VSSd}
-N 100 -320 140 -320 {lab=CLKB}
 N 260 -220 370 -220 {lab=OUT_bot_d}
 N 260 -220 260 -200 {lab=OUT_bot_d}
 N 160 -200 260 -200 {lab=OUT_bot_d}
 N 160 -220 160 -200 {lab=OUT_bot_d}
 N 100 -220 160 -220 {lab=OUT_bot_d}
-N 100 -280 100 -220 {lab=OUT_bot_d}
-N 100 -280 140 -280 {lab=OUT_bot_d}
 N 200 -180 200 -160 {lab=VDDd}
 N 200 -40 200 -20 {lab=VSSd}
 N 30 -150 60 -150 {lab=CLKbuf}
@@ -90,6 +86,12 @@ N 500 -180 500 -160 {lab=VDDd}
 N 500 -40 500 -20 {lab=VSSd}
 N 600 -170 600 -100 {lab=PHI_1}
 N 600 -170 630 -170 {lab=PHI_1}
+N 60 -220 100 -220 {lab=OUT_bot_d}
+N 60 -320 60 -220 {lab=OUT_bot_d}
+N 60 -320 140 -320 {lab=OUT_bot_d}
+N 20 -280 140 -280 {lab=CLKB}
+N 20 -320 20 -280 {lab=CLKB}
+N -50 -320 20 -320 {lab=CLKB}
 C {ipin.sym} -460 -150 0 0 {name=p1 lab=CLK}
 C {opin.sym} 650 -380 0 0 {name=p2 lab=PHI_2}
 C {lab_wire.sym} -156.25 -320 0 0 {name=p4 sig_type=std_logic lab=CLKB}

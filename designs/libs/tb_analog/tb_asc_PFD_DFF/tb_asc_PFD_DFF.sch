@@ -37,7 +37,7 @@ C {devices/gnd.sym} 120 -120 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 120 -290 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} 120 -230 0 0 {name=p2 sig_type=std_logic lab=vssa}
 C {devices/vsource.sym} 200 -290 0 0 {name=V3
-value="PULSE(0 3.3 50n 1n 1n 50n 100n)"
+value="PULSE(0 3.3 50n 10n 10n 50n 100n)"
 savecurrent=false}
 C {devices/lab_wire.sym} 200 -230 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 120 -350 0 0 {name=p4 sig_type=std_logic lab=vdda}
