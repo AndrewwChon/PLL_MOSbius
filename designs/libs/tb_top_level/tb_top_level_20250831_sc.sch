@@ -127,7 +127,7 @@ device=polarized_capacitor}
 C {lab_wire.sym} 1420 -320 0 0 {name=p12 sig_type=std_logic lab=vssa}
 C {noconn.sym} 1540 -860 2 0 {name=l11}
 C {devices/vsource.sym} 810 -710 0 0 {name=V3
-value="PULSE(0 3.3 5u 10n 10n 5u 10u)"
+value="PULSE(0 3.3 5u 1u 1u 5u 10u)"
 savecurrent=false}
 C {devices/code_shown.sym} 240 -1230 0 0 {name=Models1 only_toplevel=false
 format="tcleval( @value )"
@@ -140,15 +140,15 @@ value="
 "}
 C {libs/top_level/top_level_20250831/top_level_sc_20250831/top_level_sc_20250831.sym} 1220 -860 0 0 {name=xtop}
 C {lab_wire.sym} 920 -880 0 0 {name=p13 sig_type=std_logic lab=vssa}
-C {devices/code_shown.sym} 155 -268.75 0 0 {name=Simulation only_toplevel=false value="
-.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.int_div_out) v(xtop.int_div_in) v(xtop.dff_pfd_ref) v(xtop.dff_pfd_up) v(xtop.up_pre) v(xtop.up_post) v(xtop.down_pre) v(xtop.down_post) v(lock)
-.save v(xtop.xpfd.x1.rst) v(xtop.xpfd.x1.net2) v(xtop.xpfd.x1.net3) v(xtop.xpfd.x1.net4) v(xtop.xpfd.x1.net6)
-.save v(xtop.xpfd.x1.net5) v(xtop.xpfd.x1.Qb) v(xtop.xpfd.x1.clka) v(xtop.xpfd.x1.clkb)
+C {lab_wire.sym} 920 -860 0 0 {name=p10 sig_type=std_logic lab=vssa}
+C {devices/code_shown.sym} 135 -248.75 0 0 {name=Simulation only_toplevel=false value="
+.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.xtop_nosc.int_div_out) v(xtop.xtop_nosc.int_div_in) v(xtop.xtop_nosc.dff_pfd_ref) v(xtop.xtop_nosc.dff_pfd_up) v(xtop.xtop_nosc.up_pre) v(xtop.xtop_nosc.up_post) v(xtop.xtop_nosc.down_pre) v(xtop.xtop_nosc.down_post) v(lock)
+.save v(xtop.xtop_nosc.xpfd.x1.rst) v(xtop.xtop_nosc.xpfd.x1.net2) v(xtop.xtop_nosc.xpfd.x1.net3) v(xtop.xtop_nosc.xpfd.x1.net4) v(xtop.xtop_nosc.xpfd.x1.net6)
+.save v(xtop.xtop_nosc.xpfd.x1.net5) v(xtop.xtop_nosc.xpfd.x1.Qb) v(xtop.xtop_nosc.xpfd.x1.clka) v(xtop.xtop_nosc.xpfd.x1.clkb)
 
 .control
 set filetype=raw
 tran 1n 200u
-write tb_top_level_sc_20250831.raw
+write tb_top_level_20250831.raw
 .endc
 "}
-C {lab_wire.sym} 920 -860 0 0 {name=p10 sig_type=std_logic lab=vssa}

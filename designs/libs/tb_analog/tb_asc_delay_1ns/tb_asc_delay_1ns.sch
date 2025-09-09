@@ -23,7 +23,7 @@ C {devices/code_shown.sym} 560 -470 0 0 {name=Simulation only_toplevel=false val
 .control
 .save all
 set filetype=raw
-tran 1p 100n
+tran 1n 25u
 write sim_output.raw
 .endc
 "}
@@ -32,7 +32,7 @@ C {devices/gnd.sym} 140 -80 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 140 -250 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} 140 -190 0 0 {name=p2 sig_type=std_logic lab=vssa}
 C {devices/vsource.sym} 220 -250 0 0 {name=V3
-value="PULSE(0 3.3 25n 500p 500p 25n 50n)"
+value="PULSE(0 3.3 5u 1u 1u 5u 10u)"
 savecurrent=false}
 C {devices/lab_wire.sym} 220 -190 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 140 -310 0 0 {name=p4 sig_type=std_logic lab=vdda}
