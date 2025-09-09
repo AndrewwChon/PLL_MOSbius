@@ -356,3 +356,4 @@ C {lab_wire.sym} 1390 -980 0 0 {name=p134 sig_type=std_logic lab=dff_pfd_ps_up}
 C {lab_wire.sym} 1410 -700 0 0 {name=p135 sig_type=std_logic lab=dff_pfd_ps_down}
 C {libs/core_analog/asc_PFD_DFF_20250831/asc_PFD_DFF_20250831.sym} 1100 -680 0 0 {name=xpfd}
 C {libs/core_analog/asc_PFD_DFF_20250831/asc_PFD_DFF_20250831.sym} 1100 -920 0 0 {name=xpfd_ps}
+C {lab_wire.sym} 1240 -460 0 0 {name=p136 sig_type=std_logic lab=lock_pre}
