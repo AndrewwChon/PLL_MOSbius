@@ -14,8 +14,8 @@ x5 S0 VDD S0_B VSS inv1u05u
 ** sch_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sch
 .subckt pass1u05u ind vss clkn ins clkp vdd
 *.PININFO ind:B ins:B clkn:B clkp:B vdd:B vss:B
-XM1 ind clkp ins vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
-XM2 ind clkn ins vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M1 ind clkp ins vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 ind clkn ins vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
 .ends
 
 
@@ -24,7 +24,7 @@ XM2 ind clkn ins vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
 ** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
 .subckt inv1u05u in vdd out vss
 *.PININFO in:B out:B vss:B vdd:B
-XM1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
-XM2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+M1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
 .ends
 
