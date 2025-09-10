@@ -1,0 +1,13 @@
+** sch_path: /foss/designs/libs/core_analog/BIAS/BIAS.sch
+.subckt BIAS vdd 200p2 200p1 res 100n 200n vss
+*.PININFO res:B 100n:B 200n:B 200p1:B 200p2:B vdd:B vss:B
+M8 res res vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M1 100n res vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M2 200n res vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M3 net1 res vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M6 net1 net1 vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+M4 200p1 net1 vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+M5 200p2 net1 vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+M7 vdd vdd vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M9 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+.ends
