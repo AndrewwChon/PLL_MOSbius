@@ -1,0 +1,18 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 10/09/2025 03:15
+
+.SUBCKT BIAS vss 200p1 200p2 vdd 200n 100n res
+M$1 vdd vdd vdd vdd pfet_03v3 L=0.28U W=40U AS=13.15P AD=13.15P PS=55.52U
++ PD=55.52U
+M$5 \$5 res vdd vdd pfet_03v3 L=0.28U W=40U AS=12P AD=12P PS=49.6U PD=49.6U
+M$9 200n res vdd vdd pfet_03v3 L=0.28U W=40U AS=12P AD=12P PS=49.6U PD=49.6U
+M$13 res res vdd vdd pfet_03v3 L=0.28U W=20U AS=6P AD=6P PS=24.8U PD=24.8U
+M$17 100n res vdd vdd pfet_03v3 L=0.28U W=20U AS=6P AD=6P PS=24.8U PD=24.8U
+M$65 vss vss vss vss nfet_03v3 L=0.28U W=16U AS=5.14P AD=5.14P PS=23.14U
++ PD=23.14U
+M$69 200p2 \$5 vss vss nfet_03v3 L=0.28U W=16U AS=4.72P AD=4.72P PS=20.72U
++ PD=20.72U
+M$73 200p1 \$5 vss vss nfet_03v3 L=0.28U W=16U AS=4.72P AD=4.72P PS=20.72U
++ PD=20.72U
+M$77 \$5 \$5 vss vss nfet_03v3 L=0.28U W=16U AS=4.72P AD=4.72P PS=20.72U
++ PD=20.72U
+.ENDS BIAS

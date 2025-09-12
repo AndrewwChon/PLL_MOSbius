@@ -32,7 +32,7 @@ N 840 -400 840 -380 {lab=vssa}
 N 240 -460 240 -410 {lab=vssa}
 N 240 -580 240 -520 {lab=def}
 N 960 -500 1000 -500 {lab=fin}
-N 960 -480 1000 -480 {lab=def}
+N 960 -480 1000 -480 {lab=vssa}
 N 880 -640 880 -600 {lab=vdda}
 N 880 -400 880 -360 {lab=vssa}
 N 560 -500 600 -500 {lab=fout}
@@ -64,7 +64,7 @@ C {devices/gnd.sym} 160 -520 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 160 -690 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} 160 -630 0 0 {name=p2 sig_type=std_logic lab=vssa}
 C {devices/vsource.sym} 240 -690 0 0 {name=V3
-value="PULSE(0 3.3 0 1p 1p 5n 10n)"
+value="PULSE(0 3.3 0 10p 10p 5n 10n)"
 savecurrent=false}
 C {devices/lab_wire.sym} 240 -630 0 0 {name=p7 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 160 -750 0 0 {name=p4 sig_type=std_logic lab=vdda}
@@ -74,11 +74,10 @@ C {devices/lab_wire.sym} 880 -360 0 0 {name=p3 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 580 -500 0 0 {name=p12 sig_type=std_logic lab=fout}
 C {devices/lab_wire.sym} 1000 -500 0 0 {name=p9 sig_type=std_logic lab=fin}
 C {devices/vsource.sym} 240 -490 0 0 {name=V4
-value="PULSE(0 3.3 0 1p 1p 5n 1)"
+value="PULSE(0 3.3 0 10p 10p 5n 1)"
 savecurrent=false}
 C {devices/lab_wire.sym} 240 -430 0 0 {name=p38 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 240 -570 0 0 {name=p39 sig_type=std_logic lab=def}
-C {devices/lab_wire.sym} 1000 -480 0 0 {name=p5 sig_type=std_logic lab=def}
 C {devices/lab_wire.sym} 840 -380 0 0 {name=p6 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 820 -360 0 0 {name=p10 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} 800 -340 0 0 {name=p11 sig_type=std_logic lab=vssa}
@@ -99,3 +98,4 @@ C {devices/lab_wire.sym} 700 -760 0 0 {name=p26 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 680 -780 0 0 {name=p27 sig_type=std_logic lab=vdda}
 C {libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sym} 780 -500 0 0 {name=x1}
 C {noconn.sym} 560 -500 0 1 {name=l5}
+C {devices/lab_wire.sym} 1000 -480 0 0 {name=p5 sig_type=std_logic lab=vssa}

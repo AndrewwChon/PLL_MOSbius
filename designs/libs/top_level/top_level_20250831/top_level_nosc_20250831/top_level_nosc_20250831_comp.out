@@ -1,0 +1,734 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell pfet$24 in circuit inv1u05u (0)(1 instance)
+Flattening unmatched subcell nfet$24 in circuit inv1u05u (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: inv1u05u                        |Circuit 2: inv1u05u                        
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv1u05u                        |Circuit 2: inv1u05u                        
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+VDD                                        |vdd                                        
+VSS                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv1u05u and inv1u05u are equivalent.
+Flattening unmatched subcell pfet$23 in circuit pass1u05u (0)(1 instance)
+Flattening unmatched subcell nfet$23 in circuit pass1u05u (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: pass1u05u                       |Circuit 2: pass1u05u                       
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pass1u05u                       |Circuit 2: pass1u05u                       
+-------------------------------------------|-------------------------------------------
+ins                                        |ins                                        
+ind                                        |ind                                        
+clkp                                       |clkp                                       
+VDD                                        |vdd                                        
+clkn                                       |clkn                                       
+VSS                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pass1u05u and pass1u05u are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
+Flattening unmatched subcell pfet$4 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$2 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$3 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$1 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$3 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$1 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$4 in circuit asc_drive_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$2 in circuit asc_drive_buffer (0)(1 instance)
+
+Class asc_drive_buffer (0):  Merged 20 parallel devices.
+Subcircuit summary:
+Circuit 1: asc_drive_buffer                |Circuit 2: asc_drive_buffer                
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (14->4)                          |pfet_03v3 (4)                              
+nfet_03v3 (14->4)                          |nfet_03v3 (4)                              
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: asc_drive_buffer                |Circuit 2: asc_drive_buffer                
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+out                                        |out                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_drive_buffer and asc_drive_buffer are equivalent.
+Flattening unmatched subcell nfet$55 in circuit asc_delay (0)(2 instances)
+Flattening unmatched subcell pfet$54 in circuit asc_delay (0)(2 instances)
+
+Flattening instances of inv1u05u in cell asc_delay (1) makes a better match
+Making another compare attempt.
+
+Subcircuit summary:
+Circuit 1: asc_delay                       |Circuit 2: asc_delay                       
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: asc_delay                       |Circuit 2: asc_delay                       
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+out                                        |out                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_delay and asc_delay are equivalent.
+Flattening unmatched subcell nfet$47 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell pfet$46 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell nfet$50 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell pfet$49 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell nfet$48 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell pfet$47 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell nfet$51 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell pfet$50 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell nfet$49 in circuit asc_drive_buffer_up (0)(1 instance)
+Flattening unmatched subcell pfet$48 in circuit asc_drive_buffer_up (0)(1 instance)
+
+Class asc_drive_buffer_up (0):  Merged 20 parallel devices.
+Subcircuit summary:
+Circuit 1: asc_drive_buffer_up             |Circuit 2: asc_drive_buffer_up             
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (15->5)                          |nfet_03v3 (5)                              
+pfet_03v3 (15->5)                          |pfet_03v3 (5)                              
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: asc_drive_buffer_up             |Circuit 2: asc_drive_buffer_up             
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+out                                        |out                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_drive_buffer_up and asc_drive_buffer_up are equivalent.
+Flattening unmatched subcell nfet$79 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$93 in circuit asc_dual_psd_def_20250809 (0)(28 instances)
+Flattening unmatched subcell pfet$87 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$86 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell pfet$68 in circuit asc_dual_psd_def_20250809 (0)(36 instances)
+Flattening unmatched subcell pfet$66 in circuit asc_dual_psd_def_20250809 (0)(111 instances)
+Flattening unmatched subcell pfet$78 in circuit asc_dual_psd_def_20250809 (0)(6 instances)
+Flattening unmatched subcell nfet$91 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell pfet in circuit asc_dual_psd_def_20250809 (0)(111 instances)
+Flattening unmatched subcell nfet$103 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$71 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$77 in circuit asc_dual_psd_def_20250809 (0)(83 instances)
+Flattening unmatched subcell nfet$74 in circuit asc_dual_psd_def_20250809 (0)(83 instances)
+Flattening unmatched subcell nfet$84 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell pfet$90 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet$100 in circuit asc_dual_psd_def_20250809 (0)(12 instances)
+Flattening unmatched subcell pfet$83 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$101 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell pfet$76 in circuit asc_dual_psd_def_20250809 (0)(4 instances)
+Flattening unmatched subcell pfet$69 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$82 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet$75 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell pfet$81 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$74 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$78 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$98 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$80 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell pfet$67 in circuit asc_dual_psd_def_20250809 (0)(36 instances)
+Flattening unmatched subcell nfet$94 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell pfet$97 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell pfet$77 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet in circuit asc_dual_psd_def_20250809 (0)(28 instances)
+Flattening unmatched subcell nfet$108 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$72 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell nfet$96 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$89 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$95 in circuit asc_dual_psd_def_20250809 (0)(6 instances)
+Flattening unmatched subcell pfet$88 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$106 in circuit asc_dual_psd_def_20250809 (0)(6 instances)
+Flattening unmatched subcell pfet$70 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet$87 in circuit asc_dual_psd_def_20250809 (0)(12 instances)
+Flattening unmatched subcell pfet$93 in circuit asc_dual_psd_def_20250809 (0)(4 instances)
+Flattening unmatched subcell pfet$86 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$104 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$92 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$79 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$85 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$91 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet$81 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet$76 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell pfet$84 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$102 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$90 in circuit asc_dual_psd_def_20250809 (0)(6 instances)
+Flattening unmatched subcell nfet$83 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$82 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell pfet$75 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$99 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$80 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell nfet$109 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell pfet$73 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet$97 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$96 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$89 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$107 in circuit asc_dual_psd_def_20250809 (0)(6 instances)
+Flattening unmatched subcell nfet$95 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell nfet$88 in circuit asc_dual_psd_def_20250809 (0)(6 instances)
+Flattening unmatched subcell pfet$94 in circuit asc_dual_psd_def_20250809 (0)(4 instances)
+Flattening unmatched subcell nfet$105 in circuit asc_dual_psd_def_20250809 (0)(4 instances)
+Flattening unmatched subcell pfet$92 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$85 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell asc_OR in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_NOR in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_swallow_counter_20250809 in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_SR_latch in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_NOR in circuit asc_dual_psd_def_20250809 (1)(2 instances)
+Flattening unmatched subcell asc_9_bit_counter_20250809 in circuit asc_dual_psd_def_20250809 (1)(2 instances)
+Flattening unmatched subcell asc_XNOR in circuit asc_dual_psd_def_20250809 (1)(18 instances)
+Flattening unmatched subcell asc_dff_rst in circuit asc_dual_psd_def_20250809 (1)(18 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_dual_psd_def_20250809 (1)(36 instances)
+Flattening unmatched subcell asc_AND_9_20250809 in circuit asc_dual_psd_def_20250809 (1)(2 instances)
+Flattening unmatched subcell asc_AND in circuit asc_dual_psd_def_20250809 (1)(4 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_dual_psd_def_20250809 (1)(12 instances)
+Flattening unmatched subcell asc_NOR in circuit asc_dual_psd_def_20250809 (1)(4 instances)
+Flattening unmatched subcell asc_dual_mod_pre_2_3_20250809 in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_OR in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_NOR in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_AND in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_NAND in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_dff_rst in circuit asc_dual_psd_def_20250809 (1)(2 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_dual_psd_def_20250809 (1)(4 instances)
+
+Cell asc_dual_psd_def_20250809 (0) disconnected node: vdd
+Flattening instances of inv1u05u in cell asc_dual_psd_def_20250809 (1) makes a better match
+Flattening instances of pass1u05u in cell asc_dual_psd_def_20250809 (1) makes a better match
+Making another compare attempt.
+
+Cell asc_dual_psd_def_20250809 (0) disconnected node: vdd
+Class asc_dual_psd_def_20250809 (0):  Merged 318 parallel devices.
+Cell asc_dual_psd_def_20250809 (0) disconnected node: vdd
+Subcircuit summary:
+Circuit 1: asc_dual_psd_def_20250809       |Circuit 2: asc_dual_psd_def_20250809       
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (683->475)                       |nfet_03v3 (475)                            
+pfet_03v3 (585->475)                       |pfet_03v3 (475)                            
+Number of devices: 950                     |Number of devices: 950                     
+Number of nets: 475                        |Number of nets: 475                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port and property errors.
+pfet$96_0/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NOR:9/pfet_03v3:M3:
+ w circuit1: 1.2e-05   circuit2: 6e-06   (delta=66.7%, cutoff=1%)
+pfet$76_2/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NOR:9/pfet_03v3:M3:
+ w circuit1: 1.2e-05   circuit2: 6e-06   (delta=66.7%, cutoff=1%)
+pfet$96_1/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NOR:9/pfet_03v3:M4:
+ w circuit1: 1.2e-05   circuit2: 6e-06   (delta=66.7%, cutoff=1%)
+pfet$76_3/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NOR:9/pfet_03v3:M4:
+ w circuit1: 1.2e-05   circuit2: 6e-06   (delta=66.7%, cutoff=1%)
+pfet$90_6/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_AND:3/asc_NAND:1/pfet_03v3:M2:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$78_1/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_AND:3/asc_NAND:1/pfet_03v3:M2:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$90_0/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_AND:3/inv1u05u:2/pfet_03v3:M1:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$82_0/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_AND:3/inv1u05u:2/pfet_03v3:M1:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$90_5/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NAND:1/pfet_03v3:M2:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$78_5/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NAND:1/pfet_03v3:M2:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$90_3/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NAND:1/pfet_03v3:M4:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$78_3/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NAND:1/pfet_03v3:M4:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$78_4/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NAND:2/pfet_03v3:M4:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$90_1/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NAND:2/pfet_03v3:M4:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$90_2/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NAND:2/pfet_03v3:M2:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$78_2/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NAND:2/pfet_03v3:M2:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$90_4/pfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_AND:3/asc_NAND:1/pfet_03v3:M4:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+pfet$78_0/pfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_AND:3/asc_NAND:1/pfet_03v3:M4:
+ w circuit1: 6e-06   circuit2: 3e-06   (delta=66.7%, cutoff=1%)
+nfet$100_5/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_AND:3/asc_NAND:1/nfet_03v3:M1:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$87_7/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_AND:3/asc_NAND:1/nfet_03v3:M1:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$108_1/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NOR:9/nfet_03v3:M1:
+ w circuit1: 2e-06   circuit2: 1e-06   (delta=66.7%, cutoff=1%)
+nfet$89_1/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NOR:9/nfet_03v3:M1:
+ w circuit1: 2e-06   circuit2: 1e-06   (delta=66.7%, cutoff=1%)
+nfet$108_0/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NOR:9/nfet_03v3:M2:
+ w circuit1: 2e-06   circuit2: 1e-06   (delta=66.7%, cutoff=1%)
+nfet$89_0/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NOR:9/nfet_03v3:M2:
+ w circuit1: 2e-06   circuit2: 1e-06   (delta=66.7%, cutoff=1%)
+nfet$106_0/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_AND:3/inv1u05u:2/nfet_03v3:M2:
+ w circuit1: 2e-06   circuit2: 1e-06   (delta=66.7%, cutoff=1%)
+nfet$91_0/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_AND:3/inv1u05u:2/nfet_03v3:M2:
+ w circuit1: 2e-06   circuit2: 1e-06   (delta=66.7%, cutoff=1%)
+nfet$100_1/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NAND:1/nfet_03v3:M1:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$87_10/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NAND:1/nfet_03v3:M1:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$100_2/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NAND:2/nfet_03v3:M1:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$87_9/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NAND:2/nfet_03v3:M1:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$100_0/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_AND:3/asc_NAND:1/nfet_03v3:M3:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$87_6/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_AND:3/asc_NAND:1/nfet_03v3:M3:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$100_4/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NAND:1/nfet_03v3:M3:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$87_11/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NAND:1/nfet_03v3:M3:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$100_3/nfet_03v3:0 vs. asc_swallow_counter_20250809:2/asc_9_bit_counter_20250809:1/asc_AND_9_20250809:2/asc_NAND:2/nfet_03v3:M3:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+nfet$87_8/nfet_03v3:0 vs. asc_9_bit_counter_20250809:3/asc_AND_9_20250809:2/asc_NAND:2/nfet_03v3:M3:
+ w circuit1: 4e-06   circuit2: 2e-06   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: asc_dual_psd_def_20250809       |Circuit 2: asc_dual_psd_def_20250809       
+-------------------------------------------|-------------------------------------------
+w_n11156_26804#                            |vdd **Mismatch**                           
+define                                     |define                                     
+sd9                                        |sd9                                        
+pd9                                        |pd9                                        
+pd6                                        |pd6                                        
+sd6                                        |sd6                                        
+sd2                                        |sd2                                        
+pd2                                        |pd2                                        
+sd8                                        |sd8                                        
+pd8                                        |pd8                                        
+sd4                                        |sd4                                        
+pd4                                        |pd4                                        
+pd7                                        |pd7                                        
+sd7                                        |sd7                                        
+pd3                                        |pd3                                        
+sd3                                        |sd3                                        
+sd5                                        |sd5                                        
+pd5                                        |pd5                                        
+sd1                                        |sd1                                        
+pd1                                        |pd1                                        
+fin                                        |fin                                        
+fout                                       |fout                                       
+vss                                        |vss                                        
+vdd                                        |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for asc_dual_psd_def_20250809 and asc_dual_psd_def_20250809 altered to match.
+Device classes asc_dual_psd_def_20250809 and asc_dual_psd_def_20250809 are equivalent.
+Flattening unmatched subcell pfet$30 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$29 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$28 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$27 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$26 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$30 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$29 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$28 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$27 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$26 in circuit asc_hysteresis_buffer (0)(1 instance)
+
+Flattening instances of inv1u05u in cell asc_hysteresis_buffer (1) makes a better match
+Making another compare attempt.
+
+Class asc_hysteresis_buffer (0):  Merged 20 parallel devices.
+Subcircuit summary:
+Circuit 1: asc_hysteresis_buffer           |Circuit 2: asc_hysteresis_buffer           
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (15->5)                          |pfet_03v3 (5)                              
+nfet_03v3 (15->5)                          |nfet_03v3 (5)                              
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: asc_hysteresis_buffer           |Circuit 2: asc_hysteresis_buffer           
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+out                                        |out                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_hysteresis_buffer and asc_hysteresis_buffer are equivalent.
+Flattening unmatched subcell nfet$17 in circuit asc_lock_detector_20250826 (0)(1 instance)
+Flattening unmatched subcell pfet$8 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell pfet$16 in circuit asc_lock_detector_20250826 (0)(2 instances)
+Flattening unmatched subcell nfet$15 in circuit asc_lock_detector_20250826 (0)(3 instances)
+Flattening unmatched subcell pfet$6 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell nfet$9 in circuit asc_lock_detector_20250826 (0)(3 instances)
+Flattening unmatched subcell pfet$14 in circuit asc_lock_detector_20250826 (0)(3 instances)
+Flattening unmatched subcell nfet$13 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell nfet$7 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell pfet$12 in circuit asc_lock_detector_20250826 (0)(3 instances)
+Flattening unmatched subcell nfet$11 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell nfet$5 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell pfet$10 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell pfet$19 in circuit asc_lock_detector_20250826 (0)(1 instance)
+Flattening unmatched subcell nfet$18 in circuit asc_lock_detector_20250826 (0)(2 instances)
+Flattening unmatched subcell pfet$9 in circuit asc_lock_detector_20250826 (0)(14 instances)
+Flattening unmatched subcell pfet$17 in circuit asc_lock_detector_20250826 (0)(1 instance)
+Flattening unmatched subcell nfet$16 in circuit asc_lock_detector_20250826 (0)(2 instances)
+Flattening unmatched subcell pfet$7 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell pfet$15 in circuit asc_lock_detector_20250826 (0)(3 instances)
+Flattening unmatched subcell nfet$14 in circuit asc_lock_detector_20250826 (0)(14 instances)
+Flattening unmatched subcell pfet$5 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell nfet$8 in circuit asc_lock_detector_20250826 (0)(3 instances)
+Flattening unmatched subcell pfet$13 in circuit asc_lock_detector_20250826 (0)(3 instances)
+Flattening unmatched subcell nfet$12 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell nfet$6 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell pfet$11 in circuit asc_lock_detector_20250826 (0)(8 instances)
+Flattening unmatched subcell nfet$10 in circuit asc_lock_detector_20250826 (0)(3 instances)
+Flattening unmatched subcell nfet$19 in circuit asc_lock_detector_20250826 (0)(1 instance)
+Flattening unmatched subcell pfet$18 in circuit asc_lock_detector_20250826 (0)(2 instances)
+Flattening unmatched subcell asc_AND in circuit asc_lock_detector_20250826 (1)(1 instance)
+Flattening unmatched subcell asc_NAND in circuit asc_lock_detector_20250826 (1)(1 instance)
+Flattening unmatched subcell asc_dff_rst in circuit asc_lock_detector_20250826 (1)(2 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_lock_detector_20250826 (1)(4 instances)
+Flattening unmatched subcell asc_delay_LD in circuit asc_lock_detector_20250826 (1)(2 instances)
+Flattening unmatched subcell asc_pulse_ex in circuit asc_lock_detector_20250826 (1)(1 instance)
+Flattening unmatched subcell asc_OR in circuit asc_lock_detector_20250826 (1)(1 instance)
+Flattening unmatched subcell asc_NOR in circuit asc_lock_detector_20250826 (1)(1 instance)
+
+Flattening instances of inv1u05u in cell asc_lock_detector_20250826 (1) makes a better match
+Flattening instances of pass1u05u in cell asc_lock_detector_20250826 (1) makes a better match
+Flattening instances of asc_drive_buffer in cell asc_lock_detector_20250826 (1) makes a better match
+Making another compare attempt.
+
+Class asc_lock_detector_20250826 (0):  Merged 232 parallel devices.
+Subcircuit summary:
+Circuit 1: asc_lock_detector_20250826      |Circuit 2: asc_lock_detector_20250826      
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (200->80)                        |nfet_03v3 (80)                             
+pfet_03v3 (192->80)                        |pfet_03v3 (80)                             
+Number of devices: 160                     |Number of devices: 160                     
+Number of nets: 80                         |Number of nets: 80                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: asc_lock_detector_20250826      |Circuit 2: asc_lock_detector_20250826      
+-------------------------------------------|-------------------------------------------
+lock                                       |lock                                       
+ref                                        |ref                                        
+div                                        |div                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_lock_detector_20250826 and asc_lock_detector_20250826 are equivalent.
+Flattening unmatched subcell nfet$31 in circuit xp_3_1_MUX (0)(4 instances)
+Flattening unmatched subcell nfet$32 in circuit xp_3_1_MUX (0)(2 instances)
+Flattening unmatched subcell pfet$31 in circuit xp_3_1_MUX (0)(4 instances)
+Flattening unmatched subcell pfet$32 in circuit xp_3_1_MUX (0)(2 instances)
+
+Flattening instances of inv1u05u in cell xp_3_1_MUX (1) makes a better match
+Flattening instances of pass1u05u in cell xp_3_1_MUX (1) makes a better match
+Making another compare attempt.
+
+Subcircuit summary:
+Circuit 1: xp_3_1_MUX                      |Circuit 2: xp_3_1_MUX                      
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (6)                              |nfet_03v3 (6)                              
+pfet_03v3 (6)                              |pfet_03v3 (6)                              
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: xp_3_1_MUX                      |Circuit 2: xp_3_1_MUX                      
+-------------------------------------------|-------------------------------------------
+B_1                                        |B_1                                        
+A_1                                        |A_1                                        
+C_1                                        |C_1                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+S0                                         |S0                                         
+S1                                         |S1                                         
+OUT_1                                      |OUT_1                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes xp_3_1_MUX and xp_3_1_MUX are equivalent.
+Flattening unmatched subcell nfet$20 in circuit xp_programmable_basic_pump (0)(16 instances)
+Flattening unmatched subcell pfet$25 in circuit xp_programmable_basic_pump (0)(4 instances)
+Flattening unmatched subcell pfet$22 in circuit xp_programmable_basic_pump (0)(24 instances)
+Flattening unmatched subcell nfet$22 in circuit xp_programmable_basic_pump (0)(16 instances)
+Flattening unmatched subcell pfet$21 in circuit xp_programmable_basic_pump (0)(6 instances)
+Flattening unmatched subcell nfet$21 in circuit xp_programmable_basic_pump (0)(14 instances)
+Flattening unmatched subcell pfet$20 in circuit xp_programmable_basic_pump (0)(26 instances)
+Flattening unmatched subcell nfet$25 in circuit xp_programmable_basic_pump (0)(4 instances)
+
+Class xp_programmable_basic_pump (0):  Merged 284 parallel devices.
+Subcircuit summary:
+Circuit 1: xp_programmable_basic_pump      |Circuit 2: xp_programmable_basic_pump      
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (96->17)                         |nfet_03v3 (50->17)                         
+pfet_03v3 (220->15)                        |pfet_03v3 (60->15)                         
+inv1u05u (4)                               |inv1u05u (4)                               
+pass1u05u (8)                              |pass1u05u (8)                              
+Number of devices: 44                      |Number of devices: 44                      
+Number of nets: 34                         |Number of nets: 34                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: xp_programmable_basic_pump      |Circuit 2: xp_programmable_basic_pump      
+-------------------------------------------|-------------------------------------------
+iref                                       |iref                                       
+up                                         |up                                         
+s2                                         |s2                                         
+s3                                         |s3                                         
+s1                                         |s1                                         
+s4                                         |s4                                         
+down                                       |down                                       
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+out                                        |out                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes xp_programmable_basic_pump and xp_programmable_basic_pump are equivalent.
+Flattening unmatched subcell pfet$39 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell nfet$45 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell nfet$38 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell pfet$44 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell pfet$37 in circuit asc_PFD_DFF_20250831 (0)(2 instances)
+Flattening unmatched subcell nfet$43 in circuit asc_PFD_DFF_20250831 (0)(13 instances)
+Flattening unmatched subcell pfet$42 in circuit asc_PFD_DFF_20250831 (0)(21 instances)
+Flattening unmatched subcell nfet$36 in circuit asc_PFD_DFF_20250831 (0)(1 instance)
+Flattening unmatched subcell pfet$35 in circuit asc_PFD_DFF_20250831 (0)(5 instances)
+Flattening unmatched subcell nfet$41 in circuit asc_PFD_DFF_20250831 (0)(2 instances)
+Flattening unmatched subcell nfet$34 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell pfet$40 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell pfet$33 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell nfet$46 in circuit asc_PFD_DFF_20250831 (0)(2 instances)
+Flattening unmatched subcell pfet$45 in circuit asc_PFD_DFF_20250831 (0)(2 instances)
+Flattening unmatched subcell nfet$39 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell pfet$38 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell nfet$44 in circuit asc_PFD_DFF_20250831 (0)(2 instances)
+Flattening unmatched subcell pfet$43 in circuit asc_PFD_DFF_20250831 (0)(2 instances)
+Flattening unmatched subcell nfet$37 in circuit asc_PFD_DFF_20250831 (0)(2 instances)
+Flattening unmatched subcell pfet$36 in circuit asc_PFD_DFF_20250831 (0)(1 instance)
+Flattening unmatched subcell nfet$42 in circuit asc_PFD_DFF_20250831 (0)(8 instances)
+Flattening unmatched subcell nfet$35 in circuit asc_PFD_DFF_20250831 (0)(5 instances)
+Flattening unmatched subcell pfet$41 in circuit asc_PFD_DFF_20250831 (0)(2 instances)
+Flattening unmatched subcell pfet$34 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell nfet$40 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell nfet$33 in circuit asc_PFD_DFF_20250831 (0)(4 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_PFD_DFF_20250831 (1)(1 instance)
+Flattening unmatched subcell asc_dff_rst_20250831 in circuit asc_PFD_DFF_20250831 (1)(2 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_PFD_DFF_20250831 (1)(4 instances)
+Flattening unmatched subcell qw_NOLclk in circuit asc_PFD_DFF_20250831 (1)(2 instances)
+Flattening unmatched subcell SmallW_Linv in circuit asc_PFD_DFF_20250831 (1)(4 instances)
+Flattening unmatched subcell SmallW_Linv_2 in circuit asc_PFD_DFF_20250831 (1)(8 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_PFD_DFF_20250831 (1)(4 instances)
+
+Flattening instances of asc_delay in cell asc_PFD_DFF_20250831 (1) makes a better match
+Flattening instances of inv1u05u in cell asc_PFD_DFF_20250831 (1) makes a better match
+Flattening instances of pass1u05u in cell asc_PFD_DFF_20250831 (1) makes a better match
+Making another compare attempt.
+
+Class asc_PFD_DFF_20250831 (0):  Merged 18 parallel devices.
+Subcircuit summary:
+Circuit 1: asc_PFD_DFF_20250831            |Circuit 2: asc_PFD_DFF_20250831            
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (59)                             |pfet_03v3 (59)                             
+nfet_03v3 (77->59)                         |nfet_03v3 (59)                             
+Number of devices: 118                     |Number of devices: 118                     
+Number of nets: 59                         |Number of nets: 59                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: asc_PFD_DFF_20250831            |Circuit 2: asc_PFD_DFF_20250831            
+-------------------------------------------|-------------------------------------------
+fref                                       |fref                                       
+fdiv                                       |fdiv                                       
+vss                                        |vss                                        
+up                                         |up                                         
+down                                       |down                                       
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_PFD_DFF_20250831 and asc_PFD_DFF_20250831 are equivalent.
+Flattening unmatched subcell nfet$54 in circuit CSRVCO_20250823 (0)(2 instances)
+Flattening unmatched subcell pfet$53 in circuit CSRVCO_20250823 (0)(2 instances)
+Flattening unmatched subcell nfet$52 in circuit CSRVCO_20250823 (0)(15 instances)
+Flattening unmatched subcell pfet$51 in circuit CSRVCO_20250823 (0)(15 instances)
+Flattening unmatched subcell cap_mim in circuit CSRVCO_20250823 (0)(7 instances)
+Flattening unmatched subcell nfet$53 in circuit CSRVCO_20250823 (0)(2 instances)
+Flattening unmatched subcell pfet$52 in circuit CSRVCO_20250823 (0)(2 instances)
+
+Flattening instances of asc_delay in cell CSRVCO_20250823 (1) makes a better match
+Making another compare attempt.
+
+Class CSRVCO_20250823 (0):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: CSRVCO_20250823                 |Circuit 2: CSRVCO_20250823                 
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (19->18)                         |nfet_03v3 (19->18)                         
+pfet_03v3 (19->18)                         |pfet_03v3 (19->18)                         
+cap_mim_2f0_m4m5_noshield (7)              |cap_mim_2f0fF (7)                          
+Number of devices: 43                      |Number of devices: 43                      
+Number of nets: 27                         |Number of nets: 27                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: CSRVCO_20250823                 |Circuit 2: CSRVCO_20250823                 
+-------------------------------------------|-------------------------------------------
+vctrl                                      |vctrl                                      
+vdd                                        |vdd                                        
+vosc                                       |vosc                                       
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes CSRVCO_20250823 and CSRVCO_20250823 are equivalent.
+
+Subcircuit summary:
+Circuit 1: top_level_nosc_20250831         |Circuit 2: top_level_nosc_20250831         
+-------------------------------------------|-------------------------------------------
+asc_drive_buffer_up (1)                    |asc_drive_buffer_up (1)                    
+asc_dual_psd_def_20250809 (1)              |asc_dual_psd_def_20250809 (1)              
+asc_drive_buffer (7)                       |asc_drive_buffer (7)                       
+asc_hysteresis_buffer (1)                  |asc_hysteresis_buffer (1)                  
+asc_lock_detector_20250826 (1)             |asc_lock_detector_20250826 (1)             
+xp_3_1_MUX (6)                             |xp_3_1_MUX (6)                             
+xp_programmable_basic_pump (1)             |xp_programmable_basic_pump (1)             
+asc_delay (1)                              |asc_delay (1)                              
+asc_PFD_DFF_20250831 (2)                   |asc_PFD_DFF_20250831 (2)                   
+CSRVCO_20250823 (1)                        |CSRVCO_20250823 (1)                        
+Number of devices: 22                      |Number of devices: 22                      
+Number of nets: 66                         |Number of nets: 66                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: top_level_nosc_20250831         |Circuit 2: top_level_nosc_20250831         
+-------------------------------------------|-------------------------------------------
+mx_pfd_s0                                  |mx_pfd_s0                                  
+mx_pfd_s1                                  |mx_pfd_s1                                  
+ext_pfd_div                                |ext_pfd_div                                
+ext_pfd_up                                 |ext_pfd_up                                 
+ext_pfd_down                               |ext_pfd_down                               
+ext_pfd_ref                                |ext_pfd_ref                                
+ext_vco_out                                |ext_vco_out                                
+ext_vco_in                                 |ext_vco_in                                 
+filter_out                                 |filter_out                                 
+filter_in                                  |filter_in                                  
+cp_s4                                      |cp_s4                                      
+cp_s3                                      |cp_s3                                      
+cp_s2                                      |cp_s2                                      
+cp_s1                                      |cp_s1                                      
+i_cp_100u                                  |i_cp_100u                                  
+div_swc_s8                                 |div_swc_s8                                 
+div_swc_s7                                 |div_swc_s7                                 
+div_swc_s6                                 |div_swc_s6                                 
+div_swc_s5                                 |div_swc_s5                                 
+div_swc_s4                                 |div_swc_s4                                 
+div_swc_s3                                 |div_swc_s3                                 
+div_swc_s2                                 |div_swc_s2                                 
+div_swc_s1                                 |div_swc_s1                                 
+div_swc_s0                                 |div_swc_s0                                 
+div_def                                    |div_def                                    
+div_prc_s8                                 |div_prc_s8                                 
+div_prc_s7                                 |div_prc_s7                                 
+div_prc_s6                                 |div_prc_s6                                 
+div_prc_s5                                 |div_prc_s5                                 
+div_prc_s4                                 |div_prc_s4                                 
+div_prc_s3                                 |div_prc_s3                                 
+div_prc_s2                                 |div_prc_s2                                 
+div_prc_s1                                 |div_prc_s1                                 
+div_prc_s0                                 |div_prc_s0                                 
+div_out                                    |div_out                                    
+down                                       |down                                       
+up                                         |up                                         
+div_in                                     |div_in                                     
+out                                        |out                                        
+lock                                       |lock                                       
+ref                                        |ref                                        
+mx_vco_s0                                  |mx_vco_s0                                  
+mx_vco_s1                                  |mx_vco_s1                                  
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes top_level_nosc_20250831 and top_level_nosc_20250831 are equivalent.
+
+Final result: Circuits match uniquely.
+.
