@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 11/09/2025 00:52
+* Extracted by KLayout with GF180MCU LVS runset on : 14/09/2025 23:08
 
 .SUBCKT asc_dual_psd_def_20250809 sd9 sd8 sd7 sd6 sd5 sd4 sd3 sd2 sd1 vss fout
 + define fin pd1 pd2 pd3 pd4 pd5 pd6 pd7 pd8 pd9

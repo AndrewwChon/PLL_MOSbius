@@ -1,0 +1,173 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell nfet$4 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$30 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$2 in circuit asc_dual_psd_def_20250809 (0)(83 instances)
+Flattening unmatched subcell nfet$15 in circuit asc_dual_psd_def_20250809 (0)(83 instances)
+Flattening unmatched subcell pfet in circuit asc_dual_psd_def_20250809 (0)(36 instances)
+Flattening unmatched subcell pfet$14 in circuit asc_dual_psd_def_20250809 (0)(36 instances)
+Flattening unmatched subcell pfet$1 in circuit asc_dual_psd_def_20250809 (0)(111 instances)
+Flattening unmatched subcell pfet$27 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$8 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$19 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$23 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$31 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$18 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet$24 in circuit asc_dual_psd_def_20250809 (0)(4 instances)
+Flattening unmatched subcell nfet$17 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$18 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell pfet$23 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell pfet$8 in circuit asc_dual_psd_def_20250809 (0)(5 instances)
+Flattening unmatched subcell pfet$16 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$22 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell pfet$21 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$6 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$9 in circuit asc_dual_psd_def_20250809 (0)(10 instances)
+Flattening unmatched subcell nfet$20 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$13 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell nfet$3 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell pfet$4 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$7 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell pfet$12 in circuit asc_dual_psd_def_20250809 (0)(4 instances)
+Flattening unmatched subcell nfet$36 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell nfet$29 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell nfet$11 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell pfet$2 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell pfet$28 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$5 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$16 in circuit asc_dual_psd_def_20250809 (0)(28 instances)
+Flattening unmatched subcell pfet$10 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell nfet$34 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$21 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell nfet$27 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell pfet$26 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell pfet$15 in circuit asc_dual_psd_def_20250809 (0)(18 instances)
+Flattening unmatched subcell pfet$19 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell nfet$32 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$25 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$31 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$24 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell nfet$1 in circuit asc_dual_psd_def_20250809 (0)(28 instances)
+Flattening unmatched subcell pfet$9 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell pfet$13 in circuit asc_dual_psd_def_20250809 (0)(111 instances)
+Flattening unmatched subcell nfet$30 in circuit asc_dual_psd_def_20250809 (0)(14 instances)
+Flattening unmatched subcell pfet$17 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$22 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell pfet$7 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell nfet$14 in circuit asc_dual_psd_def_20250809 (0)(4 instances)
+Flattening unmatched subcell pfet$20 in circuit asc_dual_psd_def_20250809 (0)(5 instances)
+Flattening unmatched subcell pfet$5 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell nfet$12 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell pfet$3 in circuit asc_dual_psd_def_20250809 (0)(8 instances)
+Flattening unmatched subcell pfet$29 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$6 in circuit asc_dual_psd_def_20250809 (0)(3 instances)
+Flattening unmatched subcell pfet$11 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell nfet$35 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$28 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell nfet$10 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$33 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell nfet$26 in circuit asc_dual_psd_def_20250809 (0)(4 instances)
+Flattening unmatched subcell pfet$32 in circuit asc_dual_psd_def_20250809 (0)(1 instance)
+Flattening unmatched subcell pfet$25 in circuit asc_dual_psd_def_20250809 (0)(2 instances)
+Flattening unmatched subcell asc_OR in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_NOR in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_swallow_counter_20250809 in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_SR_latch in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_NOR in circuit asc_dual_psd_def_20250809 (1)(2 instances)
+Flattening unmatched subcell asc_9_bit_counter_20250809 in circuit asc_dual_psd_def_20250809 (1)(2 instances)
+Flattening unmatched subcell asc_XNOR in circuit asc_dual_psd_def_20250809 (1)(18 instances)
+Flattening unmatched subcell inv1u05u in circuit asc_dual_psd_def_20250809 (1)(54 instances)
+Flattening unmatched subcell asc_dff_rst in circuit asc_dual_psd_def_20250809 (1)(18 instances)
+Flattening unmatched subcell inv1u05u in circuit asc_dual_psd_def_20250809 (1)(126 instances)
+Flattening unmatched subcell pass1u05u in circuit asc_dual_psd_def_20250809 (1)(72 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_dual_psd_def_20250809 (1)(36 instances)
+Flattening unmatched subcell asc_AND_9_20250809 in circuit asc_dual_psd_def_20250809 (1)(2 instances)
+Flattening unmatched subcell asc_AND in circuit asc_dual_psd_def_20250809 (1)(4 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_dual_psd_def_20250809 (1)(12 instances)
+Flattening unmatched subcell inv1u05u in circuit asc_dual_psd_def_20250809 (1)(4 instances)
+Flattening unmatched subcell asc_NOR in circuit asc_dual_psd_def_20250809 (1)(4 instances)
+Flattening unmatched subcell asc_dual_mod_pre_2_3_20250809 in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_OR in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_NOR in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_AND in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_NAND in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit asc_dual_psd_def_20250809 (1)(1 instance)
+Flattening unmatched subcell asc_dff_rst in circuit asc_dual_psd_def_20250809 (1)(2 instances)
+Flattening unmatched subcell inv1u05u in circuit asc_dual_psd_def_20250809 (1)(14 instances)
+Flattening unmatched subcell pass1u05u in circuit asc_dual_psd_def_20250809 (1)(8 instances)
+Flattening unmatched subcell asc_NAND in circuit asc_dual_psd_def_20250809 (1)(4 instances)
+
+Class asc_dual_psd_def_20250809 (0):  Merged 266 parallel devices.
+Subcircuit summary:
+Circuit 1: asc_dual_psd_def_20250809       |Circuit 2: asc_dual_psd_def_20250809       
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (653->475)                       |nfet_03v3 (475)                            
+pfet_03v3 (563->475)                       |pfet_03v3 (475)                            
+Number of devices: 950                     |Number of devices: 950                     
+Number of nets: 475                        |Number of nets: 475                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: asc_dual_psd_def_20250809       |Circuit 2: asc_dual_psd_def_20250809       
+-------------------------------------------|-------------------------------------------
+fin                                        |fin                                        
+fout                                       |fout                                       
+vdd                                        |vdd                                        
+define                                     |define                                     
+sd9                                        |sd9                                        
+pd9                                        |pd9                                        
+pd6                                        |pd6                                        
+sd6                                        |sd6                                        
+sd2                                        |sd2                                        
+pd2                                        |pd2                                        
+sd8                                        |sd8                                        
+pd8                                        |pd8                                        
+pd4                                        |pd4                                        
+sd4                                        |sd4                                        
+pd5                                        |pd5                                        
+sd5                                        |sd5                                        
+sd1                                        |sd1                                        
+pd1                                        |pd1                                        
+pd7                                        |pd7                                        
+sd7                                        |sd7                                        
+pd3                                        |pd3                                        
+sd3                                        |sd3                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes asc_dual_psd_def_20250809 and asc_dual_psd_def_20250809 are equivalent.
+
+Final result: Circuits match uniquely.
+.
