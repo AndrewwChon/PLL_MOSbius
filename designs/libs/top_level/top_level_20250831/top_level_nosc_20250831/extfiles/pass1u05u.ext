@@ -21,25 +21,25 @@ substrate "VSS" 0 0 3512 -3265 m1 0 0 0 0 0 0 40000 1000 0 0 0 0 0 0 0 0 0 0 0 0
 cap "ins" "ind" 203.246
 cap "VDD" "ind" 9.36477
 cap "VDD" "ins" 9.36477
-cap "clkn" "pfet$23_0/a_n92_0#" 12.5989
-cap "clkp" "pfet$23_0/a_n92_0#" 14.6694
-cap "VSS" "pfet$23_0/w_n180_n88#" 4.18062
-cap "pfet$23_0/a_138_0#" "VSS" 4.95045
 cap "pfet$23_0/a_138_0#" "pfet$23_0/w_n180_n88#" 7.20184
-cap "VSS" "clkn" 21.2479
-cap "clkp" "VSS" 0.717363
-cap "pfet$23_0/a_138_0#" "clkn" 12.3807
-cap "clkp" "pfet$23_0/a_138_0#" 14.3472
-cap "clkp" "pfet$23_0/w_n180_n88#" 2.22157
-cap "clkp" "clkn" 114.773
-cap "VSS" "pfet$23_0/a_n92_0#" 4.95045
-cap "pfet$23_0/w_n180_n88#" "pfet$23_0/a_n92_0#" 7.2326
 cap "pfet$23_0/a_138_0#" "pfet$23_0/a_n92_0#" -52.9684
-cap "pfet$23_0/w_n180_n88#" "clkp" 33.6736
-cap "clkn" "pfet$23_0/w_n180_n88#" 0.209073
+cap "clkp" "clkn" 114.773
+cap "clkp" "VSS" 0.717363
+cap "clkp" "pfet$23_0/w_n180_n88#" 2.22157
+cap "clkp" "pfet$23_0/a_n92_0#" 14.6694
+cap "clkp" "pfet$23_0/a_138_0#" 14.3472
+cap "clkn" "VSS" 21.2479
+cap "pfet$23_0/a_n92_0#" "clkn" 12.5989
+cap "pfet$23_0/w_n180_n88#" "VSS" 4.18062
+cap "pfet$23_0/a_138_0#" "clkn" 12.3807
+cap "pfet$23_0/a_n92_0#" "VSS" 4.95045
+cap "pfet$23_0/a_n92_0#" "pfet$23_0/w_n180_n88#" 7.2326
+cap "pfet$23_0/a_138_0#" "VSS" 4.95045
+cap "pfet$23_0/w_n180_n88#" "VSS" -1.07956
 cap "pfet$23_0/a_138_0#" "pfet$23_0/w_n180_n88#" 20.2045
-cap "VSS" "pfet$23_0/w_n180_n88#" -1.07956
+cap "clkp" "pfet$23_0/w_n180_n88#" 33.6736
 cap "pfet$23_0/a_n92_0#" "pfet$23_0/w_n180_n88#" 20.1801
+cap "clkn" "pfet$23_0/w_n180_n88#" 0.209073
 merge "pfet$23_0/a_138_0#" "nfet$23_0/a_138_0#" -189.391 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19184 -920 0 0 0 0 0 0 0 0
 merge "nfet$23_0/a_138_0#" "ins"
 merge "pfet$23_0/w_n180_n88#" "VDD" -79.2291 0 -1072 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

@@ -10,10 +10,8 @@ T {0 1100 1000 is 200} 1060 -520 0 0 0.4 0.4 {}
 T {1 1001 0000 is 400} 1070 -1220 0 0 0.4 0.4 {}
 T {Overall division ratio: N*P + S (N=2 fixed)
 For P=400, S=200 -> expect division ratio of 1000} 560 -440 0 0 0.4 0.4 {}
-N 810 -760 810 -740 {lab=reference}
 N 700 -680 700 -650 {lab=GND}
 N 700 -760 700 -740 {lab=vssa}
-N 810 -760 940 -760 {lab=reference}
 N 700 -980 700 -850 {lab=vdda}
 N 700 -980 940 -980 {lab=vdda}
 N 700 -760 750 -760 {lab=vssa}
@@ -37,7 +35,6 @@ N 1870 -820 1870 -800 {lab=vssa}
 N 810 -680 810 -660 {lab=vssa}
 N 810 -660 810 -630 {lab=vssa}
 N 810 -630 910 -630 {lab=vssa}
-N 910 -740 910 -690 {lab=biasn_cp}
 N 910 -740 940 -740 {lab=biasn_cp}
 N 920 -900 940 -900 {lab=vssa}
 N 920 -880 940 -880 {lab=vssa}
@@ -123,6 +120,11 @@ N 1540 -1160 1540 -1140 {lab=vssa}
 N 1520 -1160 1520 -1140 {lab=vssa}
 N 1500 -1160 1500 -1140 {lab=vssa}
 N 1480 -1160 1480 -1140 {lab=vssa}
+N 910 -740 910 -690 {lab=biasn_cp}
+N 860 -760 940 -760 {lab=reference}
+N 810 -750 810 -740 {lab=#net6}
+N 860 -810 860 -760 {lab=reference}
+N 810 -810 860 -810 {lab=reference}
 C {netlist.sym} 242.5 -1022.5 0 0 {name=s1 value="
 .param VDD = 3.3
 * control is for tests when opening the loop
@@ -139,7 +141,7 @@ C {netlist.sym} 242.5 -1022.5 0 0 {name=s1 value="
 .param Rz_filter = 10k
 .param Cj_filter = 50p
 "}
-C {lab_wire.sym} 880 -760 0 0 {name=p4 sig_type=std_logic lab=reference}
+C {lab_wire.sym} 920 -760 0 0 {name=p4 sig_type=std_logic lab=reference}
 C {devices/vsource.sym} 700 -710 0 0 {name=Vssa value=0 savecurrent=false}
 C {devices/gnd.sym} 700 -650 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} 700 -820 0 0 {name=Vdda value="PWL (0 0 1n 0 10n \{VDD\})" savecurrent=false}
@@ -159,7 +161,7 @@ C {lab_wire.sym} 1870 -820 0 0 {name=p6 sig_type=std_logic lab=vssa
 C {lab_wire.sym} 920 -830 0 0 {name=p9 sig_type=std_logic lab=vssa}
 C {lab_wire.sym} 920 -860 0 0 {name=p10 sig_type=std_logic lab=vdda}
 C {lab_wire.sym} 1400 -540 0 0 {name=p11 sig_type=std_logic lab=tune}
-C {isource.sym} 910 -660 2 0 {name=I0 value=\{Iref_cp\}}
+C {isource.sym} 910 -660 0 0 {name=I0 value=\{Iref_cp\}}
 C {lab_wire.sym} 1100 -550 0 0 {name=p13 sig_type=std_logic lab=vssa}
 C {lab_wire.sym} 1120 -530 0 0 {name=p14 sig_type=std_logic lab=vdda}
 C {lab_wire.sym} 1070 -1160 0 0 {name=p15 sig_type=std_logic lab=vdda}
@@ -218,9 +220,14 @@ C {devices/code_shown.sym} 195 -268.75 0 0 {name=Simulation only_toplevel=false 
 .control
 set filetype=raw
 tran 1n 200u
-write tb_top_level_sc_20250831.raw
+write tb_top_level_sc_20250912.raw
 .endc
 "}
 C {libs/top_level/top_level_20250912/top_level_20250912_nosc/top_level_20250912_nosc.sym} 1380 -860 0 0 {name=xtop}
 C {lab_wire.sym} 1460 -560 0 0 {name=p18 sig_type=std_logic lab=vssa}
 C {lab_wire.sym} 1460 -1160 0 0 {name=p19 sig_type=std_logic lab=vssa}
+C {res.sym} 810 -780 0 0 {name=R1
+value=1
+footprint=1206
+device=resistor
+m=1}

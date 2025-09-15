@@ -49,8 +49,8 @@ N 2210 -2660 2240 -2660 {lab=ext_pfd_div}
 N 2210 -2940 2240 -2940 {lab=ext_pfd_ref}
 N 2800 -2940 2840 -2940 {lab=ext_pfd_up}
 N 2800 -2660 2840 -2660 {lab=ext_pfd_down}
-N 3520 -2780 3560 -2780 {lab=vss}
-N 3520 -2820 3520 -2780 {lab=vss}
+N 3520 -2780 3560 -2780 {lab=i_cp}
+N 3520 -2820 3520 -2780 {lab=i_cp}
 N 2970 -2880 3100 -2880 {lab=up_pre}
 N 2970 -2600 3100 -2600 {lab=down_pre}
 N 3040 -2920 3040 -2880 {lab=up_pre}
@@ -235,13 +235,15 @@ N 640 -2880 700 -2880 {lab=ref}
 N 780 -2980 780 -2940 {lab=vdd}
 N 780 -2820 780 -2780 {lab=vss}
 N 860 -2880 910 -2880 {lab=#net5}
-N 3540 -3000 3580 -3000 {lab=vss}
-N 3540 -3040 3580 -3040 {lab=vdd}
-N 3460 -3120 3460 -3060 {lab=i_cp_100u}
-N 3520 -2980 3520 -2820 {lab=vss}
-N 3480 -2980 3480 -2940 {lab=#net6}
-N 3440 -2980 3440 -2940 {lab=#net7}
-N 3400 -2980 3400 -2940 {lab=#net8}
+N 3320 -3160 3320 -3100 {lab=i_cp_100u}
+N 3320 -3100 3380 -3100 {lab=i_cp_100u}
+N 3400 -3020 3400 -2980 {lab=vdd}
+N 3440 -3020 3440 -2980 {lab=vss}
+N 3460 -3040 3520 -3040 {lab=i_cp}
+N 3520 -3040 3520 -2820 {lab=i_cp}
+N 3460 -3080 3520 -3080 {lab=#net6}
+N 3460 -3120 3520 -3120 {lab=#net7}
+N 3460 -3160 3520 -3160 {lab=#net8}
 C {devices/iopin.sym} 1700 -2560 0 1 {name=p2 lab=vdd}
 C {devices/iopin.sym} 1700 -2540 0 1 {name=p3 lab=vss}
 C {devices/iopin.sym} 3040 -3120 1 1 {name=p5 lab=up}
@@ -273,7 +275,6 @@ C {devices/iopin.sym} 2900 -2380 2 1 {name=p33 lab=lock}
 C {devices/iopin.sym} 2800 -2940 1 1 {name=p34 lab=ext_pfd_up}
 C {devices/iopin.sym} 2800 -2660 1 1 {name=p35 lab=ext_pfd_down}
 C {devices/iopin.sym} 2240 -2660 1 1 {name=p36 lab=ext_pfd_div}
-C {devices/iopin.sym} 3460 -3120 1 1 {name=p20 lab=i_cp_100u}
 C {lab_wire.sym} 3720 -2880 0 0 {name=p37 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 3800 -2580 0 0 {name=p38 sig_type=std_logic lab=vss}
 C {devices/iopin.sym} 1700 -2380 0 1 {name=p39 lab=cp_s1}
@@ -469,10 +470,11 @@ C {lab_wire.sym} 780 -2960 0 0 {name=p194 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 780 -2780 0 0 {name=p195 sig_type=std_logic lab=vss}
 C {libs/core_analog/asc_hysteresis_buffer/asc_hysteresis_buffer.sym} 780 -2880 0 0 {name=xbuf_refi}
 C {libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym} 5040 -2440 1 0 {name=xbuf_div}
-C {libs/core_analog/BIAS/BIAS.sym} 3460 -3020 1 0 {name=xbias}
-C {lab_wire.sym} 3580 -3040 0 0 {name=p196 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 3580 -3000 0 0 {name=p197 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 3520 -2880 0 0 {name=p198 sig_type=std_logic lab=i_cp}
-C {noconn.sym} 3400 -2940 0 0 {name=l4}
-C {noconn.sym} 3440 -2940 0 0 {name=l6}
-C {noconn.sym} 3480 -2940 0 0 {name=l7}
+C {libs/core_analog/BIAS/BIAS.sym} 3420 -3100 2 1 {name=xbias}
+C {devices/iopin.sym} 3320 -3160 1 1 {name=p20 lab=i_cp_100u}
+C {lab_wire.sym} 3400 -2980 0 0 {name=p196 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 3440 -2980 0 0 {name=p197 sig_type=std_logic lab=vss}
+C {lab_wire.sym} 3520 -2920 0 0 {name=p198 sig_type=std_logic lab=i_cp}
+C {noconn.sym} 3520 -3160 0 1 {name=l4}
+C {noconn.sym} 3520 -3120 0 1 {name=l6}
+C {noconn.sym} 3520 -3080 0 1 {name=l7}
