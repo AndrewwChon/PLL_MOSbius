@@ -43,6 +43,9 @@ C {netlist.sym} 122.5 -552.5 0 0 {name=s1 value="
 "}
 C {devices/code_shown.sym} 115 -468.75 0 0 {name=Simulation only_toplevel=false value="
 
+.save v(data) v(clk) v(en) v(out[1]) v(out[2]) v(out[3]) v(out[4]) v(out[5]) v(out[6])
+.save v(out[7]) v(out[50])
+
 .control
 
 alter @V3[PULSE] = [ 0 3.3 250n 1n 1n 0.498u 1u 0 ]
@@ -50,7 +53,7 @@ alter @V4[PULSE] = [ 3.3 0 1u 1n 1n 0.998u 2u 0 ]
 alter @V5[PULSE] = [ 0 3.3 49.5u 1n 1n 49.998u 100u 0 ]
 
 ** Define Simulations
-tran 1n 1u
+tran 1n 110u
 
 set filetype=raw
 write tb_scan_chain.raw

@@ -1,4 +1,4 @@
-timestamp 1585898841
+timestamp 1586653252
 version 8.3
 tech gf180mcuD
 style ngspice()
@@ -24,15 +24,15 @@ node "VDD" 30 205.427 224 1098 m1 0 0 0 0 0 0 0 0 0 0 32208 908 0 0 0 0 0 0 0 0 
 node "I" 68 349.781 168 392 m1 0 0 0 0 0 0 0 0 0 0 0 0 102840 2156 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16610 672 0 0 0 0 0 0 0 0
 node "VNW" 1034 1192.26 69 784 nw 397420 2522 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VPW" 0 0 68 -17 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VSS" "I" 120.342
-cap "ZN" "VNW" 33.0135
-cap "VDD" "VSS" 20.8123
-cap "I" "VNW" 131.909
-cap "VDD" "VNW" 89.6661
-cap "ZN" "I" 278.877
-cap "VDD" "ZN" 112.918
-cap "VDD" "I" 45.0679
-cap "VSS" "VNW" 10.5514
 cap "ZN" "VSS" 111.077
+cap "I" "VDD" 45.0679
+cap "VNW" "VDD" 89.6661
+cap "VSS" "VDD" 20.8123
+cap "VNW" "I" 131.909
+cap "ZN" "VDD" 112.918
+cap "I" "VSS" 120.342
+cap "VNW" "VSS" 10.5514
+cap "I" "ZN" 278.877
+cap "VNW" "ZN" 33.0135
 device msubckt nfet_05v0 124 69 125 70 l=120 w=264 "VPW" "I" 240 0 "VSS" 264 23232,704 "ZN" 264 23232,704
 device msubckt pfet_05v0 144 573 145 574 l=100 w=366 "VNW" "I" 200 0 "VDD" 366 32208,908 "ZN" 366 32208,908
