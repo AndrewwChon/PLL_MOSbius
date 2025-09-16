@@ -1,0 +1,29 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -160 -60 -160 80 {}
+L 4 -160 -80 -160 -60 {}
+L 4 -160 -80 160 -80 {}
+L 4 160 -80 160 60 {}
+L 4 160 60 160 80 {}
+L 4 -160 80 160 80 {}
+B 5 -2.5 -82.5 2.5 -77.5 {name=VDDd dir=inout}
+B 5 -2.5 77.5 2.5 82.5 {name=VSSd dir=inout}
+B 5 -162.5 -2.5 -157.5 2.5 {name=CLKd dir=inout}
+B 5 -162.5 37.5 -157.5 42.5 {name=ENd dir=inout}
+B 5 -162.5 -42.5 -157.5 -37.5 {name=DATAd dir=inout}
+B 5 157.5 -2.5 162.5 2.5 {name=out[1:50] dir=inout}
+T {@symname} -32 -6 0 0 0.2 0.2 {}
+T {@name} 125 -92 0 0 0.2 0.2 {}
+T {VDDd} 15 -74 0 1 0.2 0.2 {}
+T {VSSd} 15 56 0 1 0.2 0.2 {}
+T {CLKd} -125 -4 0 1 0.2 0.2 {}
+T {ENd} -125 36 0 1 0.2 0.2 {}
+T {DATAd} -115 -44 0 1 0.2 0.2 {}
+T {out[1:50]} 155 -4 0 1 0.2 0.2 {}
