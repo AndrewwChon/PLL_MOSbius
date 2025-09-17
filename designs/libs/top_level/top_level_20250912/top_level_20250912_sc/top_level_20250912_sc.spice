@@ -1,0 +1,677 @@
+** sch_path: /foss/designs/libs/top_level/top_level_20250912/top_level_20250912_sc/top_level_20250912_sc.sch
+.include /foss/designs/switch_matrix_gf180mcu_9t5v0-main/gf180mcu_fd_sc_mcu9t5v0.spice
+.subckt top_level_20250912_sc VDDd VSSd data clk en ref i_cp_100u ext_pfd_ref ext_pfd_div ext_pfd_up ext_pfd_down lock up down
++ filter_out ext_vco_in div_in div_out out filter_in ext_vco_out div_def
+*.PININFO VDDd:B VSSd:B ref:B i_cp_100u:B filter_in:B filter_out:B ext_pfd_ref:B ext_pfd_up:B ext_pfd_down:B ext_pfd_div:B up:B
+*+ down:B out:B lock:B ext_vco_out:B ext_vco_in:B div_out:B div_in:B div_def:B data:B clk:B en:B
+xtop_nosc VDDd VSSd out[2] out[1] out[32] out[31] out[33] out[6] out[5] out[4] out[3] out[34] out[35] out[36] out[37] out[38]
++ out[39] out[40] out[41] out[42] out[43] out[44] out[45] out[46] out[47] out[48] out[49] out[50] ref i_cp_100u ext_pfd_ref ext_pfd_div
++ ext_pfd_up ext_pfd_down lock up down filter_out ext_vco_in div_in div_out out filter_in ext_vco_out div_def out[18] out[19] out[20] out[21]
++ out[22] out[23] out[24] out[25] out[26] out[7] out[8] out[9] out[10] out[11] out[12] out[13] out[14] out[15] out[16] out[17]
++ top_level_20250912_nosc
+* noconn out[27]
+* noconn out[28]
+* noconn out[29]
+* noconn out[30]
+xsc VDDd VSSd clk en data out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] out[11] out[12] out[13] out[14]
++ out[15] out[16] out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] out[30] out[31]
++ out[32] out[33] out[34] out[35] out[36] out[37] out[38] out[39] out[40] out[41] out[42] out[43] out[44] out[45] out[46] out[47] out[48]
++ out[49] out[50] scan_chain
+.ends
+
+* expanding   symbol:  libs/top_level/top_level_20250912/top_level_20250912_nosc/top_level_20250912_nosc.sym # of pins=65
+** sym_path: /foss/designs/libs/top_level/top_level_20250912/top_level_20250912_nosc/top_level_20250912_nosc.sym
+** sch_path: /foss/designs/libs/top_level/top_level_20250912/top_level_20250912_nosc/top_level_20250912_nosc.sch
+.subckt top_level_20250912_nosc vdd vss mx_pfd_s0 mx_pfd_s1 mx_vco_s0 mx_vco_s1 div_swc_s8 cp_s1 cp_s2 cp_s3 cp_s4 div_swc_s7
++ div_swc_s6 div_swc_s5 div_swc_s4 div_swc_s3 div_swc_s2 div_swc_s1 div_swc_s0 div_prc_s8 div_prc_s7 div_prc_s6 div_prc_s5 div_prc_s4
++ div_prc_s3 div_prc_s2 div_prc_s1 div_prc_s0 ref i_cp_100u ext_pfd_ref ext_pfd_div ext_pfd_up ext_pfd_down lock up down filter_out ext_vco_in
++ div_in div_out out filter_in ext_vco_out div_def div_rpc_s8 div_rpc_s7 div_rpc_s6 div_rpc_s5 div_rpc_s4 div_rpc_s3 div_rpc_s2 div_rpc_s1
++ div_rpc_s0 mx_ref_s1 mx_ref_s0 div_rsc_s8 div_rsc_s7 div_rsc_s6 div_rsc_s5 div_rsc_s4 div_rsc_s3 div_rsc_s2 div_rsc_s1 div_rsc_s0
+*.PININFO vdd:B vss:B up:B down:B ref:B out:B mx_pfd_s0:B mx_pfd_s1:B ext_pfd_ref:B lock:B ext_pfd_up:B ext_pfd_down:B
+*+ ext_pfd_div:B cp_s1:B cp_s2:B cp_s3:B cp_s4:B ext_vco_out:B mx_vco_s0:B mx_vco_s1:B filter_in:B filter_out:B ext_vco_in:B div_swc_s0:B
+*+ div_swc_s1:B div_swc_s2:B div_swc_s3:B div_swc_s4:B div_swc_s5:B div_swc_s6:B div_swc_s7:B div_swc_s8:B div_prc_s0:B div_prc_s1:B div_prc_s2:B
+*+ div_prc_s3:B div_prc_s4:B div_prc_s5:B div_prc_s6:B div_prc_s7:B div_prc_s8:B div_out:B div_in:B div_def:B mx_ref_s0:B mx_ref_s1:B
+*+ div_rsc_s0:B div_rsc_s1:B div_rsc_s2:B div_rsc_s3:B div_rsc_s4:B div_rsc_s5:B div_rsc_s6:B div_rsc_s7:B div_rsc_s8:B div_rpc_s0:B div_rpc_s1:B
+*+ div_rpc_s2:B div_rpc_s3:B div_rpc_s4:B div_rpc_s5:B div_rpc_s6:B div_rpc_s7:B div_rpc_s8:B i_cp_100u:B
+xmux_ref ext_pfd_ref vdd vss mx_pfd_s0 mx_pfd_s1 dff_pfd_ps_ref ref_buff dff_pfd_ref xp_3_1_MUX
+xmux_div ext_pfd_div vdd vss mx_pfd_s0 mx_pfd_s1 dff_pfd_ps_div int_div_out dff_pfd_div xp_3_1_MUX
+xmux_up ext_pfd_up vdd vss mx_pfd_s0 mx_pfd_s1 dff_pfd_ps_up up_pre dff_pfd_up xp_3_1_MUX
+xmux_down ext_pfd_down vdd vss mx_pfd_s0 mx_pfd_s1 dff_pfd_ps_down down_pre dff_pfd_down xp_3_1_MUX
+xmux_vco_out ext_vco_out vdd vss mx_vco_s0 mx_vco_s1 net2 vco_out csrvco_out xp_3_1_MUX
+xmux_vco_in ext_vco_in vdd vss mx_vco_s0 mx_vco_s1 net1 filter_out csrvco_in xp_3_1_MUX
+* noconn #net1
+* noconn #net2
+xbuf_out vco_out vss out vdd asc_drive_buffer
+xdrive_down down_pre vss down_post vdd asc_drive_buffer
+xbuf_down down_pre vss down vdd asc_drive_buffer
+xbuf_up up_pre vss up vdd asc_drive_buffer
+xdrive_up up_pre vss up_post vdd asc_drive_buffer_up
+xcp vdd filter_in vss cp_s4 cp_s3 cp_s2 cp_s1 down_post up_post i_cp xp_programmable_basic_pump
+xdiv int_div_out div_swc_s8 div_swc_s7 div_swc_s6 div_swc_s5 div_swc_s4 div_swc_s3 div_swc_s2 div_swc_s1 div_swc_s0 vss int_div_in
++ vdd div_def div_prc_s8 div_prc_s7 div_prc_s6 div_prc_s5 div_prc_s4 div_prc_s3 div_prc_s2 div_prc_s1 div_prc_s0
++ asc_dual_psd_def_20250809
+xbuf_divo int_div_out vss div_out vdd asc_drive_buffer
+xbuf_divi int_div_in vss div_in vdd asc_drive_buffer
+x3 csrvco_in vdd vss csrvco_out CSRVCO_20250823
+xlock vdd lock_pre vss int_div_out ref_buff asc_lock_detector_20250826
+xbuf_lock lock_pre vss lock vdd asc_drive_buffer
+xbuf_ref ref_o vss ref_buff vdd asc_hysteresis_buffer
+xpfd vdd vss dff_pfd_down dff_pfd_up dff_pfd_ref dff_pfd_div asc_PFD_DFF_20250831
+xpfd_ps vdd vss dff_pfd_ps_up dff_pfd_ps_down dff_pfd_ps_ref dff_pfd_ps_div asc_PFD_DFF_20250831
+xmux_refi net3 vdd vss mx_ref_s0 mx_ref_s1 ref_div_i net5 ref_by xp_3_1_MUX
+xmux_refo net4 vdd vss mx_ref_s0 mx_ref_s1 ref_div_o ref_o ref_by xp_3_1_MUX
+xrefdiv ref_div_o div_rsc_s8 div_rsc_s7 div_rsc_s6 div_rsc_s5 div_rsc_s4 div_rsc_s3 div_rsc_s2 div_rsc_s1 div_rsc_s0 vss ref_div_i
++ vdd vss div_rpc_s8 div_rpc_s7 div_rpc_s6 div_rpc_s5 div_rpc_s4 div_rpc_s3 div_rpc_s2 div_rpc_s1 div_rpc_s0 asc_dual_psd_def_20250809
+* noconn #net3
+* noconn #net4
+xbuf_refi ref vss net5 vdd asc_hysteresis_buffer
+xbuf_div vco_out vss int_div_in vdd asc_drive_buffer
+xbias vdd net8 net7 i_cp_100u i_cp net6 vss BIAS
+* noconn #net8
+* noconn #net7
+* noconn #net6
+.ends
+
+
+* expanding   symbol:  libs/core_analog/scan_chain/scan_chain.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/scan_chain/scan_chain.sym
+** sch_path: /foss/designs/libs/core_analog/scan_chain/scan_chain.sch
+.subckt scan_chain VDDd VSSd CLKd ENd DATAd out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] out[11] out[12]
++ out[13] out[14] out[15] out[16] out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29]
++ out[30] out[31] out[32] out[33] out[34] out[35] out[36] out[37] out[38] out[39] out[40] out[41] out[42] out[43] out[44] out[45] out[46]
++ out[47] out[48] out[49] out[50]
+*.PININFO VDDd:B VSSd:B CLKd:B DATAd:B ENd:B out[1:50]:B
+x1 VDDd VSSd phi1 phi2 en VSSd data q0 out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] VSSd VSSd VSSd VSSd
++ VDDd VSSd VSSd VSSd VSSd SRegister_10
+x3 VDDd VSSd phi1 phi2 en VSSd q0 q1 out[11] out[12] out[13] out[14] out[15] out[16] out[17] out[18] out[19] out[20] VSSd VSSd
++ VSSd VSSd VSSd VSSd VSSd VSSd VSSd SRegister_10
+x4 VDDd VSSd phi1 phi2 en VSSd q1 q2 out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] out[30] VSSd VSSd
++ VSSd VSSd VSSd VSSd VSSd VSSd VSSd SRegister_10
+* noconn q2
+x6 VDDd VSSd phi1 phi2 en VSSd q2 q3 out[31] out[32] out[33] out[34] out[35] out[36] out[37] out[38] out[39] out[40] VSSd VSSd
++ VDDd VDDd VSSd VSSd VDDd VSSd VSSd SRegister_10
+* noconn q3
+x7 VDDd VSSd phi1 phi2 en VSSd q3 q4 out[41] out[42] out[43] out[44] out[45] out[46] out[47] out[48] out[49] out[50] VDDd VDDd
++ VSSd VSSd VDDd VSSd VSSd VSSd VSSd SRegister_10
+* noconn q4
+x8 CLKd VSSd clk VDDd asc_hysteresis_buffer
+x9 DATAd VSSd data VDDd asc_hysteresis_buffer
+x10 ENd VSSd en VDDd asc_hysteresis_buffer
+x5 clk net1 VDDd VSSd SCHMITT
+x2 phi2 net1 VDDd phi1 VSSd qw_NOLclk
+.ends
+
+
+* expanding   symbol:  libs/xp_core_analog/xp_3_1_MUX/xp_3_1_MUX.sym # of pins=8
+** sym_path: /foss/designs/libs/xp_core_analog/xp_3_1_MUX/xp_3_1_MUX.sym
+** sch_path: /foss/designs/libs/xp_core_analog/xp_3_1_MUX/xp_3_1_MUX.sch
+.subckt xp_3_1_MUX A_1 VDD VSS S0 S1 B_1 OUT_1 C_1
+*.PININFO A_1:B B_1:B C_1:B OUT_1:B VDD:B VSS:B S0:B S1:B
+x2 B_1 VSS S0_B net1 S0 VDD pass1u05u
+x1 A_1 VSS S0 net1 S0_B VDD pass1u05u
+x3 net1 VSS S1 OUT_1 S1_B VDD pass1u05u
+x4 C_1 VSS S1_B OUT_1 S1 VDD pass1u05u
+x7 S1 VDD S1_B VSS inv1u05u
+x5 S0 VDD S0_B VSS inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym
+** sch_path: /foss/designs/libs/core_analog/asc_drive_buffer/asc_drive_buffer.sch
+.subckt asc_drive_buffer in vss out vdd
+*.PININFO in:B out:B vss:B vdd:B
+XM1 net1 in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 net1 in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM3 net2 net1 vdd vdd pfet_03v3 L=0.5u W=12.0u nf=1 m=1
+XM4 net2 net1 vss vss nfet_03v3 L=0.5u W=4.0u nf=1 m=1
+XM5 net3 net2 vdd vdd pfet_03v3 L=0.5u W=48.0u nf=4 m=1
+XM6 net3 net2 vss vss nfet_03v3 L=0.5u W=16.0u nf=4 m=1
+XM7 out net3 vdd vdd pfet_03v3 L=0.5u W=96.0u nf=8 m=1
+XM8 out net3 vss vss nfet_03v3 L=0.5u W=32.0u nf=8 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sym
+** sch_path: /foss/designs/libs/core_analog/asc_drive_buffer_up/asc_drive_buffer_up.sch
+.subckt asc_drive_buffer_up in vss out vdd
+*.PININFO in:B out:B vss:B vdd:B
+XM1 net1 in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 net1 in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM3 net2 net3 vdd vdd pfet_03v3 L=0.5u W=12.0u nf=1 m=1
+XM4 net2 net3 vss vss nfet_03v3 L=0.5u W=4.0u nf=1 m=1
+XM5 net4 net2 vdd vdd pfet_03v3 L=0.5u W=48.0u nf=4 m=1
+XM6 net4 net2 vss vss nfet_03v3 L=0.5u W=16.0u nf=4 m=1
+XM7 out net4 vdd vdd pfet_03v3 L=0.5u W=96.0u nf=8 m=1
+XM8 out net4 vss vss nfet_03v3 L=0.5u W=32.0u nf=8 m=1
+XM9 net3 net1 vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM10 net3 net1 vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sym # of pins=10
+** sym_path: /foss/designs/libs/core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sym
+** sch_path: /foss/designs/libs/core_analog/xp_programmable_basic_pump/xp_programmable_basic_pump.sch
+.subckt xp_programmable_basic_pump vdd out vss s4 s3 s2 s1 down up iref
+*.PININFO vdd:B vss:B up:B down:B iref:B out:B s3:B s4:B s1:B s2:B
+XM6 out net5 net4 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM8 net7 up VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=1
+XM10 net6 vss VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=1
+x2 net3 vss s1 net8 s1b vdd pass1u05u
+x4 iref vss s1 net5 s1b vdd pass1u05u
+x6 s1 vdd s1b vss inv1u05u
+x7 s2 vdd s2b vss inv1u05u
+x8 s3 vdd s3b vss inv1u05u
+x9 s4 vdd s4b vss inv1u05u
+XM12 out net10 net9 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=2
+XM14 net11 up VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=2
+x12 net3 vss s2 net12 s2b vdd pass1u05u
+x14 iref vss s2 net10 s2b vdd pass1u05u
+XM16 out net14 net13 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=4
+XM18 net15 up VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=4
+x16 net3 vss s3 net16 s3b vdd pass1u05u
+x18 iref vss s3 net14 s3b vdd pass1u05u
+XM19 out net20 net19 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=8
+XM20 out net18 net17 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=8
+XM22 net19 up VDD VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=8
+x20 net3 vss s4 net20 s4b vdd pass1u05u
+x22 iref vss s4 net18 s4b vdd pass1u05u
+XM2 iref iref net1 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM9 net3 net3 net6 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=1
+XM1 out net8 net7 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=1
+XM11 out net12 net11 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=2
+XM15 out net16 net15 VDD pfet_03v3 L=0.5u W=42.0u nf=6 m=4
+XM3 net1 vdd vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM4 net2 vdd vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM5 net3 iref net2 vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM21 net4 down vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=1
+XM7 net9 down vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=2
+XM13 net13 down vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=4
+XM17 net17 down vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=8
+XM23 vss vss vss vss nfet_03v3 L=0.5u W=14.0u nf=2 m=12
+XM26 net5 s1b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM29 net8 s1 VDD VDD pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM34 VDD VDD VDD VDD pfet_03v3 L=0.5u W=7.0u nf=1 m=24
+XM25 net10 s2b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM27 net14 s3b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM28 net18 s4b vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM30 net12 s2 VDD VDD pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM31 net16 s3 VDD VDD pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM32 net20 s4 VDD VDD pfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sym # of pins=23
+** sym_path: /foss/designs/libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sym
+** sch_path: /foss/designs/libs/core_analog/asc_dual_psd_def_20250809/asc_dual_psd_def_20250809.sch
+.subckt asc_dual_psd_def_20250809 fout sd9 sd8 sd7 sd6 sd5 sd4 sd3 sd2 sd1 vss fin vdd define pd9 pd8 pd7 pd6 pd5 pd4 pd3 pd2 pd1
+*.PININFO vdd:B vss:B sd2:B sd1:B sd3:B sd5:B sd4:B sd6:B sd8:B sd7:B sd9:B define:B fin:B fout:B pd2:B pd1:B pd3:B pd5:B pd4:B
+*+ pd6:B pd8:B pd7:B pd9:B
+x5 vdd vss net1 define fout asc_OR
+x2 mc sd9 sd8 sd7 sd6 sd5 sd4 sd3 sd2 sd1 vss net1 vdd a asc_swallow_counter_20250809
+x3 fout pd9 pd8 pd7 pd6 pd5 pd4 pd3 pd2 pd1 vss net1 vdd a asc_9_bit_counter_20250809
+x1 vdd vss a fin mc asc_dual_mod_pre_2_3_20250809
+.ends
+
+
+* expanding   symbol:  libs/core_analog/CSRVCO_20250823/CSRVCO_20250823.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/CSRVCO_20250823/CSRVCO_20250823.sym
+** sch_path: /foss/designs/libs/core_analog/CSRVCO_20250823/CSRVCO_20250823.sch
+.subckt CSRVCO_20250823 vctrl vdd vss vosc
+*.PININFO vdd:B vss:B vosc:B vctrl:B
+XM1 net8 net21 net1 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM2 net8 net21 net9 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM3 net16 net8 net2 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM4 net16 net8 net10 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM5 net17 net16 net3 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM6 net17 net16 net11 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM7 net18 net17 net4 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM8 net18 net17 net12 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM9 net19 net18 net5 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM10 net19 net18 net13 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM11 net20 net19 net6 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM12 net20 net19 net14 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM13 net21 net20 net7 vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM14 net21 net20 net15 vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM15 net1 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM16 net9 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM17 net2 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM18 net10 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM19 net3 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM20 net11 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM21 net4 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM22 net12 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM23 net5 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM24 net13 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM25 net6 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM26 net14 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM27 net7 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM28 net15 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+XM29 net22 net22 vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=1
+XM30 net22 vctrl vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=1
+x1 net21 vss vosc vdd asc_delay
+XM31 vss vss vss vss nfet_03v3 L=0.5u W=5.0u nf=1 m=2
+XM32 vdd vdd vdd vdd pfet_03v3 L=0.5u W=15.0u nf=1 m=2
+XC1 net8 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
+XC2 net16 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
+XC3 net17 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
+XC4 net18 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
+XC5 net19 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
+XC6 net20 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
+XC7 net21 vss cap_mim_2f0fF c_width=10e-6 c_length=5e-6 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_lock_detector_20250826/asc_lock_detector_20250826.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_lock_detector_20250826/asc_lock_detector_20250826.sym
+** sch_path: /foss/designs/libs/core_analog/asc_lock_detector_20250826/asc_lock_detector_20250826.sch
+.subckt asc_lock_detector_20250826 vdd lock vss div ref
+*.PININFO vdd:B vss:B div:B ref:B lock:B
+x5 vdd lock ref_q div_q vss asc_AND
+* noconn ignore1
+* noconn ignore2
+x1 div_d ref ignore1 vdd vss ref_q vss asc_dff_rst
+x2 ref_d div_ex ignore2 vdd vss div_q vss asc_dff_rst
+x3 div_ex vss div_d vdd asc_delay_LD
+x4 ref vss ref_d vdd asc_delay_LD
+x6 div vss div_ex vdd asc_pulse_ex
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_hysteresis_buffer/asc_hysteresis_buffer.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/asc_hysteresis_buffer/asc_hysteresis_buffer.sym
+** sch_path: /foss/designs/libs/core_analog/asc_hysteresis_buffer/asc_hysteresis_buffer.sch
+.subckt asc_hysteresis_buffer in vss out vdd
+*.PININFO in:B out:B vss:B vdd:B
+XM1 net1 in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 net1 in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+XM3 net2 net1 vdd vdd pfet_03v3 L=0.5u W=12.0u nf=1 m=1
+XM4 net2 net1 vss vss nfet_03v3 L=0.5u W=4.0u nf=1 m=1
+XM5 net3 net2 vdd vdd pfet_03v3 L=0.5u W=48.0u nf=4 m=1
+XM6 net3 net2 vss vss nfet_03v3 L=0.5u W=16.0u nf=4 m=1
+XM7 out net3 vdd vdd pfet_03v3 L=0.5u W=96.0u nf=8 m=1
+XM8 out net3 vss vss nfet_03v3 L=0.5u W=32.0u nf=8 m=1
+x1 net3 vdd net2 vss inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_PFD_DFF_20250831/asc_PFD_DFF_20250831.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/asc_PFD_DFF_20250831/asc_PFD_DFF_20250831.sym
+** sch_path: /foss/designs/libs/core_analog/asc_PFD_DFF_20250831/asc_PFD_DFF_20250831.sch
+.subckt asc_PFD_DFF_20250831 vdd vss down up fref fdiv
+*.PININFO vdd:B vss:B fref:B fdiv:B up:B down:B
+x4 net2 vdd net1 vss inv1u05u
+x3 net1 vss rst vdd asc_delay
+x5 vdd net2 up down vss asc_NAND
+* noconn ignore1
+* noconn ignore2
+x1 phi1r vdd ignore1 vdd vss up rst phi2r asc_dff_rst_20250831
+x6 phi2r fref vdd phi1r vss qw_NOLclk
+x7 phi1d fdiv vdd phi2d vss qw_NOLclk
+x2 phi2d vdd ignore2 vdd vss down rst phi1d asc_dff_rst_20250831
+.ends
+
+
+* expanding   symbol:  libs/core_analog/BIAS/BIAS.sym # of pins=7
+** sym_path: /foss/designs/libs/core_analog/BIAS/BIAS.sym
+** sch_path: /foss/designs/libs/core_analog/BIAS/BIAS.sch
+.subckt BIAS vdd 200p2 200p1 res 100n 200n vss
+*.PININFO res:B 100n:B 200n:B 200p1:B 200p2:B vdd:B vss:B
+XM8 res res vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM1 100n res vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM2 200n res vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM3 net1 res vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM6 net1 net1 vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+XM4 200p1 net1 vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+XM5 200p2 net1 vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+XM7 vdd vdd vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM9 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+.ends
+
+
+* expanding   symbol:  libs/core_analog/SRegister_10/SRegister_10.sym # of pins=18
+** sym_path: /foss/designs/libs/core_analog/SRegister_10/SRegister_10.sym
+** sch_path: /foss/designs/libs/core_analog/SRegister_10/SRegister_10.sch
+.subckt SRegister_10 VDDd VSSd phi1 phi2 en default1 d q out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10]
++ default2 default3 default4 default5 default6 default7 default8 default9 default10
+*.PININFO VDDd:B VSSd:B phi1:B phi2:B en:B d:B q:B out[1:10]:B default1:B default2:B default3:B default4:B default5:B default6:B
+*+ default7:B default8:B default9:B default10:B
+x1 net1 d phi1 phi2 VDDd VSSd out[1] en default1 Register_unitcell
+x2 net2 net1 phi1 phi2 VDDd VSSd out[2] en default2 Register_unitcell
+x3 net3 net2 phi1 phi2 VDDd VSSd out[3] en default3 Register_unitcell
+x4 net4 net3 phi1 phi2 VDDd VSSd out[4] en default4 Register_unitcell
+x5 net5 net4 phi1 phi2 VDDd VSSd out[5] en default5 Register_unitcell
+x6 net6 net5 phi1 phi2 VDDd VSSd out[6] en default6 Register_unitcell
+x7 net7 net6 phi1 phi2 VDDd VSSd out[7] en default7 Register_unitcell
+x8 net8 net7 phi1 phi2 VDDd VSSd out[8] en default8 Register_unitcell
+x9 net9 net8 phi1 phi2 VDDd VSSd out[9] en default9 Register_unitcell
+x10 q net9 phi1 phi2 VDDd VSSd out[10] en default10 Register_unitcell
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/SCHMITT/SCHMITT.sym # of pins=4
+** sym_path: /foss/designs/libs/qw_core_analog/SCHMITT/SCHMITT.sym
+** sch_path: /foss/designs/libs/qw_core_analog/SCHMITT/SCHMITT.sch
+.subckt SCHMITT IN OUT VDD VSS
+*.PININFO OUT:B IN:B VDD:B VSS:B
+XM1 OUT IN net1 VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+XM2 OUT IN net2 VDD pfet_03v3 L=0.28u W=4u nf=1 m=1
+XM3 net2 IN VDD VDD pfet_03v3 L=0.28u W=4u nf=1 m=1
+XM4 net1 IN VSS VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+XM5 VSS OUT net2 VDD pfet_03v3 L=0.28u W=2u nf=1 m=1
+XM6 VDD OUT net1 VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/qw_NOLclk/qw_NOLclk.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/qw_NOLclk/qw_NOLclk.sym
+** sch_path: /foss/designs/libs/core_analog/qw_NOLclk/qw_NOLclk.sch
+.subckt qw_NOLclk PHI_2 CLK VDDd PHI_1 VSSd
+*.PININFO CLK:I PHI_2:O VDDd:B VSSd:B PHI_1:O
+* noconn VDDd
+* noconn VSSd
+x4 VDDd PHI_2 net1 VSSd SmallW_Linv
+x7 VDDd PHI_1 net2 VSSd SmallW_Linv
+x12 VDDd net3 OUT_top_d VSSd SmallW_Linv_2
+x14 VDDd net4 OUT_bot_d VSSd SmallW_Linv_2
+x5 VDDd net1 net3 VSSd SmallW_Linv_2
+x8 VDDd net2 net4 VSSd SmallW_Linv_2
+x9 CLK VDDd CLKB VSSd inv1u05u
+x2 CLKB VDDd CLKbuf VSSd inv1u05u
+x10 VDDd OUT_top OUT_bot_d CLKB VSSd asc_NAND
+x1 VDDd OUT_bot OUT_top_d CLKbuf VSSd asc_NAND
+x3 OUT_top VDDd PHI_2 VSSd inv1u05u
+x6 OUT_bot VDDd PHI_1 VSSd inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/pass1u05u/pass1u05u.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/pass1u05u/pass1u05u.sch
+.subckt pass1u05u ind vss clkn ins clkp vdd
+*.PININFO ind:B ins:B clkn:B clkp:B vdd:B vss:B
+XM1 ind clkp ins vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 ind clkn ins vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/inv1u05u/inv1u05u.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sym
+** sch_path: /foss/designs/libs/core_analog/inv1u05u/inv1u05u.sch
+.subckt inv1u05u in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+XM1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+XM2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_OR/asc_OR.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_OR/asc_OR.sym
+** sch_path: /foss/designs/libs/core_analog/asc_OR/asc_OR.sch
+.subckt asc_OR VDD VSS OUT A B
+*.PININFO VDD:B A:B B:B VSS:B OUT:B
+x1 VDD VSS net1 A B asc_NOR
+x2 net1 VDD OUT VSS inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_swallow_counter_20250809/asc_swallow_counter_20250809.sym # of pins=14
+** sym_path: /foss/designs/libs/core_analog/asc_swallow_counter_20250809/asc_swallow_counter_20250809.sym
+** sch_path: /foss/designs/libs/core_analog/asc_swallow_counter_20250809/asc_swallow_counter_20250809.sch
+.subckt asc_swallow_counter_20250809 mc d9 d8 d7 d6 d5 d4 d3 d2 d1 vss rst vdd a
+*.PININFO vdd:B vss:B rst:B a:B mc:B d2:B d1:B d3:B d5:B d4:B d6:B d8:B d7:B d9:B
+x2 rst set ignore vdd vss mc asc_SR_latch
+* noconn ignore
+x1 set d9 d8 d7 d6 d5 d4 d3 d2 d1 vss rst vdd a asc_9_bit_counter_20250809
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_9_bit_counter_20250809/asc_9_bit_counter_20250809.sym # of pins=14
+** sym_path: /foss/designs/libs/core_analog/asc_9_bit_counter_20250809/asc_9_bit_counter_20250809.sym
+** sch_path: /foss/designs/libs/core_analog/asc_9_bit_counter_20250809/asc_9_bit_counter_20250809.sch
+.subckt asc_9_bit_counter_20250809 done d9 d8 d7 d6 d5 d4 d3 d2 d1 vss rst vdd a
+*.PININFO a:B vdd:B vss:B done:B d1:B d2:B d3:B d4:B d5:B d6:B d7:B d8:B d9:B rst:B
+x19 vdd vss A1 net10 OUT1 asc_XNOR
+x20 vdd vss B net11 OUT2 asc_XNOR
+x21 vdd vss C net12 OUT3 asc_XNOR
+x22 vdd vss D net13 OUT4 asc_XNOR
+x23 vdd vss E net14 OUT5 asc_XNOR
+x24 vdd vss F net15 OUT6 asc_XNOR
+x25 vdd vss G net16 OUT7 asc_XNOR
+x26 vdd vss H net17 OUT8 asc_XNOR
+x27 vdd vss I net18 OUT9 asc_XNOR
+x1 a net1 net1 vdd vss OUT1 rst asc_dff_rst
+x3 OUT1 net2 net2 vdd vss OUT2 rst asc_dff_rst
+x5 OUT2 net3 net3 vdd vss OUT3 rst asc_dff_rst
+x7 OUT3 net4 net4 vdd vss OUT4 rst asc_dff_rst
+x9 OUT4 net5 net5 vdd vss OUT5 rst asc_dff_rst
+x11 OUT5 net6 net6 vdd vss OUT6 rst asc_dff_rst
+x13 OUT6 net7 net7 vdd vss OUT7 rst asc_dff_rst
+x15 OUT7 net8 net8 vdd vss OUT8 rst asc_dff_rst
+x17 OUT8 net9 net9 vdd vss OUT9 rst asc_dff_rst
+x2 vdd vss done A1 B C D E F G H I asc_AND_9_20250809
+x4 d1 vdd net10 vss inv1u05u
+x6 d2 vdd net11 vss inv1u05u
+x8 d3 vdd net12 vss inv1u05u
+x10 d4 vdd net13 vss inv1u05u
+x12 d5 vdd net14 vss inv1u05u
+x14 d6 vdd net15 vss inv1u05u
+x16 d7 vdd net16 vss inv1u05u
+x18 d8 vdd net17 vss inv1u05u
+x28 d9 vdd net18 vss inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_dual_mod_pre_2_3_20250809/asc_dual_mod_pre_2_3_20250809.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_dual_mod_pre_2_3_20250809/asc_dual_mod_pre_2_3_20250809.sym
+** sch_path: /foss/designs/libs/core_analog/asc_dual_mod_pre_2_3_20250809/asc_dual_mod_pre_2_3_20250809.sch
+.subckt asc_dual_mod_pre_2_3_20250809 vdd vss out in mc
+*.PININFO vdd:B vss:B in:B mc:B out:B
+x2 vdd vss y q1 mc asc_OR
+x3 vdd x out y vss asc_AND
+* noconn ignore1
+* noconn ignore2
+x1 in out ignore1 vdd vss q1 vss asc_dff_rst
+x4 in x out vdd vss ignore2 vss asc_dff_rst
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_delay/asc_delay.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/asc_delay/asc_delay.sym
+** sch_path: /foss/designs/libs/core_analog/asc_delay/asc_delay.sch
+.subckt asc_delay in vss out vdd
+*.PININFO vdd:B vss:B in:B out:B
+x1 in vdd net1 vss inv1u05u
+x2 net1 vdd out vss inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_AND/asc_AND.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_AND/asc_AND.sym
+** sch_path: /foss/designs/libs/core_analog/asc_AND/asc_AND.sch
+.subckt asc_AND VDD OUT A B VSS
+*.PININFO VDD:B A:B B:B VSS:B OUT:B
+x1 VDD net1 A B VSS asc_NAND
+x2 net1 VDD OUT VSS inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_dff_rst/asc_dff_rst.sym # of pins=7
+** sym_path: /foss/designs/libs/core_analog/asc_dff_rst/asc_dff_rst.sym
+** sch_path: /foss/designs/libs/core_analog/asc_dff_rst/asc_dff_rst.sch
+.subckt asc_dff_rst clk D Qb vdd vss Q rst
+*.PININFO clk:B vdd:B vss:B D:B Q:B Qb:B rst:B
+x1 net3 vdd net2 vss inv1u05u
+x2 clk vdd clkb vss inv1u05u
+x3 net1 vss clkb net3 clka vdd pass1u05u
+x5 net3 vss clka net6 clkb vdd pass1u05u
+x6 net2 vss clka net5 clkb vdd pass1u05u
+x8 Qb vdd net4 vss inv1u05u
+x9 net5 vss clkb net4 clka vdd pass1u05u
+x10 clkb vdd clka vss inv1u05u
+x11 D vdd net1 vss inv1u05u
+x12 Qb vdd Q vss inv1u05u
+x13 rst vdd rstb vss inv1u05u
+x4 vdd net6 net2 rstb vss asc_NAND
+x7 vdd Qb rstb net5 vss asc_NAND
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_delay_LD/asc_delay_LD.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/asc_delay_LD/asc_delay_LD.sym
+** sch_path: /foss/designs/libs/core_analog/asc_delay_LD/asc_delay_LD.sch
+.subckt asc_delay_LD in vss out vdd
+*.PININFO in:B vss:B vdd:B out:B
+x1 in vss net1 vdd asc_drive_buffer
+x2 net1 vss net2 vdd asc_drive_buffer
+x3 net2 vss net3 vdd asc_drive_buffer
+x4 net3 vss out vdd asc_drive_buffer
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_pulse_ex/asc_pulse_ex.sym # of pins=4
+** sym_path: /foss/designs/libs/core_analog/asc_pulse_ex/asc_pulse_ex.sym
+** sch_path: /foss/designs/libs/core_analog/asc_pulse_ex/asc_pulse_ex.sch
+.subckt asc_pulse_ex in vss out vdd
+*.PININFO in:B vss:B vdd:B out:B
+x1 in vss net1 vdd asc_drive_buffer
+x2 net1 vss net2 vdd asc_drive_buffer
+x3 net2 vss net3 vdd asc_drive_buffer
+x5 vdd vss out in net3 asc_OR
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_NAND/asc_NAND.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_NAND/asc_NAND.sym
+** sch_path: /foss/designs/libs/core_analog/asc_NAND/asc_NAND.sch
+.subckt asc_NAND VDD OUT A B VSS
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+XM1 OUT A net1 VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+XM2 OUT A VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+XM3 net1 B VSS VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+XM4 OUT B VDD VDD pfet_03v3 L=0.5u W=3u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_dff_rst_20250831/asc_dff_rst_20250831.sym # of pins=8
+** sym_path: /foss/designs/libs/core_analog/asc_dff_rst_20250831/asc_dff_rst_20250831.sym
+** sch_path: /foss/designs/libs/core_analog/asc_dff_rst_20250831/asc_dff_rst_20250831.sch
+.subckt asc_dff_rst_20250831 clka D Qb vdd vss Q rst clkb
+*.PININFO clkb:B vdd:B vss:B D:B Q:B Qb:B rst:B clka:B
+x1 net3 vdd net2 vss inv1u05u
+x3 net1 vss clkb net3 clka vdd pass1u05u
+x5 net3 vss clka net6 clkb vdd pass1u05u
+x6 net2 vss clka net5 clkb vdd pass1u05u
+x8 Qb vdd net4 vss inv1u05u
+x9 net5 vss clkb net4 clka vdd pass1u05u
+x11 D vdd net1 vss inv1u05u
+x12 Qb vdd Q vss inv1u05u
+x13 rst vdd rstb vss inv1u05u
+x4 vdd net6 net2 rstb vss asc_NAND
+x7 vdd Qb rstb net5 vss asc_NAND
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/Register_unitcell/Register_unitcell.sym # of pins=9
+** sym_path: /foss/designs/libs/qw_core_analog/Register_unitcell/Register_unitcell.sym
+** sch_path: /foss/designs/libs/qw_core_analog/Register_unitcell/Register_unitcell.sch
+.subckt Register_unitcell q d phi1 phi2 VDDd VSSd out en default
+*.PININFO phi1:B phi2:B d:B q:B en:B default:B out:B VDDd:B VSSd:B
+x4 en enbar VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+* noconn VDDd
+* noconn VSSd
+x1 d q phi1 phi2 VDDd VSSd DFF_2phase_1
+x2 q en or1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__and2_1
+x10 or2 or1 out VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__or2_1
+x3 enbar default or2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__and2_1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/SmallW_Linv/SmallW_Linv.sym # of pins=4
+** sym_path: /foss/designs/libs/qw_core_analog/SmallW_Linv/SmallW_Linv.sym
+** sch_path: /foss/designs/libs/qw_core_analog/SmallW_Linv/SmallW_Linv.sch
+.subckt SmallW_Linv vdd in out vss
+*.PININFO in:B out:B vdd:B vss:B
+XM1 out in vss vss nfet_03v3 L=2u W=0.5u nf=1 m=1
+XM2 out in vdd vdd pfet_03v3 L=2u W=1u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/SmallW_Linv_2/SmallW_Linv_2.sym # of pins=4
+** sym_path: /foss/designs/libs/qw_core_analog/SmallW_Linv_2/SmallW_Linv_2.sym
+** sch_path: /foss/designs/libs/qw_core_analog/SmallW_Linv_2/SmallW_Linv_2.sch
+.subckt SmallW_Linv_2 vdd in out vss
+*.PININFO in:B out:B vdd:B vss:B
+XM1 out in vss vss nfet_03v3 L=4u W=0.5u nf=1 m=1
+XM2 out in vdd vdd pfet_03v3 L=4u W=1u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_NOR/asc_NOR.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sym
+** sch_path: /foss/designs/libs/core_analog/asc_NOR/asc_NOR.sch
+.subckt asc_NOR VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+XM1 OUT A VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+XM2 OUT B VSS VSS nfet_03v3 L=0.5u W=1u nf=1 m=1
+XM3 OUT B net1 VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+XM4 net1 A VDD VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_SR_latch/asc_SR_latch.sym # of pins=6
+** sym_path: /foss/designs/libs/core_analog/asc_SR_latch/asc_SR_latch.sym
+** sch_path: /foss/designs/libs/core_analog/asc_SR_latch/asc_SR_latch.sch
+.subckt asc_SR_latch R S Qb VDD VSS Q
+*.PININFO VDD:B VSS:B S:B R:B Qb:B Q:B
+x1 VDD VSS Q R Qb asc_NOR
+x2 VDD VSS Qb Q S asc_NOR
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_XNOR/asc_XNOR.sym # of pins=5
+** sym_path: /foss/designs/libs/core_analog/asc_XNOR/asc_XNOR.sym
+** sch_path: /foss/designs/libs/core_analog/asc_XNOR/asc_XNOR.sch
+.subckt asc_XNOR VDD VSS OUT A B
+*.PININFO VDD:B VSS:B B:B A:B OUT:B
+XM1 OUT A net1 VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+XM2 OUT B net3 VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+XM3 net1 Bb VSS VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+XM4 net3 A VDD VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+XM5 OUT Ab net2 VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+XM6 OUT Bb net4 VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+XM7 net2 B VSS VSS nfet_03v3 L=0.5u W=2u nf=2 m=1
+XM8 net4 Ab VDD VDD pfet_03v3 L=0.5u W=6u nf=2 m=1
+x1 A VDD Ab VSS inv1u05u
+x2 B VDD Bb VSS inv1u05u
+.ends
+
+
+* expanding   symbol:  libs/core_analog/asc_AND_9_20250809/asc_AND_9_20250809.sym # of pins=12
+** sym_path: /foss/designs/libs/core_analog/asc_AND_9_20250809/asc_AND_9_20250809.sym
+** sch_path: /foss/designs/libs/core_analog/asc_AND_9_20250809/asc_AND_9_20250809.sch
+.subckt asc_AND_9_20250809 VDD VSS OUT A B C D E F G H I
+*.PININFO VDD:B VSS:B B:B A:B D:B C:B F:B E:B H:B G:B I:B OUT:B
+x3 VDD OUT net7 I VSS asc_AND
+x1 VDD net3 A B VSS asc_NAND
+x2 VDD net4 C D VSS asc_NAND
+x4 VDD net1 E F VSS asc_NAND
+x5 VDD net2 G H VSS asc_NAND
+x8 VDD VSS net6 net1 net2 asc_NOR
+x9 VDD VSS net5 net3 net4 asc_NOR
+x6 VDD net7 net5 net6 VSS asc_AND
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/DFF_2phase_1/DFF_2phase_1.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/DFF_2phase_1/DFF_2phase_1.sym
+** sch_path: /foss/designs/libs/qw_core_analog/DFF_2phase_1/DFF_2phase_1.sch
+.subckt DFF_2phase_1 D Q PHI_1 PHI_2 VDDd VSSd
+*.PININFO D:I PHI_1:I PHI_2:I Q:O VDDd:B VSSd:B
+* noconn VSSd
+* noconn VDDd
+xmain D PHI_1 out_m VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+xsecondary out_m PHI_2 Q VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+.ends
+

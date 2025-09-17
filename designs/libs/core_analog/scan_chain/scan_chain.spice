@@ -6,17 +6,17 @@
 + out[47] out[48] out[49] out[50]
 *.PININFO VDDd:B VSSd:B CLKd:B DATAd:B ENd:B out[1:50]:B
 x1 VDDd VSSd phi1 phi2 en VSSd data q0 out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] VSSd VSSd VSSd VSSd
-+ VSSd VSSd VSSd VSSd VSSd SRegister_10
++ VDDd VSSd VSSd VSSd VSSd SRegister_10
 x3 VDDd VSSd phi1 phi2 en VSSd q0 q1 out[11] out[12] out[13] out[14] out[15] out[16] out[17] out[18] out[19] out[20] VSSd VSSd
 + VSSd VSSd VSSd VSSd VSSd VSSd VSSd SRegister_10
 x4 VDDd VSSd phi1 phi2 en VSSd q1 q2 out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] out[30] VSSd VSSd
 + VSSd VSSd VSSd VSSd VSSd VSSd VSSd SRegister_10
 * noconn q2
 x6 VDDd VSSd phi1 phi2 en VSSd q2 q3 out[31] out[32] out[33] out[34] out[35] out[36] out[37] out[38] out[39] out[40] VSSd VSSd
-+ VSSd VSSd VSSd VSSd VSSd VSSd VSSd SRegister_10
++ VDDd VDDd VSSd VSSd VDDd VSSd VSSd SRegister_10
 * noconn q3
-x7 VDDd VSSd phi1 phi2 en VSSd q3 q4 out[41] out[42] out[43] out[44] out[45] out[46] out[47] out[48] out[49] out[50] VSSd VSSd
-+ VSSd VSSd VSSd VSSd VSSd VSSd VSSd SRegister_10
+x7 VDDd VSSd phi1 phi2 en VSSd q3 q4 out[41] out[42] out[43] out[44] out[45] out[46] out[47] out[48] out[49] out[50] VDDd VDDd
++ VSSd VSSd VDDd VSSd VSSd VSSd VSSd SRegister_10
 * noconn q4
 x8 CLKd VSSd clk VDDd asc_hysteresis_buffer
 x9 DATAd VSSd data VDDd asc_hysteresis_buffer
