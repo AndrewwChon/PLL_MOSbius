@@ -1,109 +1,88 @@
 * NGSPICE file created from scan_chain.ext - technology: gf180mcuD
 
-.subckt pfet$25 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
-X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
-.ends
-
-.subckt nfet$24 a_838_0# a_38_n60# a_n84_0# VSUBS
-X0 a_838_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=4u
-.ends
-
-.subckt pfet$23 w_n180_n88# a_n92_0# a_438_0# a_38_n136#
-X0 a_438_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=2u
-.ends
-
-.subckt pfet$26 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
-X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
-.ends
-
-.subckt nfet$25 a_38_n60# a_n84_0# a_138_0# VSUBS
-X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
-.ends
-
-.subckt pfet$24 a_838_0# w_n180_n88# a_n92_0# a_38_n136#
+.subckt pfet$8 a_838_0# w_n180_n88# a_n92_0# a_38_n136#
 X0 a_838_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=4u
 .ends
 
-.subckt nfet$23 a_38_n60# a_n84_0# a_438_0# VSUBS
+.subckt nfet$9 a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt nfet$7 a_38_n60# a_n84_0# a_438_0# VSUBS
 X0 a_438_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=2u
 .ends
 
-.subckt nfet$26 a_242_n60# a_38_n60# a_n84_0# a_342_0# a_138_0# VSUBS
+.subckt pfet$10 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt pfet$9 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt pfet$7 w_n180_n88# a_n92_0# a_438_0# a_38_n136#
+X0 a_438_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=2u
+.ends
+
+.subckt nfet$8 a_838_0# a_38_n60# a_n84_0# VSUBS
+X0 a_838_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=4u
+.ends
+
+.subckt nfet$10 a_242_n60# a_38_n60# a_n84_0# a_342_0# a_138_0# VSUBS
 X0 a_342_0# a_242_n60# a_138_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.26p ps=1.52u w=1u l=0.5u
 X1 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.61p ps=3.22u w=1u l=0.5u
 .ends
 
-.subckt qw_NOLclk CLK VDDd VSSd PHI_1 PHI_2
-Xpfet$25_3 VDDd VDDd m1_11161_409# CLK pfet$25
-Xnfet$24_1 m1_15103_233# m1_13930_233# VSSd VSSd nfet$24
-Xpfet$23_1 VDDd VDDd m1_13930_1818# PHI_2 pfet$23
-Xnfet$24_2 m1_12351_431# m1_15103_1818# VSSd VSSd nfet$24
-Xpfet$23_0 VDDd VDDd m1_13930_233# PHI_1 pfet$23
-Xnfet$24_3 m1_15103_1818# m1_13930_1818# VSSd VSSd nfet$24
-Xpfet$26_0 VDDd m1_11601_71# VDDd m1_11379_n171# pfet$26
-Xpfet$26_1 VDDd VDDd m1_11601_71# m1_12351_431# pfet$26
-Xpfet$26_2 VDDd m1_11601_2380# VDDd m1_11161_409# pfet$26
-Xnfet$25_0 m1_11601_71# VSSd PHI_1 VSSd nfet$25
-Xpfet$26_3 VDDd VDDd m1_11601_2380# m1_12351_2064# pfet$26
-Xnfet$25_1 m1_11161_409# VSSd m1_11379_n171# VSSd nfet$25
-Xpfet$24_0 m1_12351_2064# VDDd VDDd m1_15103_233# pfet$24
-Xnfet$25_2 m1_11601_2380# VSSd PHI_2 VSSd nfet$25
-Xpfet$24_1 m1_15103_233# VDDd VDDd m1_13930_233# pfet$24
-Xpfet$24_2 m1_12351_431# VDDd VDDd m1_15103_1818# pfet$24
-Xnfet$25_3 CLK VSSd m1_11161_409# VSSd nfet$25
-Xnfet$23_0 PHI_1 VSSd m1_13930_233# VSSd nfet$23
-Xpfet$24_3 m1_15103_1818# VDDd VDDd m1_13930_1818# pfet$24
-Xnfet$23_1 PHI_2 VSSd m1_13930_1818# VSSd nfet$23
-Xnfet$26_0 m1_12351_431# m1_12351_431# m1_11601_71# m1_11601_71# m1_11837_749# VSSd
-+ nfet$26
-Xnfet$26_2 m1_12351_2064# m1_12351_2064# m1_11601_2380# m1_11601_2380# m1_11837_1708#
-+ VSSd nfet$26
-Xnfet$26_1 m1_11379_n171# m1_11379_n171# VSSd VSSd m1_11837_749# VSSd nfet$26
-Xpfet$25_0 VDDd VDDd PHI_1 m1_11601_71# pfet$25
-Xpfet$25_2 VDDd VDDd PHI_2 m1_11601_2380# pfet$25
-Xnfet$26_3 m1_11161_409# m1_11161_409# VSSd VSSd m1_11837_1708# VSSd nfet$26
-Xnfet$24_0 m1_12351_2064# m1_15103_233# VSSd VSSd nfet$24
-Xpfet$25_1 VDDd VDDd m1_11379_n171# m1_11161_409# pfet$25
+.subckt qw_NOLclk VDDd VSSd PHI_1 CLK PHI_2
+Xpfet$8_0 m1_12351_2064# VDDd VDDd m1_15103_233# pfet$8
+Xpfet$8_1 m1_15103_233# VDDd VDDd m1_13930_233# pfet$8
+Xpfet$8_2 m1_12351_431# VDDd VDDd m1_15103_1818# pfet$8
+Xpfet$8_3 m1_15103_1818# VDDd VDDd m1_13930_1818# pfet$8
+Xnfet$9_0 m1_11601_71# VSSd PHI_1 VSSd nfet$9
+Xnfet$9_1 m1_11161_409# VSSd m1_11379_n171# VSSd nfet$9
+Xnfet$9_2 m1_11601_2380# VSSd PHI_2 VSSd nfet$9
+Xnfet$9_3 CLK VSSd m1_11161_409# VSSd nfet$9
+Xnfet$7_0 PHI_1 VSSd m1_13930_233# VSSd nfet$7
+Xnfet$7_1 PHI_2 VSSd m1_13930_1818# VSSd nfet$7
+Xpfet$10_0 VDDd m1_11601_71# VDDd m1_11379_n171# pfet$10
+Xpfet$10_1 VDDd VDDd m1_11601_71# m1_12351_431# pfet$10
+Xpfet$10_2 VDDd m1_11601_2380# VDDd m1_11161_409# pfet$10
+Xpfet$10_3 VDDd VDDd m1_11601_2380# m1_12351_2064# pfet$10
+Xpfet$9_0 VDDd VDDd PHI_1 m1_11601_71# pfet$9
+Xpfet$9_1 VDDd VDDd m1_11379_n171# m1_11161_409# pfet$9
+Xpfet$9_2 VDDd VDDd PHI_2 m1_11601_2380# pfet$9
+Xpfet$9_3 VDDd VDDd m1_11161_409# CLK pfet$9
+Xpfet$7_0 VDDd VDDd m1_13930_233# PHI_1 pfet$7
+Xpfet$7_1 VDDd VDDd m1_13930_1818# PHI_2 pfet$7
+Xnfet$8_0 m1_12351_2064# m1_15103_233# VSSd VSSd nfet$8
+Xnfet$8_1 m1_15103_233# m1_13930_233# VSSd VSSd nfet$8
+Xnfet$8_2 m1_12351_431# m1_15103_1818# VSSd VSSd nfet$8
+Xnfet$8_3 m1_15103_1818# m1_13930_1818# VSSd VSSd nfet$8
+Xnfet$10_0 m1_12351_431# m1_12351_431# m1_11601_71# m1_11601_71# m1_11837_749# VSSd
++ nfet$10
+Xnfet$10_1 m1_11379_n171# m1_11379_n171# VSSd VSSd m1_11837_749# VSSd nfet$10
+Xnfet$10_2 m1_12351_2064# m1_12351_2064# m1_11601_2380# m1_11601_2380# m1_11837_1708#
++ VSSd nfet$10
+Xnfet$10_3 m1_11161_409# m1_11161_409# VSSd VSSd m1_11837_1708# VSSd nfet$10
 .ends
 
-.subckt nfet$22 a_38_n60# a_n84_0# a_138_0# VSUBS
-X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.subckt pfet a_750_0# a_546_0# w_n180_n88# a_n92_0# a_446_n136# a_650_n136# a_342_0#
++ a_138_0# a_38_n136# a_242_n136#
+X0 a_342_0# a_242_n136# a_138_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X1 a_546_0# a_446_n136# a_342_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X2 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=7.8p ps=25.3u w=12u l=0.5u
+X3 a_750_0# a_650_n136# a_546_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=3.12p ps=12.52u w=12u l=0.5u
 .ends
 
-.subckt pfet$21 a_1158_0# a_750_0# a_1058_n136# a_546_0# a_1262_n136# a_1566_0# a_954_0#
-+ w_n180_n88# a_854_n136# a_n92_0# a_446_n136# a_650_n136# a_342_0# a_1466_n136# a_138_0#
-+ a_38_n136# a_1362_0# a_242_n136#
-X0 a_1362_0# a_1262_n136# a_1158_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
-X1 a_954_0# a_854_n136# a_750_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
-X2 a_1566_0# a_1466_n136# a_1362_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=3.12p ps=12.52u w=12u l=0.5u
-X3 a_342_0# a_242_n136# a_138_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
-X4 a_546_0# a_446_n136# a_342_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
-X5 a_1158_0# a_1058_n136# a_954_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
-X6 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=7.8p ps=25.3u w=12u l=0.5u
-X7 a_750_0# a_650_n136# a_546_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
-.ends
-
-.subckt nfet$20 a_38_n60# a_n84_0# a_138_0# VSUBS
-X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
-.ends
-
-.subckt pfet$19 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
-X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=7.8p ps=25.3u w=12u l=0.5u
-.ends
-
-.subckt nfet$18 a_750_0# a_546_0# a_446_n60# a_242_n60# a_38_n60# a_n84_0# a_342_0#
-+ a_138_0# a_650_n60# VSUBS
-X0 a_342_0# a_242_n60# a_138_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
-X1 a_546_0# a_446_n60# a_342_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
-X2 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=2.44p ps=9.22u w=4u l=0.5u
-X3 a_750_0# a_650_n60# a_546_0# VSUBS nfet_03v3 ad=2.44p pd=9.22u as=1.04p ps=4.52u w=4u l=0.5u
-.ends
-
-.subckt pfet$22 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+.subckt pfet$4 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
 X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
 .ends
 
-.subckt nfet$21 a_1158_0# a_750_0# a_546_0# a_446_n60# a_242_n60# a_1566_0# a_954_0#
+.subckt pfet$2 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt nfet$3 a_1158_0# a_750_0# a_546_0# a_446_n60# a_242_n60# a_1566_0# a_954_0#
 + a_1466_n60# a_1262_n60# a_38_n60# a_n84_0# a_1058_n60# a_854_n60# a_342_0# a_138_0#
 + a_650_n60# a_1362_0# VSUBS
 X0 a_954_0# a_854_n60# a_750_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
@@ -116,49 +95,61 @@ X6 a_750_0# a_650_n60# a_546_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.
 X7 a_1362_0# a_1262_n60# a_1158_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
 .ends
 
-.subckt pfet$20 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
-X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
-.ends
-
-.subckt nfet$19 a_38_n60# a_n84_0# a_138_0# VSUBS
+.subckt nfet$1 a_38_n60# a_n84_0# a_138_0# VSUBS
 X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=2.44p pd=9.22u as=2.44p ps=9.22u w=4u l=0.5u
 .ends
 
-.subckt pfet$18 a_750_0# a_546_0# w_n180_n88# a_n92_0# a_446_n136# a_650_n136# a_342_0#
-+ a_138_0# a_38_n136# a_242_n136#
-X0 a_342_0# a_242_n136# a_138_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
-X1 a_546_0# a_446_n136# a_342_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
-X2 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=7.8p ps=25.3u w=12u l=0.5u
-X3 a_750_0# a_650_n136# a_546_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=3.12p ps=12.52u w=12u l=0.5u
+.subckt nfet a_750_0# a_546_0# a_446_n60# a_242_n60# a_38_n60# a_n84_0# a_342_0# a_138_0#
++ a_650_n60# VSUBS
+X0 a_342_0# a_242_n60# a_138_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X1 a_546_0# a_446_n60# a_342_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.5u
+X2 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=1.04p pd=4.52u as=2.44p ps=9.22u w=4u l=0.5u
+X3 a_750_0# a_650_n60# a_546_0# VSUBS nfet_03v3 ad=2.44p pd=9.22u as=1.04p ps=4.52u w=4u l=0.5u
+.ends
+
+.subckt pfet$3 a_1158_0# a_750_0# a_1058_n136# a_546_0# a_1262_n136# a_1566_0# a_954_0#
++ w_n180_n88# a_854_n136# a_n92_0# a_446_n136# a_650_n136# a_342_0# a_1466_n136# a_138_0#
++ a_38_n136# a_1362_0# a_242_n136#
+X0 a_1362_0# a_1262_n136# a_1158_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X1 a_954_0# a_854_n136# a_750_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X2 a_1566_0# a_1466_n136# a_1362_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=3.12p ps=12.52u w=12u l=0.5u
+X3 a_342_0# a_242_n136# a_138_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X4 a_546_0# a_446_n136# a_342_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X5 a_1158_0# a_1058_n136# a_954_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+X6 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=7.8p ps=25.3u w=12u l=0.5u
+X7 a_750_0# a_650_n136# a_546_0# w_n180_n88# pfet_03v3 ad=3.12p pd=12.52u as=3.12p ps=12.52u w=12u l=0.5u
+.ends
+
+.subckt pfet$1 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=7.8p pd=25.3u as=7.8p ps=25.3u w=12u l=0.5u
+.ends
+
+.subckt nfet$4 a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt nfet$2 a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
 .ends
 
 .subckt asc_hysteresis_buffer vss in vdd out
-Xnfet$22_0 m1_1156_42# vss m1_884_42# vss nfet$22
-Xpfet$21_0 out out m1_1156_42# vdd m1_1156_42# out vdd vdd m1_1156_42# out m1_1156_42#
-+ m1_1156_42# out m1_1156_42# vdd m1_1156_42# vdd m1_1156_42# pfet$21
-Xnfet$20_0 in vss m1_348_648# vss nfet$20
-Xpfet$19_0 vdd vdd m1_884_42# m1_348_648# pfet$19
-Xnfet$18_0 m1_1156_42# vss m1_884_42# m1_884_42# m1_884_42# m1_1156_42# m1_1156_42#
-+ vss m1_884_42# vss nfet$18
-Xpfet$22_0 vdd vdd m1_884_42# m1_1156_42# pfet$22
-Xnfet$21_0 out out vss m1_1156_42# m1_1156_42# out vss m1_1156_42# m1_1156_42# m1_1156_42#
-+ out m1_1156_42# m1_1156_42# out vss m1_1156_42# vss vss nfet$21
-Xpfet$20_0 vdd vdd m1_348_648# in pfet$20
-Xnfet$19_0 m1_348_648# vss m1_884_42# vss nfet$19
-Xpfet$18_0 m1_1156_42# vdd vdd m1_1156_42# m1_884_42# m1_884_42# m1_1156_42# vdd m1_884_42#
-+ m1_884_42# pfet$18
+Xpfet_0 m1_1156_42# vdd vdd m1_1156_42# m1_884_42# m1_884_42# m1_1156_42# vdd m1_884_42#
++ m1_884_42# pfet
+Xpfet$4_0 vdd vdd m1_884_42# m1_1156_42# pfet$4
+Xpfet$2_0 vdd vdd m1_348_648# in pfet$2
+Xnfet$3_0 out out vss m1_1156_42# m1_1156_42# out vss m1_1156_42# m1_1156_42# m1_1156_42#
++ out m1_1156_42# m1_1156_42# out vss m1_1156_42# vss vss nfet$3
+Xnfet$1_0 m1_348_648# vss m1_884_42# vss nfet$1
+Xnfet_0 m1_1156_42# vss m1_884_42# m1_884_42# m1_884_42# m1_1156_42# m1_1156_42# vss
++ m1_884_42# vss nfet
+Xpfet$3_0 out out m1_1156_42# vdd m1_1156_42# out vdd vdd m1_1156_42# out m1_1156_42#
++ m1_1156_42# out m1_1156_42# vdd m1_1156_42# vdd m1_1156_42# pfet$3
+Xpfet$1_0 vdd vdd m1_884_42# m1_348_648# pfet$1
+Xnfet$4_0 m1_1156_42# vss m1_884_42# vss nfet$4
+Xnfet$2_0 in vss m1_348_648# vss nfet$2
 .ends
 
-.subckt gf180mcu_fd_sc_mcu9t5v0__and2_1 A1 A2 VDD VSS Z VNW VPW
-X0 VDD A2 a_36_201# VNW pfet_05v0 ad=0.5054p pd=2.57u as=0.2132p ps=1.34u w=0.82u l=0.5u
-X1 a_244_201# A1 a_36_201# VPW nfet_05v0 ad=0.1056p pd=0.98u as=0.2904p ps=2.2u w=0.66u l=0.6u
-X2 Z a_36_201# VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.3894p ps=2.06u w=1.32u l=0.6u
-X3 Z a_36_201# VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.5054p ps=2.57u w=1.83u l=0.5u
-X4 VSS A2 a_244_201# VPW nfet_05v0 ad=0.3894p pd=2.06u as=0.1056p ps=0.98u w=0.66u l=0.6u
-X5 a_36_201# A1 VDD VNW pfet_05v0 ad=0.2132p pd=1.34u as=0.3608p ps=2.52u w=0.82u l=0.5u
-.ends
-
-.subckt gf180mcu_fd_sc_mcu9t5v0__latq_1 D E Q VDD VSS VNW VPW
+.subckt gf180mcu_fd_sc_mcu9t5v0__latq_1$2 D E Q VDD VSS VNW VPW
 X0 VSS a_1020_652# Q VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
 X1 a_504_110# a_36_92# VDD VNW pfet_05v0 ad=0.44p pd=2.88u as=0.476p ps=2.18u w=1u l=0.5u
 X2 VDD a_1020_652# Q VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
@@ -177,19 +168,28 @@ X14 a_1364_532# a_1020_652# VSS VPW nfet_05v0 ad=0.3476p pd=2.46u as=0.2054p ps=
 X15 a_1224_652# a_504_110# a_1020_652# VNW pfet_05v0 ad=0.426p pd=2.08u as=0.26p ps=1.52u w=1u l=0.5u
 .ends
 
-.subckt DFF_2phase_1 VDDd D PHI_2 PHI_1 Q VSSd
-Xgf180mcu_fd_sc_mcu9t5v0__latq_1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q PHI_2 Q VDDd
-+ VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
-Xgf180mcu_fd_sc_mcu9t5v0__latq_1_1 D PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q VDDd
-+ VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+.subckt DFF_2phase_1$1 D PHI_2 PHI_1 Q VDDd VSSd
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1$2_0 gf180mcu_fd_sc_mcu9t5v0__latq_1$2_1/Q PHI_2 Q
++ VDDd VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1$2
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1$2_1 D PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1$2_1/Q
++ VDDd VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1$2
 .ends
 
-.subckt gf180mcu_fd_sc_mcu9t5v0__inv_1 I VDD VSS ZN VNW VPW
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_1$1 I VDD VSS ZN VNW VPW
 X0 ZN I VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
 X1 ZN I VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
 .ends
 
-.subckt gf180mcu_fd_sc_mcu9t5v0__or2_1 A1 A2 VDD VSS Z VNW VPW
+.subckt gf180mcu_fd_sc_mcu9t5v0__and2_1$1 A1 A2 VDD VSS Z VNW VPW
+X0 VDD A2 a_36_201# VNW pfet_05v0 ad=0.5054p pd=2.57u as=0.2132p ps=1.34u w=0.82u l=0.5u
+X1 a_244_201# A1 a_36_201# VPW nfet_05v0 ad=0.1056p pd=0.98u as=0.2904p ps=2.2u w=0.66u l=0.6u
+X2 Z a_36_201# VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.3894p ps=2.06u w=1.32u l=0.6u
+X3 Z a_36_201# VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.5054p ps=2.57u w=1.83u l=0.5u
+X4 VSS A2 a_244_201# VPW nfet_05v0 ad=0.3894p pd=2.06u as=0.1056p ps=0.98u w=0.66u l=0.6u
+X5 a_36_201# A1 VDD VNW pfet_05v0 ad=0.2132p pd=1.34u as=0.3608p ps=2.52u w=0.82u l=0.5u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__or2_1$1 A1 A2 VDD VSS Z VNW VPW
 X0 a_255_756# A1 a_67_756# VNW pfet_05v0 ad=0.2379p pd=1.435u as=0.4026p ps=2.71u w=0.915u l=0.5u
 X1 VSS A2 a_67_756# VPW nfet_05v0 ad=0.3828p pd=2.08u as=0.1716p ps=1.18u w=0.66u l=0.6u
 X2 VDD A2 a_255_756# VNW pfet_05v0 ad=0.57645p pd=2.69u as=0.2379p ps=1.435u w=0.915u l=0.5u
@@ -198,66 +198,66 @@ X4 Z a_67_756# VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.57645p ps=2.69u w=1.83
 X5 a_67_756# A1 VSS VPW nfet_05v0 ad=0.1716p pd=1.18u as=0.2904p ps=2.2u w=0.66u l=0.6u
 .ends
 
-.subckt Register_unitcell$1 out d en default phi2 q phi1 VSSd VDDd
-Xgf180mcu_fd_sc_mcu9t5v0__and2_1_1 q en VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__or2_1_0/A2
-+ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__and2_1
-XDFF_2phase_1_0 VDDd d phi2 phi1 q VSSd DFF_2phase_1
-Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 en VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
-+ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-Xgf180mcu_fd_sc_mcu9t5v0__or2_1_0 gf180mcu_fd_sc_mcu9t5v0__or2_1_0/A1 gf180mcu_fd_sc_mcu9t5v0__or2_1_0/A2
-+ VDDd VSSd out VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__or2_1
-Xgf180mcu_fd_sc_mcu9t5v0__and2_1_0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN default VDDd
-+ VSSd gf180mcu_fd_sc_mcu9t5v0__or2_1_0/A1 VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__and2_1
+.subckt Register_unitcell out q default phi2 phi1 en d VSSd VDDd
+XDFF_2phase_1$1_0 d phi2 phi1 q VDDd VSSd DFF_2phase_1$1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1$1_0 en VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0/ZN
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1$1
+Xgf180mcu_fd_sc_mcu9t5v0__and2_1$1_0 gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0/ZN default
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__or2_1$1_0/A1 VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__and2_1$1
+Xgf180mcu_fd_sc_mcu9t5v0__and2_1$1_1 q en VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__or2_1$1_0/A2
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__and2_1$1
+Xgf180mcu_fd_sc_mcu9t5v0__or2_1$1_0 gf180mcu_fd_sc_mcu9t5v0__or2_1$1_0/A1 gf180mcu_fd_sc_mcu9t5v0__or2_1$1_0/A2
++ VDDd VSSd out VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__or2_1$1
 .ends
 
-.subckt SRegister_10$1 out[1] out[2] out[3] out[8] d default10 default9 default8 default7
-+ default6 default5 default4 default3 default2 default1 out[9] out[6] out[4] out[10]
-+ out[7] phi2 out[5] en phi1 q VDDd VSSd
-XRegister_unitcell$1_0 out[2] Register_unitcell$1_6/q en default2 phi2 Register_unitcell$1_7/d
-+ phi1 VSSd VDDd Register_unitcell$1
-XRegister_unitcell$1_1 out[6] Register_unitcell$1_9/q en default6 phi2 Register_unitcell$1_2/d
-+ phi1 VSSd VDDd Register_unitcell$1
-XRegister_unitcell$1_2 out[7] Register_unitcell$1_2/d en default7 phi2 Register_unitcell$1_3/d
-+ phi1 VSSd VDDd Register_unitcell$1
-XRegister_unitcell$1_3 out[8] Register_unitcell$1_3/d en default8 phi2 Register_unitcell$1_4/d
-+ phi1 VSSd VDDd Register_unitcell$1
-XRegister_unitcell$1_4 out[9] Register_unitcell$1_4/d en default9 phi2 Register_unitcell$1_5/d
-+ phi1 VSSd VDDd Register_unitcell$1
-XRegister_unitcell$1_5 out[10] Register_unitcell$1_5/d en default10 phi2 q phi1 VSSd
-+ VDDd Register_unitcell$1
-XRegister_unitcell$1_7 out[3] Register_unitcell$1_7/d en default3 phi2 Register_unitcell$1_8/d
-+ phi1 VSSd VDDd Register_unitcell$1
-XRegister_unitcell$1_6 out[1] d en default1 phi2 Register_unitcell$1_6/q phi1 VSSd
-+ VDDd Register_unitcell$1
-XRegister_unitcell$1_8 out[4] Register_unitcell$1_8/d en default4 phi2 Register_unitcell$1_9/d
-+ phi1 VSSd VDDd Register_unitcell$1
-XRegister_unitcell$1_9 out[5] Register_unitcell$1_9/d en default5 phi2 Register_unitcell$1_9/q
-+ phi1 VSSd VDDd Register_unitcell$1
+.subckt SRegister_10$1 out[1] out[2] out[3] out[9] d q default10 default9 default8
++ default7 default6 default5 default4 default3 default2 default1 out[6] out[4] out[10]
++ out[7] out[5] out[8] phi2 en VDDd phi1 VSSd
+XRegister_unitcell_0 out[2] Register_unitcell_7/d default2 phi2 phi1 en Register_unitcell_6/q
++ VSSd VDDd Register_unitcell
+XRegister_unitcell_1 out[6] Register_unitcell_2/d default6 phi2 phi1 en Register_unitcell_9/q
++ VSSd VDDd Register_unitcell
+XRegister_unitcell_2 out[7] Register_unitcell_3/d default7 phi2 phi1 en Register_unitcell_2/d
++ VSSd VDDd Register_unitcell
+XRegister_unitcell_3 out[8] Register_unitcell_4/d default8 phi2 phi1 en Register_unitcell_3/d
++ VSSd VDDd Register_unitcell
+XRegister_unitcell_5 out[10] q default10 phi2 phi1 en Register_unitcell_5/d VSSd VDDd
++ Register_unitcell
+XRegister_unitcell_4 out[9] Register_unitcell_5/d default9 phi2 phi1 en Register_unitcell_4/d
++ VSSd VDDd Register_unitcell
+XRegister_unitcell_6 out[1] Register_unitcell_6/q default1 phi2 phi1 en d VSSd VDDd
++ Register_unitcell
+XRegister_unitcell_7 out[3] Register_unitcell_8/d default3 phi2 phi1 en Register_unitcell_7/d
++ VSSd VDDd Register_unitcell
+XRegister_unitcell_8 out[4] Register_unitcell_9/d default4 phi2 phi1 en Register_unitcell_8/d
++ VSSd VDDd Register_unitcell
+XRegister_unitcell_9 out[5] Register_unitcell_9/q default5 phi2 phi1 en Register_unitcell_9/d
++ VSSd VDDd Register_unitcell
 .ends
 
-.subckt pfet$2 a_28_460# w_n180_n88# a_n92_0# a_94_0#
+.subckt pfet$6 a_28_460# w_n180_n88# a_n92_0# a_94_0#
 X0 a_94_0# a_28_460# a_n92_0# w_n180_n88# pfet_03v3 ad=1.3p pd=5.3u as=1.3p ps=5.3u w=2u l=0.28u
 .ends
 
-.subckt nfet$1 a_n84_0# a_94_0# a_30_460# VSUBS
+.subckt nfet$5 a_n84_0# a_94_0# a_30_460# VSUBS
 X0 a_94_0# a_30_460# a_n84_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
 .ends
 
-.subckt pfet$1 a_28_n136# w_n180_n88# a_n92_0# a_94_0#
+.subckt pfet$5 a_28_n136# w_n180_n88# a_n92_0# a_94_0#
 X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=2.6p pd=9.3u as=2.6p ps=9.3u w=4u l=0.28u
 .ends
 
-.subckt nfet$2 a_30_n132# a_n84_0# a_94_0# VSUBS
+.subckt nfet$6 a_30_n132# a_n84_0# a_94_0# VSUBS
 X0 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
 .ends
 
 .subckt SCHMITT VDD VSS IN OUT
-Xpfet$2_0 OUT VDD m1_596_1544# VSS pfet$2
-Xnfet$1_0 m1_592_402# OUT IN VSS nfet$1
-Xnfet$1_1 VSS m1_592_402# IN VSS nfet$1
-Xpfet$1_0 IN VDD m1_596_1544# OUT pfet$1
-Xpfet$1_1 IN VDD VDD m1_596_1544# pfet$1
-Xnfet$2_0 OUT m1_592_402# VDD VSS nfet$2
+Xpfet$6_0 OUT VDD m1_596_1544# VSS pfet$6
+Xnfet$5_0 m1_592_402# OUT IN VSS nfet$5
+Xnfet$5_1 VSS m1_592_402# IN VSS nfet$5
+Xpfet$5_0 IN VDD m1_596_1544# OUT pfet$5
+Xpfet$5_1 IN VDD VDD m1_596_1544# pfet$5
+Xnfet$6_0 OUT m1_592_402# VDD VSS nfet$6
 .ends
 
 .subckt scan_chain VDDd VSSd ENd DATAd CLKd out[1] out[2] out[3] out[4] out[5] out[6]
@@ -266,25 +266,29 @@ Xnfet$2_0 OUT m1_592_402# VDD VSS nfet$2
 + out[28] out[29] out[30] out[40] out[39] out[38] out[37] out[36] out[35] out[34]
 + out[33] out[32] out[31] out[41] out[42] out[43] out[44] out[45] out[46] out[47]
 + out[48] out[49] out[50]
-Xqw_NOLclk_0 SCHMITT_0/OUT VDDd VSSd qw_NOLclk_0/PHI_1 qw_NOLclk_0/PHI_2 qw_NOLclk
+Xqw_NOLclk_0 VDDd VSSd qw_NOLclk_0/PHI_1 SCHMITT_0/OUT qw_NOLclk_0/PHI_2 qw_NOLclk
 Xasc_hysteresis_buffer_0 VSSd CLKd VDDd SCHMITT_0/IN asc_hysteresis_buffer
-XSRegister_10$1_0 out[31] out[32] out[33] out[38] SRegister_10$1_3/q VSSd VSSd VSSd
-+ VSSd VSSd VSSd VSSd VSSd VSSd VSSd out[39] out[36] out[34] out[40] out[37] qw_NOLclk_0/PHI_2
-+ out[35] SRegister_10$1_4/en qw_NOLclk_0/PHI_1 SRegister_10$1_2/d VDDd VSSd SRegister_10$1
+XSRegister_10$1_0 out[31] out[32] out[33] out[39] SRegister_10$1_3/q SRegister_10$1_2/d
++ VSSd VSSd VDDd VSSd VSSd VDDd VDDd VSSd VSSd VSSd out[36] out[34] out[40] out[37]
++ out[35] out[38] qw_NOLclk_0/PHI_2 SRegister_10$1_4/en VDDd qw_NOLclk_0/PHI_1 VSSd
++ SRegister_10$1
 Xasc_hysteresis_buffer_1 VSSd ENd VDDd SRegister_10$1_4/en asc_hysteresis_buffer
-XSRegister_10$1_1 out[11] out[12] out[13] out[18] SRegister_10$1_4/q VSSd VSSd VSSd
-+ VSSd VSSd VSSd VSSd VSSd VSSd VSSd out[19] out[16] out[14] out[20] out[17] qw_NOLclk_0/PHI_2
-+ out[15] SRegister_10$1_4/en qw_NOLclk_0/PHI_1 SRegister_10$1_3/d VDDd VSSd SRegister_10$1
+XSRegister_10$1_1 out[11] out[12] out[13] out[19] SRegister_10$1_4/q SRegister_10$1_3/d
++ VSSd VSSd VSSd VSSd VSSd VSSd VSSd VSSd VSSd VSSd out[16] out[14] out[20] out[17]
++ out[15] out[18] qw_NOLclk_0/PHI_2 SRegister_10$1_4/en VDDd qw_NOLclk_0/PHI_1 VSSd
++ SRegister_10$1
 Xasc_hysteresis_buffer_2 VSSd DATAd VDDd SRegister_10$1_4/d asc_hysteresis_buffer
-XSRegister_10$1_2 out[41] out[42] out[43] out[48] SRegister_10$1_2/d VSSd VSSd VSSd
-+ VSSd VSSd VSSd VSSd VSSd VSSd VSSd out[49] out[46] out[44] out[50] out[47] qw_NOLclk_0/PHI_2
-+ out[45] SRegister_10$1_4/en qw_NOLclk_0/PHI_1 SRegister_10$1_2/q VDDd VSSd SRegister_10$1
-XSRegister_10$1_3 out[21] out[22] out[23] out[28] SRegister_10$1_3/d VSSd VSSd VSSd
-+ VSSd VSSd VSSd VSSd VSSd VSSd VSSd out[29] out[26] out[24] out[30] out[27] qw_NOLclk_0/PHI_2
-+ out[25] SRegister_10$1_4/en qw_NOLclk_0/PHI_1 SRegister_10$1_3/q VDDd VSSd SRegister_10$1
-XSRegister_10$1_4 out[1] out[2] out[3] out[8] SRegister_10$1_4/d VSSd VSSd VSSd VSSd
-+ VSSd VSSd VSSd VSSd VSSd VSSd out[9] out[6] out[4] out[10] out[7] qw_NOLclk_0/PHI_2
-+ out[5] SRegister_10$1_4/en qw_NOLclk_0/PHI_1 SRegister_10$1_4/q VDDd VSSd SRegister_10$1
+XSRegister_10$1_2 out[41] out[42] out[43] out[49] SRegister_10$1_2/d SRegister_10$1_2/q
++ VSSd VSSd VSSd VSSd VDDd VSSd VSSd VDDd VDDd VSSd out[46] out[44] out[50] out[47]
++ out[45] out[48] qw_NOLclk_0/PHI_2 SRegister_10$1_4/en VDDd qw_NOLclk_0/PHI_1 VSSd
++ SRegister_10$1
+XSRegister_10$1_3 out[21] out[22] out[23] out[29] SRegister_10$1_3/d SRegister_10$1_3/q
++ VSSd VSSd VSSd VSSd VSSd VSSd VSSd VSSd VSSd VSSd out[26] out[24] out[30] out[27]
++ out[25] out[28] qw_NOLclk_0/PHI_2 SRegister_10$1_4/en VDDd qw_NOLclk_0/PHI_1 VSSd
++ SRegister_10$1
+XSRegister_10$1_4 out[1] out[2] out[3] out[9] SRegister_10$1_4/d SRegister_10$1_4/q
++ VSSd VSSd VSSd VSSd VDDd VSSd VSSd VSSd VSSd VSSd out[6] out[4] out[10] out[7] out[5]
++ out[8] qw_NOLclk_0/PHI_2 SRegister_10$1_4/en VDDd qw_NOLclk_0/PHI_1 VSSd SRegister_10$1
 XSCHMITT_0 VDDd VSSd SCHMITT_0/IN SCHMITT_0/OUT SCHMITT
 .ends
 

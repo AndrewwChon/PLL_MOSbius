@@ -5,11 +5,11 @@ V {}
 S {}
 E {}
 T {clk rising edge triggered with inverting schmitt trigger} 680 -930 0 0 0.4 0.4 {}
-T {default0[1:9] is the swallow counter default state set to S=200 (011001000)} 830 -490 0 0 0.4 0.4 {}
-T {default0[10], default1[1:8] is the program counter default state set to P=400 (110010000)} 830 -460 0 0 0.4 0.4 {}
-T {default1[9:10] is the PFD MUX default state set to Select C (00) (Non-Polarity Switch PFD)} 830 -430 0 0 0.4 0.4 {}
-T {default2[1:2] is the VCO MUX default state set to Select C (00) (CS Ring VCO)} 830 -400 0 0 0.4 0.4 {}
-T {default2[3:6] is the Charge Pump default state set to 100uA (1000)} 830 -370 0 0 0.4 0.4 {}
+T {swallow counter default state set to S=200 (011001000)} 830 -490 0 0 0.4 0.4 {}
+T {program counter default state set to P=400 (110010000)} 830 -460 0 0 0.4 0.4 {}
+T {PFD MUX default state set to Select C (00) (Non-Polarity Switch PFD)} 830 -430 0 0 0.4 0.4 {}
+T {VCO MUX default state set to Select C (00) (CS Ring VCO)} 830 -400 0 0 0.4 0.4 {}
+T {Charge Pump default state set to 100uA (0001)} 830 -370 0 0 0.4 0.4 {}
 N 1300 -960 1300 -930 {lab=VDDd}
 N 1320 -960 1320 -930 {lab=VSSd}
 N 760 -860 790 -860 {lab=#net1}
@@ -119,7 +119,7 @@ N 1180 -780 1250 -780 {lab=VSSd}
 N 1180 -760 1250 -760 {lab=VSSd}
 N 1180 -740 1250 -740 {lab=VSSd}
 N 1180 -720 1250 -720 {lab=VSSd}
-N 1180 -700 1250 -700 {lab=VSSd}
+N 1180 -700 1250 -700 {lab=VDDd}
 N 1180 -680 1250 -680 {lab=VSSd}
 N 1180 -660 1250 -660 {lab=VSSd}
 N 1180 -640 1250 -640 {lab=VSSd}
@@ -146,19 +146,19 @@ N 2040 -620 2110 -620 {lab=VSSd}
 N 2040 -800 2110 -800 {lab=VSSd}
 N 2470 -780 2540 -780 {lab=VSSd}
 N 2470 -760 2540 -760 {lab=VSSd}
-N 2470 -740 2540 -740 {lab=VSSd}
-N 2470 -720 2540 -720 {lab=VSSd}
+N 2470 -740 2540 -740 {lab=#net2}
+N 2470 -720 2540 -720 {lab=#net3}
 N 2470 -700 2540 -700 {lab=VSSd}
 N 2470 -680 2540 -680 {lab=VSSd}
-N 2470 -660 2540 -660 {lab=VSSd}
+N 2470 -660 2540 -660 {lab=#net4}
 N 2470 -640 2540 -640 {lab=VSSd}
 N 2470 -620 2540 -620 {lab=VSSd}
 N 2470 -800 2540 -800 {lab=VSSd}
-N 2900 -780 2970 -780 {lab=VSSd}
-N 2900 -760 2970 -760 {lab=VSSd}
+N 2900 -780 2970 -780 {lab=#net5}
+N 2900 -760 2970 -760 {lab=#net6}
 N 2900 -740 2970 -740 {lab=VSSd}
 N 2900 -720 2970 -720 {lab=VSSd}
-N 2900 -700 2970 -700 {lab=VSSd}
+N 2900 -700 2970 -700 {lab=#net7}
 N 2900 -680 2970 -680 {lab=VSSd}
 N 2900 -660 2970 -660 {lab=VSSd}
 N 2900 -640 2970 -640 {lab=VSSd}
@@ -263,19 +263,13 @@ C {lab_wire.sym} 2080 -620 0 0 {name=p87 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2510 -800 0 0 {name=p19 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2510 -780 0 0 {name=p29 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2510 -760 0 0 {name=p57 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 2510 -740 0 0 {name=p88 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 2510 -720 0 0 {name=p89 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2510 -700 0 0 {name=p90 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2510 -680 0 0 {name=p91 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 2510 -660 0 0 {name=p92 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2510 -640 0 0 {name=p93 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2510 -620 0 0 {name=p94 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2940 -800 0 0 {name=p95 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 2940 -780 0 0 {name=p96 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 2940 -760 0 0 {name=p97 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2940 -740 0 0 {name=p98 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2940 -720 0 0 {name=p99 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 2940 -700 0 0 {name=p100 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2940 -680 0 0 {name=p101 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2940 -660 0 0 {name=p102 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 2940 -640 0 0 {name=p103 sig_type=std_logic lab=VSSd}
@@ -283,4 +277,10 @@ C {lab_wire.sym} 2940 -620 0 0 {name=p104 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 1220 -720 0 0 {name=p45 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 1220 -760 0 0 {name=p40 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 1220 -780 0 0 {name=p47 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 1220 -700 0 0 {name=p48 sig_type=std_logic lab=VSSd}
+C {lab_wire.sym} 1220 -700 0 0 {name=p48 sig_type=std_logic lab=VDDd}
+C {lab_wire.sym} 2510 -740 0 0 {name=p105 sig_type=std_logic lab=VDDd}
+C {lab_wire.sym} 2510 -720 0 0 {name=p88 sig_type=std_logic lab=VDDd}
+C {lab_wire.sym} 2510 -660 0 0 {name=p89 sig_type=std_logic lab=VDDd}
+C {lab_wire.sym} 2940 -780 0 0 {name=p92 sig_type=std_logic lab=VDDd}
+C {lab_wire.sym} 2940 -760 0 0 {name=p96 sig_type=std_logic lab=VDDd}
+C {lab_wire.sym} 2940 -700 0 0 {name=p97 sig_type=std_logic lab=VDDd}
