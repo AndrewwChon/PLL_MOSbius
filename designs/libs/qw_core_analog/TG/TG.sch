@@ -23,7 +23,7 @@ N 240 -250 340 -250 {lab=vdd}
 N 340 -350 340 -250 {lab=vdd}
 C {symbols/pfet_03v3.sym} 240 -310 1 0 {name=M1
 L=0.28u
-W=5u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -37,7 +37,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 240 -110 3 0 {name=M2
 L=0.28u
-W=5u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

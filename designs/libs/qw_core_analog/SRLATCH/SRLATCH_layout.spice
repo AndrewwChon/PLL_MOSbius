@@ -1,0 +1,21 @@
+* NGSPICE file created from SRLATCH.ext - technology: gf180mcuD
+
+.subckt nfet$1 a_n84_0# a_94_0# a_30_160# VSUBS
+X0 a_94_0# a_30_160# a_n84_0# VSUBS nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=0.28u
+.ends
+
+.subckt pfet$1 a_28_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.3p pd=5.3u as=1.3p ps=5.3u w=2u l=0.28u
+.ends
+
+.subckt SRLATCH q qb s r vdd vss
+Xnfet$1_0 vss qb r vss nfet$1
+Xnfet$1_1 vss qb q vss nfet$1
+Xnfet$1_2 q vss s vss nfet$1
+Xnfet$1_3 q vss qb vss nfet$1
+Xpfet$1_0 r vdd m1_818_875# qb pfet$1
+Xpfet$1_1 q vdd vdd m1_818_875# pfet$1
+Xpfet$1_3 qb vdd q m1_50_875# pfet$1
+Xpfet$1_2 s vdd m1_50_875# vdd pfet$1
+.ends
+

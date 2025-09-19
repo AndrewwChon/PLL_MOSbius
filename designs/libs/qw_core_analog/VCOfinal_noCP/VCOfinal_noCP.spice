@@ -1,0 +1,101 @@
+** sch_path: /foss/designs/libs/qw_core_analog/VCOfinal_noCP/VCOfinal_noCP.sch
+.subckt VCOfinal_noCP osci vdd vss irefp irefn fout foutb qb qnot
+*.PININFO osci:B vdd:B vss:B irefp:B irefn:B fout:B foutb:B qb:B qnot:B
+x3 vdd q qnot vss INV
+x5 vdd net1 fout vss INV
+x7 vdd net2 foutb vss INV
+* noconn fout
+XR3 vss vlow vss ppolyf_u r_width=1e-6 r_length=21e-6 m=1
+XR1 vhigh vdd vss ppolyf_u r_width=1e-6 r_length=21e-6 m=1
+XR2 vlow net3 vss ppolyf_u r_width=1e-6 r_length=21e-6 m=1
+XR4 net3 vhigh vss ppolyf_u r_width=1e-6 r_length=21e-6 m=1
+x6 vdd out_comp_high q qb out_comp_low vss SRLATCH
+x9 vdd osci out_comp_high vhigh irefn vss Ncomparator
+x11 vdd irefp vlow out_comp_low osci vss Pcomparator
+x2 q net1 vdd vss SCHXMITT
+x1 qb net2 vdd vss SCHXMITT
+.ends
+
+* expanding   symbol:  libs/qw_core_analog/INV.sym # of pins=4
+** sym_path: /foss/designs/libs/qw_core_analog/INV.sym
+** sch_path: /foss/designs/libs/qw_core_analog/INV.sch
+.subckt INV VDD A A_BAR VSS
+*.PININFO A:I VDD:I VSS:I A_BAR:O
+XM11 A_BAR A VSS VSS nfet_03v3 L=0.28u W=1u nf=1 m=1
+XM12 A_BAR A VDD VDD pfet_03v3 L=0.28u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/SRLATCH/SRLATCH.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/SRLATCH/SRLATCH.sym
+** sch_path: /foss/designs/libs/qw_core_analog/SRLATCH/SRLATCH.sch
+.subckt SRLATCH vdd s q qb r vss
+*.PININFO s:B r:B q:B qb:B vdd:B vss:B
+x1 vdd s qb q vss NOR
+x2 vdd q r qb vss NOR
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/Ncomparator/Ncomparator.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/Ncomparator/Ncomparator.sym
+** sch_path: /foss/designs/libs/qw_core_analog/Ncomparator/Ncomparator.sch
+.subckt Ncomparator vdd inp out inn iref vss
+*.PININFO inp:B inn:B out:B vdd:B vss:B iref:B
+XM6 iref iref vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+XM8 net2 net2 vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM1 net1 iref vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+XM2 net2 inn net1 vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM3 net3 inp net1 vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM4 net3 net2 vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM5 out iref vss vss nfet_03v3 L=0.28u W=16u nf=8 m=1
+XM7 out net3 vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM9 vdd vdd vdd vdd pfet_03v3 L=0.28u W=5u nf=2 m=4
+XM10 vss vss vss vss nfet_03v3 L=0.28u W=2u nf=1 m=2
+XM11 net1 net1 net1 vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/Pcomparator/Pcomparator.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/Pcomparator/Pcomparator.sym
+** sch_path: /foss/designs/libs/qw_core_analog/Pcomparator/Pcomparator.sch
+.subckt Pcomparator vdd iref inp out inn vss
+*.PININFO inp:B inn:B vdd:B vss:B out:B iref:B
+XM8 iref iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM1 net1 iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM2 net2 inn net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM3 net3 inp net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM4 net2 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM5 net3 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM6 out iref vdd vdd pfet_03v3 L=0.28u W=20u nf=8 m=2
+XM7 out net3 vss vss nfet_03v3 L=0.28u W=16u nf=8 m=1
+XM9 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+XM10 vdd vdd vdd vdd pfet_03v3 L=0.28u W=2.5u nf=1 m=4
+XM11 net1 net1 net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/SCHXMITT/SCHXMITT.sym # of pins=4
+** sym_path: /foss/designs/libs/qw_core_analog/SCHXMITT/SCHXMITT.sym
+** sch_path: /foss/designs/libs/qw_core_analog/SCHXMITT/SCHXMITT.sch
+.subckt SCHXMITT IN OUT VDD VSS
+*.PININFO OUT:B IN:B VDD:B VSS:B
+XM1 OUT IN net1 VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+XM2 OUT IN net2 VDD pfet_03v3 L=0.28u W=4u nf=1 m=1
+XM3 net2 IN VDD VDD pfet_03v3 L=0.28u W=4u nf=1 m=1
+XM4 net1 IN VSS VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+XM5 VSS OUT net2 VDD pfet_03v3 L=0.28u W=2u nf=1 m=1
+XM6 VDD OUT net1 VSS nfet_03v3 L=0.28u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/NOR.sym # of pins=5
+** sym_path: /foss/designs/libs/qw_core_analog/NOR.sym
+** sch_path: /foss/designs/libs/qw_core_analog/NOR.sch
+.subckt NOR vdd a b out vss
+*.PININFO vdd:B vss:B a:B b:B out:B
+XM1 out a vss vss nfet_03v3 L=0.28u W=0.5u nf=1 m=1
+XM2 net1 a vdd vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+XM3 out b net1 vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+XM4 out b vss vss nfet_03v3 L=0.28u W=0.5u nf=1 m=1
+.ends
+

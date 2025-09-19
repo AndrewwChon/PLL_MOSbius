@@ -1,0 +1,141 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u                        |Circuit 2: ppolyf_u                        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
+Flattening unmatched subcell pfet$6 in circuit OTAforChargePump (0)(6 instances)
+Flattening unmatched subcell nfet$13 in circuit OTAforChargePump (0)(2 instances)
+Flattening unmatched subcell pfet$5 in circuit OTAforChargePump (0)(12 instances)
+Flattening unmatched subcell nfet$12 in circuit OTAforChargePump (0)(4 instances)
+
+Class OTAforChargePump (0):  Merged 67 parallel devices.
+Subcircuit summary:
+Circuit 1: OTAforChargePump                |Circuit 2: OTAforChargePump                
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (60->6)                          |pfet_03v3 (18->6)                          
+nfet_03v3 (16->3)                          |nfet_03v3 (6->3)                           
+Number of devices: 9                       |Number of devices: 9                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: OTAforChargePump                |Circuit 2: OTAforChargePump                
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+inp                                        |inp                                        
+inn                                        |inn                                        
+iref                                       |iref                                       
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OTAforChargePump and OTAforChargePump are equivalent.
+Flattening unmatched subcell nfet$10 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell pfet in circuit PCP1248X (0)(36 instances)
+Flattening unmatched subcell pfet$1 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell nfet$15 in circuit PCP1248X (0)(1 instance)
+Flattening unmatched subcell nfet$9 in circuit PCP1248X (0)(37 instances)
+Flattening unmatched subcell pfet$4 in circuit PCP1248X (0)(6 instances)
+Flattening unmatched subcell pfet$10 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell nfet$16 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell pfet$9 in circuit PCP1248X (0)(4 instances)
+Flattening unmatched subcell ppolyf_u_resistor in circuit PCP1248X (0)(6 instances)
+Flattening unmatched subcell nfet in circuit PCP1248X (0)(4 instances)
+Flattening unmatched subcell nfet$8 in circuit PCP1248X (0)(3 instances)
+Flattening unmatched subcell cap_mim$1 in circuit PCP1248X (0)(3 instances)
+Flattening unmatched subcell nfet$6 in circuit PCP1248X (0)(4 instances)
+Flattening unmatched subcell pfet$11 in circuit PCP1248X (0)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit PCP1248X (1)(4 instances)
+Flattening unmatched subcell TG in circuit PCP1248X (1)(8 instances)
+
+Class PCP1248X (0):  Merged 520 parallel devices.
+Class PCP1248X (0):  Merged 5 series devices.
+Class PCP1248X (1):  Merged 6 parallel devices.
+Class PCP1248X (1):  Merged 5 series devices.
+Subcircuit summary:
+Circuit 1: PCP1248X                        |Circuit 2: PCP1248X                        
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (214->34)                        |nfet_03v3 (73->34)                         
+pfet_03v3 (372->32)                        |pfet_03v3 (71->32)                         
+OTAforChargePump (1)                       |OTAforChargePump (1)                       
+ppolyf_u (6->1)                            |ppolyf_u (6->1)                            
+cap_mim_2f0_m4m5_noshield (3)              |cap_mim_2f0fF (3)                          
+Number of devices: 71                      |Number of devices: 71                      
+Number of nets: 41                         |Number of nets: 41                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: PCP1248X                        |Circuit 2: PCP1248X                        
+-------------------------------------------|-------------------------------------------
+s0                                         |s0                                         
+s1                                         |s1                                         
+s2                                         |s2                                         
+s3                                         |s3                                         
+down                                       |down                                       
+up                                         |up                                         
+iref200u                                   |iref200u                                   
+vin                                        |vin                                        
+vdd                                        |vdd                                        
+out                                        |out                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes PCP1248X and PCP1248X are equivalent.
+
+Final result: Circuits match uniquely.
+.
