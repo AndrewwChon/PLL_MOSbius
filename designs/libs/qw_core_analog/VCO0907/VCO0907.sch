@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 240 -1730 1430 -1010 {flags=graph
-y1=-0.04320988
-y2=3.3175585
+y1=-2.7318246
+y2=0.62894374
 ypos1=-0.5
 ypos2=3.5
 divy=5
 subdivy=1
 unity=1
-x1=2.4910572e-08
-x2=9.9066284e-08
+x1=4.5e-07
+x2=1.45e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -45,8 +45,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.4910572e-08
-x2=9.9066284e-08
+x1=4.5e-07
+x2=1.45e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -161,32 +161,6 @@ N 980 -620 1060 -620 {lab=vdd}
 N 980 -620 980 -500 {lab=vdd}
 N 720 -860 720 -830 {lab=s3}
 N 720 -770 720 -740 {lab=vss}
-C {devices/code_shown.sym} 2430 -610 0 0 {name=Simulation only_toplevel=false value="
-
-.param VDD = 3.3
-.param Vtune = 2
-.param s0 = 3.3 s1 = 0 s2 = 0 s3 = 0
-.param VIN=1
-*V6 net3 0 \{Vtune\}
-.meas tran period1 TRIG v(fout) VAL=1.65 RISE=15 TARG v(fout) VAL=1.65 RISE=16
-.meas tran freq param='1/period1' 
-
-.control
-save all
-
-let vstart = 0.0
-let vstop = 3.3
-let vstep = 0.1
-
-foreach VINVAL 2.0
-    alterparam Vtune = $VINVAL
-    reset
-    tran 10p 2u
-end
-
-write VCO0907.raw
-.endc
-"}
 C {devices/code_shown.sym} 2420 -800 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -286,10 +260,27 @@ C {lab_wire.sym} 660 -750 2 1 {name=p45 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1340 -120 0 0 {name=p33 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1080 -330 0 1 {name=p46 sig_type=std_logic lab=qb}
 C {lab_wire.sym} 1080 -410 0 1 {name=p47 sig_type=std_logic lab=qnot}
-C {capa-2.sym} 1240 -330 0 0 {name=C3 gnd=0 value=1p m=1}
+C {capa-2.sym} 1240 -330 0 0 {name=C3 gnd=0 value=1.2p m=1}
 C {lab_wire.sym} 1380 -740 2 1 {name=p63 sig_type=std_logic lab=vss}
 C {libs/qw_core_analog/PCP1248X/PCP1248X.sym} 1000 -370 0 0 {name=x6}
 C {lab_wire.sym} 1030 -240 0 0 {name=p81 sig_type=std_logic lab=s3}
 C {vsource.sym} 720 -800 0 0 {name=V7 value=\{s3\} savecurrent=false}
 C {lab_wire.sym} 720 -850 0 0 {name=p17 sig_type=std_logic lab=s3}
 C {lab_wire.sym} 720 -750 2 1 {name=p48 sig_type=std_logic lab=vss}
+C {devices/code_shown.sym} 2420 -580 0 0 {name=Simulation only_toplevel=false value="
+
+.param VDD = 3.3
+.param Vtune = 2.5
+.param s0 = 3.3 s1 = 0 s2 = 0 s3 = 0
+
+*V6 net3 0 \{Vtune\}
+
+.control
+save all
+
+    .tran 10p 1u
+end
+
+write VCO0907.raw
+.endc
+"}

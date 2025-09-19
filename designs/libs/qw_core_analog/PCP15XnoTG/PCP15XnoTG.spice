@@ -1,0 +1,62 @@
+** sch_path: /foss/designs/libs/qw_core_analog/PCP15XnoTG/PCP15XnoTG.sch
+.subckt PCP15XnoTG vdd vss vin iref200u out up down
+*.PININFO vdd:B vss:B vin:B iref200u:B out:B up:B down:B
+XM26 net1 gaten vss vss nfet_03v3 L=0.5u W=8u nf=4 m=1
+XM27 net8 vb1 net1 vss nfet_03v3 L=0.5u W=8u nf=4 m=1
+XM29 net2 gaten vss vss nfet_03v3 L=0.5u W=8u nf=4 m=2
+XM30 net8 vb1 net2 vss nfet_03v3 L=0.5u W=8u nf=4 m=2
+XM32 net3 gaten vss vss nfet_03v3 L=0.5u W=8u nf=4 m=4
+XM33 net8 vb1 net3 vss nfet_03v3 L=0.5u W=8u nf=4 m=4
+XM34 net7 vb2 net4 vdd pfet_03v3 L=0.5u W=20u nf=8 m=1
+XM35 net4 gatep vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=1
+XM37 net7 vb2 net5 vdd pfet_03v3 L=0.5u W=20u nf=8 m=2
+XM38 net5 gatep vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=2
+XM40 net7 vb2 net6 vdd pfet_03v3 L=0.5u W=20u nf=8 m=4
+XM41 net6 gatep vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=4
+XM43 out down net8 vss nfet_03v3 L=0.28u W=8u nf=4 m=1
+XM44 out up net7 vdd pfet_03v3 L=0.28u W=20u nf=8 m=1
+XM15 net10 gatep vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=1
+XM16 gatep vb2 net10 vdd pfet_03v3 L=0.5u W=20u nf=8 m=1
+XM23 net9 gaten vss vss nfet_03v3 L=0.5u W=8u nf=4 m=1
+XM24 gatep vb1 net9 vss nfet_03v3 L=0.5u W=8u nf=4 m=1
+XM45 vb2 gaten vss vss nfet_03v3 L=0.5u W=4u nf=4 m=2
+XM46 vb2 vb2 vdd vdd pfet_03v3 L=0.5u W=2.5u nf=2 m=2
+XM47 vb1 vb2 vdd vdd pfet_03v3 L=0.5u W=2.5u nf=2 m=2
+XM48 vb1 vb1 vss vss nfet_03v3 L=0.5u W=2u nf=2 m=1
+XM49 net11 gaten vss vss nfet_03v3 L=0.5u W=4u nf=4 m=2
+XM50 vdd vb1 net11 vss nfet_03v3 L=0.5u W=8u nf=1 m=1
+x8 vdd iref200u vdd vin gaten vss OTAforChargePump
+XM2 net12 gaten vss vss nfet_03v3 L=0.5u W=8u nf=4 m=8
+XM3 net8 vb1 net12 vss nfet_03v3 L=0.5u W=8u nf=4 m=8
+XM4 net7 vb2 net13 vdd pfet_03v3 L=0.5u W=20u nf=8 m=8
+XM5 net13 gatep vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=8
+XM7 vss vss vss vss nfet_03v3 L=0.5u W=2u nf=2 m=2
+XM8 vdd vdd vdd vdd pfet_03v3 L=0.5u W=2.5u nf=2 m=2
+XM9 vdd vdd vdd vdd pfet_03v3 L=0.5u W=10u nf=4 m=6
+XM10 vdd vdd vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=2
+XM11 net7 net7 net7 vdd pfet_03v3 L=0.5u W=10u nf=4 m=5
+XM12 net7 net7 net7 vdd pfet_03v3 L=0.5u W=20u nf=8 m=2
+XM13 gatep gatep gatep vdd pfet_03v3 L=0.5u W=10u nf=4 m=1
+XM14 vss vss vss vss nfet_03v3 L=0.5u W=4u nf=2 m=6
+XM17 vss vss vss vss nfet_03v3 L=0.5u W=8u nf=4 m=2
+XM18 net8 net8 net8 vss nfet_03v3 L=0.5u W=4u nf=2 m=5
+XM19 net8 net8 net8 vss nfet_03v3 L=0.5u W=8u nf=4 m=2
+XM20 gatep gatep gatep vss nfet_03v3 L=0.5u W=4u nf=2 m=1
+.ends
+
+* expanding   symbol:  libs/qw_core_analog/OTAforChargePump/OTAforChargePump.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/OTAforChargePump/OTAforChargePump.sym
+** sch_path: /foss/designs/libs/qw_core_analog/OTAforChargePump/OTAforChargePump.sch
+.subckt OTAforChargePump vdd iref inp inn out vss
+*.PININFO inp:B inn:B vdd:B vss:B out:B iref:B
+XM8 iref iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM1 net1 iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM2 net2 inp net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM3 out inn net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM4 net2 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM5 out net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM6 vdd vdd vdd vdd pfet_03v3 L=0.28u W=5u nf=2 m=4
+XM7 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+XM9 net1 net1 net1 vdd pfet_03v3 L=0.28u W=5u nf=2 m=2
+.ends
+

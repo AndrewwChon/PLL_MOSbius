@@ -1,0 +1,625 @@
+timestamp 1586871989
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use Pcomparator Pcomparator_0 -1 0 13638 0 1 -12528
+use nfet$19$1 nfet$19$1_1 -1 0 12129 0 1 -18623
+use pfet$19 pfet$19_1 -1 0 12129 0 1 -17389
+use SRLATCH SRLATCH_0 -1 0 17051 0 1 -16814
+use SCHMITT SCHMITT_1 1 0 17751 0 1 -19298
+use ppolyf_u_resistor$2 ppolyf_u_resistor$2_3 -1 0 18300 0 1 -12596
+use ppolyf_u_resistor$2 ppolyf_u_resistor$2_2 -1 0 18300 0 1 -13396
+use ppolyf_u_resistor$2 ppolyf_u_resistor$2_1 -1 0 18300 0 1 -12996
+use ppolyf_u_resistor$2 ppolyf_u_resistor$2_0 -1 0 18300 0 1 -13796
+use SCHMITT SCHMITT_0 -1 0 14221 0 1 -19021
+use pfet$19 pfet$19_0 -1 0 15245 0 1 -15941
+use nfet$19$1 nfet$19$1_0 -1 0 15245 0 1 -17175
+use Ncomparator Ncomparator_0 1 0 20345 0 1 -14362
+use nfet$19$1 nfet$19$1_2 1 0 19843 0 1 -18900
+use pfet$19 pfet$19_2 1 0 19843 0 1 -17666
+port "irefp" 6 11389 -11804 11389 -11804 m2
+port "irefn" 3 20860 -16545 20860 -16545 m1
+port "qb" 4 17439 -11794 17439 -11794 m2
+port "osci" 9 1508 -11346 1508 -11346 m4
+port "fout" 7 20112 -18203 20112 -18203 m2
+port "foutb" 8 11855 -17928 11855 -17928 m2
+port "qnot" 5 14328 -11803 14328 -11803 m2
+port "vdd" 2 12847 -15040 12847 -15040 m1
+port "vss" 1 16011 -17915 16011 -17915 m1
+node "irefp" 0 0 11389 -11804 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "irefn" 0 0 20860 -16545 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_13605_n17581#" 1 985.23 13605 -17581 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 199320 2252 471680 4728 0 0 0 0
+node "m2_12027_n16151#" 3 1155.33 12027 -16151 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 207560 4244 586960 5776 0 0 0 0
+node "m2_16717_n16059#" 3 933.721 16717 -16059 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 331800 6836 0 0 0 0 0 0
+node "qb" 3 1372.74 17439 -11794 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 680256 7622 768900 7430 0 0 0 0
+node "osci" 15 9465.74 1508 -11346 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 943800 18900 835560 8036 5623600 33760 714340 4882
+node "m1_19859_n18642#" 2 553.798 19859 -18642 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44000 1280 126480 2672 0 0 0 0 0 0
+node "fout" 2 616.006 20112 -18203 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44304 1288 145200 3104 0 0 0 0 0 0
+node "m1_12013_n18365#" 2 549.09 12013 -18365 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44000 1280 126480 2672 0 0 0 0 0 0
+node "foutb" 2 611.634 11855 -17928 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44304 1288 145200 3104 0 0 0 0 0 0
+node "m1_17573_n16191#" 0 877.705 17573 -16191 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 385884 3018 0 0 0 0 0 0 0 0
+node "m1_15129_n16917#" 5 2397.65 15129 -16917 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44000 1280 596440 10390 0 0 0 0 0 0
+node "qnot" 4 1779.6 14328 -11803 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44304 1288 505940 7598 764500 7390 0 0 0 0
+node "m1_13996_n14070#" 4 4582.94 13996 -14070 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1737117 17822 0 0 0 0 0 0 0 0
+node "m1_18300_n13734#" 4 2584.72 18300 -13734 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49504 1160 1461340 14994 262460 2826 0 0 0 0
+node "m1_13996_n13334#" 0 243.785 13996 -13334 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49504 1160 0 0 0 0 0 0 0 0
+node "m1_18300_n12934#" 2 1302 18300 -12934 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49504 1160 313400 4280 449900 4530 0 0 0 0
+node "m1_11219_n12341#" 3 3937.21 11219 -12341 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 854599 6754 2126700 13190 0 0 0 0 0 0
+node "m1_6175_n10561#" 7 2266.99 6175 -10561 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 342992 10224 0 0 0 0 0 0 0 0
+node "w_19599_n18172#" 1739 3752.83 19599 -18172 nw 967564 4010 0 0 248368 6536 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 347800 6880 0 0 0 0 0 0 0 0
+node "w_11564_n17895#" 1739 3724.7 11564 -17895 nw 967564 4010 0 0 248368 6536 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 347800 6880 0 0 0 0 0 0 0 0
+node "vdd" 1710 6363.45 12847 -15040 m1 1027617 4124 0 0 248368 6536 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1111154 17882 0 0 0 0 0 0 0 0
+substrate "vss" 0 0 16011 -17915 m1 0 0 0 0 0 0 649344 17088 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7475439 39184 74800 1120 74800 1120 3556740 21602 0 0
+cap "m1_15129_n16917#" "m2_12027_n16151#" 131.839
+cap "qb" "vdd" 46.0997
+cap "m1_13996_n14070#" "osci" 151.717
+cap "vdd" "qnot" 572.769
+cap "osci" "m1_13996_n13334#" 0.742943
+cap "qb" "m2_16717_n16059#" 11.0448
+cap "osci" "m1_18300_n13734#" 974.746
+cap "m1_13996_n14070#" "vdd" 53.0213
+cap "m2_16717_n16059#" "m1_18300_n12934#" 0.88528
+cap "qb" "qnot" 491.11
+cap "w_11564_n17895#" "m2_12027_n16151#" 18.4275
+cap "m2_16717_n16059#" "m1_13996_n14070#" 1.67968
+cap "vdd" "m1_18300_n13734#" 146.824
+cap "osci" "m1_11219_n12341#" 426.012
+cap "m2_13605_n17581#" "m1_12013_n18365#" 4.00075
+cap "m1_15129_n16917#" "m1_17573_n16191#" 19.6013
+cap "foutb" "w_11564_n17895#" 389.377
+cap "qb" "m1_13996_n14070#" 55.3942
+cap "m1_15129_n16917#" "osci" 2.39212
+cap "m1_13996_n14070#" "qnot" 66.7903
+cap "qb" "m1_13996_n13334#" 0.337266
+cap "m2_13605_n17581#" "vdd" 31.5677
+cap "qnot" "m1_13996_n13334#" 5.47192
+cap "m1_19859_n18642#" "fout" 310.411
+cap "m1_13996_n14070#" "m1_18300_n12934#" 528.75
+cap "qb" "m1_18300_n13734#" 214.758
+cap "m1_18300_n13734#" "qnot" 235.135
+cap "m1_15129_n16917#" "vdd" 326.492
+cap "fout" "w_19599_n18172#" 389.377
+cap "m2_12027_n16151#" "m1_17573_n16191#" 0.389883
+cap "m1_13996_n14070#" "m1_13996_n13334#" 13.418
+cap "m1_18300_n13734#" "m1_18300_n12934#" 30.5146
+cap "osci" "m2_12027_n16151#" 37.9828
+cap "m2_13605_n17581#" "qb" 0.109562
+cap "m2_16717_n16059#" "w_19599_n18172#" 0.16568
+cap "m2_13605_n17581#" "qnot" 132.926
+cap "m1_15129_n16917#" "m2_16717_n16059#" 8.18681
+cap "m1_13996_n14070#" "m1_18300_n13734#" 460.116
+cap "qb" "m1_11219_n12341#" 697.619
+cap "m1_11219_n12341#" "qnot" 516.566
+cap "m1_18300_n13734#" "m1_13996_n13334#" 10.8101
+cap "m1_12013_n18365#" "m2_12027_n16151#" 2.98167
+cap "m1_6175_n10561#" "osci" 73.6268
+cap "m1_12013_n18365#" "w_11564_n17895#" 381.643
+cap "qb" "m1_15129_n16917#" 3.00776
+cap "m1_15129_n16917#" "qnot" 379.538
+cap "vdd" "m2_12027_n16151#" 320.193
+cap "m1_11219_n12341#" "m1_18300_n12934#" 250.899
+cap "foutb" "m1_12013_n18365#" 310.411
+cap "m1_13996_n14070#" "m1_11219_n12341#" 278.36
+cap "m1_11219_n12341#" "m1_13996_n13334#" 17.2488
+cap "osci" "m1_17573_n16191#" 0.97968
+cap "m1_11219_n12341#" "m1_18300_n13734#" 203.796
+cap "qb" "m2_12027_n16151#" 22.9817
+cap "m2_12027_n16151#" "qnot" 146.835
+cap "m1_19859_n18642#" "w_19599_n18172#" 381.643
+cap "m1_19859_n18642#" "m1_15129_n16917#" 4.00075
+cap "m2_13605_n17581#" "m1_15129_n16917#" 149.207
+cap "vdd" "osci" 76.0635
+cap "m2_16717_n16059#" "m1_17573_n16191#" 25.5296
+cap "m2_16717_n16059#" "osci" 225.183
+cap "m1_18300_n13734#" "m2_12027_n16151#" 13.7058
+cap "m1_15129_n16917#" "w_19599_n18172#" 7.14542
+cap "qb" "osci" 1177.7
+cap "osci" "qnot" 267.374
+cap "m2_13605_n17581#" "m2_12027_n16151#" 308.983
+cap "m2_13605_n17581#" "w_11564_n17895#" 13.3937
+cap "m2_16717_n16059#" "vdd" 4.38752
+cap "osci" "m1_18300_n12934#" 237.38
+cap "SCHMITT_0/VSS" "pfet$19_1/a_94_0#" 1.27385
+cap "SCHMITT_0/VSS" "SCHMITT_0/OUT" 0.859835
+cap "SCHMITT_0/VSS" "SCHMITT_0/OUT" 20.2402
+cap "SCHMITT_0/VDD" "SCHMITT_0/OUT" 1.66061
+cap "SCHMITT_0/VSS" "SCHMITT_0/VDD" 0.485499
+cap "SCHMITT_0/nfet$3_0/a_n84_0#" "SCHMITT_0/OUT" 0.535754
+cap "pfet$19_1/a_94_0#" "SCHMITT_0/OUT" 16.732
+cap "pfet$19_1/a_94_0#" "SCHMITT_0/VSS" 28.4753
+cap "SCHMITT_0/VDD" "pfet$19_1/a_94_0#" 0.00837217
+cap "SCHMITT_0/VDD" "SCHMITT_0/OUT" 3.01826
+cap "SCHMITT_0/nfet$3_0/a_n84_0#" "pfet$19_1/a_94_0#" 1.33452
+cap "SCHMITT_0/VSS" "SCHMITT_0/OUT" 136.465
+cap "SCHMITT_0/nfet$3_0/a_n84_0#" "SCHMITT_0/OUT" 0.718292
+cap "SCHMITT_0/VDD" "SCHMITT_0/VSS" 3.60905
+cap "SCHMITT_0/IN" "pfet$19_1/a_94_0#" 0.0474501
+cap "SCHMITT_0/IN" "SCHMITT_0/OUT" 0.014339
+cap "SCHMITT_0/nfet$3_0/a_n84_0#" "SCHMITT_0/VSS" 19.585
+cap "SCHMITT_0/VSS" "SCHMITT_0/IN" 0.189109
+cap "SCHMITT_0/OUT" "pfet$19_1/a_94_0#" 10.9261
+cap "SRLATCH_0/vss" "SCHMITT_0/VDD" 8.88761
+cap "SRLATCH_0/qb" "SRLATCH_0/vss" 7.04899
+cap "SRLATCH_0/q" "SRLATCH_0/vss" 0.572412
+cap "SCHMITT_1/VDD" "SRLATCH_0/q" 0.985779
+cap "SCHMITT_1/VDD" "SRLATCH_0/vss" 63.8583
+cap "SRLATCH_0/q" "SCHMITT_1/OUT" -0.39719
+cap "SCHMITT_1/VDD" "pfet$19_2/a_94_0#" 0.0669774
+cap "SRLATCH_0/q" "SRLATCH_0/vss" 34.1964
+cap "SCHMITT_1/VDD" "SCHMITT_1/OUT" 1.56705
+cap "SRLATCH_0/q" "SCHMITT_1/pfet$2_1/a_94_0#" -17.5484
+cap "SCHMITT_1/VDD" "SRLATCH_0/vss" 0.0778163
+cap "SCHMITT_1/OUT" "pfet$19_2/a_94_0#" 0.136139
+cap "SCHMITT_1/nfet$2_1/a_94_0#" "pfet$19_2/a_94_0#" 1.33452
+cap "SRLATCH_0/vss" "SCHMITT_1/OUT" 3.17834
+cap "SCHMITT_1/VDD" "SRLATCH_0/q" 0.790735
+cap "SCHMITT_1/OUT" "SCHMITT_1/nfet$2_1/a_94_0#" 0.718292
+cap "SRLATCH_0/q" "pfet$19_2/a_94_0#" 0.0976636
+cap "SRLATCH_0/vss" "SCHMITT_1/nfet$2_1/a_94_0#" 20.0676
+cap "pfet$19_2/a_94_0#" "SCHMITT_1/VDD" 6.01177
+cap "SCHMITT_1/VSS" "SCHMITT_1/VDD" 5.6997
+cap "SCHMITT_1/VSS" "pfet$19_2/a_94_0#" 28.4753
+cap "SCHMITT_1/OUT" "SCHMITT_1/IN" -0.45463
+cap "SCHMITT_1/OUT" "SCHMITT_1/VDD" 41.6188
+cap "pfet$19_2/a_94_0#" "SCHMITT_1/OUT" 27.5781
+cap "SCHMITT_1/OUT" "SCHMITT_1/nfet$2_1/a_94_0#" 0.535754
+cap "SCHMITT_1/VSS" "SCHMITT_1/OUT" 152.152
+cap "SCHMITT_1/VDD" "SCHMITT_1/IN" 0.00944116
+cap "pfet$19_1/a_94_0#" "m2_12027_n16151#" 2.31825
+cap "SCHMITT_0/VDD" "m2_12027_n16151#" 5.21336
+cap "SCHMITT_0/OUT" "pfet$19_1/a_94_0#" 21.1699
+cap "SCHMITT_0/OUT" "SCHMITT_0/VSS" 0.992476
+cap "SCHMITT_0/OUT" "SCHMITT_0/VDD" 64.3152
+cap "SCHMITT_0/OUT" "SCHMITT_0/IN" -1.9756
+cap "SCHMITT_0/OUT" "m2_12027_n16151#" 0.34315
+cap "SCHMITT_0/VDD" "Pcomparator_0/nfet$6_2/a_190_460#" 0.330147
+cap "SCHMITT_0/OUT" "SCHMITT_0/pfet$3_0/a_n92_0#" 0.658425
+cap "SCHMITT_0/VDD" "SCHMITT_0/VSS" 4.88014
+cap "SCHMITT_0/VDD" "pfet$19_1/a_94_0#" -6.37849
+cap "m2_12027_n16151#" "SCHMITT_0/VSS" 0.353331
+cap "SCHMITT_0/OUT" "pfet$19_1/a_94_0#" 19.7293
+cap "SCHMITT_0/VDD" "pfet$19_1/a_94_0#" 0.0586052
+cap "SCHMITT_0/IN" "SCHMITT_0/pfet$3_0/a_n92_0#" 326.823
+cap "SCHMITT_0/OUT" "m2_12027_n16151#" 13.8744
+cap "SCHMITT_0/VDD" "m2_12027_n16151#" 15.4415
+cap "SCHMITT_0/OUT" "SCHMITT_0/VSS" 0.306045
+cap "SCHMITT_0/VDD" "SCHMITT_0/VSS" 2.66968
+cap "SCHMITT_0/IN" "SCHMITT_0/nfet$3_0/a_n84_0#" 0.775221
+cap "pfet$19_1/a_94_0#" "SCHMITT_0/pfet$3_0/a_n92_0#" 1.33575
+cap "SCHMITT_0/VDD" "SCHMITT_0/OUT" 133.963
+cap "m2_12027_n16151#" "SCHMITT_0/pfet$3_0/a_n92_0#" 7.33736
+cap "SCHMITT_0/VSS" "SCHMITT_0/pfet$3_0/a_n92_0#" 0.955644
+cap "SCHMITT_0/IN" "pfet$19_1/a_94_0#" 0.0502135
+cap "SCHMITT_0/OUT" "SCHMITT_0/pfet$3_0/a_n92_0#" -0.68012
+cap "m2_12027_n16151#" "SCHMITT_0/IN" 0.170347
+cap "SCHMITT_0/VSS" "SCHMITT_0/IN" 6.86872
+cap "SCHMITT_0/VDD" "SCHMITT_0/pfet$3_0/a_n92_0#" -1.31487
+cap "SCHMITT_0/OUT" "SCHMITT_0/IN" 24.9007
+cap "SCHMITT_0/VDD" "SCHMITT_0/IN" 63.8136
+cap "SRLATCH_0/qb" "SRLATCH_0/r" 0.203883
+cap "SRLATCH_0/vss" "nfet$19$1_0/a_30_260#" 1.83565
+cap "SRLATCH_0/vss" "SRLATCH_0/qb" -0.280253
+cap "SRLATCH_0/vdd" "SRLATCH_0/r" 3.71633
+cap "SCHMITT_0/pfet$3_0/a_n92_0#" "nfet$19$1_0/a_30_260#" 0.0538736
+cap "SRLATCH_0/qb" "nfet$19$1_0/a_94_0#" 4.49045
+cap "SRLATCH_0/vdd" "SRLATCH_0/vss" 90.0036
+cap "nfet$19$1_0/a_94_0#" "nfet$19$1_0/a_30_260#" 14.9487
+cap "SRLATCH_0/vdd" "nfet$19$1_0/a_94_0#" 13.5004
+cap "SRLATCH_0/qb" "nfet$19$1_0/a_30_260#" 0.809455
+cap "SRLATCH_0/vss" "nfet$19$1_0/a_94_0#" 27.9389
+cap "SRLATCH_0/vdd" "nfet$19$1_0/a_30_260#" 4.18954
+cap "SRLATCH_0/vdd" "SRLATCH_0/qb" 267.423
+cap "SRLATCH_0/r" "SRLATCH_0/vss" 1.91857
+cap "SRLATCH_0/qb" "SRLATCH_0/q" 257.236
+cap "SRLATCH_0/qb" "SRLATCH_0/vss" 65.1595
+cap "SRLATCH_0/q" "SRLATCH_0/vss" 139.836
+cap "SRLATCH_0/pfet$10_0/a_n92_0#" "SRLATCH_0/qb" -0.505695
+cap "SRLATCH_0/r" "nfet$19$1_0/a_94_0#" 0.153691
+cap "SRLATCH_0/qb" "SRLATCH_0/vdd" 0.549352
+cap "SRLATCH_0/q" "SRLATCH_0/vdd" 10.8615
+cap "SRLATCH_0/q" "nfet$19$1_0/a_94_0#" 1.08433
+cap "SRLATCH_0/vss" "nfet$19$1_0/a_94_0#" -2.26677
+cap "SRLATCH_0/vss" "SRLATCH_0/vdd" 3.46214
+cap "SRLATCH_0/qb" "SRLATCH_0/r" 20.2012
+cap "SCHMITT_0/pfet$2_1/a_94_0#" "SRLATCH_0/q" 0.0847808
+cap "SRLATCH_0/q" "SRLATCH_0/r" -1.0813
+cap "SRLATCH_0/vss" "SRLATCH_0/q" 120.043
+cap "SRLATCH_0/vss" "SRLATCH_0/s" 0.857428
+cap "SRLATCH_0/q" "SCHMITT_1/OUT" 0.519454
+cap "SRLATCH_0/vss" "SRLATCH_0/qb" 31.7262
+cap "SRLATCH_0/qb" "SCHMITT_1/OUT" 0.00324688
+cap "SRLATCH_0/q" "SRLATCH_0/s" 15.1248
+cap "SRLATCH_0/qb" "SRLATCH_0/q" 13.0001
+cap "SCHMITT_1/pfet$2_1/a_94_0#" "SRLATCH_0/q" 2.60475
+cap "SCHMITT_1/pfet$2_1/a_94_0#" "SRLATCH_0/qb" 0.111747
+cap "SRLATCH_0/vss" "SRLATCH_0/vdd" 204.517
+cap "SRLATCH_0/pfet$10_2/a_n92_0#" "SRLATCH_0/q" -0.0242307
+cap "SRLATCH_0/q" "SRLATCH_0/vdd" 123.251
+cap "SRLATCH_0/s" "SRLATCH_0/vdd" 0.152369
+cap "SRLATCH_0/qb" "SRLATCH_0/vdd" 13.4548
+cap "pfet$19_2/a_94_0#" "SCHMITT_1/pfet$2_1/a_94_0#" 1.33575
+cap "SRLATCH_0/s" "SRLATCH_0/vdd" 1.1272
+cap "pfet$19_2/a_94_0#" "SCHMITT_1/OUT" 0.158139
+cap "SRLATCH_0/vss" "SCHMITT_1/pfet$2_1/a_94_0#" 4.36554
+cap "SRLATCH_0/vss" "SRLATCH_0/q" 6.0682
+cap "SCHMITT_1/OUT" "SRLATCH_0/vss" 0.120337
+cap "SCHMITT_1/pfet$2_1/a_94_0#" "SRLATCH_0/q" 260.908
+cap "SCHMITT_1/OUT" "SCHMITT_1/pfet$2_1/a_94_0#" 0.112186
+cap "SRLATCH_0/pfet$10_3/a_28_n136#" "SRLATCH_0/q" 0.0169867
+cap "SCHMITT_1/OUT" "SRLATCH_0/q" 14.0189
+cap "SRLATCH_0/vss" "SRLATCH_0/vdd" 2.90236
+cap "SRLATCH_0/vdd" "SCHMITT_1/pfet$2_1/a_94_0#" -1.31487
+cap "SRLATCH_0/s" "SRLATCH_0/q" 0.072609
+cap "SRLATCH_0/vdd" "SRLATCH_0/q" 166.958
+cap "SCHMITT_1/OUT" "SRLATCH_0/vdd" 4.80993
+cap "SCHMITT_1/IN" "SCHMITT_1/OUT" 1.66758
+cap "SCHMITT_1/VSS" "SCHMITT_1/OUT" 3.83147
+cap "SCHMITT_1/pfet$2_1/a_94_0#" "SCHMITT_1/OUT" 0.0499606
+cap "pfet$19_2/a_94_0#" "SCHMITT_1/VDD" -12.3903
+cap "SCHMITT_1/IN" "SCHMITT_1/VDD" -1.30147
+cap "SCHMITT_1/VSS" "pfet$19_2/a_94_0#" 3.84792
+cap "SCHMITT_1/VSS" "SCHMITT_1/VDD" 101.143
+cap "Ncomparator_0/nfet$8_0/a_94_0#" "SCHMITT_1/VDD" 0.425751
+cap "pfet$19_2/a_94_0#" "SCHMITT_1/OUT" 40.685
+cap "SCHMITT_1/OUT" "SCHMITT_1/VDD" 155.281
+cap "irefn" "SCHMITT_1/VDD" 2.78186
+cap "irefn" "SCHMITT_1/VSS" 3.39635
+cap "Pcomparator_0/nfet$6_2/a_190_460#" "Pcomparator_0/inp" -5.55112e-17
+cap "SCHMITT_0/VSS" "m2_12027_n16151#" 9.58698
+cap "m2_12027_n16151#" "SCHMITT_0/OUT" 1.63645
+cap "SCHMITT_0/VDD" "m2_12027_n16151#" 21.47
+cap "Pcomparator_0/vdd" "m2_12027_n16151#" 9.07059
+cap "SCHMITT_0/VSS" "Pcomparator_0/pfet$5_13/a_n92_0#" -0.182805
+cap "SCHMITT_0/VSS" "m2_12027_n16151#" 16.019
+cap "Pcomparator_0/inp" "m2_12027_n16151#" 6.03478
+cap "SCHMITT_0/VDD" "Pcomparator_0/nfet$6_2/a_190_460#" 3.43849
+cap "Pcomparator_0/vdd" "SCHMITT_0/VSS" -0.8464
+cap "SCHMITT_0/VSS" "Pcomparator_0/inp" -0.250518
+cap "Pcomparator_0/vdd" "Pcomparator_0/nfet$6_2/a_190_460#" 0.297197
+cap "Pcomparator_0/inn" "SCHMITT_0/VSS" -0.121898
+cap "SCHMITT_0/VSS" "Pcomparator_0/nfet$6_2/a_190_460#" 0.105114
+cap "Pcomparator_0/inp" "Pcomparator_0/nfet$6_2/a_190_460#" 4.37901
+cap "m2_12027_n16151#" "pfet$19_1/a_94_0#" 7.42179
+cap "m2_12027_n16151#" "SCHMITT_0/VDD" 75.7671
+cap "m2_12027_n16151#" "SCHMITT_0/pfet$3_0/a_n92_0#" 25.4288
+cap "SCHMITT_0/VDD" "SCHMITT_0/IN" -0.472355
+cap "m2_12027_n16151#" "SCHMITT_0/IN" 3.54173
+cap "m2_12027_n16151#" "SCHMITT_0/pfet$3_0/a_94_0#" 0.353331
+cap "m2_12027_n16151#" "SCHMITT_0/OUT" 18.5436
+cap "Pcomparator_0/m1_3615_n1223#" "SCHMITT_0/VDD" 1.60897
+cap "nfet$19$1_0/a_94_0#" "SRLATCH_0/qb" 8.55815
+cap "SRLATCH_0/r" "SRLATCH_0/qb" 0.0104708
+cap "nfet$19$1_0/a_30_260#" "SRLATCH_0/vdd" 13.3401
+cap "SRLATCH_0/vdd" "SRLATCH_0/qb" -0.704928
+cap "SRLATCH_0/vss" "nfet$19$1_0/a_30_260#" 0.0287263
+cap "osci" "nfet$19$1_0/a_30_260#" 0.00418651
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "SRLATCH_0/vdd" 0.0231275
+cap "nfet$19$1_0/a_94_0#" "SRLATCH_0/r" 7.65626
+cap "nfet$19$1_0/a_94_0#" "SRLATCH_0/vdd" 5.35317
+cap "SRLATCH_0/r" "SRLATCH_0/vdd" 6.09956
+cap "nfet$19$1_0/a_94_0#" "nfet$19$1_0/a_30_260#" 8.98854
+cap "SRLATCH_0/r" "nfet$19$1_0/a_30_260#" 0.125051
+cap "nfet$19$1_0/a_94_0#" "SRLATCH_0/vdd" -12.5923
+cap "SRLATCH_0/q" "SRLATCH_0/qb" 30.505
+cap "SRLATCH_0/r" "SRLATCH_0/qb" 151.675
+cap "osci" "SRLATCH_0/vdd" 10.6414
+cap "SRLATCH_0/q" "SRLATCH_0/s" -0.7334
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "SRLATCH_0/q" 0.0817845
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "SRLATCH_0/r" 0.0475711
+cap "SRLATCH_0/q" "SRLATCH_0/vss" 0.196498
+cap "SRLATCH_0/r" "SRLATCH_0/vss" 0.10983
+cap "SRLATCH_0/q" "nfet$19$1_0/a_94_0#" 0.639942
+cap "nfet$19$1_0/a_94_0#" "SRLATCH_0/r" 0.197977
+cap "SRLATCH_0/q" "SRLATCH_0/vdd" 58.2144
+cap "SRLATCH_0/vdd" "SRLATCH_0/r" 53.2081
+cap "osci" "SRLATCH_0/q" 2.71174
+cap "SRLATCH_0/r" "SRLATCH_0/pfet$10_0/a_n92_0#" 0.890408
+cap "osci" "SRLATCH_0/r" 0.0829335
+cap "SRLATCH_0/s" "SRLATCH_0/qb" 7.75268
+cap "SRLATCH_0/qb" "SRLATCH_0/vss" 0.163489
+cap "nfet$19$1_0/a_94_0#" "SRLATCH_0/qb" 12.0613
+cap "SRLATCH_0/q" "SRLATCH_0/r" 23.14
+cap "SRLATCH_0/qb" "SRLATCH_0/pfet$10_2/a_n92_0#" -2.59854
+cap "SRLATCH_0/vdd" "SRLATCH_0/qb" 195.421
+cap "SRLATCH_0/qb" "SRLATCH_0/pfet$10_0/a_n92_0#" 5.77812
+cap "SRLATCH_0/vdd" "SRLATCH_0/s" -0.811541
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "SRLATCH_0/vdd" 15.8306
+cap "SRLATCH_0/vdd" "SRLATCH_0/vss" 0.736582
+cap "SRLATCH_0/pfet$10_2/a_n92_0#" "SRLATCH_0/qb" -0.0104761
+cap "SRLATCH_0/s" "osci" 0.189985
+cap "SRLATCH_0/vdd" "osci" 8.85127
+cap "SRLATCH_0/q" "SRLATCH_0/qb" -6.65729
+cap "SRLATCH_0/r" "SRLATCH_0/s" 2.34744
+cap "SRLATCH_0/pfet$10_2/a_n92_0#" "SRLATCH_0/s" 107.375
+cap "SRLATCH_0/r" "SRLATCH_0/vdd" -0.0702722
+cap "SRLATCH_0/q" "SRLATCH_0/pfet$10_0/a_n92_0#" -2.59854
+cap "SRLATCH_0/s" "SRLATCH_0/q" 117.18
+cap "SRLATCH_0/vdd" "SRLATCH_0/q" 13.6494
+cap "SRLATCH_0/s" "SRLATCH_0/qb" 54.2576
+cap "SRLATCH_0/vdd" "SRLATCH_0/qb" -0.0168906
+cap "SRLATCH_0/s" "SRLATCH_0/pfet$10_0/a_n92_0#" 11.9339
+cap "SRLATCH_0/q" "SRLATCH_0/vss" 2.07677
+cap "SRLATCH_0/vdd" "SRLATCH_0/s" 293.764
+cap "SRLATCH_0/q" "osci" 1.66752
+cap "SRLATCH_0/r" "SRLATCH_0/q" -0.582461
+cap "SRLATCH_0/pfet$10_2/a_n92_0#" "SRLATCH_0/q" -1.66766
+cap "SRLATCH_0/qb" "SRLATCH_0/vss" 0.0558772
+cap "SRLATCH_0/qb" "osci" 0.189985
+cap "SRLATCH_0/s" "SRLATCH_0/vss" 2.01503
+cap "SRLATCH_0/vdd" "SRLATCH_0/vss" 16.6441
+cap "SRLATCH_0/s" "SCHMITT_1/pfet$2_1/a_94_0#" 1.20895
+cap "SRLATCH_0/s" "SRLATCH_0/q" 0.69776
+cap "SRLATCH_0/vdd" "SRLATCH_0/vss" 5.52814
+cap "SRLATCH_0/vdd" "SRLATCH_0/s" 14.0353
+cap "SRLATCH_0/s" "SCHMITT_1/pfet$2_0/a_94_0#" 0.488622
+cap "SCHMITT_1/VDD" "Ncomparator_0/nfet$9_3/a_n84_0#" 2.53392
+cap "Ncomparator_0/vss" "Ncomparator_0/inp" 1.07575
+cap "Ncomparator_0/vss" "pfet$19_2/a_94_0#" 4.03795
+cap "SCHMITT_1/VDD" "Ncomparator_0/nfet$8_0/a_94_0#" 5.13037
+cap "Ncomparator_0/vss" "pfet$19_2/a_28_n136#" 2.98797
+cap "Ncomparator_0/vss" "Ncomparator_0/nfet$8_0/a_94_0#" 6.00344
+cap "Ncomparator_0/vss" "Ncomparator_0/inn" 0.503226
+cap "Ncomparator_0/nfet$8_0/a_94_0#" "Ncomparator_0/inp" 13.2969
+cap "SCHMITT_1/VDD" "Ncomparator_0/vss" 27.8313
+cap "Ncomparator_0/inn" "Ncomparator_0/nfet$8_0/a_94_0#" -0.382599
+cap "Pcomparator_0/pfet$5_12/a_574_0#" "Pcomparator_0/inp" 0.0660296
+cap "Pcomparator_0/pfet$5_12/a_574_0#" "Pcomparator_0/nfet$4_0/a_1054_0#" -0.143936
+cap "Pcomparator_0/pfet$5_12/a_574_0#" "Pcomparator_0/pfet$5_12/a_414_0#" -0.218652
+cap "Pcomparator_0/inn" "Pcomparator_0/pfet$5_12/a_574_0#" 0.760444
+cap "Pcomparator_0/vdd" "Pcomparator_0/nfet$4_0/a_1150_n132#" 4.38714
+cap "m2_12027_n16151#" "Pcomparator_0/vdd" 59.091
+cap "Pcomparator_0/inp" "Pcomparator_0/vdd" 56.7609
+cap "Pcomparator_0/inp" "Pcomparator_0/nfet$6_2/a_190_460#" 95.8539
+cap "Pcomparator_0/pfet$5_13/a_n92_0#" "Pcomparator_0/vdd" 7.03585
+cap "Pcomparator_0/m1_4319_n1003#" "Pcomparator_0/inp" 0.0463904
+cap "Pcomparator_0/nfet$6_2/a_190_460#" "Pcomparator_0/vdd" 46.2734
+cap "m2_12027_n16151#" "Pcomparator_0/inn" 112.683
+cap "Pcomparator_0/inp" "Pcomparator_0/inn" -8.35833
+cap "Pcomparator_0/inn" "Pcomparator_0/vdd" 9.26403
+cap "Pcomparator_0/nfet$6_2/a_190_460#" "Pcomparator_0/inn" 96.8687
+cap "Pcomparator_0/vdd" "Pcomparator_0/vss" 2.18913
+cap "Pcomparator_0/inp" "m2_12027_n16151#" 389.692
+cap "Pcomparator_0/pfet$5_13/a_n92_0#" "Pcomparator_0/inp" 1.52077
+cap "SCHMITT_0/VDD" "Pcomparator_0/inp" -3.55271e-15
+cap "Pcomparator_0/inp" "ppolyf_u_resistor$2_0/a_4200_0#" 0.047564
+cap "SCHMITT_0/VDD" "m2_12027_n16151#" 1.24557
+cap "SCHMITT_0/VDD" "Pcomparator_0/m1_3615_n1223#" 0.697727
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "ppolyf_u_resistor$2_1/a_4200_0#" 1.51402
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "osci" 0.436928
+cap "pfet$19_0/a_94_0#" "ppolyf_u_resistor$2_0/a_4200_0#" 0.0925351
+cap "SRLATCH_0/vdd" "ppolyf_u_resistor$2_0/a_4200_0#" 0.0418982
+cap "SRLATCH_0/vdd" "osci" -0.0142202
+cap "pfet$19_0/a_94_0#" "osci" 0.0138194
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "m1_18300_n13734#" 7.02569
+cap "SRLATCH_0/qb" "osci" 1.17002
+cap "osci" "pfet$19_0/a_28_n136#" 0.974706
+cap "SRLATCH_0/vdd" "osci" 41.1244
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "osci" -1.42109e-14
+cap "SRLATCH_0/pfet$10_0/a_n92_0#" "osci" 10.3654
+cap "pfet$19_0/a_94_0#" "osci" 0.0138194
+cap "SRLATCH_0/qb" "ppolyf_u_resistor$2_0/a_4200_0#" -0.304364
+cap "SRLATCH_0/vss" "osci" 0.184619
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "SRLATCH_0/vdd" 17.7636
+cap "SRLATCH_0/q" "osci" 4.70055
+cap "SRLATCH_0/r" "osci" 1.04088
+cap "SRLATCH_0/vss" "SRLATCH_0/vdd" 19.1561
+cap "SRLATCH_0/s" "osci" 0.257405
+cap "SRLATCH_0/vdd" "osci" 38.4253
+cap "SRLATCH_0/pfet$10_3/a_28_n136#" "osci" 0.257405
+cap "SRLATCH_0/q" "osci" 0.489954
+cap "SRLATCH_0/vss" "SRLATCH_0/s" -0.711361
+cap "SRLATCH_0/vss" "osci" 0.036905
+cap "Ncomparator_0/m1_1242_549#" "SRLATCH_0/vss" 0.382451
+cap "Ncomparator_0/vdd" "SRLATCH_0/vss" 1.11022e-16
+cap "ppolyf_u_resistor$2_0/a_n132_0#" "Ncomparator_0/inn" 0.858495
+cap "SRLATCH_0/s" "SRLATCH_0/vss" 2.12711
+cap "ppolyf_u_resistor$2_0/a_n132_0#" "Ncomparator_0/m1_1242_549#" 0.409788
+cap "Ncomparator_0/inp" "ppolyf_u_resistor$2_0/a_n132_0#" 0.684134
+cap "Ncomparator_0/m1_630_n1541#" "SRLATCH_0/vss" 0.115772
+cap "ppolyf_u_resistor$2_0/a_n132_0#" "SRLATCH_0/s" 0.370626
+cap "ppolyf_u_resistor$2_0/a_n132_0#" "SRLATCH_0/vss" -1.67061
+cap "Ncomparator_0/inn" "SRLATCH_0/vss" 0.217988
+cap "SRLATCH_0/s" "Ncomparator_0/inn" -1.11022e-16
+cap "Ncomparator_0/nfet$7_1/a_94_0#" "Ncomparator_0/vdd" 4.15102
+cap "Ncomparator_0/nfet$7_1/a_94_0#" "Ncomparator_0/inn" 1.04797
+cap "Ncomparator_0/inp" "Ncomparator_0/inn" 4.05045
+cap "Ncomparator_0/nfet$7_1/a_94_0#" "ppolyf_u_resistor$2_0/a_n132_0#" 0.485554
+cap "Ncomparator_0/vss" "Ncomparator_0/inn" -4.76392
+cap "Ncomparator_0/nfet$8_0/a_94_0#" "Ncomparator_0/inn" 383.955
+cap "Ncomparator_0/nfet$9_3/a_n84_0#" "Ncomparator_0/inn" 1.89477
+cap "Ncomparator_0/vss" "Ncomparator_0/nfet$7_1/a_94_0#" 166.989
+cap "Ncomparator_0/vss" "Ncomparator_0/inp" 3.85131
+cap "Ncomparator_0/inp" "Ncomparator_0/nfet$8_0/a_94_0#" 118.529
+cap "Ncomparator_0/nfet$9_3/a_n84_0#" "Ncomparator_0/inp" 1.67007
+cap "Ncomparator_0/vss" "Ncomparator_0/nfet$8_0/a_94_0#" 32.483
+cap "Ncomparator_0/vss" "Ncomparator_0/nfet$9_3/a_n84_0#" 18.1084
+cap "Ncomparator_0/nfet$8_0/a_94_0#" "Ncomparator_0/nfet$9_3/a_n84_0#" -0.140064
+cap "Ncomparator_0/inn" "Ncomparator_0/nfet$9_3/a_n84_0#" 0.468273
+cap "Pcomparator_0/pfet$4_0/a_1054_0#" "osci" 2.39993
+cap "Pcomparator_0/pfet$5_13/a_414_0#" "Pcomparator_0/inp" 0.28335
+cap "Pcomparator_0/pfet$5_13/a_414_0#" "Pcomparator_0/vdd" 5.68434e-14
+cap "Pcomparator_0/out" "Pcomparator_0/inp" 33.486
+cap "Pcomparator_0/inn" "Pcomparator_0/out" 5.42391
+cap "Pcomparator_0/pfet$5_2/a_414_0#" "Pcomparator_0/vdd" 0.889372
+cap "Pcomparator_0/inp" "Pcomparator_0/pfet$5_13/a_n92_0#" 0.477598
+cap "Pcomparator_0/inp" "Pcomparator_0/vdd" 3.07863
+cap "Pcomparator_0/inp" "Pcomparator_0/m1_4319_n1003#" 0.478996
+cap "Pcomparator_0/out" "Pcomparator_0/vdd" 73.5556
+cap "Pcomparator_0/vdd" "Pcomparator_0/pfet$5_13/a_n92_0#" 19.5418
+cap "Pcomparator_0/out" "osci" 0.686379
+cap "ppolyf_u_resistor$2_1/a_4200_0#" "qnot" 1.34058
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "m1_18300_n13734#" 3.72193
+cap "ppolyf_u_resistor$2_0/a_4200_0#" "ppolyf_u_resistor$2_3/a_4200_0#" 0.0868206
+cap "ppolyf_u_resistor$2_1/a_4200_0#" "ppolyf_u_resistor$2_0/a_4200_0#" 9.22421
+cap "qb" "ppolyf_u_resistor$2_3/a_4200_0#" -3.46945e-18
+cap "ppolyf_u_resistor$2_1/a_4200_0#" "qb" -5.55112e-17
+cap "ppolyf_u_resistor$2_3/a_4200_0#" "m1_18300_n13734#" 0.587264
+cap "osci" "ppolyf_u_resistor$2_3/a_4200_0#" 0.573205
+cap "ppolyf_u_resistor$2_3/a_4200_0#" "qnot" 1.35223
+cap "ppolyf_u_resistor$2_1/a_4200_0#" "m1_18300_n13734#" 3.93627
+cap "ppolyf_u_resistor$2_1/a_4200_0#" "ppolyf_u_resistor$2_3/a_4200_0#" 12.7977
+cap "ppolyf_u_resistor$2_0/a_n376_0#" "Ncomparator_0/inn" -18.9185
+cap "ppolyf_u_resistor$2_0/a_n376_0#" "Ncomparator_0/m1_1242_549#" 3.08186
+cap "Ncomparator_0/inn" "Ncomparator_0/m1_1242_549#" 0.170115
+cap "ppolyf_u_resistor$2_0/a_n376_0#" "ppolyf_u_resistor$2_0/a_n132_0#" -6.56339
+cap "Ncomparator_0/inn" "ppolyf_u_resistor$2_0/a_n132_0#" 14.8539
+cap "ppolyf_u_resistor$2_0/a_n376_0#" "Ncomparator_0/m1_1998_1433#" 0.0971099
+cap "ppolyf_u_resistor$2_0/a_n376_0#" "Ncomparator_0/vdd" 13.9384
+cap "Ncomparator_0/inn" "Ncomparator_0/vdd" 9.42835
+cap "ppolyf_u_resistor$2_0/a_n132_0#" "Ncomparator_0/m1_1242_549#" 0.158457
+cap "ppolyf_u_resistor$2_0/a_n376_0#" "Ncomparator_0/m1_570_1653#" 0.483118
+cap "ppolyf_u_resistor$2_0/a_n376_0#" "Ncomparator_0/out" 5.27347
+cap "Ncomparator_0/inn" "Ncomparator_0/out" 0.448192
+cap "Ncomparator_0/vdd" "ppolyf_u_resistor$2_0/a_n132_0#" 0.0186533
+cap "ppolyf_u_resistor$2_0/a_n132_0#" "Ncomparator_0/out" 0.508848
+cap "Ncomparator_0/pfet$7_2/a_28_n136#" "Ncomparator_0/vss" 63.0462
+cap "Ncomparator_0/m1_1998_1433#" "Ncomparator_0/vss" 8.80913
+cap "Ncomparator_0/vdd" "Ncomparator_0/pfet$9_0/a_94_0#" 208.848
+cap "Ncomparator_0/m1_1998_1433#" "Ncomparator_0/pfet$9_0/a_94_0#" -2.61799
+cap "Ncomparator_0/pfet$9_0/a_28_560#" "Ncomparator_0/vss" 168.251
+cap "Ncomparator_0/vdd" "Ncomparator_0/pfet$7_2/a_28_n136#" 155.362
+cap "Ncomparator_0/vdd" "Ncomparator_0/m1_1998_1433#" 8.86799
+cap "Ncomparator_0/inn" "Ncomparator_0/vss" -28.3669
+cap "Ncomparator_0/vdd" "Ncomparator_0/nfet$9_3/a_n84_0#" -2.60107
+cap "Ncomparator_0/pfet$9_0/a_94_0#" "Ncomparator_0/inn" 240.631
+cap "Ncomparator_0/vdd" "Ncomparator_0/pfet$9_0/a_28_560#" 17.0184
+cap "Ncomparator_0/vdd" "Ncomparator_0/inn" 6.32688
+cap "Ncomparator_0/m1_1998_1433#" "Ncomparator_0/inn" 5.88615
+cap "Ncomparator_0/inn" "Ncomparator_0/pfet$7_2/a_28_n136#" 2.30554
+cap "Ncomparator_0/pfet$9_0/a_94_0#" "Ncomparator_0/vss" 68.1261
+cap "Ncomparator_0/pfet$9_0/a_28_560#" "Ncomparator_0/inn" 0.997843
+cap "Ncomparator_0/vdd" "Ncomparator_0/vss" 83.2672
+cap "Ncomparator_0/vss" "Ncomparator_0/inn" -1.11022e-16
+cap "Pcomparator_0/pfet$5_9/a_414_0#" "osci" 319.924
+cap "Pcomparator_0/pfet$5_8/a_508_560#" "Pcomparator_0/vdd" 0.126097
+cap "Pcomparator_0/pfet$5_8/a_508_560#" "osci" 4.3436
+cap "Pcomparator_0/vdd" "osci" 165.466
+cap "osci" "Pcomparator_0/pfet$4_0/a_1054_0#" 336.411
+cap "Pcomparator_0/vdd" "Pcomparator_0/pfet$5_9/a_414_0#" 0.551358
+cap "osci" "Pcomparator_0/pfet$5_8/a_508_560#" 82.0927
+cap "Pcomparator_0/out" "osci" 23.4479
+cap "Pcomparator_0/vdd" "osci" 344.416
+cap "Pcomparator_0/vdd" "Pcomparator_0/pfet$5_8/a_508_560#" 1.17197
+cap "Pcomparator_0/pfet$5_9/a_414_0#" "osci" 43.2654
+cap "Pcomparator_0/vdd" "osci" 338.431
+cap "Pcomparator_0/pfet$4_1/a_1054_0#" "osci" 34.1507
+cap "Pcomparator_0/pfet$5_8/a_508_560#" "osci" 75.2957
+cap "Pcomparator_0/pfet$5_8/a_508_560#" "Pcomparator_0/vdd" 1.23416
+cap "Pcomparator_0/pfet$5_9/a_414_0#" "osci" 36.5261
+cap "Pcomparator_0/pfet$4_0/a_1054_0#" "osci" 10.9133
+cap "Pcomparator_0/vdd" "irefp" 1.04268
+cap "Pcomparator_0/pfet$5_4/a_414_0#" "osci" 41.6898
+cap "Pcomparator_0/pfet$4_0/a_1054_0#" "osci" 23.4479
+cap "osci" "irefp" 78.7643
+cap "Pcomparator_0/vdd" "osci" 349.019
+cap "Pcomparator_0/pfet$5_4/a_414_0#" "osci" 312.285
+cap "Pcomparator_0/vdd" "irefp" 43.852
+cap "osci" "irefp" 28.7498
+cap "Pcomparator_0/vdd" "Pcomparator_0/out" 75.6732
+cap "osci" "Pcomparator_0/vdd" 67.5872
+cap "osci" "Pcomparator_0/out" 331.286
+cap "Pcomparator_0/pfet$5_4/a_414_0#" "Pcomparator_0/vdd" 22.9465
+cap "osci" "ppolyf_u_resistor$2_1/a_4200_0#" 0.411028
+cap "ppolyf_u_resistor$2_3/a_4200_0#" "qnot" 0.556069
+cap "osci" "ppolyf_u_resistor$2_3/a_4200_0#" 0.542691
+cap "ppolyf_u_resistor$2_1/a_4200_0#" "qnot" 0.428246
+cap "Ncomparator_0/vdd" "ppolyf_u_resistor$2_0/a_n376_0#" 2.81815
+cap "ppolyf_u_resistor$2_0/a_n376_0#" "Ncomparator_0/out" 0.690045
+cap "Ncomparator_0/out" "qb" 1.70073
+cap "Ncomparator_0/m1_1242_549#" "ppolyf_u_resistor$2_0/a_n376_0#" 0.403269
+cap "Ncomparator_0/vdd" "Ncomparator_0/pfet$9_0/a_28_560#" 5.29569
+cap "Ncomparator_0/vdd" "Ncomparator_0/pfet$9_0/a_94_0#" 166.403
+cap "Ncomparator_0/pfet$7_2/a_28_n136#" "Ncomparator_0/pfet$9_0/a_94_0#" -12.7136
+cap "Ncomparator_0/pfet$9_0/a_94_0#" "ppolyf_u_resistor$2_0/a_n376_0#" 1.38254
+cap "qb" "Ncomparator_0/pfet$9_0/a_94_0#" 2.04041
+cap "Ncomparator_0/vdd" "Ncomparator_0/pfet$7_2/a_28_n136#" 52.7317
+cap "Ncomparator_0/m1_1998_1433#" "Ncomparator_0/pfet$9_0/a_94_0#" -2.61799
+cap "Ncomparator_0/vdd" "ppolyf_u_resistor$2_0/a_n376_0#" 2.50818
+cap "osci" "Pcomparator_0/vdd" -5.26189
+cap "Pcomparator_0/vdd" "Pcomparator_0/pfet$4_1/a_1054_0#" 11.4926
+cap "osci" "Pcomparator_0/pfet$4_1/a_1054_0#" 11.5956
+cap "osci" "Pcomparator_0/pfet$4_1/a_1054_0#" 0.00917862
+cap "Pcomparator_0/vdd" "osci" -12.8408
+cap "Pcomparator_0/vdd" "Pcomparator_0/pfet$4_1/a_1054_0#" 27.9821
+cap "Pcomparator_0/pfet$4_1/a_1054_0#" "Pcomparator_0/vdd" 27.9821
+cap "osci" "Pcomparator_0/vdd" -12.9228
+cap "Pcomparator_0/pfet$4_1/a_1054_0#" "osci" 0.113772
+cap "osci" "Pcomparator_0/vdd" -12.8151
+cap "Pcomparator_0/pfet$4_1/a_1054_0#" "Pcomparator_0/vdd" 27.9821
+cap "Pcomparator_0/out" "Pcomparator_0/vdd" 6.73694
+cap "Pcomparator_0/vdd" "osci" -2.47436
+cap "Pcomparator_0/out" "osci" 11.5956
+merge "Ncomparator_0/out" "SRLATCH_0/s" -464.824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22900 -758 0 0 0 0 0 0
+merge "SRLATCH_0/s" "m2_16717_n16059#"
+merge "ppolyf_u_resistor$2_1/a_n376_0#" "ppolyf_u_resistor$2_2/a_n376_0#" -3998.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28880 -15192 0 0 0 0 -95880 -904 0 0
+merge "ppolyf_u_resistor$2_2/a_n376_0#" "ppolyf_u_resistor$2_3/a_n376_0#"
+merge "ppolyf_u_resistor$2_3/a_n376_0#" "ppolyf_u_resistor$2_0/a_n376_0#"
+merge "ppolyf_u_resistor$2_0/a_n376_0#" "ppolyf_u_resistor$2_0/a_4200_0#"
+merge "ppolyf_u_resistor$2_0/a_4200_0#" "m1_13996_n14070#"
+merge "m1_13996_n14070#" "pfet$19_0/VSUBS"
+merge "pfet$19_0/VSUBS" "pfet$19_2/VSUBS"
+merge "pfet$19_2/VSUBS" "nfet$19$1_2/VSUBS"
+merge "nfet$19$1_2/VSUBS" "nfet$19$1_2/a_n84_0#"
+merge "nfet$19$1_2/a_n84_0#" "Ncomparator_0/vss"
+merge "Ncomparator_0/vss" "SCHMITT_1/VSS"
+merge "SCHMITT_1/VSS" "SRLATCH_0/vss"
+merge "SRLATCH_0/vss" "nfet$19$1_0/VSUBS"
+merge "nfet$19$1_0/VSUBS" "nfet$19$1_0/a_n84_0#"
+merge "nfet$19$1_0/a_n84_0#" "SCHMITT_0/VSS"
+merge "SCHMITT_0/VSS" "pfet$19_1/VSUBS"
+merge "pfet$19_1/VSUBS" "nfet$19$1_1/VSUBS"
+merge "nfet$19$1_1/VSUBS" "nfet$19$1_1/a_n84_0#"
+merge "nfet$19$1_1/a_n84_0#" "Pcomparator_0/vss"
+merge "Pcomparator_0/vss" "vss"
+merge "pfet$19_0/a_28_n136#" "SCHMITT_1/IN" -1187.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -608 0 -640 0 0 0 0 0 0
+merge "SCHMITT_1/IN" "SRLATCH_0/q"
+merge "SRLATCH_0/q" "nfet$19$1_0/a_30_260#"
+merge "nfet$19$1_0/a_30_260#" "m1_15129_n16917#"
+merge "Ncomparator_0/vdd" "m1_6175_n10561#" -9856.74 -850176 -12942 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -499487 -24593 -952000 -6280 0 0 0 0 0 0
+merge "m1_6175_n10561#" "ppolyf_u_resistor$2_3/a_4200_0#"
+merge "ppolyf_u_resistor$2_3/a_4200_0#" "pfet$19_0/a_n92_0#"
+merge "pfet$19_0/a_n92_0#" "m1_11219_n12341#"
+merge "m1_11219_n12341#" "pfet$19_2/a_n92_0#"
+merge "pfet$19_2/a_n92_0#" "pfet$19_2/w_n180_n88#"
+merge "pfet$19_2/w_n180_n88#" "SCHMITT_1/VDD"
+merge "SCHMITT_1/VDD" "w_19599_n18172#"
+merge "w_19599_n18172#" "m1_17573_n16191#"
+merge "m1_17573_n16191#" "pfet$19_0/w_n180_n88#"
+merge "pfet$19_0/w_n180_n88#" "Pcomparator_0/vdd"
+merge "Pcomparator_0/vdd" "SRLATCH_0/vdd"
+merge "SRLATCH_0/vdd" "SCHMITT_0/VDD"
+merge "SCHMITT_0/VDD" "vdd"
+merge "vdd" "pfet$19_1/a_n92_0#"
+merge "pfet$19_1/a_n92_0#" "pfet$19_1/w_n180_n88#"
+merge "pfet$19_1/w_n180_n88#" "w_11564_n17895#"
+merge "ppolyf_u_resistor$2_2/a_n132_0#" "ppolyf_u_resistor$2_0/a_n132_0#" -1190.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -608 -616000 -5800 0 0 0 0 0 0
+merge "ppolyf_u_resistor$2_0/a_n132_0#" "Pcomparator_0/inp"
+merge "Pcomparator_0/inp" "m1_18300_n13734#"
+merge "pfet$19_1/a_94_0#" "nfet$19$1_1/a_94_0#" -179.586 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -592 0 0 0 0 0 0 0 0
+merge "nfet$19$1_1/a_94_0#" "foutb"
+merge "ppolyf_u_resistor$2_1/a_4200_0#" "ppolyf_u_resistor$2_2/a_4200_0#" -177.355 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -608 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$2_2/a_4200_0#" "m1_13996_n13334#"
+merge "pfet$19_2/a_94_0#" "nfet$19$1_2/a_94_0#" -181.045 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -592 0 0 0 0 0 0 0 0
+merge "nfet$19$1_2/a_94_0#" "fout"
+merge "Pcomparator_0/iref" "irefp" -13.4313 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Pcomparator_0/inn" "Ncomparator_0/inp" -6855.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -516800 -10560 -835560 -8036 -4612440 -28152 0 0
+merge "Ncomparator_0/inp" "osci"
+merge "pfet$19_2/a_28_n136#" "nfet$19$1_2/a_30_260#" -586.125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -608 0 -218 0 0 0 0 0 0
+merge "nfet$19$1_2/a_30_260#" "SCHMITT_1/OUT"
+merge "SCHMITT_1/OUT" "m1_19859_n18642#"
+merge "Pcomparator_0/out" "SRLATCH_0/r" -2085.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -455260 -9298 -636240 -6224 0 0 0 0
+merge "SRLATCH_0/r" "m2_12027_n16151#"
+merge "SRLATCH_0/qb" "qb" -1980.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -576840 -6332 -425260 -4526 0 0 0 0
+merge "qb" "SCHMITT_0/IN"
+merge "SCHMITT_0/IN" "m2_13605_n17581#"
+merge "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$2_3/a_n132_0#" -445.036 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -608 0 -200 0 0 0 0 0 0
+merge "ppolyf_u_resistor$2_3/a_n132_0#" "Ncomparator_0/inn"
+merge "Ncomparator_0/inn" "m1_18300_n12934#"
+merge "pfet$19_0/a_94_0#" "nfet$19$1_0/a_94_0#" -971.572 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -592 -263340 -2834 -425040 -4084 0 0 0 0
+merge "nfet$19$1_0/a_94_0#" "qnot"
+merge "Ncomparator_0/iref" "irefn" -1.91923 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "SCHMITT_0/OUT" "pfet$19_1/a_28_n136#" -622.407 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -608 0 -218 0 0 0 0 0 0
+merge "pfet$19_1/a_28_n136#" "nfet$19$1_1/a_30_260#"
+merge "nfet$19$1_1/a_30_260#" "m1_12013_n18365#"

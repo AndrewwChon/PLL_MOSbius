@@ -1,0 +1,449 @@
+* NGSPICE file created from PCP1248X.ext - technology: gf180mcuD
+
+.subckt nfet$10 a_n84_0# a_38_n132# a_342_0# a_138_0# a_242_n132# VSUBS
+X0 a_342_0# a_242_n132# a_138_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.5u
+X1 a_138_0# a_38_n132# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.5u
+.ends
+
+.subckt pfet a_1158_0# a_750_0# a_546_0# a_446_n60# a_242_n60# a_1566_0# a_954_0#
++ a_1466_n60# w_n180_n88# a_1262_n60# a_38_n60# a_n92_0# a_1058_n60# a_854_n60# a_342_0#
++ a_138_0# a_650_n60# a_1362_0#
+X0 a_1362_0# a_1262_n60# a_1158_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.5u
+X1 a_954_0# a_854_n60# a_750_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.5u
+X2 a_1566_0# a_1466_n60# a_1362_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.5u
+X3 a_342_0# a_242_n60# a_138_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.5u
+X4 a_546_0# a_446_n60# a_342_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.5u
+X5 a_1158_0# a_1058_n60# a_954_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.5u
+X6 a_138_0# a_38_n60# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.5u
+X7 a_750_0# a_650_n60# a_546_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.5u
+.ends
+
+.subckt pfet$1 a_750_0# a_546_0# a_446_n60# a_242_n60# w_n180_n88# a_38_n60# a_n92_0#
++ a_342_0# a_138_0# a_650_n60#
+X0 a_342_0# a_242_n60# a_138_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.5u
+X1 a_546_0# a_446_n60# a_342_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.5u
+X2 a_138_0# a_38_n60# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.5u
+X3 a_750_0# a_650_n60# a_546_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.5u
+.ends
+
+.subckt nfet$15 a_510_n132# a_254_0# a_414_0# a_30_n132# a_n84_0# a_94_0# a_190_n132#
++ a_574_0# a_350_n132# VSUBS
+X0 a_254_0# a_190_n132# a_94_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_574_0# a_510_n132# a_414_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+X2 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+X3 a_414_0# a_350_n132# a_254_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+.ends
+
+.subckt nfet$9 a_750_0# a_546_0# a_446_n132# a_n84_0# a_650_n132# a_38_n132# a_342_0#
++ a_138_0# a_242_n132# VSUBS
+X0 a_342_0# a_242_n132# a_138_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.5u
+X1 a_546_0# a_446_n132# a_342_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.5u
+X2 a_138_0# a_38_n132# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.5u
+X3 a_750_0# a_650_n132# a_546_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.5u
+.ends
+
+.subckt pfet$4 w_n180_n88# a_n92_0# a_342_0# a_138_0# a_38_n136# a_242_n136#
+X0 a_342_0# a_242_n136# a_138_0# w_n180_n88# pfet_03v3 ad=0.8125p pd=3.8u as=0.325p ps=1.77u w=1.25u l=0.5u
+X1 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.325p pd=1.77u as=0.8125p ps=3.8u w=1.25u l=0.5u
+.ends
+
+.subckt pfet$6 a_28_n136# a_254_0# a_188_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_254_0# a_188_n136# a_94_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+.ends
+
+.subckt nfet$13 a_510_n132# a_254_0# a_414_0# a_30_n132# a_n84_0# a_94_0# a_190_n132#
++ a_574_0# a_350_n132# VSUBS
+X0 a_254_0# a_190_n132# a_94_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_574_0# a_510_n132# a_414_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+X2 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+X3 a_414_0# a_350_n132# a_254_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+.ends
+
+.subckt pfet$5 a_28_n136# a_254_0# a_188_n136# w_n180_n88# a_348_n136# a_414_0# a_n92_0#
++ a_94_0# a_574_0# a_508_n136#
+X0 a_254_0# a_188_n136# a_94_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_574_0# a_508_n136# a_414_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X2 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+X3 a_414_0# a_348_n136# a_254_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+.ends
+
+.subckt nfet$12 a_254_0# a_30_n132# a_n84_0# a_94_0# a_190_n132# VSUBS
+X0 a_254_0# a_190_n132# a_94_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt OTAforChargePump vdd vss iref inn inp out
+Xpfet$6_0 m1_n400_n914# m1_n400_n914# m1_n400_n914# vdd m1_n400_n914# m1_n400_n914#
++ pfet$6
+Xpfet$6_2 vdd vdd vdd vdd vdd vdd pfet$6
+Xpfet$6_1 m1_n400_n914# m1_n400_n914# m1_n400_n914# vdd m1_n400_n914# m1_n400_n914#
++ pfet$6
+Xpfet$6_3 vdd vdd vdd vdd vdd vdd pfet$6
+Xnfet$13_0 vss vss vss vss vss vss vss vss vss vss nfet$13
+Xpfet$6_4 vdd vdd vdd vdd vdd vdd pfet$6
+Xnfet$13_1 vss vss vss vss vss vss vss vss vss vss nfet$13
+Xpfet$6_5 vdd vdd vdd vdd vdd vdd pfet$6
+Xpfet$5_10 iref vdd iref vdd iref iref vdd iref vdd iref pfet$5
+Xpfet$5_11 iref vdd iref vdd iref m1_n400_n914# vdd m1_n400_n914# vdd iref pfet$5
+Xpfet$5_0 inn m1_n400_n914# inn vdd inn out m1_n400_n914# out m1_n400_n914# inn pfet$5
+Xpfet$5_1 inp m1_n400_n914# inp vdd inp m1_116_n1334# m1_n400_n914# m1_116_n1334#
++ m1_n400_n914# inp pfet$5
+Xpfet$5_2 iref vdd iref vdd iref iref vdd iref vdd iref pfet$5
+Xnfet$12_0 vss m1_116_n1334# vss out m1_116_n1334# vss nfet$12
+Xpfet$5_3 iref vdd iref vdd iref m1_n400_n914# vdd m1_n400_n914# vdd iref pfet$5
+Xnfet$12_1 vss m1_116_n1334# vss m1_116_n1334# m1_116_n1334# vss nfet$12
+Xnfet$12_2 vss m1_116_n1334# vss m1_116_n1334# m1_116_n1334# vss nfet$12
+Xpfet$5_4 iref vdd iref vdd iref m1_n400_n914# vdd m1_n400_n914# vdd iref pfet$5
+Xnfet$12_3 vss m1_116_n1334# vss out m1_116_n1334# vss nfet$12
+Xpfet$5_6 iref vdd iref vdd iref iref vdd iref vdd iref pfet$5
+Xpfet$5_5 iref vdd iref vdd iref iref vdd iref vdd iref pfet$5
+Xpfet$5_7 iref vdd iref vdd iref m1_n400_n914# vdd m1_n400_n914# vdd iref pfet$5
+Xpfet$5_8 inp m1_n400_n914# inp vdd inp m1_116_n1334# m1_n400_n914# m1_116_n1334#
++ m1_n400_n914# inp pfet$5
+Xpfet$5_9 inn m1_n400_n914# inn vdd inn out m1_n400_n914# out m1_n400_n914# inn pfet$5
+.ends
+
+.subckt pfet$10 a_28_460# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_460# a_n92_0# w_n180_n88# pfet_03v3 ad=1.3p pd=5.3u as=1.3p ps=5.3u w=2u l=0.28u
+.ends
+
+.subckt nfet$16 a_30_n132# a_n84_0# a_94_0# VSUBS
+X0 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt pfet$9 w_n180_n88# a_n92_0# a_138_0# a_38_n136#
+X0 a_138_0# a_38_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=1.95p pd=7.3u as=1.95p ps=7.3u w=3u l=0.5u
+.ends
+
+.subckt ppolyf_u_resistor a_4000_0# a_n376_0# a_n132_0#
+X0 a_n132_0# a_4000_0# a_n376_0# ppolyf_u r_width=1u r_length=20u
+.ends
+
+.subckt nfet a_38_n60# a_n84_0# a_138_0# VSUBS
+X0 a_138_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt nfet$8 a_n84_0# a_38_n132# a_342_0# a_138_0# a_242_n132# VSUBS
+X0 a_342_0# a_242_n132# a_138_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.26p ps=1.52u w=1u l=0.5u
+X1 a_138_0# a_38_n132# a_n84_0# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.61p ps=3.22u w=1u l=0.5u
+.ends
+
+.subckt cap_mim$1 m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=50u c_length=100u
+.ends
+
+.subckt nfet$6 a_750_0# a_546_0# a_446_n132# a_n84_0# a_650_n132# a_38_n132# a_342_0#
++ a_138_0# a_242_n132# VSUBS
+X0 a_342_0# a_242_n132# a_138_0# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.5u
+X1 a_546_0# a_446_n132# a_342_0# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.5u
+X2 a_138_0# a_38_n132# a_n84_0# VSUBS nfet_03v3 ad=0.26p pd=1.52u as=0.61p ps=3.22u w=1u l=0.5u
+X3 a_750_0# a_650_n132# a_546_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.26p ps=1.52u w=1u l=0.5u
+.ends
+
+.subckt pfet$11 a_1054_0# a_734_0# a_828_n136# a_28_n136# a_254_0# a_894_0# a_188_n136#
++ a_988_n136# w_n180_n88# a_348_n136# a_1214_0# a_1148_n136# a_414_0# a_n92_0# a_94_0#
++ a_574_0# a_508_n136# a_668_n136#
+X0 a_1214_0# a_1148_n136# a_1054_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_734_0# a_668_n136# a_574_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X2 a_254_0# a_188_n136# a_94_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X3 a_574_0# a_508_n136# a_414_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X4 a_1054_0# a_988_n136# a_894_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X5 a_894_0# a_828_n136# a_734_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X6 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+X7 a_414_0# a_348_n136# a_254_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+.ends
+
+.subckt PCP1248X vdd vss s3 s2 s1 s0 vin iref200u out up down
+Xnfet$10_6 vss vss vss vss vss vss nfet$10
+Xpfet_0 m1_n2925_n36# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187#
++ m1_n1721_n939# pfet
+Xpfet$1_6 m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# vdd m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# pfet$1
+Xpfet$1_10 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet$1
+Xnfet$10_7 vss vss vss vss vss vss nfet$10
+Xpfet$1_7 m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# vdd m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# pfet$1
+Xpfet_1 m1_n2925_n36# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187#
++ m1_n1721_n939# pfet
+Xpfet$1_11 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet$1
+Xnfet$10_8 vss vss vss vss vss vss nfet$10
+Xpfet_2 m1_n2925_n36# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187#
++ m1_n1721_n939# pfet
+Xpfet$1_8 m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# vdd m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# pfet$1
+Xnfet$10_9 vss vss vss vss vss vss nfet$10
+Xpfet$1_9 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet$1
+Xpfet_3 m1_n2925_n36# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187#
++ m1_n1721_n939# pfet
+Xnfet$15_0 down out m1_13543_n1758# down out m1_13543_n1758# down out down vss nfet$15
+Xpfet_4 m1_n2925_n36# m1_n2925_n36# m1_n25_493# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36#
++ m1_n25_493# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1751_n2187#
++ m1_n1751_n2187# m1_n2925_n36# m1_n25_493# m1_n1751_n2187# m1_n25_493# pfet
+Xnfet$9_0 m1_13543_n1758# m1_14167_n938# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_14167_n938# m1_9963_14448# vss nfet$9
+Xpfet_5 m1_n47_11059# m1_n47_11059# m1_6759_7857# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n47_11059# m1_6759_7857# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n47_11059# m1_n1751_n2187# m1_n1751_n2187# m1_n47_11059# m1_6759_7857# m1_n1751_n2187#
++ m1_6759_7857# pfet
+Xpfet_30 m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# vdd m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# pfet
+Xnfet$9_1 m1_13543_n1758# m1_14167_n938# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_14167_n938# m1_9963_14448# vss nfet$9
+Xpfet_6 vdd vdd m1_6759_7857# m1_n47_11059# m1_n47_11059# vdd m1_6759_7857# m1_n47_11059#
++ vdd m1_n47_11059# m1_n47_11059# vdd m1_n47_11059# m1_n47_11059# vdd m1_6759_7857#
++ m1_n47_11059# m1_6759_7857# pfet
+Xpfet_31 m1_n2925_n36# m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187#
++ m1_1671_n1319# pfet
+Xpfet_20 m1_n2925_n36# m1_n2925_n36# m1_1671_873# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_1671_873# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36#
++ m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_1671_873# m1_n1751_n2187# m1_1671_873#
++ pfet
+Xnfet$9_30 m1_13543_n1758# m1_14167_n938# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_14167_n938# m1_9963_14448# vss nfet$9
+Xnfet$9_2 m1_13543_n1758# m1_14167_n938# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_14167_n938# m1_9963_14448# vss nfet$9
+Xpfet_7 vdd vdd m1_n25_493# m1_n91_6229# m1_n91_6229# vdd m1_n25_493# m1_n91_6229#
++ vdd m1_n91_6229# m1_n91_6229# vdd m1_n91_6229# m1_n91_6229# vdd m1_n25_493# m1_n91_6229#
++ m1_n25_493# pfet
+Xpfet$4_0 vdd vdd vdd vdd vdd vdd pfet$4
+Xpfet_10 vdd vdd m1_n1721_n939# m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939# m1_n1771_4009#
++ vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939#
++ m1_n1771_4009# m1_n1721_n939# pfet
+Xpfet_32 m1_n2925_n36# m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187#
++ m1_1671_n1319# pfet
+Xpfet_21 vdd vdd m1_1671_873# m1_1641_5849# m1_1641_5849# vdd m1_1671_873# m1_1641_5849#
++ vdd m1_1641_5849# m1_1641_5849# vdd m1_1641_5849# m1_1641_5849# vdd m1_1671_873#
++ m1_1641_5849# m1_1671_873# pfet
+Xnfet$9_20 vss m1_14167_n938# m1_14137_3830# vss m1_14137_3830# m1_14137_3830# vss
++ m1_14167_n938# m1_14137_3830# vss nfet$9
+Xnfet$9_31 m1_n47_11059# m1_14015_1164# m1_9963_14448# m1_n47_11059# m1_9963_14448#
++ m1_9963_14448# m1_n47_11059# m1_14015_1164# m1_9963_14448# vss nfet$9
+Xnfet$9_3 m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758#
++ m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# vss nfet$9
+Xpfet_8 vdd vdd m1_n1721_n939# m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939# m1_n1771_4009#
++ vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939#
++ m1_n1771_4009# m1_n1721_n939# pfet
+Xpfet_11 vdd vdd m1_n1721_n939# m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939# m1_n1771_4009#
++ vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939#
++ m1_n1771_4009# m1_n1721_n939# pfet
+Xpfet_22 vdd vdd m1_1671_n1319# m1_1137_12199# m1_1137_12199# vdd m1_1671_n1319# m1_1137_12199#
++ vdd m1_1137_12199# m1_1137_12199# vdd m1_1137_12199# m1_1137_12199# vdd m1_1671_n1319#
++ m1_1137_12199# m1_1671_n1319# pfet
+Xpfet_33 vdd vdd m1_1671_n1319# m1_1137_12199# m1_1137_12199# vdd m1_1671_n1319# m1_1137_12199#
++ vdd m1_1137_12199# m1_1137_12199# vdd m1_1137_12199# m1_1137_12199# vdd m1_1671_n1319#
++ m1_1137_12199# m1_1671_n1319# pfet
+Xpfet$4_1 vdd vdd vdd m1_n1751_n2187# m1_n1751_n2187# m1_n1751_n2187# pfet$4
+Xnfet$9_21 vss m1_14167_n938# m1_14137_3830# vss m1_14137_3830# m1_14137_3830# vss
++ m1_14167_n938# m1_14137_3830# vss nfet$9
+Xnfet$9_32 m1_13543_n1758# m1_14167_n938# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_14167_n938# m1_9963_14448# vss nfet$9
+Xnfet$9_10 m1_13543_n1758# m1_15911_n1318# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_15911_n1318# m1_9963_14448# vss nfet$9
+Xnfet$9_4 m1_13543_n1758# m1_15039_784# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_15039_784# m1_9963_14448# vss nfet$9
+Xpfet_9 vdd vdd m1_n1721_n939# m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939# m1_n1771_4009#
++ vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939#
++ m1_n1771_4009# m1_n1721_n939# pfet
+Xpfet_12 m1_n2925_n36# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187#
++ m1_n1721_n939# pfet
+Xpfet_23 vdd vdd m1_n1721_n939# m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939# m1_n1771_4009#
++ vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939#
++ m1_n1771_4009# m1_n1721_n939# pfet
+Xpfet_34 vdd vdd m1_1671_n1319# m1_1137_12199# m1_1137_12199# vdd m1_1671_n1319# m1_1137_12199#
++ vdd m1_1137_12199# m1_1137_12199# vdd m1_1137_12199# m1_1137_12199# vdd m1_1671_n1319#
++ m1_1137_12199# m1_1671_n1319# pfet
+Xpfet$4_2 vdd vdd vdd m1_9963_14448# m1_n1751_n2187# m1_n1751_n2187# pfet$4
+Xnfet$9_22 vss m1_14167_n938# m1_14137_3830# vss m1_14137_3830# m1_14137_3830# vss
++ m1_14167_n938# m1_14137_3830# vss nfet$9
+Xnfet$9_33 vss m1_14167_n938# m1_14137_3830# vss m1_14137_3830# m1_14137_3830# vss
++ m1_14167_n938# m1_14137_3830# vss nfet$9
+Xnfet$9_11 m1_13543_n1758# m1_15039_784# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_15039_784# m1_9963_14448# vss nfet$9
+Xnfet$9_5 m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758#
++ m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# vss nfet$9
+XOTAforChargePump_0 vdd vss iref200u vin OTAforChargePump_0/inp OTAforChargePump_0/out
++ OTAforChargePump
+Xpfet_13 m1_n2925_n36# m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187#
++ m1_1671_n1319# pfet
+Xpfet_24 vdd vdd m1_n25_493# m1_n91_6229# m1_n91_6229# vdd m1_n25_493# m1_n91_6229#
++ vdd m1_n91_6229# m1_n91_6229# vdd m1_n91_6229# m1_n91_6229# vdd m1_n25_493# m1_n91_6229#
++ m1_n25_493# pfet
+Xpfet_35 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet
+Xpfet$4_3 vdd vdd vdd m1_n1751_n2187# m1_n1751_n2187# m1_n1751_n2187# pfet$4
+Xnfet$9_34 vss m1_14167_n938# m1_14137_3830# vss m1_14137_3830# m1_14137_3830# vss
++ m1_14167_n938# m1_14137_3830# vss nfet$9
+Xnfet$10_10 vss vss vss vss vss vss nfet$10
+Xnfet$9_23 vss m1_15039_784# m1_15009_5932# vss m1_15009_5932# m1_15009_5932# vss
++ m1_15039_784# m1_15009_5932# vss nfet$9
+Xnfet$9_6 m1_13543_n1758# m1_16783_404# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_16783_404# m1_9963_14448# vss nfet$9
+Xnfet$9_12 m1_13543_n1758# m1_14167_n938# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_14167_n938# m1_9963_14448# vss nfet$9
+Xpfet_14 m1_n2925_n36# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187#
++ m1_n1721_n939# pfet
+Xpfet_25 vdd vdd m1_1671_n1319# m1_1137_12199# m1_1137_12199# vdd m1_1671_n1319# m1_1137_12199#
++ vdd m1_1137_12199# m1_1137_12199# vdd m1_1137_12199# m1_1137_12199# vdd m1_1671_n1319#
++ m1_1137_12199# m1_1671_n1319# pfet
+Xpfet$10_0 s0 vdd m1_1641_5849# vdd pfet$10
+Xpfet$4_4 vdd vdd vdd m1_9963_14448# m1_n1751_n2187# m1_n1751_n2187# pfet$4
+Xnfet$9_24 vss vss vss vss vss vss vss vss vss vss nfet$9
+Xnfet$9_35 vss m1_14015_1164# OTAforChargePump_0/out vss OTAforChargePump_0/out OTAforChargePump_0/out
++ vss m1_14015_1164# OTAforChargePump_0/out vss nfet$9
+Xnfet$9_7 m1_13543_n1758# m1_15911_n1318# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_15911_n1318# m1_9963_14448# vss nfet$9
+Xnfet$9_13 m1_13543_n1758# m1_14167_n938# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_14167_n938# m1_9963_14448# vss nfet$9
+Xnfet$10_11 vss vss vss vss vss vss nfet$10
+Xnfet$16_10 m1_n2855_12403# m1_14137_3830# vss vss nfet$16
+Xpfet_15 m1_n2925_n36# m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_1671_n1319# m1_n1751_n2187#
++ m1_1671_n1319# pfet
+Xpfet_26 vdd vdd m1_n1721_n939# m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939# m1_n1771_4009#
++ vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939#
++ m1_n1771_4009# m1_n1721_n939# pfet
+Xpfet$4_5 vdd vdd vdd vdd vdd vdd pfet$4
+Xpfet$10_1 s3 vdd m1_n1771_4009# vdd pfet$10
+Xnfet$9_36 OTAforChargePump_0/inp m1_9475_12045# m1_9963_14448# OTAforChargePump_0/inp
++ m1_9963_14448# m1_9963_14448# OTAforChargePump_0/inp m1_9475_12045# m1_9963_14448#
++ vss nfet$9
+Xnfet$9_25 vss m1_14167_n938# m1_14137_3830# vss m1_14137_3830# m1_14137_3830# vss
++ m1_14167_n938# m1_14137_3830# vss nfet$9
+Xnfet$9_8 m1_13543_n1758# m1_15911_n1318# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_15911_n1318# m1_9963_14448# vss nfet$9
+Xnfet$9_14 m1_13543_n1758# m1_14167_n938# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_14167_n938# m1_9963_14448# vss nfet$9
+Xnfet$16_11 s3 OTAforChargePump_0/out m1_14137_3830# vss nfet$16
+Xpfet_16 m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# vdd m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# pfet
+Xpfet_27 vdd vdd m1_n1721_n939# m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939# m1_n1771_4009#
++ vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939#
++ m1_n1771_4009# m1_n1721_n939# pfet
+Xpfet$10_2 m1_n1311_12403# vdd m1_n47_11059# m1_n91_6229# pfet$10
+Xnfet$9_26 vss m1_14167_n938# m1_14137_3830# vss m1_14137_3830# m1_14137_3830# vss
++ m1_14167_n938# m1_14137_3830# vss nfet$9
+Xnfet$9_15 vss vss vss vss vss vss vss vss vss vss nfet$9
+Xnfet$9_9 m1_13543_n1758# m1_15911_n1318# m1_9963_14448# m1_13543_n1758# m1_9963_14448#
++ m1_9963_14448# m1_13543_n1758# m1_15911_n1318# m1_9963_14448# vss nfet$9
+Xpfet_17 m1_n2925_n36# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187#
++ m1_n1721_n939# pfet
+Xpfet_28 vdd vdd m1_n1721_n939# m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939# m1_n1771_4009#
++ vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1771_4009# m1_n1771_4009# vdd m1_n1721_n939#
++ m1_n1771_4009# m1_n1721_n939# pfet
+Xpfet$10_3 m1_n2083_12403# vdd m1_n47_11059# m1_1137_12199# pfet$10
+Xnfet$9_27 vss m1_15911_n1318# m1_15881_3450# vss m1_15881_3450# m1_15881_3450# vss
++ m1_15911_n1318# m1_15881_3450# vss nfet$9
+Xnfet$9_16 vss m1_16783_404# m1_16753_5552# vss m1_16753_5552# m1_16753_5552# vss
++ m1_16783_404# m1_16753_5552# vss nfet$9
+Xpfet_18 m1_n2925_n36# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187#
++ m1_n2925_n36# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1721_n939# m1_n1751_n2187#
++ m1_n1721_n939# pfet
+Xpfet_29 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet
+Xpfet$10_4 m1_n2855_12403# vdd m1_n47_11059# m1_n1771_4009# pfet$10
+Xnfet$9_28 vss m1_15911_n1318# m1_15881_3450# vss m1_15881_3450# m1_15881_3450# vss
++ m1_15911_n1318# m1_15881_3450# vss nfet$9
+Xnfet$9_17 vss m1_15039_784# m1_15009_5932# vss m1_15009_5932# m1_15009_5932# vss
++ m1_15039_784# m1_15009_5932# vss nfet$9
+Xpfet_19 m1_n2925_n36# m1_n2925_n36# m1_n25_493# m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36#
++ m1_n25_493# m1_n1751_n2187# vdd m1_n1751_n2187# m1_n1751_n2187# m1_n2925_n36# m1_n1751_n2187#
++ m1_n1751_n2187# m1_n2925_n36# m1_n25_493# m1_n1751_n2187# m1_n25_493# pfet
+Xpfet$10_5 s1 vdd m1_n91_6229# vdd pfet$10
+Xnfet$9_29 vss m1_14167_n938# m1_14137_3830# vss m1_14137_3830# m1_14137_3830# vss
++ m1_14167_n938# m1_14137_3830# vss nfet$9
+Xnfet$9_18 vss m1_15911_n1318# m1_15881_3450# vss m1_15881_3450# m1_15881_3450# vss
++ m1_15911_n1318# m1_15881_3450# vss nfet$9
+Xpfet$10_6 s2 vdd m1_1137_12199# vdd pfet$10
+Xnfet$9_19 vss m1_15911_n1318# m1_15881_3450# vss m1_15881_3450# m1_15881_3450# vss
++ m1_15911_n1318# m1_15881_3450# vss nfet$9
+Xpfet$9_0 vdd vdd m1_n2855_12403# s3 pfet$9
+Xpfet$10_7 m1_n539_12403# vdd m1_n47_11059# m1_1641_5849# pfet$10
+Xpfet$9_1 vdd vdd m1_n2083_12403# s2 pfet$9
+Xpfet$10_8 m1_n539_12403# vdd OTAforChargePump_0/out m1_16753_5552# pfet$10
+Xpfet$9_2 vdd vdd m1_n539_12403# s0 pfet$9
+Xpfet$10_9 m1_n1311_12403# vdd OTAforChargePump_0/out m1_15009_5932# pfet$10
+Xnfet$16_0 s0 m1_n47_11059# m1_1641_5849# vss nfet$16
+Xpfet$9_3 vdd vdd m1_n1311_12403# s1 pfet$9
+Xnfet$16_1 s1 m1_n47_11059# m1_n91_6229# vss nfet$16
+Xppolyf_u_resistor_0 m1_3630_13790# vss m1_n502_13390# ppolyf_u_resistor
+Xnfet$16_2 s3 m1_n47_11059# m1_n1771_4009# vss nfet$16
+Xnfet_0 s3 vss m1_n2855_12403# vss nfet
+Xppolyf_u_resistor_1 OTAforChargePump_0/inp vss m1_n502_13390# ppolyf_u_resistor
+Xnfet$16_3 s2 m1_n47_11059# m1_1137_12199# vss nfet$16
+Xnfet_1 s2 vss m1_n2083_12403# vss nfet
+Xppolyf_u_resistor_2 m1_3630_14590# vss m1_n502_14190# ppolyf_u_resistor
+Xnfet$16_4 m1_n539_12403# m1_16753_5552# vss vss nfet$16
+Xnfet$8_0 vss vss vss vss vss vss nfet$8
+Xnfet_2 s1 vss m1_n1311_12403# vss nfet
+Xppolyf_u_resistor_3 m1_3630_13790# vss m1_n502_14190# ppolyf_u_resistor
+Xnfet$16_5 s0 OTAforChargePump_0/out m1_16753_5552# vss nfet$16
+Xpfet$10_10 m1_n2083_12403# vdd OTAforChargePump_0/out m1_15881_3450# pfet$10
+Xnfet$8_1 vss vss vss vss vss vss nfet$8
+Xnfet_3 s0 vss m1_n539_12403# vss nfet
+Xppolyf_u_resistor_4 m1_3630_14590# vss m1_n502_14990# ppolyf_u_resistor
+Xnfet$16_6 m1_n1311_12403# m1_15009_5932# vss vss nfet$16
+Xpfet$10_11 m1_n2855_12403# vdd OTAforChargePump_0/out m1_14137_3830# pfet$10
+Xnfet$8_2 vss m1_9963_14448# vss m1_9963_14448# m1_9963_14448# vss nfet$8
+Xppolyf_u_resistor_5 vdd vss m1_n502_14990# ppolyf_u_resistor
+Xcap_mim$1_0 m1_n1751_n2187# vdd cap_mim$1
+Xnfet$16_7 s1 OTAforChargePump_0/out m1_15009_5932# vss nfet$16
+Xnfet$6_0 vss m1_9475_12045# OTAforChargePump_0/out vss OTAforChargePump_0/out OTAforChargePump_0/out
++ vss m1_9475_12045# OTAforChargePump_0/out vss nfet$6
+Xcap_mim$1_1 vss m1_9963_14448# cap_mim$1
+Xpfet$11_0 m1_n2925_n36# m1_n2925_n36# up up out out up up vdd up out up m1_n2925_n36#
++ out m1_n2925_n36# out up up pfet$11
+Xnfet$16_8 m1_n2083_12403# m1_15881_3450# vss vss nfet$16
+Xnfet$6_1 vss m1_n1751_n2187# OTAforChargePump_0/out vss OTAforChargePump_0/out OTAforChargePump_0/out
++ vss m1_n1751_n2187# OTAforChargePump_0/out vss nfet$6
+Xcap_mim$1_2 vss OTAforChargePump_0/out cap_mim$1
+Xnfet$16_9 s2 OTAforChargePump_0/out m1_15881_3450# vss nfet$16
+Xnfet$6_2 vss m1_9475_12045# OTAforChargePump_0/out vss OTAforChargePump_0/out OTAforChargePump_0/out
++ vss m1_9475_12045# OTAforChargePump_0/out vss nfet$6
+Xnfet$10_0 m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758#
++ vss nfet$10
+Xpfet$1_0 m1_n47_11059# m1_n47_11059# m1_n47_11059# m1_n47_11059# vdd m1_n47_11059#
++ m1_n47_11059# m1_n47_11059# m1_n47_11059# m1_n47_11059# pfet$1
+Xnfet$6_3 vss m1_n1751_n2187# OTAforChargePump_0/out vss OTAforChargePump_0/out OTAforChargePump_0/out
++ vss m1_n1751_n2187# OTAforChargePump_0/out vss nfet$6
+Xnfet$10_1 m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758#
++ vss nfet$10
+Xpfet$1_1 m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# vdd m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# pfet$1
+Xnfet$10_2 m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758#
++ vss nfet$10
+Xpfet$1_2 m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# vdd m1_n2925_n36#
++ m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# m1_n2925_n36# pfet$1
+Xnfet$10_3 m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758#
++ vss nfet$10
+Xpfet$1_3 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet$1
+Xnfet$10_4 m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758# m1_13543_n1758#
++ vss nfet$10
+Xpfet$1_4 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet$1
+Xnfet$10_5 m1_n47_11059# m1_n47_11059# m1_n47_11059# m1_n47_11059# m1_n47_11059# vss
++ nfet$10
+Xpfet$1_5 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet$1
+.ends
+
