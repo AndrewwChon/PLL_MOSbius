@@ -1,0 +1,59 @@
+* NGSPICE file created from OTAforChargePump.ext - technology: gf180mcuD
+
+.subckt pfet$1 a_28_n136# a_254_0# a_188_n136# w_n180_n88# a_348_n136# a_414_0# a_n92_0#
++ a_94_0# a_574_0# a_508_n136#
+X0 a_254_0# a_188_n136# a_94_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_574_0# a_508_n136# a_414_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X2 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+X3 a_414_0# a_348_n136# a_254_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+.ends
+
+.subckt pfet$2 a_28_n136# a_254_0# a_188_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_254_0# a_188_n136# a_94_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+.ends
+
+.subckt nfet$1 a_510_n132# a_254_0# a_414_0# a_30_n132# a_n84_0# a_94_0# a_190_n132#
++ a_574_0# a_350_n132# VSUBS
+X0 a_254_0# a_190_n132# a_94_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_574_0# a_510_n132# a_414_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+X2 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+X3 a_414_0# a_350_n132# a_254_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+.ends
+
+.subckt nfet a_254_0# a_30_n132# a_n84_0# a_94_0# a_190_n132# VSUBS
+X0 a_254_0# a_190_n132# a_94_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt OTAforChargePump iref inn inp vdd vss out
+Xpfet$1_6 iref vdd iref vdd iref iref vdd iref vdd iref pfet$1
+Xpfet$1_10 iref vdd iref vdd iref iref vdd iref vdd iref pfet$1
+Xpfet$1_7 iref vdd iref vdd iref m1_n400_n914# vdd m1_n400_n914# vdd iref pfet$1
+Xpfet$1_11 iref vdd iref vdd iref m1_n400_n914# vdd m1_n400_n914# vdd iref pfet$1
+Xpfet$1_8 inp m1_n400_n914# inp vdd inp m1_116_n1334# m1_n400_n914# m1_116_n1334#
++ m1_n400_n914# inp pfet$1
+Xpfet$1_9 inn m1_n400_n914# inn vdd inn out m1_n400_n914# out m1_n400_n914# inn pfet$1
+Xpfet$2_0 m1_n400_n914# m1_n400_n914# m1_n400_n914# vdd m1_n400_n914# m1_n400_n914#
++ pfet$2
+Xpfet$2_1 m1_n400_n914# m1_n400_n914# m1_n400_n914# vdd m1_n400_n914# m1_n400_n914#
++ pfet$2
+Xpfet$2_2 vdd vdd vdd vdd vdd vdd pfet$2
+Xpfet$2_3 vdd vdd vdd vdd vdd vdd pfet$2
+Xpfet$2_4 vdd vdd vdd vdd vdd vdd pfet$2
+Xpfet$2_5 vdd vdd vdd vdd vdd vdd pfet$2
+Xnfet$1_0 vss vss vss vss vss vss vss vss vss vss nfet$1
+Xnfet$1_1 vss vss vss vss vss vss vss vss vss vss nfet$1
+Xnfet_0 vss m1_116_n1334# vss out m1_116_n1334# vss nfet
+Xnfet_1 vss m1_116_n1334# vss m1_116_n1334# m1_116_n1334# vss nfet
+Xnfet_2 vss m1_116_n1334# vss m1_116_n1334# m1_116_n1334# vss nfet
+Xnfet_3 vss m1_116_n1334# vss out m1_116_n1334# vss nfet
+Xpfet$1_0 inn m1_n400_n914# inn vdd inn out m1_n400_n914# out m1_n400_n914# inn pfet$1
+Xpfet$1_1 inp m1_n400_n914# inp vdd inp m1_116_n1334# m1_n400_n914# m1_116_n1334#
++ m1_n400_n914# inp pfet$1
+Xpfet$1_2 iref vdd iref vdd iref iref vdd iref vdd iref pfet$1
+Xpfet$1_3 iref vdd iref vdd iref m1_n400_n914# vdd m1_n400_n914# vdd iref pfet$1
+Xpfet$1_4 iref vdd iref vdd iref m1_n400_n914# vdd m1_n400_n914# vdd iref pfet$1
+Xpfet$1_5 iref vdd iref vdd iref iref vdd iref vdd iref pfet$1
+.ends
+

@@ -76,7 +76,7 @@ N 1500 -240 1520 -240 {lab=vss}
 N 1500 -310 1520 -310 {lab=vss}
 C {symbols/pfet_03v3.sym} 660 -490 0 1 {name=M8
 L=0.28u
-W=2.5u
+W=10u
 nf=4
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -90,7 +90,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 780 -490 0 0 {name=M1
 L=0.28u
-W=2.5u
+W=10u
 nf=4
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -104,7 +104,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 920 -490 0 0 {name=M2
 L=0.28u
-W=2.5u
+W=10u
 nf=4
 m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -118,7 +118,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 1060 -490 0 0 {name=M3
 L=0.28u
-W=2.5u
+W=10u
 nf=4
 m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -132,7 +132,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1100 -310 0 1 {name=M6
 L=0.28u
-W=2u
+W=8u
 nf=4
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -146,7 +146,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1220 -310 0 0 {name=M4
 L=0.28u
-W=2u
+W=8u
 nf=4
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -160,7 +160,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1360 -310 0 0 {name=M5
 L=0.28u
-W=2u
+W=8u
 nf=4
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -181,7 +181,7 @@ C {iopin.sym} 580 -560 2 0 {name=p6 lab=vdd}
 C {iopin.sym} 580 -240 2 0 {name=p7 lab=vss}
 C {symbols/pfet_03v3.sym} 1160 -530 0 0 {name=M7
 L=0.28u
-W=2.5u
+W=10u
 nf=4
 m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -195,7 +195,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1480 -310 0 0 {name=M9
 L=0.28u
-W=2u
+W=8u
 nf=4
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

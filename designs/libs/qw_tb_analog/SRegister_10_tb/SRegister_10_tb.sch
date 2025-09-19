@@ -23,14 +23,14 @@ N 780 -480 840 -480 {lab=out[1:10]}
 N 380 -240 380 -200 {lab=vss}
 N 380 -340 380 -300 {lab=en}
 N 460 -240 460 -200 {lab=vss}
-N 460 -340 460 -300 {lab=def}
+N 460 -340 460 -300 {lab=def[1:10]}
 N 700 -560 710 -570 {lab=vdd}
 N 700 -560 700 -540 {lab=vdd}
 N 730 -570 740 -560 {lab=vss}
 N 740 -560 740 -540 {lab=vss}
 N 630 -460 660 -460 {lab=en}
 N 630 -440 660 -440 {lab=def[1:10]}
-N 780 -530 840 -530 {lab=q}
+N 780 -520 840 -520 {lab=q}
 N 640 -500 660 -500 {lab=phi1}
 N 640 -480 660 -480 {lab=phi2}
 C {vsource.sym} 180 -170 0 0 {name=V1 value=0 savecurrent=false}
@@ -90,6 +90,6 @@ C {lab_wire.sym} 460 -220 0 0 {name=p21 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 460 -320 0 0 {name=p22 sig_type=std_logic lab=def[1:10]}
 C {lab_wire.sym} 640 -460 0 0 {name=p15 sig_type=std_logic lab=en}
 C {lab_wire.sym} 640 -440 0 0 {name=p16 sig_type=std_logic lab=def[1:10]}
-C {noconn.sym} 840 -530 0 1 {name=l2}
-C {lab_wire.sym} 810 -530 0 1 {name=p17 sig_type=std_logic lab=q}
-C {SRegister_10/SRegister_10.sym} 720 -480 0 0 {name=x1}
+C {noconn.sym} 840 -520 0 1 {name=l2}
+C {lab_wire.sym} 810 -520 0 1 {name=p17 sig_type=std_logic lab=q}
+C {libs/qw_core_analog/SRegister_10/SRegister_10.sym} 720 -480 0 0 {name=x3}

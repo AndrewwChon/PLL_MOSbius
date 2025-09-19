@@ -1,0 +1,15 @@
+** sch_path: /foss/designs/libs/qw_core_analog/Pcomparator/Pcomparator.sch
+.subckt Pcomparator inp inn vdd vss out iref
+*.PININFO inp:B inn:B vdd:B vss:B out:B iref:B
+M8 iref iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M1 net1 iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M2 net2 inn net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M3 net3 inp net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M4 net2 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+M5 net3 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+M6 out iref vdd vdd pfet_03v3 L=0.28u W=20u nf=8 m=2
+M7 out net3 vss vss nfet_03v3 L=0.28u W=16u nf=8 m=1
+M9 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+M10 vdd vdd vdd vdd pfet_03v3 L=0.28u W=2.5u nf=1 m=4
+M11 net1 net1 net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+.ends
