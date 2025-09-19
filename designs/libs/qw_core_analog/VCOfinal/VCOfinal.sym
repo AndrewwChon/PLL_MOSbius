@@ -1,0 +1,39 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -60 -80 -60 80 {}
+L 4 -60 80 60 80 {}
+L 4 60 -80 60 80 {}
+L 4 -60 -80 60 -80 {}
+B 5 -22.5 -82.5 -17.5 -77.5 {name=vdd dir=inout}
+B 5 17.5 -82.5 22.5 -77.5 {name=vss dir=inout}
+B 5 -62.5 -52.5 -57.5 -47.5 {name=iref200 dir=inout}
+B 5 -62.5 27.5 -57.5 32.5 {name=irefp dir=inout}
+B 5 -62.5 47.5 -57.5 52.5 {name=irefn dir=inout}
+B 5 -42.5 77.5 -37.5 82.5 {name=s0 dir=inout}
+B 5 -22.5 77.5 -17.5 82.5 {name=s1 dir=inout}
+B 5 17.5 77.5 22.5 82.5 {name=s2 dir=inout}
+B 5 37.5 77.5 42.5 82.5 {name=s3 dir=inout}
+B 5 57.5 -22.5 62.5 -17.5 {name=fout dir=inout}
+B 5 57.5 17.5 62.5 22.5 {name=foutb dir=inout}
+B 5 -62.5 -2.5 -57.5 2.5 {name=vin dir=inout}
+T {@symname} -34 -6 0 0 0.2 0.2 {}
+T {@name} 35 -92 0 0 0.2 0.2 {}
+T {vdd} -15 -74 0 1 0.2 0.2 {}
+T {vss} 35 -74 0 1 0.2 0.2 {}
+T {iref200} -15 -54 0 1 0.2 0.2 {}
+T {irefp} -35 26 0 1 0.2 0.2 {}
+T {irefn} -35 46 0 1 0.2 0.2 {}
+T {s0} -35 66 0 1 0.2 0.2 {}
+T {s1} -15 66 0 1 0.2 0.2 {}
+T {s2} 25 66 0 1 0.2 0.2 {}
+T {s3} 45 66 0 1 0.2 0.2 {}
+T {fout} 55 -24 0 1 0.2 0.2 {}
+T {foutb} 55 16 0 1 0.2 0.2 {}
+T {vin} -35 -4 0 1 0.2 0.2 {}

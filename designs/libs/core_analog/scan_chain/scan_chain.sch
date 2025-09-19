@@ -10,6 +10,10 @@ T {program counter default state set to P=400 (110010000)} 830 -460 0 0 0.4 0.4 
 T {PFD MUX default state set to Select C (00) (Non-Polarity Switch PFD)} 830 -430 0 0 0.4 0.4 {}
 T {VCO MUX default state set to Select C (00) (CS Ring VCO)} 830 -400 0 0 0.4 0.4 {}
 T {Charge Pump default state set to 100uA (0001)} 830 -370 0 0 0.4 0.4 {}
+T {input divider swallow counter default state set to S=0 (000000000)} 830 -340 0 0 0.4 0.4 {}
+T {input divider program counter default state set to P=0 (000000000)} 830 -310 0 0 0.4 0.4 {}
+T {Input Divider MUX default state set to Select C (00) (no input division)} 830 -280 0 0 0.4 0.4 {}
+T {Relaxation VCO Charge Pump default state set to 0uA (0000)} 830 -250 0 0 0.4 0.4 {}
 N 1300 -960 1300 -930 {lab=VDDd}
 N 1320 -960 1320 -930 {lab=VSSd}
 N 760 -860 790 -860 {lab=#net1}
