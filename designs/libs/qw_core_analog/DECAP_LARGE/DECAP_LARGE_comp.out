@@ -1,0 +1,61 @@
+
+Circuit 1 cell cap_nmos_03v3 and Circuit 2 cell cap_nmos_03v3 are black boxes.
+Warning: Equate pins:  cell cap_nmos_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_nmos_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_nmos_03v3                   |Circuit 2: cap_nmos_03v3                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_nmos_03v3 and cap_nmos_03v3 are equivalent.
+Flattening unmatched subcell cap_nmos in circuit DECAP_SC (0)(4 instances)
+
+Cell DECAP_SC (0) disconnected node: a_n313_2257#
+Class DECAP_SC (0):  Merged 3 parallel devices.
+Class DECAP_SC (1):  Merged 3 parallel devices.
+Cell DECAP_SC (0) disconnected node: a_n313_2257#
+Subcircuit summary:
+Circuit 1: DECAP_SC                        |Circuit 2: DECAP_SC                        
+-------------------------------------------|-------------------------------------------
+cap_nmos_03v3 (4->1)                       |cap_nmos_03v3 (4->1)                       
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: DECAP_SC                        |Circuit 2: DECAP_SC                        
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+a_n313_2257#                               |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DECAP_SC and DECAP_SC are equivalent.
+
+Subcircuit summary:
+Circuit 1: DECAP_LARGE                     |Circuit 2: DECAP_LARGE                     
+-------------------------------------------|-------------------------------------------
+DECAP_SC (126)                             |DECAP_SC (126)                             
+Number of devices: 126                     |Number of devices: 126                     
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: DECAP_LARGE                     |Circuit 2: DECAP_LARGE                     
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DECAP_LARGE and DECAP_LARGE are equivalent.
+
+Final result: Circuits match uniquely.
+.

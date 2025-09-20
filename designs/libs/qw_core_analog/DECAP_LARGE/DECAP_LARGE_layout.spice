@@ -1,0 +1,142 @@
+* NGSPICE file created from DECAP_LARGE.ext - technology: gf180mcuD
+
+.subckt cap_nmos a_88_n92# a_0_0#
+X0 a_88_n92# a_0_0# cap_nmos_03v3 c_width=10u c_length=10u
+.ends
+
+.subckt DECAP_SC a_n313_2257# vdd vss
+Xcap_nmos_0 vdd vss cap_nmos
+Xcap_nmos_1 vdd vss cap_nmos
+Xcap_nmos_2 vdd vss cap_nmos
+Xcap_nmos_3 vdd vss cap_nmos
+.ends
+
+.subckt DECAP_LARGE vss vdd
+XDECAP_SC_0 vss vdd vss DECAP_SC
+XDECAP_SC_1 vss vdd vss DECAP_SC
+XDECAP_SC_2 DECAP_SC_2/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_3 DECAP_SC_3/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_4 DECAP_SC_4/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_5 DECAP_SC_5/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_6 DECAP_SC_6/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_7 DECAP_SC_7/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_8 DECAP_SC_8/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_90 DECAP_SC_90/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_9 DECAP_SC_9/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_80 vss vdd vss DECAP_SC
+XDECAP_SC_91 DECAP_SC_91/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_70 vss vdd vss DECAP_SC
+XDECAP_SC_81 vss vdd vss DECAP_SC
+XDECAP_SC_92 vss vdd vss DECAP_SC
+XDECAP_SC_71 vss vdd vss DECAP_SC
+XDECAP_SC_60 vss vdd vss DECAP_SC
+XDECAP_SC_93 vss vdd vss DECAP_SC
+XDECAP_SC_82 vss vdd vss DECAP_SC
+XDECAP_SC_50 vss vdd vss DECAP_SC
+XDECAP_SC_72 DECAP_SC_72/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_94 vss vdd vss DECAP_SC
+XDECAP_SC_61 vss vdd vss DECAP_SC
+XDECAP_SC_83 vss vdd vss DECAP_SC
+XDECAP_SC_40 DECAP_SC_40/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_51 vss vdd vss DECAP_SC
+XDECAP_SC_73 vss vdd vss DECAP_SC
+XDECAP_SC_95 vss vdd vss DECAP_SC
+XDECAP_SC_62 vss vdd vss DECAP_SC
+XDECAP_SC_84 vss vdd vss DECAP_SC
+XDECAP_SC_52 DECAP_SC_52/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_41 DECAP_SC_41/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_30 vss vdd vss DECAP_SC
+XDECAP_SC_120 DECAP_SC_120/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_96 DECAP_SC_96/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_63 vss vdd vss DECAP_SC
+XDECAP_SC_74 vss vdd vss DECAP_SC
+XDECAP_SC_85 vss vdd vss DECAP_SC
+XDECAP_SC_64 vss vdd vss DECAP_SC
+XDECAP_SC_42 vss vdd vss DECAP_SC
+XDECAP_SC_31 vss vdd vss DECAP_SC
+XDECAP_SC_20 vss vdd vss DECAP_SC
+XDECAP_SC_97 vss vdd vss DECAP_SC
+XDECAP_SC_53 vss vdd vss DECAP_SC
+XDECAP_SC_75 vss vdd vss DECAP_SC
+XDECAP_SC_86 vss vdd vss DECAP_SC
+XDECAP_SC_121 vss vdd vss DECAP_SC
+XDECAP_SC_110 vss vdd vss DECAP_SC
+XDECAP_SC_65 vss vdd vss DECAP_SC
+XDECAP_SC_43 vss vdd vss DECAP_SC
+XDECAP_SC_54 vss vdd vss DECAP_SC
+XDECAP_SC_21 vss vdd vss DECAP_SC
+XDECAP_SC_10 vss vdd vss DECAP_SC
+XDECAP_SC_122 vss vdd vss DECAP_SC
+XDECAP_SC_98 vss vdd vss DECAP_SC
+XDECAP_SC_100 vss vdd vss DECAP_SC
+XDECAP_SC_111 vss vdd vss DECAP_SC
+XDECAP_SC_32 DECAP_SC_32/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_76 vss vdd vss DECAP_SC
+XDECAP_SC_87 vss vdd vss DECAP_SC
+XDECAP_SC_66 vss vdd vss DECAP_SC
+XDECAP_SC_44 DECAP_SC_44/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_88 vss vdd vss DECAP_SC
+XDECAP_SC_55 vss vdd vss DECAP_SC
+XDECAP_SC_22 vss vdd vss DECAP_SC
+XDECAP_SC_11 vss vdd vss DECAP_SC
+XDECAP_SC_99 vss vdd vss DECAP_SC
+XDECAP_SC_33 vss vdd vss DECAP_SC
+XDECAP_SC_77 vss vdd vss DECAP_SC
+XDECAP_SC_123 vss vdd vss DECAP_SC
+XDECAP_SC_101 vss vdd vss DECAP_SC
+XDECAP_SC_112 DECAP_SC_112/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_67 vss vdd vss DECAP_SC
+XDECAP_SC_89 vss vdd vss DECAP_SC
+XDECAP_SC_56 vss vdd vss DECAP_SC
+XDECAP_SC_23 vss vdd vss DECAP_SC
+XDECAP_SC_12 DECAP_SC_12/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_102 DECAP_SC_102/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_124 vss vdd vss DECAP_SC
+XDECAP_SC_113 vss vdd vss DECAP_SC
+XDECAP_SC_34 vss vdd vss DECAP_SC
+XDECAP_SC_45 DECAP_SC_45/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_78 vss vdd vss DECAP_SC
+XDECAP_SC_46 vss vdd vss DECAP_SC
+XDECAP_SC_68 vss vdd vss DECAP_SC
+XDECAP_SC_57 vss vdd vss DECAP_SC
+XDECAP_SC_24 vss vdd vss DECAP_SC
+XDECAP_SC_13 vss vdd vss DECAP_SC
+XDECAP_SC_103 DECAP_SC_103/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_125 vss vdd vss DECAP_SC
+XDECAP_SC_114 vss vdd vss DECAP_SC
+XDECAP_SC_35 vss vdd vss DECAP_SC
+XDECAP_SC_79 vss vdd vss DECAP_SC
+XDECAP_SC_47 vss vdd vss DECAP_SC
+XDECAP_SC_69 vss vdd vss DECAP_SC
+XDECAP_SC_25 vss vdd vss DECAP_SC
+XDECAP_SC_14 vss vdd vss DECAP_SC
+XDECAP_SC_58 vss vdd vss DECAP_SC
+XDECAP_SC_36 vss vdd vss DECAP_SC
+XDECAP_SC_104 DECAP_SC_104/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_115 vss vdd vss DECAP_SC
+XDECAP_SC_48 vss vdd vss DECAP_SC
+XDECAP_SC_26 vss vdd vss DECAP_SC
+XDECAP_SC_15 vss vdd vss DECAP_SC
+XDECAP_SC_105 DECAP_SC_105/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_116 vss vdd vss DECAP_SC
+XDECAP_SC_59 DECAP_SC_59/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_37 vss vdd vss DECAP_SC
+XDECAP_SC_49 vss vdd vss DECAP_SC
+XDECAP_SC_27 vss vdd vss DECAP_SC
+XDECAP_SC_16 vss vdd vss DECAP_SC
+XDECAP_SC_38 vss vdd vss DECAP_SC
+XDECAP_SC_106 DECAP_SC_106/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_117 vss vdd vss DECAP_SC
+XDECAP_SC_28 vss vdd vss DECAP_SC
+XDECAP_SC_17 vss vdd vss DECAP_SC
+XDECAP_SC_107 DECAP_SC_107/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_118 vss vdd vss DECAP_SC
+XDECAP_SC_39 vss vdd vss DECAP_SC
+XDECAP_SC_29 vss vdd vss DECAP_SC
+XDECAP_SC_18 vss vdd vss DECAP_SC
+XDECAP_SC_108 DECAP_SC_108/a_n313_2257# vdd vss DECAP_SC
+XDECAP_SC_119 vss vdd vss DECAP_SC
+XDECAP_SC_19 vss vdd vss DECAP_SC
+XDECAP_SC_109 DECAP_SC_109/a_n313_2257# vdd vss DECAP_SC
+.ends
+
