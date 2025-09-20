@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/libs/qw_core_analog/DECAP_SC/DECAP_SC.sch
+.subckt DECAP_SC vdd vss
+*.PININFO vdd:B vss:B
+XC1 vdd vss cap_nmos_03v3 c_width=10e-6 c_length=10e-6 m=1
+XC2 vdd vss cap_nmos_03v3 c_width=10e-6 c_length=10e-6 m=1
+XC3 vdd vss cap_nmos_03v3 c_width=10e-6 c_length=10e-6 m=1
+XC4 vdd vss cap_nmos_03v3 c_width=10e-6 c_length=10e-6 m=1
+.ends
