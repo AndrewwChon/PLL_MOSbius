@@ -17,6 +17,8 @@ T {Control for Programmable
 Charge Pump. 1x, 2x, 4x, 8x} 2090 -740 0 0 0.3 0.3 {}
 T {Select B for PFD Mux is Polarity Switch} 920 -1060 0 0 0.4 0.4 {}
 T {Schmitt Trigger / Hysteresis Buffer} 330 -1080 0 0 0.3 0.3 {}
+T {Select C for External PFD} 920 -1100 0 0 0.4 0.4 {}
+T {Select C for External VCO} 3070 -1020 0 0 0.4 0.4 {}
 N 320 -960 380 -960 {lab=ref}
 N 460 -1060 460 -1020 {lab=vdd}
 N 460 -900 460 -860 {lab=vss}
@@ -308,7 +310,6 @@ C {lab_wire.sym} 1940 -20 0 0 {name=p119 sig_type=std_logic lab=div_swc_s0}
 C {devices/iopin.sym} 900 -40 3 1 {name=p120 lab=div_out}
 C {devices/iopin.sym} 3160 -40 3 1 {name=p121 lab=div_in}
 C {devices/iopin.sym} 2100 -280 2 1 {name=p122 lab=div_def}
-C {libs/core_analog/asc_PFD_DFF/asc_PFD_DFF.sym} 1100 -680 0 0 {name=xpfd}
 C {libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym} 3740 -820 0 0 {name=xbuf_out}
 C {lab_wire.sym} 1760 -760 0 0 {name=p82 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1760 -580 0 0 {name=p101 sig_type=std_logic lab=vss}
@@ -349,8 +350,10 @@ C {libs/core_analog/asc_drive_buffer/asc_drive_buffer.sym} 1340 -460 0 0 {name=x
 C {libs/core_analog/asc_hysteresis_buffer/asc_hysteresis_buffer.sym} 460 -960 0 0 {name=xbuf_ref}
 C {lab_wire.sym} 1100 -820 0 0 {name=p130 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1100 -1000 0 0 {name=p131 sig_type=std_logic lab=vdd}
-C {libs/core_analog/asc_PFD_DFF/asc_PFD_DFF.sym} 1100 -920 0 0 {name=xpfd_ps}
 C {lab_wire.sym} 900 -700 0 0 {name=p132 sig_type=std_logic lab=dff_pfd_ps_div}
 C {lab_wire.sym} 1000 -980 0 0 {name=p133 sig_type=std_logic lab=dff_pfd_ps_ref}
 C {lab_wire.sym} 1390 -980 0 0 {name=p134 sig_type=std_logic lab=dff_pfd_ps_up}
 C {lab_wire.sym} 1410 -700 0 0 {name=p135 sig_type=std_logic lab=dff_pfd_ps_down}
+C {libs/core_analog/asc_PFD_DFF_20250831/asc_PFD_DFF_20250831.sym} 1100 -680 0 0 {name=xpfd}
+C {libs/core_analog/asc_PFD_DFF_20250831/asc_PFD_DFF_20250831.sym} 1100 -920 0 0 {name=xpfd_ps}
+C {lab_wire.sym} 1240 -460 0 0 {name=p136 sig_type=std_logic lab=lock_pre}

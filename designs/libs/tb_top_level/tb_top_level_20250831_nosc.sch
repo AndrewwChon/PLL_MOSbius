@@ -101,15 +101,6 @@ N 1340 -330 1340 -320 {lab=vssa}
 N 1440 -480 1440 -420 {lab=tune}
 N 1440 -360 1440 -320 {lab=vssa}
 N 1340 -320 1440 -320 {lab=vssa}
-C {devices/code_shown.sym} 225 -238.75 0 0 {name=Simulation only_toplevel=false value="
-.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.int_div_out) v(xtop.int_div_in) v(xtop.dff_pfd_ref) v(xtop.dff_pfd_up) v(xtop.up_pre) v(xtop.up_post) v(xtop.down_pre) v(xtop.down_post) v(lock)
-
-.control
-set filetype=raw
-tran 1n 200u
-write tb_top_level_20250826.raw
-.endc
-"}
 C {netlist.sym} 242.5 -1022.5 0 0 {name=s1 value="
 .param VDD = 3.3
 * control is for tests when opening the loop
@@ -187,7 +178,7 @@ device=polarized_capacitor}
 C {lab_wire.sym} 1420 -320 0 0 {name=p12 sig_type=std_logic lab=vssa}
 C {noconn.sym} 1540 -860 2 0 {name=l11}
 C {devices/vsource.sym} 810 -710 0 0 {name=V3
-value="PULSE(0 3.3 5u 5n 5n 5u 10u)"
+value="PULSE(0 3.3 5u 10n 10n 5u 10u)"
 savecurrent=false}
 C {devices/code_shown.sym} 240 -1170 0 0 {name=Models1 only_toplevel=false
 format="tcleval( @value )"
@@ -198,3 +189,14 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
 C {libs/top_level/top_level_20250831/top_level_nosc_20250831/top_level_nosc_20250831.sym} 1220 -860 0 0 {name=xtop}
+C {devices/code_shown.sym} 195 -268.75 0 0 {name=Simulation only_toplevel=false value="
+.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.int_div_out) v(xtop.int_div_in) v(xtop.dff_pfd_ref) v(xtop.dff_pfd_up) v(xtop.up_pre) v(xtop.up_post) v(xtop.down_pre) v(xtop.down_post) v(lock)
+.save v(xtop.xpfd.x1.rst) v(xtop.xpfd.x1.net2) v(xtop.xpfd.x1.net3) v(xtop.xpfd.x1.net4) v(xtop.xpfd.x1.net6)
+.save v(xtop.xpfd.x1.net5) v(xtop.xpfd.x1.Qb) v(xtop.xpfd.x1.clka) v(xtop.xpfd.x1.clkb)
+
+.control
+set filetype=raw
+tran 1n 200u
+write tb_top_level_sc_20250831.raw
+.endc
+"}

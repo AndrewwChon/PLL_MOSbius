@@ -55,21 +55,7 @@ N 1340 -330 1340 -320 {lab=vssa}
 N 1440 -480 1440 -420 {lab=tune}
 N 1440 -360 1440 -320 {lab=vssa}
 N 1340 -320 1440 -320 {lab=vssa}
-N 920 -860 940 -860 {lab=clk}
-N 780 -900 840 -900 {lab=clk}
-N 840 -900 840 -860 {lab=clk}
-N 840 -860 920 -860 {lab=clk}
-N 780 -840 780 -660 {lab=vssa}
-N 780 -900 780 -880 {lab=clk}
-C {devices/code_shown.sym} 225 -238.75 0 0 {name=Simulation only_toplevel=false value="
-.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.int_div_out) v(xtop.int_div_in) v(xtop.dff_pfd_ref) v(xtop.dff_pfd_up) v(xtop.up_pre) v(xtop.up_post) v(xtop.down_pre) v(xtop.down_post) v(lock)
-
-.control
-set filetype=raw
-tran 1n 200u
-write tb_top_level_20250826.raw
-.endc
-"}
+N 920 -860 940 -860 {lab=vssa}
 C {netlist.sym} 242.5 -1072.5 0 0 {name=s1 value="
 .param VDD = 3.3
 * control is for tests when opening the loop
@@ -104,7 +90,6 @@ C {lab_wire.sym} 1540 -860 0 0 {name=p5 sig_type=std_logic lab=out
 C {lab_wire.sym} 1550 -820 0 0 {name=p6 sig_type=std_logic lab=vssa
 }
 C {lab_wire.sym} 920 -840 0 0 {name=p9 sig_type=std_logic lab=vssa}
-C {lab_wire.sym} 800 -900 0 0 {name=p10 sig_type=std_logic lab=clk}
 C {lab_wire.sym} 1400 -540 0 0 {name=p11 sig_type=std_logic lab=tune}
 C {isource.sym} 910 -660 2 0 {name=I0 value=\{Iref_cp\}}
 C {devices/vsource.sym} 1650 -810 0 0 {name=V4
@@ -142,7 +127,7 @@ device=polarized_capacitor}
 C {lab_wire.sym} 1420 -320 0 0 {name=p12 sig_type=std_logic lab=vssa}
 C {noconn.sym} 1540 -860 2 0 {name=l11}
 C {devices/vsource.sym} 810 -710 0 0 {name=V3
-value="PULSE(0 3.3 5u 5n 5n 5u 10u)"
+value="PULSE(0 3.3 5u 1u 1u 5u 10u)"
 savecurrent=false}
 C {devices/code_shown.sym} 240 -1230 0 0 {name=Models1 only_toplevel=false
 format="tcleval( @value )"
@@ -155,6 +140,15 @@ value="
 "}
 C {libs/top_level/top_level_20250831/top_level_sc_20250831/top_level_sc_20250831.sym} 1220 -860 0 0 {name=xtop}
 C {lab_wire.sym} 920 -880 0 0 {name=p13 sig_type=std_logic lab=vssa}
-C {devices/vsource.sym} 780 -850 0 0 {name=V1
-value="PULSE(0 3.3 250n 1n 1n 500n 1u"
-savecurrent=false}
+C {lab_wire.sym} 920 -860 0 0 {name=p10 sig_type=std_logic lab=vssa}
+C {devices/code_shown.sym} 135 -248.75 0 0 {name=Simulation only_toplevel=false value="
+.save v(tune) v(out) v(reference) v(up) v(down) v(xtop.xtop_nosc.int_div_out) v(xtop.xtop_nosc.int_div_in) v(xtop.xtop_nosc.dff_pfd_ref) v(xtop.xtop_nosc.dff_pfd_up) v(xtop.xtop_nosc.up_pre) v(xtop.xtop_nosc.up_post) v(xtop.xtop_nosc.down_pre) v(xtop.xtop_nosc.down_post) v(lock)
+.save v(xtop.xtop_nosc.xpfd.x1.rst) v(xtop.xtop_nosc.xpfd.x1.net2) v(xtop.xtop_nosc.xpfd.x1.net3) v(xtop.xtop_nosc.xpfd.x1.net4) v(xtop.xtop_nosc.xpfd.x1.net6)
+.save v(xtop.xtop_nosc.xpfd.x1.net5) v(xtop.xtop_nosc.xpfd.x1.Qb) v(xtop.xtop_nosc.xpfd.x1.clka) v(xtop.xtop_nosc.xpfd.x1.clkb)
+
+.control
+set filetype=raw
+tran 1n 200u
+write tb_top_level_20250831.raw
+.endc
+"}

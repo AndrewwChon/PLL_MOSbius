@@ -1,0 +1,176 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u                        |Circuit 2: ppolyf_u                        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+Flattening unmatched subcell pfet$6 in circuit Pcomparator (0)(4 instances)
+Flattening unmatched subcell pfet$4 in circuit Pcomparator (0)(2 instances)
+Flattening unmatched subcell nfet$5 in circuit Pcomparator (0)(2 instances)
+Flattening unmatched subcell pfet$5 in circuit Pcomparator (0)(14 instances)
+Flattening unmatched subcell nfet$6 in circuit Pcomparator (0)(4 instances)
+Flattening unmatched subcell nfet$4 in circuit Pcomparator (0)(1 instance)
+
+Class Pcomparator (0):  Merged 89 parallel devices.
+Subcircuit summary:
+Circuit 1: Pcomparator                     |Circuit 2: Pcomparator                     
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (76->7)                          |pfet_03v3 (20->7)                          
+nfet_03v3 (24->4)                          |nfet_03v3 (7->4)                           
+Number of devices: 11                      |Number of devices: 11                      
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Pcomparator                     |Circuit 2: Pcomparator                     
+-------------------------------------------|-------------------------------------------
+inn                                        |inn                                        
+inp                                        |inp                                        
+vss                                        |vss                                        
+iref                                       |iref                                       
+out                                        |out                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Pcomparator and Pcomparator are equivalent.
+Flattening unmatched subcell pfet$8 in circuit Ncomparator (0)(4 instances)
+Flattening unmatched subcell nfet$9 in circuit Ncomparator (0)(6 instances)
+Flattening unmatched subcell nfet$7 in circuit Ncomparator (0)(4 instances)
+Flattening unmatched subcell pfet$9 in circuit Ncomparator (0)(4 instances)
+Flattening unmatched subcell pfet$7 in circuit Ncomparator (0)(4 instances)
+Flattening unmatched subcell nfet$8 in circuit Ncomparator (0)(1 instance)
+Flattening unmatched subcell nfet$10 in circuit Ncomparator (0)(2 instances)
+
+Class Ncomparator (0):  Merged 71 parallel devices.
+Subcircuit summary:
+Circuit 1: Ncomparator                     |Circuit 2: Ncomparator                     
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (40->4)                          |pfet_03v3 (12->4)                          
+nfet_03v3 (42->7)                          |nfet_03v3 (13->7)                          
+Number of devices: 11                      |Number of devices: 11                      
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Ncomparator                     |Circuit 2: Ncomparator                     
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+inn                                        |inn                                        
+inp                                        |inp                                        
+iref                                       |iref                                       
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Ncomparator and Ncomparator are equivalent.
+Flattening unmatched subcell nfet$11 in circuit SRLATCH (0)(4 instances)
+Flattening unmatched subcell pfet$10 in circuit SRLATCH (0)(4 instances)
+Flattening unmatched subcell NOR in circuit SRLATCH (1)(2 instances)
+
+Subcircuit summary:
+Circuit 1: SRLATCH                         |Circuit 2: SRLATCH                         
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (4)                              |nfet_03v3 (4)                              
+pfet_03v3 (4)                              |pfet_03v3 (4)                              
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: SRLATCH                         |Circuit 2: SRLATCH                         
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+s                                          |s                                          
+r                                          |r                                          
+qb                                         |qb                                         
+q                                          |q                                          
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes SRLATCH and SRLATCH are equivalent.
+Flattening unmatched subcell nfet$19$1 in circuit VCOfinal_noCP (0)(3 instances)
+Flattening unmatched subcell ppolyf_u_resistor$2 in circuit VCOfinal_noCP (0)(4 instances)
+Flattening unmatched subcell pfet$19 in circuit VCOfinal_noCP (0)(3 instances)
+Flattening unmatched subcell SCHMITT in circuit VCOfinal_noCP (0)(2 instances)
+Flattening unmatched subcell pfet$2 in circuit VCOfinal_noCP (0)(4 instances)
+Flattening unmatched subcell nfet$3 in circuit VCOfinal_noCP (0)(2 instances)
+Flattening unmatched subcell pfet$3 in circuit VCOfinal_noCP (0)(2 instances)
+Flattening unmatched subcell nfet$2 in circuit VCOfinal_noCP (0)(4 instances)
+Flattening unmatched subcell INV in circuit VCOfinal_noCP (1)(3 instances)
+Flattening unmatched subcell SCHXMITT in circuit VCOfinal_noCP (1)(2 instances)
+
+Class VCOfinal_noCP (0):  Merged 1 series devices.
+Class VCOfinal_noCP (1):  Merged 1 series devices.
+Subcircuit summary:
+Circuit 1: VCOfinal_noCP                   |Circuit 2: VCOfinal_noCP                   
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (9)                              |nfet_03v3 (9)                              
+Pcomparator (1)                            |Pcomparator (1)                            
+Ncomparator (1)                            |Ncomparator (1)                            
+SRLATCH (1)                                |SRLATCH (1)                                
+ppolyf_u (4->3)                            |ppolyf_u (4->3)                            
+pfet_03v3 (9)                              |pfet_03v3 (9)                              
+Number of devices: 24                      |Number of devices: 24                      
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: VCOfinal_noCP                   |Circuit 2: VCOfinal_noCP                   
+-------------------------------------------|-------------------------------------------
+qb                                         |qb                                         
+irefn                                      |irefn                                      
+irefp                                      |irefp                                      
+vdd                                        |vdd                                        
+qnot                                       |qnot                                       
+foutb                                      |foutb                                      
+fout                                       |fout                                       
+osci                                       |osci                                       
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes VCOfinal_noCP and VCOfinal_noCP are equivalent.
+
+Final result: Circuits match uniquely.
+.

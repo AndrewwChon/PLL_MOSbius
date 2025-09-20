@@ -1,15 +1,15 @@
 ** sch_path: /foss/designs/libs/qw_core_analog/Pcomparator/Pcomparator.sch
 .subckt Pcomparator inp inn vdd vss out iref
 *.PININFO inp:B inn:B vdd:B vss:B out:B iref:B
-XM8 iref iref vdd vdd pfet_03v3 L=0.28u W=40u nf=1 m=1
-XM1 net1 iref vdd vdd pfet_03v3 L=0.28u W=40u nf=1 m=1
-XM2 net2 inn net1 vdd pfet_03v3 L=0.28u W=20u nf=1 m=1
-XM3 net3 inp net1 vdd pfet_03v3 L=0.28u W=20u nf=1 m=1
-XM4 net2 net2 vss vss nfet_03v3 L=0.28u W=8u nf=1 m=1
-XM5 net3 net2 vss vss nfet_03v3 L=0.28u W=8u nf=1 m=1
-XM6 out iref vdd vdd pfet_03v3 L=0.28u W=40u nf=1 m=1
-XM7 out net3 vss vss nfet_03v3 L=0.28u W=16u nf=1 m=1
-XM9 vss vss vss vss nfet_03v3 L=0.28u W=2u nf=1 m=2
+XM8 iref iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM1 net1 iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM2 net2 inn net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM3 net3 inp net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM4 net2 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM5 net3 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM6 out iref vdd vdd pfet_03v3 L=0.28u W=20u nf=8 m=2
+XM7 out net3 vss vss nfet_03v3 L=0.28u W=16u nf=8 m=1
+XM9 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
 XM10 vdd vdd vdd vdd pfet_03v3 L=0.28u W=2.5u nf=1 m=4
-XM11 net1 net1 net1 vdd pfet_03v3 L=0.28u W=2.5u nf=4 m=2
+XM11 net1 net1 net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
 .ends

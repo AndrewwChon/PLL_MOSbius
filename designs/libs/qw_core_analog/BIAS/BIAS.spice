@@ -1,0 +1,14 @@
+** sch_path: /foss/designs/libs/qw_core_analog/BIAS/BIAS.sch
+.include /foss/designs/switch_matrix_gf180mcu_9t5v0-main/gf180mcu_fd_sc_mcu9t5v0.spice
+.subckt BIAS vdd 200p2 200p1 res 100n 200n vss
+*.PININFO res:B 100n:B 200n:B 200p1:B 200p2:B vdd:B vss:B
+XM8 res res vdd vdd pfet_03v3 L=0.28u W=2.5u nf=4 m=2
+XM1 100n res vdd vdd pfet_03v3 L=0.28u W=2.5u nf=4 m=2
+XM2 200n res vdd vdd pfet_03v3 L=0.28u W=2.5u nf=4 m=4
+XM3 net1 res vdd vdd pfet_03v3 L=0.28u W=2.5u nf=4 m=4
+XM6 net1 net1 vss vss nfet_03v3 L=0.28u W=2u nf=4 m=2
+XM4 200p1 net1 vss vss nfet_03v3 L=0.28u W=2u nf=4 m=2
+XM5 200p2 net1 vss vss nfet_03v3 L=0.28u W=2u nf=4 m=2
+XM7 vdd vdd vdd vdd pfet_03v3 L=0.28u W=2.5u nf=4 m=4
+XM9 vss vss vss vss nfet_03v3 L=0.28u W=2u nf=4 m=2
+.ends

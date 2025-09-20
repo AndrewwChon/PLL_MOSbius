@@ -1,0 +1,13 @@
+** sch_path: /foss/designs/libs/qw_core_analog/OTAforChargePump/OTAforChargePump.sch
+.subckt OTAforChargePump vdd iref inp inn out vss
+*.PININFO inp:B inn:B vdd:B vss:B out:B iref:B
+XM8 iref iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM1 net1 iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+XM2 net2 inp net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM3 out inn net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+XM4 net2 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM5 out net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+XM6 vdd vdd vdd vdd pfet_03v3 L=0.28u W=5u nf=2 m=4
+XM7 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+XM9 net1 net1 net1 vdd pfet_03v3 L=0.28u W=5u nf=2 m=2
+.ends

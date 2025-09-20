@@ -12,8 +12,6 @@ N 710 -600 710 -570 {lab=vdd}
 N 730 -600 730 -570 {lab=vss}
 N 170 -450 200 -450 {lab=vdd}
 N 170 -430 200 -430 {lab=vss}
-N 500 -500 640 -500 {lab=phi1}
-N 500 -480 640 -480 {lab=phi2}
 N 240 -240 240 -200 {lab=vss}
 N 240 -340 240 -300 {lab=clk}
 N 170 -500 200 -500 {lab=#net1}
@@ -34,9 +32,20 @@ N 630 -440 660 -440 {lab=vss}
 N 780 -520 840 -520 {lab=q}
 N 640 -500 660 -500 {lab=phi1}
 N 640 -480 660 -480 {lab=phi2}
-N 40 -500 70 -500 {lab=clk}
+N 40 -500 70 -500 {lab=#net2}
 N 120 -540 120 -520 {lab=vdd}
 N 120 -480 120 -460 {lab=vss}
+N 500 -460 560 -460 {lab=phi1}
+N 560 -500 560 -460 {lab=phi1}
+N 560 -500 640 -500 {lab=phi1}
+N 540 -480 640 -480 {lab=phi2}
+N 540 -500 540 -480 {lab=phi2}
+N 500 -500 540 -500 {lab=phi2}
+N 200 -450 500 -480 {lab=vdd}
+N 200 -430 500 -440 {lab=vss}
+N -160 -500 -120 -500 {lab=clk}
+N -40 -560 120 -540 {lab=vdd}
+N -40 -440 120 -460 {lab=vss}
 C {vsource.sym} 180 -170 0 0 {name=V1 value=0 savecurrent=false}
 C {gnd.sym} 180 -100 0 0 {name=l1 lab=GND}
 C {vsource.sym} 180 -270 0 0 {name=V2 value=3.3 savecurrent=false}
@@ -44,13 +53,12 @@ C {lab_wire.sym} 180 -220 0 0 {name=p1 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 180 -320 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 710 -590 3 1 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 730 -590 3 1 {name=p4 sig_type=std_logic lab=vss}
-C {switch_matrix_gf180mcu_9t5v0-main/NO_ClkGen/NO_ClkGen.sym} 350 -490 0 0 {name=x2}
 C {lab_wire.sym} 180 -450 0 0 {name=p5 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 180 -430 0 0 {name=p6 sig_type=std_logic lab=vss}
 C {vsource.sym} 240 -270 0 0 {name=V3 value=3.3 savecurrent=false}
 C {lab_wire.sym} 240 -220 0 0 {name=p7 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 240 -320 0 0 {name=p8 sig_type=std_logic lab=clk}
-C {lab_wire.sym} 40 -500 0 0 {name=p9 sig_type=std_logic lab=clk}
+C {lab_wire.sym} -160 -500 0 0 {name=p9 sig_type=std_logic lab=clk}
 C {devices/code_shown.sym} 892.5 -527.5 0 0 {name=Models only_toplevel=false
 format="tcleval( @value )"
 value="
@@ -58,7 +66,7 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {devices/code_shown.sym} 890 -410 0 0 {name=NGSPICE only_toplevel=true
+C {devices/code_shown.sym} 890 -360 0 0 {name=NGSPICE only_toplevel=true
 value="
 
 .control
@@ -78,8 +86,8 @@ tran 1n 20u
 write SRegister_10_tb.raw
 .endc
 "}
-C {lab_wire.sym} 560 -500 0 0 {name=p10 sig_type=std_logic lab=phi1}
-C {lab_wire.sym} 560 -480 0 0 {name=p11 sig_type=std_logic lab=phi2}
+C {lab_wire.sym} 600 -500 0 0 {name=p10 sig_type=std_logic lab=phi1}
+C {lab_wire.sym} 600 -480 0 0 {name=p11 sig_type=std_logic lab=phi2}
 C {vsource.sym} 300 -270 0 0 {name=V4 value=0 savecurrent=false}
 C {lab_wire.sym} 300 -220 0 0 {name=p12 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 300 -320 0 0 {name=p13 sig_type=std_logic lab=d}
@@ -95,8 +103,10 @@ C {lab_wire.sym} 460 -320 0 0 {name=p22 sig_type=std_logic lab=def[1:10]}
 C {lab_wire.sym} 640 -460 0 0 {name=p15 sig_type=std_logic lab=en}
 C {noconn.sym} 840 -520 0 1 {name=l2}
 C {lab_wire.sym} 810 -520 0 1 {name=p17 sig_type=std_logic lab=q}
-C {libs/core_analog/SRegister_10/SRegister_10.sym} 720 -480 0 0 {name=x1}
-C {libs/qw_core_analog/schmitt_trigger.sym} 110 -500 0 0 {name=x3}
 C {lab_wire.sym} 120 -460 0 0 {name=p23 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 120 -540 0 0 {name=p24 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 630 -440 0 0 {name=p16 sig_type=std_logic lab=vss}
+C {libs/core_analog/qw_NOLclk/qw_NOLclk.sym} 350 -470 0 0 {name=x4}
+C {libs/qw_core_analog/SRegister_10/SRegister_10.sym} 720 -480 0 0 {name=x1}
+C {libs/qw_core_analog/SCHMITT/SCHMITT.sym} 110 -500 0 0 {name=x2}
+C {libs/core_analog/asc_hysteresis_buffer/asc_hysteresis_buffer.sym} -40 -500 0 0 {name=x3}

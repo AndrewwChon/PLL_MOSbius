@@ -1,0 +1,51 @@
+* NGSPICE file created from BIAS.ext - technology: gf180mcuD
+
+.subckt pfet a_254_0# a_348_560# w_n180_n88# a_414_0# a_n92_0# a_94_0# a_574_0# a_508_560#
++ a_188_560# a_28_560#
+X0 a_254_0# a_188_560# a_94_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+X1 a_574_0# a_508_560# a_414_0# w_n180_n88# pfet_03v3 ad=1.625p pd=6.3u as=0.65p ps=3.02u w=2.5u l=0.28u
+X2 a_94_0# a_28_560# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=1.625p ps=6.3u w=2.5u l=0.28u
+X3 a_414_0# a_348_560# a_254_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.28u
+.ends
+
+.subckt nfet a_510_n132# a_254_0# a_414_0# a_30_n132# a_n84_0# a_94_0# a_190_n132#
++ a_574_0# a_350_n132# VSUBS
+X0 a_254_0# a_190_n132# a_94_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+X1 a_574_0# a_510_n132# a_414_0# VSUBS nfet_03v3 ad=1.22p pd=5.22u as=0.52p ps=2.52u w=2u l=0.28u
+X2 a_94_0# a_30_n132# a_n84_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=1.22p ps=5.22u w=2u l=0.28u
+X3 a_414_0# a_350_n132# a_254_0# VSUBS nfet_03v3 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.28u
+.ends
+
+.subckt BIAS vdd vss res 200p1 200p2 100n 200n
+Xpfet_0 vdd res vdd 200n vdd 200n vdd res res res pfet
+Xpfet_1 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet
+Xpfet_2 vdd res vdd m1_27_n1423# vdd m1_27_n1423# vdd res res res pfet
+Xpfet_4 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet
+Xpfet_3 vdd res vdd m1_27_n1423# vdd m1_27_n1423# vdd res res res pfet
+Xpfet_5 vdd res vdd 200n vdd 200n vdd res res res pfet
+Xpfet_6 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet
+Xpfet_10 vdd res vdd m1_27_n1423# vdd m1_27_n1423# vdd res res res pfet
+Xpfet_7 vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd pfet
+Xpfet_8 vdd res vdd res vdd res vdd res res res pfet
+Xpfet_11 vdd res vdd 200n vdd 200n vdd res res res pfet
+Xpfet_9 vdd res vdd 100n vdd 100n vdd res res res pfet
+Xpfet_12 vdd res vdd 100n vdd 100n vdd res res res pfet
+Xpfet_13 vdd res vdd res vdd res vdd res res res pfet
+Xpfet_14 vdd res vdd 200n vdd 200n vdd res res res pfet
+Xpfet_15 vdd res vdd m1_27_n1423# vdd m1_27_n1423# vdd res res res pfet
+Xnfet_0 m1_27_n1423# vss 200p1 m1_27_n1423# vss 200p1 m1_27_n1423# vss m1_27_n1423#
++ vss nfet
+Xnfet_1 vss vss vss vss vss vss vss vss vss vss nfet
+Xnfet_2 m1_27_n1423# vss 200p2 m1_27_n1423# vss 200p2 m1_27_n1423# vss m1_27_n1423#
++ vss nfet
+Xnfet_3 vss vss vss vss vss vss vss vss vss vss nfet
+Xnfet_4 m1_27_n1423# vss 200p2 m1_27_n1423# vss 200p2 m1_27_n1423# vss m1_27_n1423#
++ vss nfet
+Xnfet_5 m1_27_n1423# vss 200p1 m1_27_n1423# vss 200p1 m1_27_n1423# vss m1_27_n1423#
++ vss nfet
+Xnfet_6 m1_27_n1423# vss m1_27_n1423# m1_27_n1423# vss m1_27_n1423# m1_27_n1423# vss
++ m1_27_n1423# vss nfet
+Xnfet_7 m1_27_n1423# vss m1_27_n1423# m1_27_n1423# vss m1_27_n1423# m1_27_n1423# vss
++ m1_27_n1423# vss nfet
+.ends
+

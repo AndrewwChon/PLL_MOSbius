@@ -1,0 +1,198 @@
+** sch_path: /foss/designs/libs/qw_core_analog/VCOfinal_flatten/VCOfinal_flatten.sch
+.subckt VCOfinal_flatten vin vdd vss iref200 irefp irefn s0 s1 s2 s3
+*.PININFO vin:B vdd:B vss:B iref200:B irefp:B irefn:B s0:B s1:B s2:B s3:B
+x3 vdd q qnot vss INV
+x8 vdd vss vin iref200 osci qnot qb s0 s1 s2 s3 PCP1248X
+XR3 vss vlow vss ppolyf_u r_width=1e-6 r_length=21e-6 m=1
+XR1 vhigh vdd vss ppolyf_u r_width=1e-6 r_length=21e-6 m=1
+XR2 vlow net1 vss ppolyf_u r_width=1e-6 r_length=21e-6 m=1
+XR4 net1 vhigh vss ppolyf_u r_width=1e-6 r_length=21e-6 m=1
+x6 vdd out_comp_high q qb out_comp_low vss SRLATCH
+x9 vdd osci out_comp_high vhigh irefn vss Ncomparator
+x11 vdd irefp vlow out_comp_low osci vss Pcomparator
+.ends
+
+* expanding   symbol:  libs/qw_core_analog/INV.sym # of pins=4
+** sym_path: /foss/designs/libs/qw_core_analog/INV.sym
+** sch_path: /foss/designs/libs/qw_core_analog/INV.sch
+.subckt INV VDD A A_BAR VSS
+*.PININFO A:I VDD:I VSS:I A_BAR:O
+M11 A_BAR A VSS VSS nfet_03v3 L=0.28u W=1u nf=1 m=1
+M12 A_BAR A VDD VDD pfet_03v3 L=0.28u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/PCP1248X/PCP1248X.sym # of pins=11
+** sym_path: /foss/designs/libs/qw_core_analog/PCP1248X/PCP1248X.sym
+** sch_path: /foss/designs/libs/qw_core_analog/PCP1248X/PCP1248X.sch
+.subckt PCP1248X vdd vss vin iref200u out up down s0 s1 s2 s3
+*.PININFO vdd:B vss:B vin:B iref200u:B out:B up:B down:B s0:B s1:B s2:B s3:B
+M25 net1 s0b vss vss nfet_03v3 L=0.28u W=2u nf=1 m=1
+M26 net2 net1 vss vss nfet_03v3 L=0.5u W=8u nf=4 m=1
+M27 net14 vb1 net2 vss nfet_03v3 L=0.5u W=8u nf=4 m=1
+M28 net3 s1b vss vss nfet_03v3 L=0.28u W=2u nf=1 m=1
+M29 net4 net3 vss vss nfet_03v3 L=0.5u W=8u nf=4 m=2
+M30 net14 vb1 net4 vss nfet_03v3 L=0.5u W=8u nf=4 m=2
+M31 net5 s2b vss vss nfet_03v3 L=0.28u W=2u nf=1 m=1
+M32 net6 net5 vss vss nfet_03v3 L=0.5u W=8u nf=4 m=4
+M33 net14 vb1 net6 vss nfet_03v3 L=0.5u W=8u nf=4 m=4
+M34 net13 vb2 net7 vdd pfet_03v3 L=0.5u W=20u nf=8 m=1
+M35 net7 net8 vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=1
+M36 net8 s0 vdd vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+M37 net13 vb2 net9 vdd pfet_03v3 L=0.5u W=20u nf=8 m=2
+M38 net9 net10 vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=2
+M39 net10 s1 vdd vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+M40 net13 vb2 net11 vdd pfet_03v3 L=0.5u W=20u nf=8 m=4
+M41 net11 net12 vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=4
+M42 net12 s2 vdd vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+M43 out down net14 vss nfet_03v3 L=0.28u W=8u nf=1 m=1
+M44 out up net13 vdd pfet_03v3 L=0.28u W=20u nf=1 m=1
+M15 net16 gatep vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=1
+M16 gatep vb2 net16 vdd pfet_03v3 L=0.5u W=20u nf=8 m=1
+M23 net15 gaten vss vss nfet_03v3 L=0.5u W=8u nf=4 m=1
+M24 gatep vb1 net15 vss nfet_03v3 L=0.5u W=8u nf=4 m=1
+M45 vb2 gaten vss vss nfet_03v3 L=0.5u W=4u nf=4 m=2
+M46 vb2 vb2 vdd vdd pfet_03v3 L=0.5u W=2.5u nf=2 m=2
+M47 vb1 vb2 vdd vdd pfet_03v3 L=0.5u W=2.5u nf=2 m=2
+M48 vb1 vb1 vss vss nfet_03v3 L=0.5u W=2u nf=2 m=1
+M49 net17 gaten vss vss nfet_03v3 L=0.5u W=4u nf=4 m=2
+M50 net18 vb1 net17 vss nfet_03v3 L=0.5u W=8u nf=1 m=1
+x8 vdd iref200u net18 vin gaten vss OTAforChargePump
+x9 s0 vdd s0b vss inv1u05u
+x10 s1 vdd s1b vss inv1u05u
+x11 s2 vdd s2b vss inv1u05u
+M1 net19 s3b vss vss nfet_03v3 L=0.28u W=2u nf=1 m=1
+M2 net20 net19 vss vss nfet_03v3 L=0.5u W=8u nf=4 m=8
+M3 net14 vb1 net20 vss nfet_03v3 L=0.5u W=8u nf=4 m=8
+M4 net13 vb2 net21 vdd pfet_03v3 L=0.5u W=20u nf=8 m=8
+M5 net21 net22 vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=8
+M6 net22 s3 vdd vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+x13 s3 vdd s3b vss inv1u05u
+M7 vss vss vss vss nfet_03v3 L=0.5u W=2u nf=2 m=2
+M8 vdd vdd vdd vdd pfet_03v3 L=0.5u W=2.5u nf=2 m=2
+M9 vdd vdd vdd vdd pfet_03v3 L=0.5u W=10u nf=4 m=6
+M10 vdd vdd vdd vdd pfet_03v3 L=0.5u W=20u nf=8 m=2
+M11 net13 net13 net13 vdd pfet_03v3 L=0.5u W=10u nf=4 m=5
+M12 net13 net13 net13 vdd pfet_03v3 L=0.5u W=20u nf=8 m=2
+M13 gatep gatep gatep vdd pfet_03v3 L=0.5u W=10u nf=4 m=1
+M14 vss vss vss vss nfet_03v3 L=0.5u W=4u nf=2 m=6
+M17 vss vss vss vss nfet_03v3 L=0.5u W=8u nf=4 m=2
+M18 net14 net14 net14 vss nfet_03v3 L=0.5u W=4u nf=2 m=5
+M19 net14 net14 net14 vss nfet_03v3 L=0.5u W=8u nf=4 m=2
+M20 gatep gatep gatep vss nfet_03v3 L=0.5u W=4u nf=2 m=1
+x14 vdd s0b gaten net1 vss s0 TG
+x1 vdd s1b gaten net3 vss s1 TG
+x2 vdd s2b gaten net5 vss s2 TG
+x3 vdd s3b gaten net19 vss s3 TG
+x4 vdd s0b gatep net8 vss s0 TG
+x5 vdd s1b gatep net10 vss s1 TG
+x6 vdd s2b gatep net12 vss s2 TG
+x7 vdd s3b gatep net22 vss s3 TG
+XR1 net18 net27 vss ppolyf_u r_width=1e-6 r_length=20e-6 m=1
+XR2 net27 net26 vss ppolyf_u r_width=1e-6 r_length=20e-6 m=1
+XR3 net26 net25 vss ppolyf_u r_width=1e-6 r_length=20e-6 m=1
+XR4 net25 net24 vss ppolyf_u r_width=1e-6 r_length=20e-6 m=1
+XR5 net24 net23 vss ppolyf_u r_width=1e-6 r_length=20e-6 m=1
+XR6 net23 vdd vss ppolyf_u r_width=1e-6 r_length=20e-6 m=1
+XC1 gaten vss cap_mim_2f0fF c_width=50e-6 c_length=100e-6 m=1
+XC2 vb1 vss cap_mim_2f0fF c_width=50e-6 c_length=100e-6 m=1
+XC3 vdd vb2 cap_mim_2f0fF c_width=50e-6 c_length=100e-6 m=1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/SRLATCH/SRLATCH.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/SRLATCH/SRLATCH.sym
+** sch_path: /foss/designs/libs/qw_core_analog/SRLATCH/SRLATCH.sch
+.subckt SRLATCH vdd s q qb r vss
+*.PININFO s:B r:B q:B qb:B vdd:B vss:B
+x1 vdd s qb q vss NOR
+x2 vdd q r qb vss NOR
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/Ncomparator/Ncomparator.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/Ncomparator/Ncomparator.sym
+** sch_path: /foss/designs/libs/qw_core_analog/Ncomparator/Ncomparator.sch
+.subckt Ncomparator vdd inp out inn iref vss
+*.PININFO inp:B inn:B out:B vdd:B vss:B iref:B
+M6 iref iref vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+M8 net2 net2 vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M1 net1 iref vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+M2 net2 inn net1 vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+M3 net3 inp net1 vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+M4 net3 net2 vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M5 out iref vss vss nfet_03v3 L=0.28u W=16u nf=8 m=1
+M7 out net3 vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M9 vdd vdd vdd vdd pfet_03v3 L=0.28u W=5u nf=2 m=4
+M10 vss vss vss vss nfet_03v3 L=0.28u W=2u nf=1 m=2
+M11 net1 net1 net1 vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/Pcomparator/Pcomparator.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/Pcomparator/Pcomparator.sym
+** sch_path: /foss/designs/libs/qw_core_analog/Pcomparator/Pcomparator.sch
+.subckt Pcomparator vdd iref inp out inn vss
+*.PININFO inp:B inn:B vdd:B vss:B out:B iref:B
+M8 iref iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M1 net1 iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M2 net2 inn net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M3 net3 inp net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M4 net2 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+M5 net3 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+M6 out iref vdd vdd pfet_03v3 L=0.28u W=20u nf=8 m=2
+M7 out net3 vss vss nfet_03v3 L=0.28u W=16u nf=8 m=1
+M9 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+M10 vdd vdd vdd vdd pfet_03v3 L=0.28u W=2.5u nf=1 m=4
+M11 net1 net1 net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/OTAforChargePump/OTAforChargePump.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/OTAforChargePump/OTAforChargePump.sym
+** sch_path: /foss/designs/libs/qw_core_analog/OTAforChargePump/OTAforChargePump.sch
+.subckt OTAforChargePump vdd iref inp inn out vss
+*.PININFO inp:B inn:B vdd:B vss:B out:B iref:B
+M8 iref iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M1 net1 iref vdd vdd pfet_03v3 L=0.28u W=10u nf=4 m=4
+M2 net2 inp net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M3 out inn net1 vdd pfet_03v3 L=0.28u W=10u nf=4 m=2
+M4 net2 net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+M5 out net2 vss vss nfet_03v3 L=0.28u W=4u nf=2 m=2
+M6 vdd vdd vdd vdd pfet_03v3 L=0.28u W=5u nf=2 m=4
+M7 vss vss vss vss nfet_03v3 L=0.28u W=8u nf=4 m=2
+M9 net1 net1 net1 vdd pfet_03v3 L=0.28u W=5u nf=2 m=2
+.ends
+
+
+* expanding   symbol:  libs/xp_core_analog/inv1u05u/inv1u05u.sym # of pins=4
+** sym_path: /foss/designs/libs/xp_core_analog/inv1u05u/inv1u05u.sym
+** sch_path: /foss/designs/libs/xp_core_analog/inv1u05u/inv1u05u.sch
+.subckt inv1u05u in vdd out vss
+*.PININFO in:B out:B vss:B vdd:B
+M1 out in vdd vdd pfet_03v3 L=0.5u W=3.0u nf=1 m=1
+M2 out in vss vss nfet_03v3 L=0.5u W=1.0u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/TG/TG.sym # of pins=6
+** sym_path: /foss/designs/libs/qw_core_analog/TG/TG.sym
+** sch_path: /foss/designs/libs/qw_core_analog/TG/TG.sch
+.subckt TG vdd clkp ind ins vss clkn
+*.PININFO ind:B ins:B clkn:B clkp:B vdd:B vss:B
+M1 ind clkp ins vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+M2 ind clkn ins vss nfet_03v3 L=0.28u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/NOR.sym # of pins=5
+** sym_path: /foss/designs/libs/qw_core_analog/NOR.sym
+** sch_path: /foss/designs/libs/qw_core_analog/NOR.sch
+.subckt NOR vdd a b out vss
+*.PININFO vdd:B vss:B a:B b:B out:B
+M1 out a vss vss nfet_03v3 L=0.28u W=0.5u nf=1 m=1
+M2 net1 a vdd vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+M3 out b net1 vdd pfet_03v3 L=0.28u W=2u nf=1 m=1
+M4 out b vss vss nfet_03v3 L=0.28u W=0.5u nf=1 m=1
+.ends
+

@@ -1,0 +1,84 @@
+** sch_path: /foss/designs/libs/qw_tb_analog/NOLclk_tb/NOLclk_tb.sch
+.subckt NOLclk_tb
+
+x1 phi2 clk vdd phi1 vss NOLclk
+V1 vss GND 0
+V2 vdd vss 3.3
+V3 clk vss 3.3
+V4 d vss 0
+* noconn phi1
+V5 en vss 0
+V6 def vss 3.3
+* noconn phi2
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+
+
+
+.control
+save all
+
+
+
+** Define Sources
+
+alter @V3[PULSE] = [ 0 3.3 50n 1n 1n 48n 100n 0 ]
+*alter @V4[PULSE] = [ 3.3 0 15u 1n 1n 9.998u 20u 0 ]
+*alter @V5[PULSE] = [ 0 3.3 50u 1n 1n 49.998u 100u 0 ]
+
+** Define Simulations
+tran 1p 200n
+
+write NOLclk_tb.raw
+.endc
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  libs/qw_core_analog/NOLclk/NOLclk.sym # of pins=5
+** sym_path: /foss/designs/libs/qw_core_analog/NOLclk/NOLclk.sym
+** sch_path: /foss/designs/libs/qw_core_analog/NOLclk/NOLclk.sch
+.subckt NOLclk PHI_2 CLK VDDd PHI_1 VSSd
+*.PININFO CLK:I PHI_2:O VDDd:B VSSd:B PHI_1:O
+* noconn VDDd
+* noconn VSSd
+x21 CLK CLKB VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x22 CLKB OUT_bot_d OUT_top VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x1 OUT_top_d CLKbuf OUT_bot VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 CLKB CLKbuf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x6 OUT_bot PHI_1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x3 OUT_top PHI_2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x4 VDDd PHI_2 net1 VSSd SmallW_Linv
+x7 VDDd PHI_1 net2 VSSd SmallW_Linv
+x12 VDDd net3 OUT_top_d VSSd SmallW_Linv_2
+x14 VDDd net4 OUT_bot_d VSSd SmallW_Linv_2
+x5 VDDd net1 net3 VSSd SmallW_Linv_2
+x8 VDDd net2 net4 VSSd SmallW_Linv_2
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/SmallW_Linv/SmallW_Linv.sym # of pins=4
+** sym_path: /foss/designs/libs/qw_core_analog/SmallW_Linv/SmallW_Linv.sym
+** sch_path: /foss/designs/libs/qw_core_analog/SmallW_Linv/SmallW_Linv.sch
+.subckt SmallW_Linv vdd in out vss
+*.PININFO in:B out:B vdd:B vss:B
+M1 out in vss vss nfet_03v3 L=2u W=0.5u nf=1 m=1
+M2 out in vdd vdd pfet_03v3 L=2u W=1u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/SmallW_Linv_2/SmallW_Linv_2.sym # of pins=4
+** sym_path: /foss/designs/libs/qw_core_analog/SmallW_Linv_2/SmallW_Linv_2.sym
+** sch_path: /foss/designs/libs/qw_core_analog/SmallW_Linv_2/SmallW_Linv_2.sch
+.subckt SmallW_Linv_2 vdd in out vss
+*.PININFO in:B out:B vdd:B vss:B
+M1 out in vss vss nfet_03v3 L=4u W=0.5u nf=1 m=1
+M2 out in vdd vdd pfet_03v3 L=4u W=1u nf=1 m=1
+.ends
+
+.GLOBAL GND
