@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/libs/secondary_esd/single_res.sch
+.subckt single_res A C VSS
+*.PININFO A:B C:B VSS:B
+XR1 A C VSS ppolyf_u r_width=40u r_length=5.5u m=1
+.ends

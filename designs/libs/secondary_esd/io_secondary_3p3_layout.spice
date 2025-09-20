@@ -1,0 +1,26 @@
+* NGSPICE file created from io_secondary_3p3.ext - technology: gf180mcuD
+
+.subckt diode_nd2ps a_n168_0# a_0_0#
+D0 a_n168_0# a_0_0# diode_nd2ps_03v3 pj=40u area=99.99999p
+.ends
+
+.subckt diode_pd2nw w_n224_n86# a_0_0#
+D0 a_0_0# w_n224_n86# diode_pd2nw_03v3 pj=40u area=99.99999p
+.ends
+
+.subckt ppolyf_u_resistor a_n376_0# a_1100_0# a_n132_0#
+X0 a_n132_0# a_1100_0# a_n376_0# ppolyf_u r_width=40u r_length=5.5u
+.ends
+
+.subckt io_secondary_3p3 ASIG3V3 to_gate VDD VSS
+Xdiode_nd2ps_0 VSS to_gate diode_nd2ps
+Xdiode_nd2ps_1 VSS to_gate diode_nd2ps
+Xdiode_pd2nw_0 VDD to_gate diode_pd2nw
+Xdiode_nd2ps_2 VSS to_gate diode_nd2ps
+Xdiode_pd2nw_1 VDD to_gate diode_pd2nw
+Xdiode_nd2ps_3 VSS to_gate diode_nd2ps
+Xdiode_pd2nw_2 VDD to_gate diode_pd2nw
+Xdiode_pd2nw_3 VDD to_gate diode_pd2nw
+Xppolyf_u_resistor_0 VSS ASIG3V3 to_gate ppolyf_u_resistor
+.ends
+

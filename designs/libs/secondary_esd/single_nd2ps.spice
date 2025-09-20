@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/libs/secondary_esd/single_nd2ps.sch
+.subckt single_nd2ps VSS VDD
+*.PININFO VSS:B VDD:B
+D2 VSS VDD diode_nd2ps_03v3 area='10u * 10u ' pj='2*10u + 2*10u ' m=4
+.ends
