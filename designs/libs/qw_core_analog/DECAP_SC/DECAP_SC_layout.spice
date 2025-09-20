@@ -1,0 +1,13 @@
+* NGSPICE file created from DECAP_SC.ext - technology: gf180mcuD
+
+.subckt cap_nmos a_88_n92# a_0_0#
+X0 a_88_n92# a_0_0# cap_nmos_03v3 c_width=10u c_length=10u
+.ends
+
+.subckt DECAP_SC vss vdd
+Xcap_nmos_0 vdd vss cap_nmos
+Xcap_nmos_1 vdd vss cap_nmos
+Xcap_nmos_2 vdd vss cap_nmos
+Xcap_nmos_3 vdd vss cap_nmos
+.ends
+
