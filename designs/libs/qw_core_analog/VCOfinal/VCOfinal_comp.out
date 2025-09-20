@@ -1,19 +1,4 @@
 
-Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
-Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes pfet_03v3 and pfet_03v3 are equivalent.
-
 Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
 Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
@@ -28,6 +13,21 @@ Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
 
 Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
 Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
@@ -55,17 +55,17 @@ Circuit 1: ppolyf_u                        |Circuit 2: ppolyf_u
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ppolyf_u and ppolyf_u are equivalent.
-Flattening unmatched subcell pfet in circuit OTAforChargePump (0)(12 instances)
-Flattening unmatched subcell nfet$1 in circuit OTAforChargePump (0)(2 instances)
-Flattening unmatched subcell nfet in circuit OTAforChargePump (0)(4 instances)
-Flattening unmatched subcell pfet$1 in circuit OTAforChargePump (0)(6 instances)
+Flattening unmatched subcell nfet$11 in circuit OTAforChargePump (0)(4 instances)
+Flattening unmatched subcell pfet$10 in circuit OTAforChargePump (0)(12 instances)
+Flattening unmatched subcell nfet$12 in circuit OTAforChargePump (0)(2 instances)
+Flattening unmatched subcell pfet$11 in circuit OTAforChargePump (0)(6 instances)
 
 Class OTAforChargePump (0):  Merged 67 parallel devices.
 Subcircuit summary:
 Circuit 1: OTAforChargePump                |Circuit 2: OTAforChargePump                
 -------------------------------------------|-------------------------------------------
-pfet_03v3 (60->6)                          |pfet_03v3 (18->6)                          
 nfet_03v3 (16->3)                          |nfet_03v3 (6->3)                           
+pfet_03v3 (60->6)                          |pfet_03v3 (18->6)                          
 Number of devices: 9                       |Number of devices: 9                       
 Number of nets: 8                          |Number of nets: 8                          
 ---------------------------------------------------------------------------------------
@@ -74,28 +74,28 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: OTAforChargePump                |Circuit 2: OTAforChargePump                
 -------------------------------------------|-------------------------------------------
-vss                                        |vss                                        
 iref                                       |iref                                       
-out                                        |out                                        
 vdd                                        |vdd                                        
 inp                                        |inp                                        
 inn                                        |inn                                        
+out                                        |out                                        
+vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes OTAforChargePump and OTAforChargePump are equivalent.
-Flattening unmatched subcell nfet$15 in circuit Pcomparator (0)(2 instances)
-Flattening unmatched subcell pfet$14 in circuit Pcomparator (0)(4 instances)
-Flattening unmatched subcell pfet$12 in circuit Pcomparator (0)(2 instances)
-Flattening unmatched subcell nfet$16 in circuit Pcomparator (0)(4 instances)
-Flattening unmatched subcell nfet$14 in circuit Pcomparator (0)(1 instance)
-Flattening unmatched subcell pfet$13 in circuit Pcomparator (0)(14 instances)
+Flattening unmatched subcell pfet$6 in circuit Pcomparator (0)(4 instances)
+Flattening unmatched subcell pfet$4 in circuit Pcomparator (0)(2 instances)
+Flattening unmatched subcell nfet$5 in circuit Pcomparator (0)(2 instances)
+Flattening unmatched subcell pfet$5 in circuit Pcomparator (0)(14 instances)
+Flattening unmatched subcell nfet$6 in circuit Pcomparator (0)(4 instances)
+Flattening unmatched subcell nfet$4 in circuit Pcomparator (0)(1 instance)
 
 Class Pcomparator (0):  Merged 89 parallel devices.
 Subcircuit summary:
 Circuit 1: Pcomparator                     |Circuit 2: Pcomparator                     
 -------------------------------------------|-------------------------------------------
-nfet_03v3 (24->4)                          |nfet_03v3 (7->4)                           
 pfet_03v3 (76->7)                          |pfet_03v3 (20->7)                          
+nfet_03v3 (24->4)                          |nfet_03v3 (7->4)                           
 Number of devices: 11                      |Number of devices: 11                      
 Number of nets: 9                          |Number of nets: 9                          
 ---------------------------------------------------------------------------------------
@@ -106,27 +106,27 @@ Circuit 1: Pcomparator                     |Circuit 2: Pcomparator
 -------------------------------------------|-------------------------------------------
 inn                                        |inn                                        
 inp                                        |inp                                        
+vss                                        |vss                                        
 iref                                       |iref                                       
 out                                        |out                                        
 vdd                                        |vdd                                        
-vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes Pcomparator and Pcomparator are equivalent.
-Flattening unmatched subcell nfet$13 in circuit Ncomparator (0)(2 instances)
-Flattening unmatched subcell nfet$11 in circuit Ncomparator (0)(1 instance)
-Flattening unmatched subcell pfet$10 in circuit Ncomparator (0)(4 instances)
+Flattening unmatched subcell pfet$8 in circuit Ncomparator (0)(4 instances)
+Flattening unmatched subcell nfet$9 in circuit Ncomparator (0)(6 instances)
+Flattening unmatched subcell nfet$7 in circuit Ncomparator (0)(4 instances)
 Flattening unmatched subcell pfet$9 in circuit Ncomparator (0)(4 instances)
-Flattening unmatched subcell nfet$12 in circuit Ncomparator (0)(6 instances)
-Flattening unmatched subcell pfet$11 in circuit Ncomparator (0)(4 instances)
-Flattening unmatched subcell nfet$10 in circuit Ncomparator (0)(4 instances)
+Flattening unmatched subcell pfet$7 in circuit Ncomparator (0)(4 instances)
+Flattening unmatched subcell nfet$8 in circuit Ncomparator (0)(1 instance)
+Flattening unmatched subcell nfet$10 in circuit Ncomparator (0)(2 instances)
 
 Class Ncomparator (0):  Merged 71 parallel devices.
 Subcircuit summary:
 Circuit 1: Ncomparator                     |Circuit 2: Ncomparator                     
 -------------------------------------------|-------------------------------------------
-nfet_03v3 (42->7)                          |nfet_03v3 (13->7)                          
 pfet_03v3 (40->4)                          |pfet_03v3 (12->4)                          
+nfet_03v3 (42->7)                          |nfet_03v3 (13->7)                          
 Number of devices: 11                      |Number of devices: 11                      
 Number of nets: 9                          |Number of nets: 9                          
 ---------------------------------------------------------------------------------------
@@ -135,17 +135,17 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: Ncomparator                     |Circuit 2: Ncomparator                     
 -------------------------------------------|-------------------------------------------
+out                                        |out                                        
 inn                                        |inn                                        
 inp                                        |inp                                        
-vdd                                        |vdd                                        
 iref                                       |iref                                       
-out                                        |out                                        
 vss                                        |vss                                        
+vdd                                        |vdd                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes Ncomparator and Ncomparator are equivalent.
-Flattening unmatched subcell pfet$8 in circuit SRLATCH (0)(4 instances)
-Flattening unmatched subcell nfet$9 in circuit SRLATCH (0)(4 instances)
+Flattening unmatched subcell pfet$8$1 in circuit SRLATCH (0)(4 instances)
+Flattening unmatched subcell nfet$9$1 in circuit SRLATCH (0)(4 instances)
 Flattening unmatched subcell NOR in circuit SRLATCH (1)(2 instances)
 
 Subcircuit summary:
@@ -170,21 +170,21 @@ r                                          |r
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes SRLATCH and SRLATCH are equivalent.
-Flattening unmatched subcell nfet$2 in circuit PCP1248X (0)(12 instances)
-Flattening unmatched subcell pfet$4 in circuit PCP1248X (0)(12 instances)
-Flattening unmatched subcell pfet$6 in circuit PCP1248X (0)(12 instances)
-Flattening unmatched subcell nfet$3 in circuit PCP1248X (0)(37 instances)
-Flattening unmatched subcell nfet$7 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell nfet$18 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell nfet$17 in circuit PCP1248X (0)(4 instances)
+Flattening unmatched subcell pfet$16 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell pfet$14 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell nfet$15 in circuit PCP1248X (0)(3 instances)
+Flattening unmatched subcell nfet$13 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell pfet$12 in circuit PCP1248X (0)(36 instances)
 Flattening unmatched subcell cap_mim in circuit PCP1248X (0)(3 instances)
-Flattening unmatched subcell pfet$2 in circuit PCP1248X (0)(36 instances)
-Flattening unmatched subcell nfet$5 in circuit PCP1248X (0)(4 instances)
-Flattening unmatched subcell pfet$7 in circuit PCP1248X (0)(1 instance)
+Flattening unmatched subcell pfet$17 in circuit PCP1248X (0)(1 instance)
+Flattening unmatched subcell nfet$16 in circuit PCP1248X (0)(4 instances)
+Flattening unmatched subcell pfet$15 in circuit PCP1248X (0)(4 instances)
 Flattening unmatched subcell ppolyf_u_resistor in circuit PCP1248X (0)(6 instances)
-Flattening unmatched subcell pfet$5 in circuit PCP1248X (0)(4 instances)
-Flattening unmatched subcell nfet$8 in circuit PCP1248X (0)(1 instance)
-Flattening unmatched subcell pfet$3 in circuit PCP1248X (0)(6 instances)
-Flattening unmatched subcell nfet$6 in circuit PCP1248X (0)(4 instances)
-Flattening unmatched subcell nfet$4 in circuit PCP1248X (0)(3 instances)
+Flattening unmatched subcell nfet$14 in circuit PCP1248X (0)(37 instances)
+Flattening unmatched subcell pfet$13 in circuit PCP1248X (0)(6 instances)
+Flattening unmatched subcell nfet$19 in circuit PCP1248X (0)(1 instance)
 Flattening unmatched subcell inv1u05u in circuit PCP1248X (1)(4 instances)
 Flattening unmatched subcell TG in circuit PCP1248X (1)(8 instances)
 
@@ -215,23 +215,23 @@ iref200u                                   |iref200u
 vin                                        |vin                                        
 out                                        |out                                        
 vdd                                        |vdd                                        
-vss                                        |vss                                        
 s0                                         |s0                                         
 s1                                         |s1                                         
 s2                                         |s2                                         
 s3                                         |s3                                         
+vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes PCP1248X and PCP1248X are equivalent.
+Flattening unmatched subcell nfet$19$1 in circuit VCOfinal (0)(3 instances)
 Flattening unmatched subcell cap_mim$2 in circuit VCOfinal (0)(1 instance)
 Flattening unmatched subcell ppolyf_u_resistor$2 in circuit VCOfinal (0)(4 instances)
 Flattening unmatched subcell pfet$19 in circuit VCOfinal (0)(3 instances)
 Flattening unmatched subcell SCHMITT in circuit VCOfinal (0)(2 instances)
-Flattening unmatched subcell nfet$17 in circuit VCOfinal (0)(4 instances)
-Flattening unmatched subcell pfet$16 in circuit VCOfinal (0)(2 instances)
-Flattening unmatched subcell nfet$18 in circuit VCOfinal (0)(2 instances)
-Flattening unmatched subcell pfet$15 in circuit VCOfinal (0)(4 instances)
-Flattening unmatched subcell nfet$19 in circuit VCOfinal (0)(3 instances)
+Flattening unmatched subcell pfet$2 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell nfet$3 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell pfet$3 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell nfet$2 in circuit VCOfinal (0)(4 instances)
 Flattening unmatched subcell INV in circuit VCOfinal (1)(3 instances)
 Flattening unmatched subcell SCHXMITT in circuit VCOfinal (1)(2 instances)
 
@@ -240,13 +240,13 @@ Class VCOfinal (1):  Merged 1 series devices.
 Subcircuit summary:
 Circuit 1: VCOfinal                        |Circuit 2: VCOfinal                        
 -------------------------------------------|-------------------------------------------
+nfet_03v3 (9)                              |nfet_03v3 (9)                              
 Pcomparator (1)                            |Pcomparator (1)                            
 Ncomparator (1)                            |Ncomparator (1)                            
 SRLATCH (1)                                |SRLATCH (1)                                
 cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (1)                          
 ppolyf_u (4->3)                            |ppolyf_u (4->3)                            
 pfet_03v3 (9)                              |pfet_03v3 (9)                              
-nfet_03v3 (9)                              |nfet_03v3 (9)                              
 PCP1248X (1)                               |PCP1248X (1)                               
 Number of devices: 26                      |Number of devices: 26                      
 Number of nets: 26                         |Number of nets: 26                         
@@ -256,10 +256,6 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: VCOfinal                        |Circuit 2: VCOfinal                        
 -------------------------------------------|-------------------------------------------
-fout                                       |fout                                       
-foutb                                      |foutb                                      
-vdd                                        |vdd                                        
-vss                                        |vss                                        
 vin                                        |vin                                        
 iref200                                    |iref200                                    
 s0                                         |s0                                         
@@ -268,6 +264,10 @@ s2                                         |s2
 s3                                         |s3                                         
 irefn                                      |irefn                                      
 irefp                                      |irefp                                      
+vdd                                        |vdd                                        
+foutb                                      |foutb                                      
+fout                                       |fout                                       
+vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes VCOfinal and VCOfinal are equivalent.

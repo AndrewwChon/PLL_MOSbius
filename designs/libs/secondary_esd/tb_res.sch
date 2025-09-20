@@ -32,8 +32,8 @@ value="
 C {isource.sym} 920 -310 2 1 {name=I0 value=1}
 C {devices/gnd.sym} 920 -240 0 0 {name=l4 lab=GND}
 C {symbols/ppolyf_u.sym} 1010 -400 3 1 {name=R1
-W=40e-6
-L=5.5e-6
+W=1e-6
+L=27e-6
 model=ppolyf_u
 spiceprefix=X
 m=1}
