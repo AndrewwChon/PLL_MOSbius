@@ -1,0 +1,10 @@
+* NGSPICE file created from single_res.ext - technology: gf180mcuD
+
+.subckt ppolyf_u_resistor$1 a_n376_0# a_1100_0# a_n132_0#
+X0 a_n132_0# a_1100_0# a_n376_0# ppolyf_u r_width=40u r_length=5.5u
+.ends
+
+.subckt single_res VSS A C
+Xppolyf_u_resistor$1_0 VSS A C ppolyf_u_resistor$1
+.ends
+

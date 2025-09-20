@@ -1,0 +1,13 @@
+* NGSPICE file created from single_nd2ps.ext - technology: gf180mcuD
+
+.subckt diode_nd2ps a_n168_0# a_0_0#
+D0 a_n168_0# a_0_0# diode_nd2ps_03v3 pj=40u area=99.99999p
+.ends
+
+.subckt single_nd2ps VDD VSS
+Xdiode_nd2ps_0 VSS VDD diode_nd2ps
+Xdiode_nd2ps_1 VSS VDD diode_nd2ps
+Xdiode_nd2ps_2 VSS VDD diode_nd2ps
+Xdiode_nd2ps_3 VSS VDD diode_nd2ps
+.ends
+

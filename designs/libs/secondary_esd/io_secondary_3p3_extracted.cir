@@ -1,0 +1,7 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 20/09/2025 06:37
+
+.SUBCKT io_secondary_3p3 ASIG3V3 VDD to_gate VSS
+D$1 to_gate \$1 diode_nd2ps_03v3 A=400P P=160U
+D$5 to_gate VDD diode_pd2nw_03v3 A=400P P=160U
+R$9 to_gate ASIG3V3 VSS 48.125 ppolyf_u L=5.5U W=40U
+.ENDS io_secondary_3p3

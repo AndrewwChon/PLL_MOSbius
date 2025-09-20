@@ -1,0 +1,5 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 20/09/2025 20:24
+
+.SUBCKT single_res VSS C A
+R$1 C A VSS 48.125 ppolyf_u L=5.5U W=40U
+.ENDS single_res

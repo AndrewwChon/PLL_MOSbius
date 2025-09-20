@@ -1,0 +1,23 @@
+Flattening unmatched subcell diode_nd2ps in circuit single_nd2ps (0)(4 instances)
+
+Class single_nd2ps (0):  Merged 3 parallel devices.
+Subcircuit summary:
+Circuit 1: single_nd2ps                    |Circuit 2: single_nd2ps                    
+-------------------------------------------|-------------------------------------------
+diode_nd2ps_03v3 (4->1)                    |diode_nd2ps_03v3 (4->1)                    
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: single_nd2ps                    |Circuit 2: single_nd2ps                    
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes single_nd2ps and single_nd2ps are equivalent.
+
+Final result: Circuits match uniquely.
+.

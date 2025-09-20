@@ -1,0 +1,5 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 20/09/2025 15:57
+
+.SUBCKT single_nd2ps VSS VDD
+D$1 VSS VDD diode_nd2ps_03v3 A=400P P=160U
+.ENDS single_nd2ps

@@ -1,0 +1,43 @@
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u                        |Circuit 2: ppolyf_u                        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+Flattening unmatched subcell diode_nd2ps in circuit io_secondary_3p3 (0)(4 instances)
+Flattening unmatched subcell diode_pd2nw in circuit io_secondary_3p3 (0)(4 instances)
+Flattening unmatched subcell ppolyf_u_resistor in circuit io_secondary_3p3 (0)(1 instance)
+
+Class io_secondary_3p3 (0):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: io_secondary_3p3                |Circuit 2: io_secondary_3p3                
+-------------------------------------------|-------------------------------------------
+diode_nd2ps_03v3 (4->1)                    |diode_nd2ps_03v3 (4->1)                    
+diode_pd2nw_03v3 (4->1)                    |diode_pd2nw_03v3 (4->1)                    
+ppolyf_u (1)                               |ppolyf_u (1)                               
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: io_secondary_3p3                |Circuit 2: io_secondary_3p3                
+-------------------------------------------|-------------------------------------------
+ASIG3V3                                    |ASIG3V3                                    
+VDD                                        |VDD                                        
+to_gate                                    |to_gate                                    
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes io_secondary_3p3 and io_secondary_3p3 are equivalent.
+
+Final result: Circuits match uniquely.
+.
