@@ -21,6 +21,10 @@ N 940 -440 980 -440 {lab=ref}
 N 1320 -560 1320 -500 {lab=vdda}
 N 1320 -380 1320 -330 {lab=vssa}
 N 1400 -440 1460 -440 {lab=out}
+N 1230 -410 1230 -340 {lab=vssa}
+N 1230 -340 1230 -330 {lab=vssa}
+N 1210 -380 1210 -330 {lab=vssa}
+N 1210 -330 1320 -330 {lab=vssa}
 C {devices/code_shown.sym} 145 -268.75 0 0 {name=Simulation only_toplevel=false value="
 
 .control
@@ -50,7 +54,6 @@ C {libs/secondary_esd/io_secondary_3p3.sym} 1180 -360 0 1 {name=IO1
 spiceprefix=X
 }
 C {devices/lab_wire.sym} 870 -340 0 0 {name=p1 sig_type=std_logic lab=ref}
-C {devices/lab_wire.sym} 960 -440 0 0 {name=p2 sig_type=std_logic lab=ref}
 C {devices/lab_wire.sym} 1100 -540 0 0 {name=p3 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1100 -320 0 0 {name=p4 sig_type=std_logic lab=vssa}
 C {libs/core_analog/asc_hysteresis_buffer/asc_hysteresis_buffer.sym} 1320 -440 0 0 {name=x1}
@@ -59,3 +62,9 @@ C {devices/lab_wire.sym} 1320 -530 0 0 {name=p6 sig_type=std_logic lab=vdda}
 C {devices/lab_wire.sym} 1220 -440 0 0 {name=p9 sig_type=std_logic lab=esd_out}
 C {devices/lab_wire.sym} 1460 -440 0 0 {name=p10 sig_type=std_logic lab=out}
 C {noconn.sym} 1460 -440 0 0 {name=l1}
+C {symbols/ppolyf_u.sym} 1210 -410 0 1 {name=R1
+W=1e-6
+L=27e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
