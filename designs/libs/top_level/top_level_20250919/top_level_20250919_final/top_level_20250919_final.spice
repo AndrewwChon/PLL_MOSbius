@@ -13,6 +13,7 @@ XIO3 VDDd en_esd en VSSd io_secondary_3p3
 XIO4 VDDd ref_esd ref VSSd io_secondary_3p3
 XIO5 VDDd i_100u_esd i_cp_100u VSSd io_secondary_3p3
 XIO6 VDDd div_def_esd div_def VSSd io_secondary_3p3
+decap VDDd VSSd DECAP_LARGE
 .ends
 
 * expanding   symbol:  libs/top_level/top_level_20250919/top_level_20250919_sc/top_level_20250919_sc.sym # of pins=22
@@ -44,6 +45,140 @@ xtop_nosc VDDd VSSd out[2] out[1] out[32] out[31] out[33] out[6] out[5] out[4] o
 XR1 to_gate ASIG3V3 VSS ppolyf_u r_width=40e-6 r_length=5.5e-6 m=1
 D2 VSS to_gate diode_nd2ps_03v3 area='10u * 10u ' pj='2*10u + 2*10u ' m=4
 D1 to_gate VDD diode_pd2nw_03v3 area='10u * 10u ' pj='2*10u + 2*10u ' m=4
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/DECAP_LARGE/DECAP_LARGE.sym # of pins=2
+** sym_path: /foss/designs/libs/qw_core_analog/DECAP_LARGE/DECAP_LARGE.sym
+** sch_path: /foss/designs/libs/qw_core_analog/DECAP_LARGE/DECAP_LARGE.sch
+.subckt DECAP_LARGE vdd vss
+*.PININFO vdd:B vss:B
+x[1] vdd vss DECAP_SC
+x[2] vdd vss DECAP_SC
+x[3] vdd vss DECAP_SC
+x[4] vdd vss DECAP_SC
+x[5] vdd vss DECAP_SC
+x[6] vdd vss DECAP_SC
+x[7] vdd vss DECAP_SC
+x[8] vdd vss DECAP_SC
+x[9] vdd vss DECAP_SC
+x[10] vdd vss DECAP_SC
+x[11] vdd vss DECAP_SC
+x[12] vdd vss DECAP_SC
+x[13] vdd vss DECAP_SC
+x[14] vdd vss DECAP_SC
+x[15] vdd vss DECAP_SC
+x[16] vdd vss DECAP_SC
+x[17] vdd vss DECAP_SC
+x[18] vdd vss DECAP_SC
+x[19] vdd vss DECAP_SC
+x[20] vdd vss DECAP_SC
+x[21] vdd vss DECAP_SC
+x[22] vdd vss DECAP_SC
+x[23] vdd vss DECAP_SC
+x[24] vdd vss DECAP_SC
+x[25] vdd vss DECAP_SC
+x[26] vdd vss DECAP_SC
+x[27] vdd vss DECAP_SC
+x[28] vdd vss DECAP_SC
+x[29] vdd vss DECAP_SC
+x[30] vdd vss DECAP_SC
+x[31] vdd vss DECAP_SC
+x[32] vdd vss DECAP_SC
+x[33] vdd vss DECAP_SC
+x[34] vdd vss DECAP_SC
+x[35] vdd vss DECAP_SC
+x[36] vdd vss DECAP_SC
+x[37] vdd vss DECAP_SC
+x[38] vdd vss DECAP_SC
+x[39] vdd vss DECAP_SC
+x[40] vdd vss DECAP_SC
+x[41] vdd vss DECAP_SC
+x[42] vdd vss DECAP_SC
+x[43] vdd vss DECAP_SC
+x[44] vdd vss DECAP_SC
+x[45] vdd vss DECAP_SC
+x[46] vdd vss DECAP_SC
+x[47] vdd vss DECAP_SC
+x[48] vdd vss DECAP_SC
+x[49] vdd vss DECAP_SC
+x[50] vdd vss DECAP_SC
+x[51] vdd vss DECAP_SC
+x[52] vdd vss DECAP_SC
+x[53] vdd vss DECAP_SC
+x[54] vdd vss DECAP_SC
+x[55] vdd vss DECAP_SC
+x[56] vdd vss DECAP_SC
+x[57] vdd vss DECAP_SC
+x[58] vdd vss DECAP_SC
+x[59] vdd vss DECAP_SC
+x[60] vdd vss DECAP_SC
+x[61] vdd vss DECAP_SC
+x[62] vdd vss DECAP_SC
+x[63] vdd vss DECAP_SC
+x[64] vdd vss DECAP_SC
+x[65] vdd vss DECAP_SC
+x[66] vdd vss DECAP_SC
+x[67] vdd vss DECAP_SC
+x[68] vdd vss DECAP_SC
+x[69] vdd vss DECAP_SC
+x[70] vdd vss DECAP_SC
+x[71] vdd vss DECAP_SC
+x[72] vdd vss DECAP_SC
+x[73] vdd vss DECAP_SC
+x[74] vdd vss DECAP_SC
+x[75] vdd vss DECAP_SC
+x[76] vdd vss DECAP_SC
+x[77] vdd vss DECAP_SC
+x[78] vdd vss DECAP_SC
+x[79] vdd vss DECAP_SC
+x[80] vdd vss DECAP_SC
+x[81] vdd vss DECAP_SC
+x[82] vdd vss DECAP_SC
+x[83] vdd vss DECAP_SC
+x[84] vdd vss DECAP_SC
+x[85] vdd vss DECAP_SC
+x[86] vdd vss DECAP_SC
+x[87] vdd vss DECAP_SC
+x[88] vdd vss DECAP_SC
+x[89] vdd vss DECAP_SC
+x[90] vdd vss DECAP_SC
+x[91] vdd vss DECAP_SC
+x[92] vdd vss DECAP_SC
+x[93] vdd vss DECAP_SC
+x[94] vdd vss DECAP_SC
+x[95] vdd vss DECAP_SC
+x[96] vdd vss DECAP_SC
+x[97] vdd vss DECAP_SC
+x[98] vdd vss DECAP_SC
+x[99] vdd vss DECAP_SC
+x[100] vdd vss DECAP_SC
+x[101] vdd vss DECAP_SC
+x[102] vdd vss DECAP_SC
+x[103] vdd vss DECAP_SC
+x[104] vdd vss DECAP_SC
+x[105] vdd vss DECAP_SC
+x[106] vdd vss DECAP_SC
+x[107] vdd vss DECAP_SC
+x[108] vdd vss DECAP_SC
+x[109] vdd vss DECAP_SC
+x[110] vdd vss DECAP_SC
+x[111] vdd vss DECAP_SC
+x[112] vdd vss DECAP_SC
+x[113] vdd vss DECAP_SC
+x[114] vdd vss DECAP_SC
+x[115] vdd vss DECAP_SC
+x[116] vdd vss DECAP_SC
+x[117] vdd vss DECAP_SC
+x[118] vdd vss DECAP_SC
+x[119] vdd vss DECAP_SC
+x[120] vdd vss DECAP_SC
+x[121] vdd vss DECAP_SC
+x[122] vdd vss DECAP_SC
+x[123] vdd vss DECAP_SC
+x[124] vdd vss DECAP_SC
+x[125] vdd vss DECAP_SC
+x[126] vdd vss DECAP_SC
 .ends
 
 
@@ -131,6 +266,18 @@ xbias vdd 200p2 200p1 i_cp_100u i_cp 200n vss BIAS
 xbuf_dd div_def vss int_div_def vdd asc_hysteresis_buffer
 xvco_rex vdd vss 200p1 200p2 200n rex_s1 rex_s2 rex_s3 rex_s4 rexvco_out rexvco_outb rexvco_in VCOfinal
 * noconn rexvco_outb
+.ends
+
+
+* expanding   symbol:  libs/qw_core_analog/DECAP_SC/DECAP_SC.sym # of pins=2
+** sym_path: /foss/designs/libs/qw_core_analog/DECAP_SC/DECAP_SC.sym
+** sch_path: /foss/designs/libs/qw_core_analog/DECAP_SC/DECAP_SC.sch
+.subckt DECAP_SC vdd vss
+*.PININFO vdd:B vss:B
+XC1 vdd vss cap_nmos_03v3 c_width=10e-6 c_length=10e-6 m=1
+XC2 vdd vss cap_nmos_03v3 c_width=10e-6 c_length=10e-6 m=1
+XC3 vdd vss cap_nmos_03v3 c_width=10e-6 c_length=10e-6 m=1
+XC4 vdd vss cap_nmos_03v3 c_width=10e-6 c_length=10e-6 m=1
 .ends
 
 
