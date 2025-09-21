@@ -13,7 +13,7 @@ XIO3 VDDd en_esd en VSSd io_secondary_3p3
 XIO4 VDDd ref_esd ref VSSd io_secondary_3p3
 XIO5 VDDd i_100u_esd i_cp_100u VSSd io_secondary_3p3
 XIO6 VDDd div_def_esd div_def VSSd io_secondary_3p3
-decap VDDd VSSd DECAP_LARGE
+xdecap VDDd VSSd DECAP_LARGE
 .ends
 
 * expanding   symbol:  libs/top_level/top_level_20250919/top_level_20250919_sc/top_level_20250919_sc.sym # of pins=22

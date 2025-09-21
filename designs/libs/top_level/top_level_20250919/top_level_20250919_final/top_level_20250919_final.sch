@@ -66,7 +66,7 @@ N 2000 -940 2000 -900 {lab=VSSd}
 N 1680 -1020 1920 -1020 {lab=div_def_esd}
 N 2120 -1020 2160 -1020 {lab=div_def}
 N 1500 -460 1560 -460 {lab=VDDd}
-N 1500 -440 1560 -440 {lab=ref_esd}
+N 1500 -440 1560 -440 {lab=VSSd}
 C {devices/iopin.sym} 1040 -1100 0 1 {name=p2 lab=VDDd}
 C {devices/iopin.sym} 1040 -1080 0 1 {name=p3 lab=VSSd}
 C {devices/iopin.sym} 520 -680 0 1 {name=p1 lab=ref}
@@ -132,6 +132,6 @@ C {devices/lab_wire.sym} 2000 -1120 0 1 {name=p28 sig_type=std_logic lab=VDDd}
 C {devices/lab_wire.sym} 2000 -900 0 1 {name=p29 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} 1780 -1020 0 0 {name=p7 sig_type=std_logic lab=div_def_esd}
 C {devices/iopin.sym} 2160 -1020 2 1 {name=p30 lab=div_def}
-C {libs/qw_core_analog/DECAP_LARGE/DECAP_LARGE.sym} 1350 -450 0 0 {name=decap}
+C {libs/qw_core_analog/DECAP_LARGE/DECAP_LARGE.sym} 1350 -450 0 0 {name=xdecap}
 C {devices/lab_wire.sym} 1560 -460 0 0 {name=p31 sig_type=std_logic lab=VDDd}
 C {devices/lab_wire.sym} 1560 -440 0 0 {name=p32 sig_type=std_logic lab=VSSd}
