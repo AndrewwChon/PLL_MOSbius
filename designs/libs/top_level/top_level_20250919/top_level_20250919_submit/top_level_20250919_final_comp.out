@@ -1,0 +1,875 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_05v0 are black boxes.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_05v0 and nfet_05v0 are equivalent.
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_05v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_05v0 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u                        |Circuit 2: ppolyf_u                        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+
+Circuit 1 cell cap_nmos_03v3 and Circuit 2 cell cap_nmos_03v3 are black boxes.
+Warning: Equate pins:  cell cap_nmos_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_nmos_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_nmos_03v3                   |Circuit 2: cap_nmos_03v3                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_nmos_03v3 and cap_nmos_03v3 are equivalent.
+Flattening unmatched subcell nfet$353 in circuit SRLATCH (0)(4 instances)
+Flattening unmatched subcell pfet$333 in circuit SRLATCH (0)(4 instances)
+Flattening unmatched subcell NOR in circuit SRLATCH (1)(2 instances)
+
+Subcircuit summary:
+Circuit 1: SRLATCH                         |Circuit 2: SRLATCH                         
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (4)                              |nfet_03v3 (4)                              
+pfet_03v3 (4)                              |pfet_03v3 (4)                              
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: SRLATCH                         |Circuit 2: SRLATCH                         
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+s                                          |s                                          
+r                                          |r                                          
+qb                                         |qb                                         
+q                                          |q                                          
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes SRLATCH and SRLATCH are equivalent.
+Flattening unmatched subcell PCP1248X$1 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell nfet$348 in circuit VCOfinal (0)(3 instances)
+Flattening unmatched subcell pfet$331 in circuit VCOfinal (0)(12 instances)
+Flattening unmatched subcell cap_mim$6 in circuit VCOfinal (0)(3 instances)
+Flattening unmatched subcell nfet$346 in circuit VCOfinal (0)(12 instances)
+Flattening unmatched subcell nfet$351 in circuit VCOfinal (0)(12 instances)
+Flattening unmatched subcell ppolyf_u_resistor$4 in circuit VCOfinal (0)(6 instances)
+Flattening unmatched subcell pfet$329 in circuit VCOfinal (0)(12 instances)
+Flattening unmatched subcell pfet$327 in circuit VCOfinal (0)(36 instances)
+Flattening unmatched subcell pfet$332 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell pfet$330 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell nfet$349 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell nfet$347 in circuit VCOfinal (0)(37 instances)
+Flattening unmatched subcell nfet$352 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell nfet$350 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell pfet$328 in circuit VCOfinal (0)(6 instances)
+Flattening unmatched subcell OTAforChargePump$2 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell pfet$325 in circuit VCOfinal (0)(12 instances)
+Flattening unmatched subcell nfet$344 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell nfet$345 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell pfet$326 in circuit VCOfinal (0)(6 instances)
+Flattening unmatched subcell SCHMITT$3 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell pfet$341 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell nfet$361 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell pfet$340 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell nfet$362 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell nfet$363 in circuit VCOfinal (0)(3 instances)
+Flattening unmatched subcell cap_mim$7 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell ppolyf_u_resistor$5 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell pfet$342 in circuit VCOfinal (0)(3 instances)
+Flattening unmatched subcell Ncomparator$1 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell pfet$336 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell pfet$334 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell nfet$356 in circuit VCOfinal (0)(6 instances)
+Flattening unmatched subcell nfet$354 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell pfet$335 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell nfet$357 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell nfet$355 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell Pcomparator$1 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell nfet$360 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell pfet$338 in circuit VCOfinal (0)(14 instances)
+Flattening unmatched subcell nfet$358 in circuit VCOfinal (0)(1 instance)
+Flattening unmatched subcell pfet$339 in circuit VCOfinal (0)(4 instances)
+Flattening unmatched subcell pfet$337 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell nfet$359 in circuit VCOfinal (0)(2 instances)
+Flattening unmatched subcell INV in circuit VCOfinal (1)(3 instances)
+Flattening unmatched subcell PCP1248X in circuit VCOfinal (1)(1 instance)
+Flattening unmatched subcell OTAforChargePump in circuit VCOfinal (1)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit VCOfinal (1)(4 instances)
+Flattening unmatched subcell TG in circuit VCOfinal (1)(8 instances)
+Flattening unmatched subcell Ncomparator in circuit VCOfinal (1)(1 instance)
+Flattening unmatched subcell Pcomparator in circuit VCOfinal (1)(1 instance)
+Flattening unmatched subcell SCHMITT in circuit VCOfinal (1)(2 instances)
+
+Cell VCOfinal (0) disconnected node: a_11641_n18839#
+Class VCOfinal (0):  Merged 753 parallel devices.
+Class VCOfinal (0):  Merged 6 series devices.
+Class VCOfinal (1):  Merged 12 parallel devices.
+Class VCOfinal (1):  Merged 6 series devices.
+Cell VCOfinal (0) disconnected node: a_11641_n18839#
+Subcircuit summary:
+Circuit 1: VCOfinal                        |Circuit 2: VCOfinal                        
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (305->54)                        |nfet_03v3 (108->54)                        
+pfet_03v3 (557->55)                        |pfet_03v3 (130->55)                        
+cap_mim_2f0_m4m5_noshield (4)              |cap_mim_2f0fF (4)                          
+ppolyf_u (10->4)                           |ppolyf_u (10->4)                           
+SRLATCH (1)                                |SRLATCH (1)                                
+Number of devices: 118                     |Number of devices: 118                     
+Number of nets: 64                         |Number of nets: 64                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: VCOfinal                        |Circuit 2: VCOfinal                        
+-------------------------------------------|-------------------------------------------
+irefn                                      |irefn                                      
+irefp                                      |irefp                                      
+fout                                       |fout                                       
+foutb                                      |foutb                                      
+vss                                        |vss                                        
+iref200                                    |iref200                                    
+vin                                        |vin                                        
+s0                                         |s0                                         
+s1                                         |s1                                         
+s2                                         |s2                                         
+s3                                         |s3                                         
+vdd                                        |vdd                                        
+a_11641_n18839#                            |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes VCOfinal and VCOfinal are equivalent.
+Flattening unmatched subcell cap_nmos$1 in circuit DECAP_SC (0)(4 instances)
+
+Cell DECAP_SC (0) disconnected node: a_n313_2257#
+Class DECAP_SC (0):  Merged 3 parallel devices.
+Class DECAP_SC (1):  Merged 3 parallel devices.
+Cell DECAP_SC (0) disconnected node: a_n313_2257#
+Subcircuit summary:
+Circuit 1: DECAP_SC                        |Circuit 2: DECAP_SC                        
+-------------------------------------------|-------------------------------------------
+cap_nmos_03v3 (4->1)                       |cap_nmos_03v3 (4->1)                       
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: DECAP_SC                        |Circuit 2: DECAP_SC                        
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+a_n313_2257#                               |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DECAP_SC and DECAP_SC are equivalent.
+Flattening unmatched subcell qw_NOLclk$1 in circuit scan_chain (0)(1 instance)
+Flattening unmatched subcell pfet$322 in circuit scan_chain (0)(4 instances)
+Flattening unmatched subcell nfet$342 in circuit scan_chain (0)(4 instances)
+Flattening unmatched subcell nfet$340 in circuit scan_chain (0)(2 instances)
+Flattening unmatched subcell pfet$323 in circuit scan_chain (0)(4 instances)
+Flattening unmatched subcell pfet$321 in circuit scan_chain (0)(2 instances)
+Flattening unmatched subcell nfet$343 in circuit scan_chain (0)(4 instances)
+Flattening unmatched subcell nfet$341 in circuit scan_chain (0)(4 instances)
+Flattening unmatched subcell pfet$324 in circuit scan_chain (0)(4 instances)
+Flattening unmatched subcell SRegister_10$1 in circuit scan_chain (0)(5 instances)
+Flattening unmatched subcell Register_unitcell$2 in circuit scan_chain (0)(50 instances)
+Flattening unmatched subcell DFF_2phase_1$3 in circuit scan_chain (0)(50 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__latq_1$4 in circuit scan_chain (0)(100 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__inv_1$3 in circuit scan_chain (0)(50 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__and2_1$3 in circuit scan_chain (0)(100 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__or2_1$3 in circuit scan_chain (0)(50 instances)
+Flattening unmatched subcell asc_hysteresis_buffer$5 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell pfet$315 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell nfet$337 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell nfet$335 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell nfet$333 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell pfet$318 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell pfet$316 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell pfet$314 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell nfet$336 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell nfet$334 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell pfet$317 in circuit scan_chain (0)(3 instances)
+Flattening unmatched subcell SCHMITT$2 in circuit scan_chain (0)(1 instance)
+Flattening unmatched subcell pfet$320 in circuit scan_chain (0)(1 instance)
+Flattening unmatched subcell nfet$339 in circuit scan_chain (0)(1 instance)
+Flattening unmatched subcell nfet$338 in circuit scan_chain (0)(2 instances)
+Flattening unmatched subcell pfet$319 in circuit scan_chain (0)(2 instances)
+Flattening unmatched subcell SRegister_10 in circuit scan_chain (1)(5 instances)
+Flattening unmatched subcell Register_unitcell in circuit scan_chain (1)(50 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__inv_1 in circuit scan_chain (1)(50 instances)
+Flattening unmatched subcell DFF_2phase_1 in circuit scan_chain (1)(50 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__latq_1 in circuit scan_chain (1)(100 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__and2_1 in circuit scan_chain (1)(100 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__or2_1 in circuit scan_chain (1)(50 instances)
+Flattening unmatched subcell asc_hysteresis_buffer in circuit scan_chain (1)(3 instances)
+Flattening unmatched subcell inv1u05u in circuit scan_chain (1)(3 instances)
+Flattening unmatched subcell SCHMITT in circuit scan_chain (1)(1 instance)
+Flattening unmatched subcell qw_NOLclk in circuit scan_chain (1)(1 instance)
+Flattening unmatched subcell SmallW_Linv in circuit scan_chain (1)(2 instances)
+Flattening unmatched subcell SmallW_Linv_2 in circuit scan_chain (1)(4 instances)
+Flattening unmatched subcell inv1u05u in circuit scan_chain (1)(4 instances)
+Flattening unmatched subcell asc_NAND in circuit scan_chain (1)(2 instances)
+
+Class scan_chain (0):  Merged 64 parallel devices.
+Subcircuit summary:
+Circuit 1: scan_chain                      |Circuit 2: scan_chain                      
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (62->32)                         |pfet_03v3 (32)                             
+nfet_03v3 (66->32)                         |nfet_03v3 (32)                             
+nfet_05v0 (1300)                           |nfet_05v0 (1300)                           
+pfet_05v0 (1300)                           |pfet_05v0 (1300)                           
+Number of devices: 2664                    |Number of devices: 2664                    
+Number of nets: 1434                       |Number of nets: 1434                       
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: scan_chain                      |Circuit 2: scan_chain                      
+-------------------------------------------|-------------------------------------------
+out[50]                                    |out[50]                                    
+out[43]                                    |out[43]                                    
+out[35]                                    |out[35]                                    
+out[42]                                    |out[42]                                    
+out[34]                                    |out[34]                                    
+out[6]                                     |out[6]                                     
+out[46]                                    |out[46]                                    
+out[38]                                    |out[38]                                    
+out[1]                                     |out[1]                                     
+out[49]                                    |out[49]                                    
+out[2]                                     |out[2]                                     
+out[48]                                    |out[48]                                    
+out[47]                                    |out[47]                                    
+out[44]                                    |out[44]                                    
+out[36]                                    |out[36]                                    
+out[7]                                     |out[7]                                     
+out[39]                                    |out[39]                                    
+out[5]                                     |out[5]                                     
+out[45]                                    |out[45]                                    
+out[37]                                    |out[37]                                    
+out[41]                                    |out[41]                                    
+out[33]                                    |out[33]                                    
+out[8]                                     |out[8]                                     
+out[3]                                     |out[3]                                     
+out[40]                                    |out[40]                                    
+out[4]                                     |out[4]                                     
+out[32]                                    |out[32]                                    
+out[9]                                     |out[9]                                     
+out[10]                                    |out[10]                                    
+out[30]                                    |out[30]                                    
+out[29]                                    |out[29]                                    
+out[28]                                    |out[28]                                    
+out[27]                                    |out[27]                                    
+out[26]                                    |out[26]                                    
+out[14]                                    |out[14]                                    
+out[25]                                    |out[25]                                    
+out[15]                                    |out[15]                                    
+out[24]                                    |out[24]                                    
+out[16]                                    |out[16]                                    
+out[23]                                    |out[23]                                    
+out[17]                                    |out[17]                                    
+out[22]                                    |out[22]                                    
+out[21]                                    |out[21]                                    
+out[20]                                    |out[20]                                    
+out[19]                                    |out[19]                                    
+out[18]                                    |out[18]                                    
+out[13]                                    |out[13]                                    
+out[12]                                    |out[12]                                    
+out[11]                                    |out[11]                                    
+out[31]                                    |out[31]                                    
+DATAd                                      |DATAd                                      
+ENd                                        |ENd                                        
+CLKd                                       |CLKd                                       
+VSSd                                       |VSSd                                       
+VDDd                                       |VDDd                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes scan_chain and scan_chain are equivalent.
+
+Subcircuit summary:
+Circuit 1: DECAP_LARGE                     |Circuit 2: DECAP_LARGE                     
+-------------------------------------------|-------------------------------------------
+DECAP_SC (126)                             |DECAP_SC (126)                             
+Number of devices: 126                     |Number of devices: 126                     
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: DECAP_LARGE                     |Circuit 2: DECAP_LARGE                     
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DECAP_LARGE and DECAP_LARGE are equivalent.
+Flattening unmatched subcell diode_nd2ps in circuit io_secondary_3p3 (0)(4 instances)
+Flattening unmatched subcell diode_pd2nw in circuit io_secondary_3p3 (0)(4 instances)
+Flattening unmatched subcell ppolyf_u_resistor$3 in circuit io_secondary_3p3 (0)(1 instance)
+
+Class io_secondary_3p3 (0):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: io_secondary_3p3                |Circuit 2: io_secondary_3p3                
+-------------------------------------------|-------------------------------------------
+diode_nd2ps_03v3 (4->1)                    |diode_nd2ps_03v3 (4->1)                    
+diode_pd2nw_03v3 (4->1)                    |diode_pd2nw_03v3 (4->1)                    
+ppolyf_u (1)                               |ppolyf_u (1)                               
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: io_secondary_3p3                |Circuit 2: io_secondary_3p3                
+-------------------------------------------|-------------------------------------------
+ASIG3V3                                    |ASIG3V3                                    
+VDD                                        |VDD                                        
+to_gate                                    |to_gate                                    
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes io_secondary_3p3 and io_secondary_3p3 are equivalent.
+Flattening unmatched subcell top_level_20250912_nosc in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell asc_hysteresis_buffer$4 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$270 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$287 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$285 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$268 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$266 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$288 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$286 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$284 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$269 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$267 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell xp_3_1_MUX$3 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$286 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$305 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pfet$287 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$304 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell asc_dual_psd_def_20250809$3 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$242 in circuit top_level_20250919_sc (0)(83 instances)
+Flattening unmatched subcell nfet$245 in circuit top_level_20250919_sc (0)(83 instances)
+Flattening unmatched subcell pfet$251 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$228 in circuit top_level_20250919_sc (0)(111 instances)
+Flattening unmatched subcell nfet$247 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$250 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell pfet$242 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$235 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell nfet$244 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$269 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell pfet$232 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell pfet$227 in circuit top_level_20250919_sc (0)(111 instances)
+Flattening unmatched subcell nfet$249 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell nfet$268 in circuit top_level_20250919_sc (0)(10 instances)
+Flattening unmatched subcell nfet$241 in circuit top_level_20250919_sc (0)(28 instances)
+Flattening unmatched subcell nfet$254 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$261 in circuit top_level_20250919_sc (0)(28 instances)
+Flattening unmatched subcell pfet$239 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$253 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell nfet$243 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$273 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pfet$258 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$240 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$266 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$233 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$259 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$256 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$271 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$264 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$249 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$231 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$257 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$254 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$262 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell pfet$247 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$230 in circuit top_level_20250919_sc (0)(36 instances)
+Flattening unmatched subcell nfet$255 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$248 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$252 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$260 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$245 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$238 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$253 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$246 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell pfet$250 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$276 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$243 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$251 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$236 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$229 in circuit top_level_20250919_sc (0)(36 instances)
+Flattening unmatched subcell pfet$259 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$274 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$241 in circuit top_level_20250919_sc (0)(5 instances)
+Flattening unmatched subcell nfet$267 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$234 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$272 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$257 in circuit top_level_20250919_sc (0)(5 instances)
+Flattening unmatched subcell nfet$265 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$258 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$270 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$255 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$263 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$248 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$256 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pfet$246 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$277 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$244 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$252 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$237 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$275 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell asc_drive_buffer$3 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$295 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$293 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$314 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$312 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$296 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$294 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$313 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$311 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell asc_hysteresis_buffer$3 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$270 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$287 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$285 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$268 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$266 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$288 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$286 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$284 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$269 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$267 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell xp_3_1_MUX$2 in circuit top_level_20250919_sc (0)(6 instances)
+Flattening unmatched subcell pfet$286 in circuit top_level_20250919_sc (0)(24 instances)
+Flattening unmatched subcell nfet$305 in circuit top_level_20250919_sc (0)(12 instances)
+Flattening unmatched subcell pfet$287 in circuit top_level_20250919_sc (0)(12 instances)
+Flattening unmatched subcell nfet$304 in circuit top_level_20250919_sc (0)(24 instances)
+Flattening unmatched subcell xp_programmable_basic_pump$1 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$279 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell pfet$265 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$280 in circuit top_level_20250919_sc (0)(16 instances)
+Flattening unmatched subcell pfet$262 in circuit top_level_20250919_sc (0)(24 instances)
+Flattening unmatched subcell pfet$261 in circuit top_level_20250919_sc (0)(6 instances)
+Flattening unmatched subcell nfet$278 in circuit top_level_20250919_sc (0)(16 instances)
+Flattening unmatched subcell pfet$260 in circuit top_level_20250919_sc (0)(26 instances)
+Flattening unmatched subcell nfet$283 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pass1u05u$2 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$263 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$281 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell inv1u05u$2 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pfet$264 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$282 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell asc_dual_psd_def_20250809$2 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$242 in circuit top_level_20250919_sc (0)(83 instances)
+Flattening unmatched subcell nfet$245 in circuit top_level_20250919_sc (0)(83 instances)
+Flattening unmatched subcell pfet$251 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$228 in circuit top_level_20250919_sc (0)(111 instances)
+Flattening unmatched subcell nfet$247 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$250 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell pfet$242 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$235 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell nfet$244 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$269 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell pfet$232 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell pfet$227 in circuit top_level_20250919_sc (0)(111 instances)
+Flattening unmatched subcell nfet$249 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell nfet$268 in circuit top_level_20250919_sc (0)(10 instances)
+Flattening unmatched subcell nfet$241 in circuit top_level_20250919_sc (0)(28 instances)
+Flattening unmatched subcell nfet$254 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$261 in circuit top_level_20250919_sc (0)(28 instances)
+Flattening unmatched subcell pfet$239 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$253 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell nfet$243 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$273 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pfet$258 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$240 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$266 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$233 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$259 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$256 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$271 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$264 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$249 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$231 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell nfet$257 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$254 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$262 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell pfet$247 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$230 in circuit top_level_20250919_sc (0)(36 instances)
+Flattening unmatched subcell nfet$255 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$248 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$252 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$260 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$245 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$238 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$253 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$246 in circuit top_level_20250919_sc (0)(18 instances)
+Flattening unmatched subcell pfet$250 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$276 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$243 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$251 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$236 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$229 in circuit top_level_20250919_sc (0)(36 instances)
+Flattening unmatched subcell pfet$259 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$274 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$241 in circuit top_level_20250919_sc (0)(5 instances)
+Flattening unmatched subcell nfet$267 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$234 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$272 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$257 in circuit top_level_20250919_sc (0)(5 instances)
+Flattening unmatched subcell nfet$265 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$258 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$270 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$255 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$263 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$248 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$256 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pfet$246 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$277 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$244 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$252 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$237 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$275 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell asc_PFD_DFF_20250831$1 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$297 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$325 in circuit top_level_20250919_sc (0)(26 instances)
+Flattening unmatched subcell pfet$306 in circuit top_level_20250919_sc (0)(42 instances)
+Flattening unmatched subcell pfet$308 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$323 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$316 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$321 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$304 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$302 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$328 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pfet$300 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$298 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$326 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$319 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$324 in circuit top_level_20250919_sc (0)(16 instances)
+Flattening unmatched subcell pfet$309 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$317 in circuit top_level_20250919_sc (0)(10 instances)
+Flattening unmatched subcell pfet$307 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$322 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$315 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$320 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$305 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell pfet$303 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$301 in circuit top_level_20250919_sc (0)(4 instances)
+Flattening unmatched subcell nfet$327 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$299 in circuit top_level_20250919_sc (0)(10 instances)
+Flattening unmatched subcell nfet$318 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell asc_drive_buffer$2 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell pfet$295 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell pfet$293 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell nfet$314 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell nfet$312 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell pfet$296 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell pfet$294 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell nfet$313 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell nfet$311 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell asc_drive_buffer_up$1 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$288 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$309 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$307 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$291 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$310 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$289 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$308 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$292 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$306 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$290 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell BIAS$1 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$310 in circuit top_level_20250919_sc (0)(16 instances)
+Flattening unmatched subcell nfet$329 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell asc_lock_detector_20250826$1 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$300 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$291 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$276 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$298 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell pfet$274 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$272 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$296 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$289 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$294 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$279 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$284 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$292 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$277 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$282 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell pfet$275 in circuit top_level_20250919_sc (0)(14 instances)
+Flattening unmatched subcell nfet$290 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$303 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$280 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$273 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$301 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$299 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$271 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$297 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell nfet$295 in circuit top_level_20250919_sc (0)(8 instances)
+Flattening unmatched subcell pfet$285 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$293 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$278 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell pfet$283 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$281 in circuit top_level_20250919_sc (0)(3 instances)
+Flattening unmatched subcell nfet$302 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell CSRVCO_20250823$1 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$311 in circuit top_level_20250919_sc (0)(15 instances)
+Flattening unmatched subcell nfet$330 in circuit top_level_20250919_sc (0)(15 instances)
+Flattening unmatched subcell pfet$313 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$331 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell cap_mim$5 in circuit top_level_20250919_sc (0)(7 instances)
+Flattening unmatched subcell pfet$312 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell nfet$332 in circuit top_level_20250919_sc (0)(2 instances)
+Flattening unmatched subcell asc_hysteresis_buffer$6 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$345 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$343 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$367 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$365 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$346 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$344 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$368 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$366 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell nfet$364 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell pfet$347 in circuit top_level_20250919_sc (0)(1 instance)
+Flattening unmatched subcell top_level_20250919_nosc in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell xp_3_1_MUX in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell pass1u05u in circuit top_level_20250919_sc (1)(32 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(16 instances)
+Flattening unmatched subcell asc_drive_buffer in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell asc_drive_buffer_up in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell xp_programmable_basic_pump in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell pass1u05u in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell asc_dual_psd_def_20250809 in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_OR in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_NOR in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_swallow_counter_20250809 in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_SR_latch in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_NOR in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell asc_9_bit_counter_20250809 in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell asc_XNOR in circuit top_level_20250919_sc (1)(36 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(108 instances)
+Flattening unmatched subcell asc_dff_rst in circuit top_level_20250919_sc (1)(36 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(252 instances)
+Flattening unmatched subcell pass1u05u in circuit top_level_20250919_sc (1)(144 instances)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(72 instances)
+Flattening unmatched subcell asc_AND_9_20250809 in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell asc_AND in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(24 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell asc_NOR in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell asc_dual_mod_pre_2_3_20250809 in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_OR in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_NOR in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_AND in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_dff_rst in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(28 instances)
+Flattening unmatched subcell pass1u05u in circuit top_level_20250919_sc (1)(16 instances)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell CSRVCO_20250823 in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell asc_delay in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_lock_detector_20250826 in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell asc_AND in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell asc_dff_rst in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(14 instances)
+Flattening unmatched subcell pass1u05u in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell asc_delay_LD in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_drive_buffer in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell asc_pulse_ex in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell asc_drive_buffer in circuit top_level_20250919_sc (1)(3 instances)
+Flattening unmatched subcell asc_OR in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell asc_NOR in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(1 instance)
+Flattening unmatched subcell asc_hysteresis_buffer in circuit top_level_20250919_sc (1)(3 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(3 instances)
+Flattening unmatched subcell asc_PFD_DFF_20250831 in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_delay in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(2 instances)
+Flattening unmatched subcell asc_dff_rst_20250831 in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(20 instances)
+Flattening unmatched subcell pass1u05u in circuit top_level_20250919_sc (1)(16 instances)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell qw_NOLclk in circuit top_level_20250919_sc (1)(4 instances)
+Flattening unmatched subcell SmallW_Linv in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell SmallW_Linv_2 in circuit top_level_20250919_sc (1)(16 instances)
+Flattening unmatched subcell inv1u05u in circuit top_level_20250919_sc (1)(16 instances)
+Flattening unmatched subcell asc_NAND in circuit top_level_20250919_sc (1)(8 instances)
+Flattening unmatched subcell BIAS in circuit top_level_20250919_sc (1)(1 instance)
+
+Class top_level_20250919_sc (0):  Merged 1417 parallel devices.
+Class top_level_20250919_sc (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: top_level_20250919_sc           |Circuit 2: top_level_20250919_sc           
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1971->1296)                     |pfet_03v3 (1355->1296)                     
+nfet_03v3 (2039->1297)                     |nfet_03v3 (1337->1297)                     
+cap_mim_2f0_m4m5_noshield (7)              |cap_mim_2f0fF (7)                          
+VCOfinal (1)                               |VCOfinal (1)                               
+scan_chain (1)                             |scan_chain (1)                             
+Number of devices: 2602                    |Number of devices: 2602                    
+Number of nets: 1300                       |Number of nets: 1300                       
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: top_level_20250919_sc           |Circuit 2: top_level_20250919_sc           
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+en                                         |en                                         
+data                                       |data                                       
+VDDd                                       |VDDd                                       
+VSSd                                       |VSSd                                       
+filter_in                                  |filter_in                                  
+ext_pfd_up                                 |ext_pfd_up                                 
+ext_pfd_down                               |ext_pfd_down                               
+ext_pfd_ref                                |ext_pfd_ref                                
+ext_pfd_div                                |ext_pfd_div                                
+lock                                       |lock                                       
+up                                         |up                                         
+down                                       |down                                       
+div_in                                     |div_in                                     
+out                                        |out                                        
+div_out                                    |div_out                                    
+div_def                                    |div_def                                    
+ref                                        |ref                                        
+ext_vco_in                                 |ext_vco_in                                 
+ext_vco_out                                |ext_vco_out                                
+filter_out                                 |filter_out                                 
+i_cp_100u                                  |i_cp_100u                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes top_level_20250919_sc and top_level_20250919_sc are equivalent.
+Flattening unmatched subcell ppolyf_u_resistor$6 in circuit top_level_20250919_final (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: top_level_20250919_final        |Circuit 2: top_level_20250919_final        
+-------------------------------------------|-------------------------------------------
+ppolyf_u (1)                               |ppolyf_u (1)                               
+DECAP_LARGE (1)                            |DECAP_LARGE (1)                            
+io_secondary_3p3 (6)                       |io_secondary_3p3 (6)                       
+top_level_20250919_sc (1)                  |top_level_20250919_sc (1)                  
+Number of devices: 9                       |Number of devices: 9                       
+Number of nets: 28                         |Number of nets: 28                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: top_level_20250919_final        |Circuit 2: top_level_20250919_final        
+-------------------------------------------|-------------------------------------------
+ext_pfd_ref                                |ext_pfd_ref                                
+ext_pfd_div                                |ext_pfd_div                                
+ext_pfd_up                                 |ext_pfd_up                                 
+ext_pfd_down                               |ext_pfd_down                               
+lock                                       |lock                                       
+up                                         |up                                         
+down                                       |down                                       
+filter_out                                 |filter_out                                 
+ext_vco_in                                 |ext_vco_in                                 
+div_in                                     |div_in                                     
+div_out                                    |div_out                                    
+out                                        |out                                        
+filter_in                                  |filter_in                                  
+ext_vco_out                                |ext_vco_out                                
+en                                         |en                                         
+i_cp_100u                                  |i_cp_100u                                  
+data                                       |data                                       
+ref                                        |ref                                        
+clk                                        |clk                                        
+div_def                                    |div_def                                    
+VDDd                                       |VDDd                                       
+VSSd                                       |VSSd                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes top_level_20250919_final and top_level_20250919_final are equivalent.
+
+Final result: Circuits match uniquely.
+.

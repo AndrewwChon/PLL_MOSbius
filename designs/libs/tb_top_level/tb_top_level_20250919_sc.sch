@@ -141,6 +141,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 "}
 C {lab_wire.sym} 920 -880 0 0 {name=p13 sig_type=std_logic lab=vssa}
 C {lab_wire.sym} 920 -860 0 0 {name=p10 sig_type=std_logic lab=vssa}
