@@ -28,7 +28,7 @@ X14 a_1364_532# a_1020_652# VSS VPW nfet_05v0 ad=0.3476p pd=2.46u as=0.2054p ps=
 X15 a_1224_652# a_504_110# a_1020_652# VNW pfet_05v0 ad=0.426p pd=2.08u as=0.26p ps=1.52u w=1u l=0.5u
 .ends
 
-.subckt DFF_2phase_1 D Q PHI_1 PHI_2 VSSd VDDd
+.subckt DFF_2phase_1 Q PHI_1 D PHI_2 VSSd VDDd
 Xgf180mcu_fd_sc_mcu9t5v0__latq_1$1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1$1_1/Q PHI_2 Q
 + VDDd VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1$1
 Xgf180mcu_fd_sc_mcu9t5v0__latq_1$1_1 D PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1$1_1/Q
@@ -52,7 +52,7 @@ X5 a_67_756# A1 VSS VPW nfet_05v0 ad=0.1716p pd=1.18u as=0.2904p ps=2.2u w=0.66u
 .subckt Register_unitcell out d en default phi2 phi1 q VDDd VSSd
 Xgf180mcu_fd_sc_mcu9t5v0__and2_1_1 q en VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__or2_1_0/A2
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__and2_1
-XDFF_2phase_1_0 d q phi1 phi2 VSSd VDDd DFF_2phase_1
+XDFF_2phase_1_0 q phi1 d phi2 VSSd VDDd DFF_2phase_1
 Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 en VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
 Xgf180mcu_fd_sc_mcu9t5v0__or2_1_0 gf180mcu_fd_sc_mcu9t5v0__or2_1_0/A1 gf180mcu_fd_sc_mcu9t5v0__or2_1_0/A2

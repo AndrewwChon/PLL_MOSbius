@@ -55,10 +55,10 @@ Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
-Flattening unmatched subcell pfet$6 in circuit OTAforChargePump (0)(6 instances)
-Flattening unmatched subcell nfet$13 in circuit OTAforChargePump (0)(2 instances)
-Flattening unmatched subcell pfet$5 in circuit OTAforChargePump (0)(12 instances)
-Flattening unmatched subcell nfet$12 in circuit OTAforChargePump (0)(4 instances)
+Flattening unmatched subcell pfet in circuit OTAforChargePump (0)(12 instances)
+Flattening unmatched subcell nfet$1 in circuit OTAforChargePump (0)(2 instances)
+Flattening unmatched subcell nfet in circuit OTAforChargePump (0)(4 instances)
+Flattening unmatched subcell pfet$1 in circuit OTAforChargePump (0)(6 instances)
 
 Class OTAforChargePump (0):  Merged 67 parallel devices.
 Subcircuit summary:
@@ -74,26 +74,26 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: OTAforChargePump                |Circuit 2: OTAforChargePump                
 -------------------------------------------|-------------------------------------------
+vss                                        |vss                                        
+iref                                       |iref                                       
 out                                        |out                                        
+vdd                                        |vdd                                        
 inp                                        |inp                                        
 inn                                        |inn                                        
-iref                                       |iref                                       
-vss                                        |vss                                        
-vdd                                        |vdd                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes OTAforChargePump and OTAforChargePump are equivalent.
 Flattening unmatched subcell nfet$10 in circuit PCP1248X (0)(12 instances)
-Flattening unmatched subcell pfet in circuit PCP1248X (0)(36 instances)
-Flattening unmatched subcell pfet$1 in circuit PCP1248X (0)(12 instances)
 Flattening unmatched subcell nfet$15 in circuit PCP1248X (0)(1 instance)
 Flattening unmatched subcell nfet$9 in circuit PCP1248X (0)(37 instances)
 Flattening unmatched subcell pfet$4 in circuit PCP1248X (0)(6 instances)
+Flattening unmatched subcell nfet$11 in circuit PCP1248X (0)(4 instances)
+Flattening unmatched subcell pfet$5 in circuit PCP1248X (0)(36 instances)
 Flattening unmatched subcell pfet$10 in circuit PCP1248X (0)(12 instances)
 Flattening unmatched subcell nfet$16 in circuit PCP1248X (0)(12 instances)
+Flattening unmatched subcell pfet$1$1 in circuit PCP1248X (0)(12 instances)
 Flattening unmatched subcell pfet$9 in circuit PCP1248X (0)(4 instances)
 Flattening unmatched subcell ppolyf_u_resistor in circuit PCP1248X (0)(6 instances)
-Flattening unmatched subcell nfet in circuit PCP1248X (0)(4 instances)
 Flattening unmatched subcell nfet$8 in circuit PCP1248X (0)(3 instances)
 Flattening unmatched subcell cap_mim$1 in circuit PCP1248X (0)(3 instances)
 Flattening unmatched subcell nfet$6 in circuit PCP1248X (0)(4 instances)
@@ -126,12 +126,12 @@ s0                                         |s0
 s1                                         |s1                                         
 s2                                         |s2                                         
 s3                                         |s3                                         
+vdd                                        |vdd                                        
+out                                        |out                                        
 down                                       |down                                       
 up                                         |up                                         
 iref200u                                   |iref200u                                   
 vin                                        |vin                                        
-vdd                                        |vdd                                        
-out                                        |out                                        
 vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
