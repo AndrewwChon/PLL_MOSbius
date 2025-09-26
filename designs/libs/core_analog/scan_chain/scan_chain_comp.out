@@ -29,21 +29,6 @@ Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0
 Cell pin lists are equivalent.
 Device classes pfet_05v0 and pfet_05v0 are equivalent.
 
-Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
-Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes pfet_03v3 and pfet_03v3 are equivalent.
-
 Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
 Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
@@ -58,6 +43,21 @@ Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
 Flattening unmatched subcell DFF_2phase_1$1 in circuit Register_unitcell (0)(1 instance)
 Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__latq_1$2 in circuit Register_unitcell (0)(2 instances)
 Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__inv_1$1 in circuit Register_unitcell (0)(1 instance)
@@ -94,14 +94,14 @@ default                                    |default
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes Register_unitcell and Register_unitcell are equivalent.
-Flattening unmatched subcell pfet$8 in circuit qw_NOLclk (0)(4 instances)
-Flattening unmatched subcell nfet$9 in circuit qw_NOLclk (0)(4 instances)
-Flattening unmatched subcell nfet$7 in circuit qw_NOLclk (0)(2 instances)
-Flattening unmatched subcell pfet$10 in circuit qw_NOLclk (0)(4 instances)
-Flattening unmatched subcell pfet$9 in circuit qw_NOLclk (0)(4 instances)
-Flattening unmatched subcell pfet$7 in circuit qw_NOLclk (0)(2 instances)
-Flattening unmatched subcell nfet$8 in circuit qw_NOLclk (0)(4 instances)
-Flattening unmatched subcell nfet$10 in circuit qw_NOLclk (0)(4 instances)
+Flattening unmatched subcell nfet$2 in circuit qw_NOLclk (0)(4 instances)
+Flattening unmatched subcell pfet in circuit qw_NOLclk (0)(2 instances)
+Flattening unmatched subcell pfet$2 in circuit qw_NOLclk (0)(4 instances)
+Flattening unmatched subcell nfet$3 in circuit qw_NOLclk (0)(4 instances)
+Flattening unmatched subcell nfet$1 in circuit qw_NOLclk (0)(4 instances)
+Flattening unmatched subcell nfet in circuit qw_NOLclk (0)(2 instances)
+Flattening unmatched subcell pfet$3 in circuit qw_NOLclk (0)(4 instances)
+Flattening unmatched subcell pfet$1 in circuit qw_NOLclk (0)(4 instances)
 Flattening unmatched subcell SmallW_Linv in circuit qw_NOLclk (1)(2 instances)
 Flattening unmatched subcell SmallW_Linv_2 in circuit qw_NOLclk (1)(4 instances)
 Flattening unmatched subcell inv1u05u in circuit qw_NOLclk (1)(4 instances)
@@ -111,8 +111,8 @@ Class qw_NOLclk (0):  Merged 4 parallel devices.
 Subcircuit summary:
 Circuit 1: qw_NOLclk                       |Circuit 2: qw_NOLclk                       
 -------------------------------------------|-------------------------------------------
-pfet_03v3 (14)                             |pfet_03v3 (14)                             
 nfet_03v3 (18->14)                         |nfet_03v3 (14)                             
+pfet_03v3 (14)                             |pfet_03v3 (14)                             
 Number of devices: 28                      |Number of devices: 28                      
 Number of nets: 17                         |Number of nets: 17                         
 ---------------------------------------------------------------------------------------
@@ -122,23 +122,23 @@ Subcircuit pins:
 Circuit 1: qw_NOLclk                       |Circuit 2: qw_NOLclk                       
 -------------------------------------------|-------------------------------------------
 CLK                                        |CLK                                        
-VSSd                                       |VSSd                                       
 VDDd                                       |VDDd                                       
-PHI_2                                      |PHI_2                                      
 PHI_1                                      |PHI_1                                      
+PHI_2                                      |PHI_2                                      
+VSSd                                       |VSSd                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes qw_NOLclk and qw_NOLclk are equivalent.
-Flattening unmatched subcell pfet in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell pfet$4 in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell pfet$2 in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell nfet$3 in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell nfet$1 in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell nfet in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell pfet$3 in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell pfet$1 in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell nfet$4 in circuit asc_hysteresis_buffer (0)(1 instance)
-Flattening unmatched subcell nfet$2 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$8 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$6 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$9 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$7 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$10 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$9 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell pfet$7 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$8 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$6 in circuit asc_hysteresis_buffer (0)(1 instance)
+Flattening unmatched subcell nfet$10 in circuit asc_hysteresis_buffer (0)(1 instance)
 Flattening unmatched subcell inv1u05u in circuit asc_hysteresis_buffer (1)(1 instance)
 
 Class asc_hysteresis_buffer (0):  Merged 20 parallel devices.
@@ -162,10 +162,10 @@ vss                                        |vss
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes asc_hysteresis_buffer and asc_hysteresis_buffer are equivalent.
-Flattening unmatched subcell pfet$6 in circuit SCHMITT (0)(1 instance)
-Flattening unmatched subcell nfet$5 in circuit SCHMITT (0)(2 instances)
-Flattening unmatched subcell pfet$5 in circuit SCHMITT (0)(2 instances)
-Flattening unmatched subcell nfet$6 in circuit SCHMITT (0)(1 instance)
+Flattening unmatched subcell pfet$4 in circuit SCHMITT (0)(2 instances)
+Flattening unmatched subcell nfet$5 in circuit SCHMITT (0)(1 instance)
+Flattening unmatched subcell pfet$5 in circuit SCHMITT (0)(1 instance)
+Flattening unmatched subcell nfet$4 in circuit SCHMITT (0)(2 instances)
 
 Subcircuit summary:
 Circuit 1: SCHMITT                         |Circuit 2: SCHMITT                         

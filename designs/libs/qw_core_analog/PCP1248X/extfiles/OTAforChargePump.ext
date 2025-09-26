@@ -1,39 +1,39 @@
-timestamp 1586843335
+timestamp 1587449274
 version 8.3
 tech gf180mcuD
 style ngspice()
 scale 1000 1 0.5
 resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
-use pfet$5 pfet$5_0 1 0 2192 0 -1 -473
-use pfet$6 pfet$6_0 1 0 2896 0 -1 -473
-use nfet$13 nfet$13_0 1 0 2236 0 -1 -1968
-use nfet$12 nfet$12_0 1 0 1860 0 -1 -1968
-use nfet$12 nfet$12_1 1 0 732 0 -1 -1968
-use pfet$5 pfet$5_1 1 0 80 0 -1 -473
-use nfet$13 nfet$13_1 1 0 36 0 -1 -1968
-use pfet$6 pfet$6_1 1 0 -304 0 -1 -473
-use pfet$5 pfet$5_2 1 0 80 0 1 1252
-use pfet$6 pfet$6_2 1 0 -304 0 1 1252
-use pfet$5 pfet$5_3 1 0 80 0 -1 880
-use pfet$6 pfet$6_3 1 0 -304 0 -1 880
-use pfet$5 pfet$5_4 1 0 2192 0 -1 880
-use pfet$5 pfet$5_5 1 0 2192 0 1 1252
-use pfet$6 pfet$6_4 1 0 2896 0 -1 880
-use pfet$6 pfet$6_5 1 0 2896 0 1 1252
-use pfet$5 pfet$5_6 1 0 1488 0 -1 880
-use pfet$5 pfet$5_7 1 0 1488 0 1 1252
-use pfet$5 pfet$5_8 1 0 1488 0 -1 -473
-use pfet$5 pfet$5_9 1 0 784 0 -1 -473
-use nfet$12 nfet$12_2 1 0 1484 0 -1 -1968
-use nfet$12 nfet$12_3 1 0 1108 0 -1 -1968
-use pfet$5 pfet$5_10 1 0 784 0 -1 880
-use pfet$5 pfet$5_11 1 0 784 0 1 1252
+use pfet pfet_0 1 0 2192 0 -1 -473
+use pfet$1 pfet$1_0 1 0 2896 0 -1 -473
+use nfet$1 nfet$1_0 1 0 2236 0 -1 -1968
+use nfet nfet_0 1 0 1860 0 -1 -1968
+use nfet nfet_1 1 0 732 0 -1 -1968
+use pfet pfet_1 1 0 80 0 -1 -473
+use nfet$1 nfet$1_1 1 0 36 0 -1 -1968
+use pfet$1 pfet$1_1 1 0 -304 0 -1 -473
+use pfet pfet_2 1 0 80 0 1 1252
+use pfet$1 pfet$1_2 1 0 -304 0 1 1252
+use pfet pfet_3 1 0 80 0 -1 880
+use pfet$1 pfet$1_3 1 0 -304 0 -1 880
+use pfet pfet_4 1 0 2192 0 -1 880
+use pfet pfet_5 1 0 2192 0 1 1252
+use pfet$1 pfet$1_4 1 0 2896 0 -1 880
+use pfet$1 pfet$1_5 1 0 2896 0 1 1252
+use pfet pfet_6 1 0 1488 0 -1 880
+use pfet pfet_7 1 0 1488 0 1 1252
+use pfet pfet_8 1 0 1488 0 -1 -473
+use pfet pfet_9 1 0 784 0 -1 -473
+use nfet nfet_2 1 0 1484 0 -1 -1968
+use nfet nfet_3 1 0 1108 0 -1 -1968
+use pfet pfet_10 1 0 784 0 -1 880
+use pfet pfet_11 1 0 784 0 1 1252
 port "out" 6 3592 -1818 3592 -1818 m3
-port "inp" 5 -679 -375 -679 -375 m2
-port "inn" 4 -676 -154 -676 -154 m2
-port "iref" 3 -677 1063 -677 1063 m2
-port "vdd" 1 -189 -1434 -189 -1434 m1
-port "vss" 2 -182 -1711 -182 -1711 m1
+port "inp" 3 -679 -375 -679 -375 m2
+port "inn" 2 -676 -154 -676 -154 m2
+port "iref" 1 -677 1063 -677 1063 m2
+port "vdd" 4 -189 -1434 -189 -1434 m1
+port "vss" 5 -182 -1711 -182 -1711 m1
 node "out" 13 3969.27 3592 -1818 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 177600 5040 904000 18480 657360 6856 0 0 0 0
 node "m1_116_n1334#" 13 3845.71 116 -1334 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 334752 8520 760000 15600 297440 3584 0 0 0 0
 node "inp" 4 26.79 -679 -375 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 116000 2720 278200 5764 0 0 0 0 0 0
@@ -42,356 +42,356 @@ node "iref" 4 120.844 -677 1063 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "m1_n400_n914#" 15 1618.73 -400 -914 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 936616 17124 2052000 23880 1111000 10980 0 0 0 0
 node "vdd" 3001 49269.5 -189 -1434 m1 15437084 15750 0 0 1697992 44684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3543976 54724 2630240 16832 0 0 0 0 0 0
 substrate "vss" 0 0 -182 -1711 m1 0 0 0 0 0 0 630192 16584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1396400 22816 697840 6784 0 0 0 0 0 0
-cap "inp" "out" 21.0403
-cap "inp" "m1_n400_n914#" 1116.44
-cap "m1_116_n1334#" "out" 1903.9
-cap "m1_116_n1334#" "m1_n400_n914#" 136.305
 cap "inp" "vdd" 709.396
-cap "vdd" "m1_116_n1334#" 2187.06
-cap "inp" "m1_116_n1334#" 55.0972
-cap "inn" "out" 65.0931
-cap "inn" "iref" 8.63011
-cap "inn" "m1_n400_n914#" 794.415
-cap "inn" "vdd" 2131.09
-cap "inp" "inn" 1033.95
-cap "out" "m1_n400_n914#" 1086.92
-cap "m1_n400_n914#" "iref" 502.737
-cap "inn" "m1_116_n1334#" 0.070451
+cap "m1_116_n1334#" "m1_n400_n914#" 136.305
+cap "m1_116_n1334#" "inn" 0.070451
+cap "m1_n400_n914#" "inn" 794.415
+cap "m1_n400_n914#" "out" 1086.92
+cap "m1_116_n1334#" "out" 1903.9
+cap "out" "inn" 65.0931
+cap "m1_n400_n914#" "vdd" 10059.7
+cap "m1_116_n1334#" "vdd" 2187.06
+cap "vdd" "inn" 2131.09
 cap "vdd" "out" 1069.14
+cap "m1_n400_n914#" "iref" 502.737
+cap "iref" "inn" 8.63011
+cap "inp" "m1_n400_n914#" 1116.44
+cap "m1_116_n1334#" "inp" 55.0972
+cap "inp" "inn" 1033.95
+cap "inp" "out" 21.0403
 cap "vdd" "iref" 5230.07
-cap "vdd" "m1_n400_n914#" 10059.7
-cap "pfet$5_0/w_n180_n88#" "nfet$13_0/a_n84_0#" 11.0762
-cap "pfet$5_0/a_n92_0#" "nfet$13_0/a_n84_0#" 0.38581
-cap "pfet$5_0/w_n180_n88#" "pfet$5_0/a_n92_0#" 5.41831
-cap "nfet$12_0/a_190_n132#" "nfet$13_0/a_n84_0#" 3.07713
-cap "nfet$12_0/a_94_0#" "nfet$13_0/a_n84_0#" 13.0209
-cap "pfet$5_8/a_508_n136#" "nfet$13_0/a_n84_0#" 0.625145
-cap "pfet$5_9/a_414_0#" "nfet$13_0/a_n84_0#" 0.278724
-cap "pfet$5_8/a_414_0#" "nfet$13_0/a_n84_0#" 1.44174
-cap "pfet$5_0/w_n180_n88#" "pfet$5_9/a_414_0#" 8.88178e-16
-cap "pfet$5_0/w_n180_n88#" "pfet$5_8/a_414_0#" 5.68434e-14
-cap "pfet$5_8/a_414_0#" "pfet$6_0/a_254_0#" 0.483622
-cap "pfet$5_8/a_414_0#" "pfet$6_0/w_n180_n88#" 20.8655
-cap "pfet$6_0/a_254_0#" "pfet$6_0/w_n180_n88#" 10.6263
-cap "nfet$13_0/a_574_0#" "pfet$5_8/a_508_n136#" 0.182943
-cap "pfet$5_0/a_414_0#" "nfet$13_0/a_574_0#" 143.558
-cap "pfet$5_8/a_414_0#" "nfet$13_0/a_574_0#" 322.637
-cap "pfet$6_0/a_254_0#" "nfet$13_0/a_574_0#" 0.0446583
-cap "pfet$6_0/w_n180_n88#" "nfet$13_0/a_574_0#" 1.4732
-cap "pfet$5_8/a_414_0#" "pfet$5_8/a_508_n136#" 1.08576
-cap "pfet$5_8/a_414_0#" "pfet$5_0/a_508_n136#" 1.18432
-cap "pfet$5_8/a_414_0#" "pfet$5_0/a_414_0#" 132.544
-cap "pfet$5_0/a_414_0#" "pfet$6_0/w_n180_n88#" 5.68434e-14
-cap "nfet$13_0/a_574_0#" "pfet$5_8/a_414_0#" 41.7544
-cap "pfet$5_0/a_414_0#" "pfet$5_8/a_414_0#" 40.325
-cap "pfet$6_0/a_254_0#" "pfet$5_8/a_414_0#" 0.191258
-cap "pfet$6_0/w_n180_n88#" "nfet$13_0/a_574_0#" 12.5494
-cap "pfet$6_0/w_n180_n88#" "pfet$5_0/a_414_0#" 2.84217e-14
-cap "pfet$6_0/w_n180_n88#" "pfet$6_0/a_254_0#" 11.677
-cap "pfet$6_0/w_n180_n88#" "pfet$5_8/a_414_0#" 3.20922
-cap "pfet$5_8/a_508_n136#" "pfet$5_8/a_414_0#" 0.130034
-cap "nfet$13_0/a_574_0#" "pfet$5_0/a_414_0#" 77.671
-cap "nfet$13_0/a_574_0#" "pfet$6_0/a_254_0#" 0.430468
-cap "nfet$13_0/a_574_0#" "pfet$5_0/a_508_n136#" 0.823884
-cap "pfet$5_0/a_414_0#" "nfet$13_0/a_574_0#" 4.287
-cap "pfet$5_0/a_414_0#" "pfet$5_8/a_414_0#" 0.928001
-cap "pfet$5_3/a_414_0#" "pfet$5_8/a_414_0#" 227.188
-cap "pfet$5_8/a_508_n136#" "pfet$5_7/a_508_n136#" 1.70363
-cap "nfet$13_0/a_n84_0#" "pfet$5_3/a_414_0#" 0.372345
-cap "pfet$5_5/a_n92_0#" "pfet$5_9/a_414_0#" -14.7273
-cap "pfet$5_5/a_n92_0#" "pfet$5_8/a_508_n136#" 74.8563
-cap "pfet$5_8/a_508_n136#" "pfet$5_9/a_508_n136#" 1.08217
-cap "pfet$5_9/a_414_0#" "pfet$5_8/a_414_0#" 4.53298
-cap "pfet$5_8/a_508_n136#" "pfet$5_8/a_414_0#" 95.7201
-cap "nfet$13_0/a_n84_0#" "pfet$5_8/a_508_n136#" 1.44751
-cap "pfet$5_9/a_414_0#" "pfet$5_3/a_414_0#" 14.3396
-cap "pfet$5_8/a_508_n136#" "pfet$5_3/a_414_0#" 59.1567
-cap "pfet$5_5/a_n92_0#" "pfet$5_8/a_414_0#" -71.9298
-cap "pfet$5_9/a_414_0#" "pfet$5_8/a_508_n136#" 8.07099
-cap "pfet$5_5/a_n92_0#" "pfet$5_3/a_414_0#" -328.879
-cap "pfet$5_3/a_414_0#" "pfet$5_9/a_508_n136#" 2.13848
-cap "pfet$5_8/a_414_0#" "pfet$5_4/a_414_0#" 253.274
-cap "pfet$5_8/a_508_n136#" "pfet$5_5/a_414_0#" 2.27151
-cap "pfet$5_0/a_508_n136#" "pfet$5_5/a_414_0#" 2.27151
-cap "pfet$5_0/a_414_0#" "pfet$5_8/a_508_n136#" 17.5619
-cap "pfet$5_4/a_414_0#" "pfet$6_5/a_188_n136#" -572.59
-cap "pfet$5_8/a_414_0#" "pfet$6_5/a_188_n136#" -79.4875
-cap "pfet$5_0/a_414_0#" "pfet$5_0/a_508_n136#" 135.411
-cap "pfet$5_8/a_508_n136#" "nfet$13_0/a_574_0#" 0.808867
-cap "pfet$5_8/a_508_n136#" "pfet$5_4/a_414_0#" 52.5277
-cap "pfet$5_8/a_414_0#" "pfet$5_8/a_508_n136#" 106.515
-cap "nfet$13_0/a_574_0#" "pfet$5_0/a_508_n136#" 0.553148
-cap "pfet$5_4/a_414_0#" "pfet$5_0/a_508_n136#" 43.429
-cap "pfet$5_8/a_414_0#" "pfet$5_0/a_508_n136#" 5.58258
-cap "pfet$5_8/a_508_n136#" "pfet$6_5/a_188_n136#" 95.7824
-cap "pfet$5_0/a_508_n136#" "pfet$6_5/a_188_n136#" 118.716
-cap "pfet$5_8/a_414_0#" "pfet$5_0/a_414_0#" 5.40602
-cap "pfet$5_0/a_414_0#" "pfet$5_4/a_414_0#" 274.652
-cap "pfet$5_8/a_508_n136#" "pfet$5_0/a_508_n136#" 40.2665
-cap "pfet$5_0/a_414_0#" "pfet$6_5/a_188_n136#" -120.979
-cap "pfet$5_0/a_414_0#" "pfet$6_5/a_188_n136#" -119.478
-cap "pfet$5_0/a_414_0#" "pfet$5_0/a_508_n136#" 137.055
-cap "pfet$5_0/a_414_0#" "pfet$5_8/a_414_0#" 0.893403
-cap "pfet$5_5/a_414_0#" "pfet$5_8/a_508_n136#" 0.567877
-cap "pfet$6_5/a_188_n136#" "pfet$5_4/a_414_0#" -481.612
-cap "pfet$5_4/a_414_0#" "pfet$5_0/a_508_n136#" 68.1552
-cap "pfet$6_5/a_188_n136#" "pfet$5_8/a_508_n136#" 27.721
-cap "pfet$5_8/a_508_n136#" "pfet$5_0/a_508_n136#" 16.0259
-cap "nfet$13_0/a_574_0#" "pfet$5_0/a_508_n136#" 1.83372
-cap "pfet$5_4/a_414_0#" "pfet$5_8/a_414_0#" 47.8951
-cap "pfet$5_8/a_508_n136#" "pfet$5_8/a_414_0#" 15.7338
-cap "pfet$5_0/a_414_0#" "pfet$5_4/a_414_0#" 285.356
-cap "pfet$5_0/a_414_0#" "pfet$5_8/a_508_n136#" 4.7561
-cap "pfet$5_5/a_414_0#" "pfet$5_0/a_508_n136#" 2.27151
-cap "pfet$6_5/a_188_n136#" "pfet$5_0/a_508_n136#" 112.994
-cap "pfet$6_5/a_188_n136#" "pfet$5_8/a_414_0#" -15.6638
-cap "pfet$5_0/a_508_n136#" "pfet$5_8/a_414_0#" 2.71903
-cap "pfet$5_4/a_414_0#" "pfet$5_8/a_508_n136#" 15.617
-cap "nfet$13_0/a_574_0#" "pfet$5_4/a_414_0#" 0.372345
-cap "nfet$13_0/a_574_0#" "pfet$5_8/a_508_n136#" 0.130491
-cap "pfet$5_7/a_414_0#" "pfet$5_7/a_508_n136#" 125.953
-cap "pfet$5_7/a_508_n136#" "pfet$5_5/a_n92_0#" 283.138
-cap "pfet$5_5/a_n92_0#" "pfet$5_8/a_508_n136#" 0.0315517
-cap "pfet$5_7/a_508_n136#" "pfet$5_9/a_508_n136#" 0.547648
-cap "pfet$5_7/a_414_0#" "pfet$5_5/a_n92_0#" 134.06
-cap "pfet$5_7/a_508_n136#" "pfet$5_8/a_508_n136#" 1.75698
-cap "pfet$5_5/a_n92_0#" "pfet$5_9/a_508_n136#" 0.365099
-cap "pfet$5_5/a_414_0#" "pfet$5_0/a_508_n136#" 4.96024
-cap "pfet$6_5/a_188_n136#" "pfet$5_5/a_414_0#" 898.42
-cap "pfet$5_5/a_414_0#" "pfet$5_8/a_508_n136#" 2.34263
-cap "pfet$5_7/a_414_0#" "pfet$5_5/a_414_0#" 184.031
-cap "pfet$5_7/a_414_0#" "pfet$6_5/a_188_n136#" 338.432
-cap "pfet$5_5/a_414_0#" "pfet$6_5/a_188_n136#" 460.347
-cap "pfet$5_0/a_414_0#" "pfet$5_7/a_414_0#" 0.129696
-cap "pfet$5_7/a_414_0#" "pfet$6_5/a_188_n136#" 180.169
-cap "pfet$5_0/a_508_n136#" "pfet$5_5/a_414_0#" 4.4126
-cap "pfet$5_8/a_508_n136#" "pfet$5_5/a_414_0#" 0.585659
-cap "pfet$5_0/a_508_n136#" "pfet$5_7/a_414_0#" 0.51468
-cap "pfet$5_5/a_414_0#" "pfet$5_7/a_414_0#" 165.974
-cap "pfet$5_7/a_508_n136#" "pfet$5_7/a_414_0#" 24.7988
-cap "pfet$5_5/a_n92_0#" "pfet$5_7/a_414_0#" -4.85232
-cap "pfet$5_5/a_n92_0#" "pfet$5_7/a_508_n136#" 162.712
-cap "pfet$5_5/a_414_0#" "pfet$6_5/a_188_n136#" 126.446
-cap "pfet$5_7/a_414_0#" "pfet$6_5/a_188_n136#" -43.2768
-cap "pfet$5_5/a_414_0#" "pfet$5_7/a_414_0#" 150.632
-cap "pfet$5_7/a_414_0#" "pfet$6_5/a_188_n136#" -13.2499
-cap "pfet$5_5/a_414_0#" "pfet$6_5/a_188_n136#" 207.042
-cap "pfet$5_5/a_414_0#" "pfet$5_7/a_414_0#" 53.4194
-merge "pfet$5_4/a_414_0#" "pfet$5_4/a_94_0#" -1797.85 0 0 0 0 0 0 -230000 -5920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -523336 -18332 0 0 0 0 0 0 0 0
-merge "pfet$5_4/a_94_0#" "pfet$5_7/a_414_0#"
-merge "pfet$5_7/a_414_0#" "pfet$5_7/a_94_0#"
-merge "pfet$5_7/a_94_0#" "pfet$5_11/a_414_0#"
-merge "pfet$5_11/a_414_0#" "pfet$5_11/a_94_0#"
-merge "pfet$5_11/a_94_0#" "pfet$5_3/a_414_0#"
-merge "pfet$5_3/a_414_0#" "pfet$5_3/a_94_0#"
-merge "pfet$5_3/a_94_0#" "pfet$6_0/a_254_0#"
-merge "pfet$6_0/a_254_0#" "pfet$6_0/a_94_0#"
-merge "pfet$6_0/a_94_0#" "pfet$6_0/a_n92_0#"
-merge "pfet$6_0/a_n92_0#" "pfet$6_0/a_188_n136#"
-merge "pfet$6_0/a_188_n136#" "pfet$6_0/a_28_n136#"
-merge "pfet$6_0/a_28_n136#" "pfet$5_0/a_574_0#"
-merge "pfet$5_0/a_574_0#" "pfet$5_0/a_254_0#"
-merge "pfet$5_0/a_254_0#" "pfet$6_1/a_n92_0#"
-merge "pfet$6_1/a_n92_0#" "pfet$6_1/a_28_n136#"
-merge "pfet$6_1/a_28_n136#" "pfet$5_0/a_n92_0#"
-merge "pfet$5_0/a_n92_0#" "pfet$5_8/a_574_0#"
-merge "pfet$5_8/a_574_0#" "pfet$5_8/a_254_0#"
-merge "pfet$5_8/a_254_0#" "pfet$5_8/a_n92_0#"
-merge "pfet$5_8/a_n92_0#" "pfet$5_9/a_574_0#"
-merge "pfet$5_9/a_574_0#" "pfet$5_9/a_254_0#"
-merge "pfet$5_9/a_254_0#" "pfet$5_9/a_n92_0#"
-merge "pfet$5_9/a_n92_0#" "pfet$5_1/a_574_0#"
-merge "pfet$5_1/a_574_0#" "pfet$5_1/a_254_0#"
-merge "pfet$5_1/a_254_0#" "pfet$5_1/a_n92_0#"
-merge "pfet$5_1/a_n92_0#" "pfet$6_1/a_254_0#"
-merge "pfet$6_1/a_254_0#" "pfet$6_1/a_94_0#"
-merge "pfet$6_1/a_94_0#" "pfet$6_1/a_188_n136#"
-merge "pfet$6_1/a_188_n136#" "m1_n400_n914#"
-merge "pfet$5_5/a_414_0#" "pfet$5_5/a_94_0#" -2999.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -184984 -10948 0 0 0 0 0 0 0 0
-merge "pfet$5_5/a_94_0#" "pfet$5_5/a_508_n136#"
-merge "pfet$5_5/a_508_n136#" "pfet$5_5/a_348_n136#"
-merge "pfet$5_5/a_348_n136#" "pfet$5_5/a_188_n136#"
-merge "pfet$5_5/a_188_n136#" "pfet$5_5/a_28_n136#"
-merge "pfet$5_5/a_28_n136#" "pfet$5_4/a_508_n136#"
-merge "pfet$5_4/a_508_n136#" "pfet$5_4/a_348_n136#"
-merge "pfet$5_4/a_348_n136#" "pfet$5_4/a_188_n136#"
-merge "pfet$5_4/a_188_n136#" "pfet$5_4/a_28_n136#"
-merge "pfet$5_4/a_28_n136#" "pfet$5_7/a_508_n136#"
-merge "pfet$5_7/a_508_n136#" "pfet$5_7/a_348_n136#"
-merge "pfet$5_7/a_348_n136#" "pfet$5_7/a_188_n136#"
-merge "pfet$5_7/a_188_n136#" "pfet$5_7/a_28_n136#"
-merge "pfet$5_7/a_28_n136#" "pfet$5_11/a_508_n136#"
-merge "pfet$5_11/a_508_n136#" "pfet$5_11/a_348_n136#"
-merge "pfet$5_11/a_348_n136#" "pfet$5_11/a_188_n136#"
-merge "pfet$5_11/a_188_n136#" "pfet$5_11/a_28_n136#"
-merge "pfet$5_11/a_28_n136#" "pfet$5_2/a_414_0#"
-merge "pfet$5_2/a_414_0#" "pfet$5_2/a_94_0#"
-merge "pfet$5_2/a_94_0#" "pfet$5_2/a_508_n136#"
-merge "pfet$5_2/a_508_n136#" "pfet$5_2/a_348_n136#"
-merge "pfet$5_2/a_348_n136#" "pfet$5_2/a_188_n136#"
-merge "pfet$5_2/a_188_n136#" "pfet$5_2/a_28_n136#"
-merge "pfet$5_2/a_28_n136#" "pfet$5_6/a_414_0#"
-merge "pfet$5_6/a_414_0#" "pfet$5_6/a_94_0#"
-merge "pfet$5_6/a_94_0#" "pfet$5_6/a_508_n136#"
-merge "pfet$5_6/a_508_n136#" "pfet$5_6/a_348_n136#"
-merge "pfet$5_6/a_348_n136#" "pfet$5_6/a_188_n136#"
-merge "pfet$5_6/a_188_n136#" "pfet$5_6/a_28_n136#"
-merge "pfet$5_6/a_28_n136#" "pfet$5_10/a_414_0#"
-merge "pfet$5_10/a_414_0#" "pfet$5_10/a_94_0#"
-merge "pfet$5_10/a_94_0#" "pfet$5_10/a_508_n136#"
-merge "pfet$5_10/a_508_n136#" "pfet$5_10/a_348_n136#"
-merge "pfet$5_10/a_348_n136#" "pfet$5_10/a_188_n136#"
-merge "pfet$5_10/a_188_n136#" "pfet$5_10/a_28_n136#"
-merge "pfet$5_10/a_28_n136#" "pfet$5_3/a_508_n136#"
-merge "pfet$5_3/a_508_n136#" "pfet$5_3/a_348_n136#"
-merge "pfet$5_3/a_348_n136#" "pfet$5_3/a_188_n136#"
-merge "pfet$5_3/a_188_n136#" "pfet$5_3/a_28_n136#"
-merge "pfet$5_3/a_28_n136#" "iref"
-merge "pfet$6_5/a_188_n136#" "pfet$6_5/a_28_n136#" -35778.9 -10529376 -55488 0 0 0 0 -460000 -11840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1033904 -34232 0 0 0 0 0 0 0 0
-merge "pfet$6_5/a_28_n136#" "pfet$6_5/a_254_0#"
-merge "pfet$6_5/a_254_0#" "pfet$6_5/a_94_0#"
-merge "pfet$6_5/a_94_0#" "pfet$6_5/a_n92_0#"
-merge "pfet$6_5/a_n92_0#" "pfet$6_5/w_n180_n88#"
-merge "pfet$6_5/w_n180_n88#" "pfet$5_5/a_574_0#"
-merge "pfet$5_5/a_574_0#" "pfet$5_5/a_254_0#"
-merge "pfet$5_5/a_254_0#" "pfet$6_4/a_254_0#"
-merge "pfet$6_4/a_254_0#" "pfet$6_4/a_94_0#"
-merge "pfet$6_4/a_94_0#" "pfet$6_4/a_n92_0#"
-merge "pfet$6_4/a_n92_0#" "pfet$6_4/a_188_n136#"
-merge "pfet$6_4/a_188_n136#" "pfet$6_4/a_28_n136#"
-merge "pfet$6_4/a_28_n136#" "pfet$5_4/a_574_0#"
-merge "pfet$5_4/a_574_0#" "pfet$5_4/a_254_0#"
-merge "pfet$5_4/a_254_0#" "pfet$5_5/a_n92_0#"
-merge "pfet$5_5/a_n92_0#" "pfet$5_5/w_n180_n88#"
-merge "pfet$5_5/w_n180_n88#" "pfet$5_7/a_574_0#"
-merge "pfet$5_7/a_574_0#" "pfet$5_7/a_254_0#"
-merge "pfet$5_7/a_254_0#" "pfet$5_7/a_n92_0#"
-merge "pfet$5_7/a_n92_0#" "pfet$5_7/w_n180_n88#"
-merge "pfet$5_7/w_n180_n88#" "pfet$5_11/a_574_0#"
-merge "pfet$5_11/a_574_0#" "pfet$5_11/a_254_0#"
-merge "pfet$5_11/a_254_0#" "pfet$5_11/a_n92_0#"
-merge "pfet$5_11/a_n92_0#" "pfet$5_11/w_n180_n88#"
-merge "pfet$5_11/w_n180_n88#" "pfet$5_2/a_574_0#"
-merge "pfet$5_2/a_574_0#" "pfet$5_2/a_254_0#"
-merge "pfet$5_2/a_254_0#" "pfet$5_2/a_n92_0#"
-merge "pfet$5_2/a_n92_0#" "pfet$5_2/w_n180_n88#"
-merge "pfet$5_2/w_n180_n88#" "pfet$6_2/a_188_n136#"
-merge "pfet$6_2/a_188_n136#" "pfet$6_2/a_28_n136#"
-merge "pfet$6_2/a_28_n136#" "pfet$6_2/a_254_0#"
-merge "pfet$6_2/a_254_0#" "pfet$6_2/a_94_0#"
-merge "pfet$6_2/a_94_0#" "pfet$6_2/a_n92_0#"
-merge "pfet$6_2/a_n92_0#" "pfet$6_2/w_n180_n88#"
-merge "pfet$6_2/w_n180_n88#" "pfet$5_4/a_n92_0#"
-merge "pfet$5_4/a_n92_0#" "pfet$5_6/a_574_0#"
-merge "pfet$5_6/a_574_0#" "pfet$5_6/a_254_0#"
-merge "pfet$5_6/a_254_0#" "pfet$5_6/a_n92_0#"
-merge "pfet$5_6/a_n92_0#" "pfet$5_10/a_574_0#"
-merge "pfet$5_10/a_574_0#" "pfet$5_10/a_254_0#"
-merge "pfet$5_10/a_254_0#" "pfet$5_10/a_n92_0#"
-merge "pfet$5_10/a_n92_0#" "pfet$5_3/a_574_0#"
-merge "pfet$5_3/a_574_0#" "pfet$5_3/a_254_0#"
-merge "pfet$5_3/a_254_0#" "pfet$5_3/a_n92_0#"
-merge "pfet$5_3/a_n92_0#" "pfet$6_3/a_254_0#"
-merge "pfet$6_3/a_254_0#" "pfet$6_3/a_94_0#"
-merge "pfet$6_3/a_94_0#" "pfet$6_3/a_n92_0#"
-merge "pfet$6_3/a_n92_0#" "pfet$6_3/a_188_n136#"
-merge "pfet$6_3/a_188_n136#" "pfet$6_3/a_28_n136#"
-merge "pfet$6_3/a_28_n136#" "pfet$6_4/w_n180_n88#"
-merge "pfet$6_4/w_n180_n88#" "pfet$6_0/w_n180_n88#"
-merge "pfet$6_0/w_n180_n88#" "pfet$5_4/w_n180_n88#"
-merge "pfet$5_4/w_n180_n88#" "pfet$5_6/w_n180_n88#"
-merge "pfet$5_6/w_n180_n88#" "pfet$5_10/w_n180_n88#"
-merge "pfet$5_10/w_n180_n88#" "pfet$5_3/w_n180_n88#"
-merge "pfet$5_3/w_n180_n88#" "pfet$6_3/w_n180_n88#"
-merge "pfet$6_3/w_n180_n88#" "pfet$5_0/w_n180_n88#"
-merge "pfet$5_0/w_n180_n88#" "pfet$5_8/w_n180_n88#"
-merge "pfet$5_8/w_n180_n88#" "pfet$5_9/w_n180_n88#"
-merge "pfet$5_9/w_n180_n88#" "pfet$5_1/w_n180_n88#"
-merge "pfet$5_1/w_n180_n88#" "pfet$6_1/w_n180_n88#"
-merge "pfet$6_1/w_n180_n88#" "vdd"
-merge "pfet$6_5/VSUBS" "pfet$5_5/VSUBS" -2496.82 0 0 0 0 -168000 -4840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -406448 -14888 0 0 0 0 0 0 0 0
-merge "pfet$5_5/VSUBS" "pfet$5_7/VSUBS"
-merge "pfet$5_7/VSUBS" "pfet$5_11/VSUBS"
-merge "pfet$5_11/VSUBS" "pfet$5_2/VSUBS"
-merge "pfet$5_2/VSUBS" "pfet$6_2/VSUBS"
-merge "pfet$6_2/VSUBS" "pfet$6_4/VSUBS"
-merge "pfet$6_4/VSUBS" "pfet$6_0/VSUBS"
-merge "pfet$6_0/VSUBS" "nfet$13_0/a_574_0#"
-merge "nfet$13_0/a_574_0#" "nfet$13_0/a_414_0#"
-merge "nfet$13_0/a_414_0#" "nfet$13_0/a_254_0#"
-merge "nfet$13_0/a_254_0#" "nfet$13_0/a_94_0#"
-merge "nfet$13_0/a_94_0#" "nfet$13_0/a_510_n132#"
-merge "nfet$13_0/a_510_n132#" "nfet$13_0/a_350_n132#"
-merge "nfet$13_0/a_350_n132#" "nfet$13_0/a_190_n132#"
-merge "nfet$13_0/a_190_n132#" "nfet$13_0/a_30_n132#"
-merge "nfet$13_0/a_30_n132#" "pfet$5_4/VSUBS"
-merge "pfet$5_4/VSUBS" "pfet$5_6/VSUBS"
-merge "pfet$5_6/VSUBS" "pfet$5_10/VSUBS"
-merge "pfet$5_10/VSUBS" "pfet$5_3/VSUBS"
-merge "pfet$5_3/VSUBS" "pfet$6_3/VSUBS"
-merge "pfet$6_3/VSUBS" "pfet$5_0/VSUBS"
-merge "pfet$5_0/VSUBS" "pfet$5_8/VSUBS"
-merge "pfet$5_8/VSUBS" "pfet$5_9/VSUBS"
-merge "pfet$5_9/VSUBS" "pfet$5_1/VSUBS"
-merge "pfet$5_1/VSUBS" "pfet$6_1/VSUBS"
-merge "pfet$6_1/VSUBS" "nfet$13_0/VSUBS"
-merge "nfet$13_0/VSUBS" "nfet$13_0/a_n84_0#"
-merge "nfet$13_0/a_n84_0#" "nfet$12_0/VSUBS"
-merge "nfet$12_0/VSUBS" "nfet$12_0/a_254_0#"
-merge "nfet$12_0/a_254_0#" "nfet$12_0/a_n84_0#"
-merge "nfet$12_0/a_n84_0#" "nfet$12_1/VSUBS"
-merge "nfet$12_1/VSUBS" "nfet$12_1/a_254_0#"
-merge "nfet$12_1/a_254_0#" "nfet$12_1/a_n84_0#"
-merge "nfet$12_1/a_n84_0#" "nfet$12_2/VSUBS"
-merge "nfet$12_2/VSUBS" "nfet$12_2/a_254_0#"
-merge "nfet$12_2/a_254_0#" "nfet$12_2/a_n84_0#"
-merge "nfet$12_2/a_n84_0#" "nfet$12_3/VSUBS"
-merge "nfet$12_3/VSUBS" "nfet$12_3/a_254_0#"
-merge "nfet$12_3/a_254_0#" "nfet$12_3/a_n84_0#"
-merge "nfet$12_3/a_n84_0#" "nfet$13_1/VSUBS"
-merge "nfet$13_1/VSUBS" "nfet$13_1/a_574_0#"
-merge "nfet$13_1/a_574_0#" "nfet$13_1/a_414_0#"
-merge "nfet$13_1/a_414_0#" "nfet$13_1/a_254_0#"
-merge "nfet$13_1/a_254_0#" "nfet$13_1/a_94_0#"
-merge "nfet$13_1/a_94_0#" "nfet$13_1/a_n84_0#"
-merge "nfet$13_1/a_n84_0#" "nfet$13_1/a_510_n132#"
-merge "nfet$13_1/a_510_n132#" "nfet$13_1/a_350_n132#"
-merge "nfet$13_1/a_350_n132#" "nfet$13_1/a_190_n132#"
-merge "nfet$13_1/a_190_n132#" "nfet$13_1/a_30_n132#"
-merge "nfet$13_1/a_30_n132#" "vss"
-merge "pfet$5_8/a_414_0#" "pfet$5_8/a_94_0#" -824.147 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41344 -3344 0 0 0 0 0 0 0 0
-merge "pfet$5_8/a_94_0#" "pfet$5_1/a_414_0#"
-merge "pfet$5_1/a_414_0#" "pfet$5_1/a_94_0#"
-merge "pfet$5_1/a_94_0#" "nfet$12_0/a_190_n132#"
-merge "nfet$12_0/a_190_n132#" "nfet$12_0/a_30_n132#"
-merge "nfet$12_0/a_30_n132#" "nfet$12_1/a_94_0#"
-merge "nfet$12_1/a_94_0#" "nfet$12_1/a_190_n132#"
-merge "nfet$12_1/a_190_n132#" "nfet$12_1/a_30_n132#"
-merge "nfet$12_1/a_30_n132#" "nfet$12_2/a_94_0#"
-merge "nfet$12_2/a_94_0#" "nfet$12_2/a_190_n132#"
-merge "nfet$12_2/a_190_n132#" "nfet$12_2/a_30_n132#"
-merge "nfet$12_2/a_30_n132#" "nfet$12_3/a_190_n132#"
-merge "nfet$12_3/a_190_n132#" "nfet$12_3/a_30_n132#"
-merge "nfet$12_3/a_30_n132#" "m1_116_n1334#"
-merge "pfet$5_0/a_414_0#" "pfet$5_0/a_94_0#" -312.067 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -912 0 0 0 0 0 0 0 0
-merge "pfet$5_0/a_94_0#" "pfet$5_9/a_414_0#"
-merge "pfet$5_9/a_414_0#" "pfet$5_9/a_94_0#"
-merge "pfet$5_9/a_94_0#" "nfet$12_0/a_94_0#"
-merge "nfet$12_0/a_94_0#" "nfet$12_3/a_94_0#"
-merge "nfet$12_3/a_94_0#" "out"
-merge "pfet$5_8/a_508_n136#" "pfet$5_8/a_348_n136#" -703.638 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -46208 -2432 0 0 0 0 0 0 0 0
-merge "pfet$5_8/a_348_n136#" "pfet$5_8/a_188_n136#"
-merge "pfet$5_8/a_188_n136#" "pfet$5_8/a_28_n136#"
-merge "pfet$5_8/a_28_n136#" "pfet$5_1/a_508_n136#"
-merge "pfet$5_1/a_508_n136#" "pfet$5_1/a_348_n136#"
-merge "pfet$5_1/a_348_n136#" "pfet$5_1/a_188_n136#"
-merge "pfet$5_1/a_188_n136#" "pfet$5_1/a_28_n136#"
-merge "pfet$5_1/a_28_n136#" "inp"
-merge "pfet$5_0/a_508_n136#" "pfet$5_0/a_348_n136#" -706.225 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -46208 -2432 0 0 0 0 0 0 0 0
-merge "pfet$5_0/a_348_n136#" "pfet$5_0/a_188_n136#"
-merge "pfet$5_0/a_188_n136#" "pfet$5_0/a_28_n136#"
-merge "pfet$5_0/a_28_n136#" "pfet$5_9/a_508_n136#"
-merge "pfet$5_9/a_508_n136#" "pfet$5_9/a_348_n136#"
-merge "pfet$5_9/a_348_n136#" "pfet$5_9/a_188_n136#"
-merge "pfet$5_9/a_188_n136#" "pfet$5_9/a_28_n136#"
-merge "pfet$5_9/a_28_n136#" "inn"
+cap "nfet$1_0/a_n84_0#" "pfet_0/a_n92_0#" 0.38581
+cap "pfet_0/w_n180_n88#" "pfet_9/a_414_0#" 8.88178e-16
+cap "nfet$1_0/a_n84_0#" "nfet_0/a_190_n132#" 3.07713
+cap "nfet$1_0/a_n84_0#" "pfet_9/a_414_0#" 0.278724
+cap "nfet$1_0/a_n84_0#" "pfet_0/w_n180_n88#" 11.0762
+cap "nfet$1_0/a_n84_0#" "nfet_0/a_94_0#" 13.0209
+cap "pfet_0/w_n180_n88#" "pfet_8/a_414_0#" 5.68434e-14
+cap "nfet$1_0/a_n84_0#" "pfet_8/a_414_0#" 1.44174
+cap "nfet$1_0/a_n84_0#" "pfet_8/a_508_n136#" 0.625145
+cap "pfet_0/w_n180_n88#" "pfet_0/a_n92_0#" 5.41831
+cap "pfet_8/a_508_n136#" "pfet_8/a_414_0#" 1.08576
+cap "pfet_8/a_414_0#" "pfet$1_0/w_n180_n88#" 20.8655
+cap "pfet_8/a_414_0#" "pfet_0/a_508_n136#" 1.18432
+cap "nfet$1_0/a_574_0#" "pfet_8/a_414_0#" 322.637
+cap "pfet$1_0/a_254_0#" "pfet$1_0/w_n180_n88#" 10.6263
+cap "pfet_0/a_414_0#" "pfet$1_0/w_n180_n88#" 5.68434e-14
+cap "pfet$1_0/a_254_0#" "nfet$1_0/a_574_0#" 0.0446583
+cap "pfet$1_0/a_254_0#" "pfet_8/a_414_0#" 0.483622
+cap "pfet_0/a_414_0#" "pfet_8/a_414_0#" 132.544
+cap "pfet_0/a_414_0#" "nfet$1_0/a_574_0#" 143.558
+cap "nfet$1_0/a_574_0#" "pfet$1_0/w_n180_n88#" 1.4732
+cap "nfet$1_0/a_574_0#" "pfet_8/a_508_n136#" 0.182943
+cap "pfet$1_0/a_254_0#" "pfet$1_0/w_n180_n88#" 11.677
+cap "pfet_8/a_414_0#" "pfet$1_0/w_n180_n88#" 3.20922
+cap "pfet_0/a_414_0#" "nfet$1_0/a_574_0#" 77.671
+cap "pfet_8/a_414_0#" "pfet_8/a_508_n136#" 0.130034
+cap "pfet_0/a_414_0#" "pfet_8/a_414_0#" 40.325
+cap "nfet$1_0/a_574_0#" "pfet$1_0/a_254_0#" 0.430468
+cap "pfet_8/a_414_0#" "nfet$1_0/a_574_0#" 41.7544
+cap "nfet$1_0/a_574_0#" "pfet_0/a_508_n136#" 0.823884
+cap "pfet_0/a_414_0#" "pfet$1_0/w_n180_n88#" 2.84217e-14
+cap "pfet_8/a_414_0#" "pfet$1_0/a_254_0#" 0.191258
+cap "nfet$1_0/a_574_0#" "pfet$1_0/w_n180_n88#" 12.5494
+cap "pfet_8/a_414_0#" "pfet_0/a_414_0#" 0.928001
+cap "nfet$1_0/a_574_0#" "pfet_0/a_414_0#" 4.287
+cap "pfet_8/a_414_0#" "pfet_3/a_414_0#" 227.188
+cap "nfet$1_0/a_n84_0#" "pfet_3/a_414_0#" 0.372345
+cap "pfet_9/a_414_0#" "pfet_8/a_414_0#" 4.53298
+cap "pfet_3/a_414_0#" "pfet_5/a_n92_0#" -328.879
+cap "pfet_9/a_414_0#" "pfet_5/a_n92_0#" -14.7273
+cap "pfet_9/a_508_n136#" "pfet_3/a_414_0#" 2.13848
+cap "pfet_8/a_508_n136#" "pfet_8/a_414_0#" 95.7201
+cap "nfet$1_0/a_n84_0#" "pfet_8/a_508_n136#" 1.44751
+cap "pfet_8/a_508_n136#" "pfet_5/a_n92_0#" 74.8563
+cap "pfet_8/a_508_n136#" "pfet_9/a_508_n136#" 1.08217
+cap "pfet_9/a_414_0#" "pfet_3/a_414_0#" 14.3396
+cap "pfet_8/a_508_n136#" "pfet_3/a_414_0#" 59.1567
+cap "pfet_8/a_508_n136#" "pfet_9/a_414_0#" 8.07099
+cap "pfet_8/a_414_0#" "pfet_5/a_n92_0#" -71.9298
+cap "pfet_7/a_508_n136#" "pfet_8/a_508_n136#" 1.70363
+cap "pfet_0/a_414_0#" "pfet_8/a_414_0#" 5.40602
+cap "pfet_8/a_508_n136#" "pfet_0/a_508_n136#" 40.2665
+cap "pfet$1_5/a_188_n136#" "pfet_4/a_414_0#" -572.59
+cap "pfet_8/a_414_0#" "pfet_0/a_508_n136#" 5.58258
+cap "pfet_8/a_414_0#" "pfet_8/a_508_n136#" 106.515
+cap "pfet_0/a_414_0#" "pfet_4/a_414_0#" 274.652
+cap "pfet_5/a_414_0#" "pfet_0/a_508_n136#" 2.27151
+cap "pfet_5/a_414_0#" "pfet_8/a_508_n136#" 2.27151
+cap "pfet_4/a_414_0#" "pfet_0/a_508_n136#" 43.429
+cap "pfet_4/a_414_0#" "pfet_8/a_508_n136#" 52.5277
+cap "pfet_8/a_414_0#" "pfet_4/a_414_0#" 253.274
+cap "pfet_0/a_414_0#" "pfet$1_5/a_188_n136#" -120.979
+cap "pfet$1_5/a_188_n136#" "pfet_0/a_508_n136#" 118.716
+cap "pfet$1_5/a_188_n136#" "pfet_8/a_508_n136#" 95.7824
+cap "nfet$1_0/a_574_0#" "pfet_0/a_508_n136#" 0.553148
+cap "nfet$1_0/a_574_0#" "pfet_8/a_508_n136#" 0.808867
+cap "pfet_8/a_414_0#" "pfet$1_5/a_188_n136#" -79.4875
+cap "pfet_0/a_414_0#" "pfet_0/a_508_n136#" 135.411
+cap "pfet_0/a_414_0#" "pfet_8/a_508_n136#" 17.5619
+cap "pfet_0/a_414_0#" "pfet$1_5/a_188_n136#" -119.478
+cap "pfet$1_5/a_188_n136#" "pfet_8/a_414_0#" -15.6638
+cap "pfet_0/a_508_n136#" "pfet_4/a_414_0#" 68.1552
+cap "nfet$1_0/a_574_0#" "pfet_8/a_508_n136#" 0.130491
+cap "pfet_8/a_508_n136#" "pfet$1_5/a_188_n136#" 27.721
+cap "pfet_0/a_414_0#" "pfet_4/a_414_0#" 285.356
+cap "pfet_4/a_414_0#" "pfet_8/a_414_0#" 47.8951
+cap "pfet_0/a_414_0#" "pfet_0/a_508_n136#" 137.055
+cap "pfet_0/a_508_n136#" "pfet_8/a_414_0#" 2.71903
+cap "pfet_5/a_414_0#" "pfet_0/a_508_n136#" 2.27151
+cap "pfet_8/a_508_n136#" "pfet_4/a_414_0#" 15.617
+cap "pfet_0/a_414_0#" "pfet_8/a_414_0#" 0.893403
+cap "pfet_8/a_508_n136#" "pfet_0/a_508_n136#" 16.0259
+cap "pfet_0/a_414_0#" "pfet_8/a_508_n136#" 4.7561
+cap "pfet_8/a_508_n136#" "pfet_8/a_414_0#" 15.7338
+cap "pfet_5/a_414_0#" "pfet_8/a_508_n136#" 0.567877
+cap "nfet$1_0/a_574_0#" "pfet_4/a_414_0#" 0.372345
+cap "nfet$1_0/a_574_0#" "pfet_0/a_508_n136#" 1.83372
+cap "pfet_4/a_414_0#" "pfet$1_5/a_188_n136#" -481.612
+cap "pfet_0/a_508_n136#" "pfet$1_5/a_188_n136#" 112.994
+cap "pfet_7/a_508_n136#" "pfet_7/a_414_0#" 125.953
+cap "pfet_9/a_508_n136#" "pfet_7/a_508_n136#" 0.547648
+cap "pfet_7/a_414_0#" "pfet_5/a_n92_0#" 134.06
+cap "pfet_7/a_508_n136#" "pfet_5/a_n92_0#" 283.138
+cap "pfet_9/a_508_n136#" "pfet_5/a_n92_0#" 0.365099
+cap "pfet_7/a_508_n136#" "pfet_8/a_508_n136#" 1.75698
+cap "pfet_8/a_508_n136#" "pfet_5/a_n92_0#" 0.0315517
+cap "pfet_0/a_508_n136#" "pfet_5/a_414_0#" 4.96024
+cap "pfet_5/a_414_0#" "pfet_8/a_508_n136#" 2.34263
+cap "pfet$1_5/a_188_n136#" "pfet_5/a_414_0#" 898.42
+cap "pfet$1_5/a_188_n136#" "pfet_7/a_414_0#" 338.432
+cap "pfet_7/a_414_0#" "pfet_5/a_414_0#" 184.031
+cap "pfet_7/a_414_0#" "pfet_0/a_414_0#" 0.129696
+cap "pfet$1_5/a_188_n136#" "pfet_7/a_414_0#" 180.169
+cap "pfet_8/a_508_n136#" "pfet_5/a_414_0#" 0.585659
+cap "pfet_0/a_508_n136#" "pfet_5/a_414_0#" 4.4126
+cap "pfet_7/a_414_0#" "pfet_5/a_414_0#" 165.974
+cap "pfet_0/a_508_n136#" "pfet_7/a_414_0#" 0.51468
+cap "pfet$1_5/a_188_n136#" "pfet_5/a_414_0#" 460.347
+cap "pfet_5/a_n92_0#" "pfet_7/a_508_n136#" 162.712
+cap "pfet_7/a_414_0#" "pfet_5/a_n92_0#" -4.85232
+cap "pfet_7/a_414_0#" "pfet_7/a_508_n136#" 24.7988
+cap "pfet_7/a_414_0#" "pfet_5/a_414_0#" 150.632
+cap "pfet$1_5/a_188_n136#" "pfet_5/a_414_0#" 126.446
+cap "pfet_7/a_414_0#" "pfet$1_5/a_188_n136#" -43.2768
+cap "pfet_7/a_414_0#" "pfet$1_5/a_188_n136#" -13.2499
+cap "pfet_7/a_414_0#" "pfet_5/a_414_0#" 53.4194
+cap "pfet_5/a_414_0#" "pfet$1_5/a_188_n136#" 207.042
+merge "pfet$1_5/a_188_n136#" "pfet$1_5/a_28_n136#" -35778.9 -10529376 -55488 0 0 0 0 -460000 -11840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1033904 -34232 0 0 0 0 0 0 0 0
+merge "pfet$1_5/a_28_n136#" "pfet$1_5/a_254_0#"
+merge "pfet$1_5/a_254_0#" "pfet$1_5/a_94_0#"
+merge "pfet$1_5/a_94_0#" "pfet$1_5/a_n92_0#"
+merge "pfet$1_5/a_n92_0#" "pfet$1_5/w_n180_n88#"
+merge "pfet$1_5/w_n180_n88#" "pfet_5/a_574_0#"
+merge "pfet_5/a_574_0#" "pfet_5/a_254_0#"
+merge "pfet_5/a_254_0#" "pfet$1_4/a_254_0#"
+merge "pfet$1_4/a_254_0#" "pfet$1_4/a_94_0#"
+merge "pfet$1_4/a_94_0#" "pfet$1_4/a_n92_0#"
+merge "pfet$1_4/a_n92_0#" "pfet$1_4/a_188_n136#"
+merge "pfet$1_4/a_188_n136#" "pfet$1_4/a_28_n136#"
+merge "pfet$1_4/a_28_n136#" "pfet_4/a_574_0#"
+merge "pfet_4/a_574_0#" "pfet_4/a_254_0#"
+merge "pfet_4/a_254_0#" "pfet_5/a_n92_0#"
+merge "pfet_5/a_n92_0#" "pfet_5/w_n180_n88#"
+merge "pfet_5/w_n180_n88#" "pfet_7/a_574_0#"
+merge "pfet_7/a_574_0#" "pfet_7/a_254_0#"
+merge "pfet_7/a_254_0#" "pfet_7/a_n92_0#"
+merge "pfet_7/a_n92_0#" "pfet_7/w_n180_n88#"
+merge "pfet_7/w_n180_n88#" "pfet_11/a_574_0#"
+merge "pfet_11/a_574_0#" "pfet_11/a_254_0#"
+merge "pfet_11/a_254_0#" "pfet_11/a_n92_0#"
+merge "pfet_11/a_n92_0#" "pfet_11/w_n180_n88#"
+merge "pfet_11/w_n180_n88#" "pfet_2/a_574_0#"
+merge "pfet_2/a_574_0#" "pfet_2/a_254_0#"
+merge "pfet_2/a_254_0#" "pfet_2/a_n92_0#"
+merge "pfet_2/a_n92_0#" "pfet_2/w_n180_n88#"
+merge "pfet_2/w_n180_n88#" "pfet$1_2/a_188_n136#"
+merge "pfet$1_2/a_188_n136#" "pfet$1_2/a_28_n136#"
+merge "pfet$1_2/a_28_n136#" "pfet$1_2/a_254_0#"
+merge "pfet$1_2/a_254_0#" "pfet$1_2/a_94_0#"
+merge "pfet$1_2/a_94_0#" "pfet$1_2/a_n92_0#"
+merge "pfet$1_2/a_n92_0#" "pfet$1_2/w_n180_n88#"
+merge "pfet$1_2/w_n180_n88#" "pfet_4/a_n92_0#"
+merge "pfet_4/a_n92_0#" "pfet_6/a_574_0#"
+merge "pfet_6/a_574_0#" "pfet_6/a_254_0#"
+merge "pfet_6/a_254_0#" "pfet_6/a_n92_0#"
+merge "pfet_6/a_n92_0#" "pfet_10/a_574_0#"
+merge "pfet_10/a_574_0#" "pfet_10/a_254_0#"
+merge "pfet_10/a_254_0#" "pfet_10/a_n92_0#"
+merge "pfet_10/a_n92_0#" "pfet_3/a_574_0#"
+merge "pfet_3/a_574_0#" "pfet_3/a_254_0#"
+merge "pfet_3/a_254_0#" "pfet_3/a_n92_0#"
+merge "pfet_3/a_n92_0#" "pfet$1_3/a_254_0#"
+merge "pfet$1_3/a_254_0#" "pfet$1_3/a_94_0#"
+merge "pfet$1_3/a_94_0#" "pfet$1_3/a_n92_0#"
+merge "pfet$1_3/a_n92_0#" "pfet$1_3/a_188_n136#"
+merge "pfet$1_3/a_188_n136#" "pfet$1_3/a_28_n136#"
+merge "pfet$1_3/a_28_n136#" "pfet$1_4/w_n180_n88#"
+merge "pfet$1_4/w_n180_n88#" "pfet$1_0/w_n180_n88#"
+merge "pfet$1_0/w_n180_n88#" "pfet_4/w_n180_n88#"
+merge "pfet_4/w_n180_n88#" "pfet_6/w_n180_n88#"
+merge "pfet_6/w_n180_n88#" "pfet_10/w_n180_n88#"
+merge "pfet_10/w_n180_n88#" "pfet_3/w_n180_n88#"
+merge "pfet_3/w_n180_n88#" "pfet$1_3/w_n180_n88#"
+merge "pfet$1_3/w_n180_n88#" "pfet_0/w_n180_n88#"
+merge "pfet_0/w_n180_n88#" "pfet_8/w_n180_n88#"
+merge "pfet_8/w_n180_n88#" "pfet_9/w_n180_n88#"
+merge "pfet_9/w_n180_n88#" "pfet_1/w_n180_n88#"
+merge "pfet_1/w_n180_n88#" "pfet$1_1/w_n180_n88#"
+merge "pfet$1_1/w_n180_n88#" "vdd"
+merge "pfet_4/a_414_0#" "pfet_4/a_94_0#" -1797.85 0 0 0 0 0 0 -230000 -5920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -523336 -18332 0 0 0 0 0 0 0 0
+merge "pfet_4/a_94_0#" "pfet_7/a_414_0#"
+merge "pfet_7/a_414_0#" "pfet_7/a_94_0#"
+merge "pfet_7/a_94_0#" "pfet_11/a_414_0#"
+merge "pfet_11/a_414_0#" "pfet_11/a_94_0#"
+merge "pfet_11/a_94_0#" "pfet_3/a_414_0#"
+merge "pfet_3/a_414_0#" "pfet_3/a_94_0#"
+merge "pfet_3/a_94_0#" "pfet$1_0/a_254_0#"
+merge "pfet$1_0/a_254_0#" "pfet$1_0/a_94_0#"
+merge "pfet$1_0/a_94_0#" "pfet$1_0/a_n92_0#"
+merge "pfet$1_0/a_n92_0#" "pfet$1_0/a_188_n136#"
+merge "pfet$1_0/a_188_n136#" "pfet$1_0/a_28_n136#"
+merge "pfet$1_0/a_28_n136#" "pfet_0/a_574_0#"
+merge "pfet_0/a_574_0#" "pfet_0/a_254_0#"
+merge "pfet_0/a_254_0#" "pfet$1_1/a_n92_0#"
+merge "pfet$1_1/a_n92_0#" "pfet$1_1/a_28_n136#"
+merge "pfet$1_1/a_28_n136#" "pfet_0/a_n92_0#"
+merge "pfet_0/a_n92_0#" "pfet_8/a_574_0#"
+merge "pfet_8/a_574_0#" "pfet_8/a_254_0#"
+merge "pfet_8/a_254_0#" "pfet_8/a_n92_0#"
+merge "pfet_8/a_n92_0#" "pfet_9/a_574_0#"
+merge "pfet_9/a_574_0#" "pfet_9/a_254_0#"
+merge "pfet_9/a_254_0#" "pfet_9/a_n92_0#"
+merge "pfet_9/a_n92_0#" "pfet_1/a_574_0#"
+merge "pfet_1/a_574_0#" "pfet_1/a_254_0#"
+merge "pfet_1/a_254_0#" "pfet_1/a_n92_0#"
+merge "pfet_1/a_n92_0#" "pfet$1_1/a_254_0#"
+merge "pfet$1_1/a_254_0#" "pfet$1_1/a_94_0#"
+merge "pfet$1_1/a_94_0#" "pfet$1_1/a_188_n136#"
+merge "pfet$1_1/a_188_n136#" "m1_n400_n914#"
+merge "pfet_5/a_414_0#" "pfet_5/a_94_0#" -2999.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -184984 -10948 0 0 0 0 0 0 0 0
+merge "pfet_5/a_94_0#" "pfet_5/a_508_n136#"
+merge "pfet_5/a_508_n136#" "pfet_5/a_348_n136#"
+merge "pfet_5/a_348_n136#" "pfet_5/a_188_n136#"
+merge "pfet_5/a_188_n136#" "pfet_5/a_28_n136#"
+merge "pfet_5/a_28_n136#" "pfet_4/a_508_n136#"
+merge "pfet_4/a_508_n136#" "pfet_4/a_348_n136#"
+merge "pfet_4/a_348_n136#" "pfet_4/a_188_n136#"
+merge "pfet_4/a_188_n136#" "pfet_4/a_28_n136#"
+merge "pfet_4/a_28_n136#" "pfet_7/a_508_n136#"
+merge "pfet_7/a_508_n136#" "pfet_7/a_348_n136#"
+merge "pfet_7/a_348_n136#" "pfet_7/a_188_n136#"
+merge "pfet_7/a_188_n136#" "pfet_7/a_28_n136#"
+merge "pfet_7/a_28_n136#" "pfet_11/a_508_n136#"
+merge "pfet_11/a_508_n136#" "pfet_11/a_348_n136#"
+merge "pfet_11/a_348_n136#" "pfet_11/a_188_n136#"
+merge "pfet_11/a_188_n136#" "pfet_11/a_28_n136#"
+merge "pfet_11/a_28_n136#" "pfet_2/a_414_0#"
+merge "pfet_2/a_414_0#" "pfet_2/a_94_0#"
+merge "pfet_2/a_94_0#" "pfet_2/a_508_n136#"
+merge "pfet_2/a_508_n136#" "pfet_2/a_348_n136#"
+merge "pfet_2/a_348_n136#" "pfet_2/a_188_n136#"
+merge "pfet_2/a_188_n136#" "pfet_2/a_28_n136#"
+merge "pfet_2/a_28_n136#" "pfet_6/a_414_0#"
+merge "pfet_6/a_414_0#" "pfet_6/a_94_0#"
+merge "pfet_6/a_94_0#" "pfet_6/a_508_n136#"
+merge "pfet_6/a_508_n136#" "pfet_6/a_348_n136#"
+merge "pfet_6/a_348_n136#" "pfet_6/a_188_n136#"
+merge "pfet_6/a_188_n136#" "pfet_6/a_28_n136#"
+merge "pfet_6/a_28_n136#" "pfet_10/a_414_0#"
+merge "pfet_10/a_414_0#" "pfet_10/a_94_0#"
+merge "pfet_10/a_94_0#" "pfet_10/a_508_n136#"
+merge "pfet_10/a_508_n136#" "pfet_10/a_348_n136#"
+merge "pfet_10/a_348_n136#" "pfet_10/a_188_n136#"
+merge "pfet_10/a_188_n136#" "pfet_10/a_28_n136#"
+merge "pfet_10/a_28_n136#" "pfet_3/a_508_n136#"
+merge "pfet_3/a_508_n136#" "pfet_3/a_348_n136#"
+merge "pfet_3/a_348_n136#" "pfet_3/a_188_n136#"
+merge "pfet_3/a_188_n136#" "pfet_3/a_28_n136#"
+merge "pfet_3/a_28_n136#" "iref"
+merge "pfet$1_5/VSUBS" "pfet_5/VSUBS" -2496.82 0 0 0 0 -168000 -4840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -406448 -14888 0 0 0 0 0 0 0 0
+merge "pfet_5/VSUBS" "pfet_7/VSUBS"
+merge "pfet_7/VSUBS" "pfet_11/VSUBS"
+merge "pfet_11/VSUBS" "pfet_2/VSUBS"
+merge "pfet_2/VSUBS" "pfet$1_2/VSUBS"
+merge "pfet$1_2/VSUBS" "pfet$1_4/VSUBS"
+merge "pfet$1_4/VSUBS" "pfet$1_0/VSUBS"
+merge "pfet$1_0/VSUBS" "nfet$1_0/a_574_0#"
+merge "nfet$1_0/a_574_0#" "nfet$1_0/a_414_0#"
+merge "nfet$1_0/a_414_0#" "nfet$1_0/a_254_0#"
+merge "nfet$1_0/a_254_0#" "nfet$1_0/a_94_0#"
+merge "nfet$1_0/a_94_0#" "nfet$1_0/a_510_n132#"
+merge "nfet$1_0/a_510_n132#" "nfet$1_0/a_350_n132#"
+merge "nfet$1_0/a_350_n132#" "nfet$1_0/a_190_n132#"
+merge "nfet$1_0/a_190_n132#" "nfet$1_0/a_30_n132#"
+merge "nfet$1_0/a_30_n132#" "pfet_4/VSUBS"
+merge "pfet_4/VSUBS" "pfet_6/VSUBS"
+merge "pfet_6/VSUBS" "pfet_10/VSUBS"
+merge "pfet_10/VSUBS" "pfet_3/VSUBS"
+merge "pfet_3/VSUBS" "pfet$1_3/VSUBS"
+merge "pfet$1_3/VSUBS" "pfet_0/VSUBS"
+merge "pfet_0/VSUBS" "pfet_8/VSUBS"
+merge "pfet_8/VSUBS" "pfet_9/VSUBS"
+merge "pfet_9/VSUBS" "pfet_1/VSUBS"
+merge "pfet_1/VSUBS" "pfet$1_1/VSUBS"
+merge "pfet$1_1/VSUBS" "nfet$1_0/VSUBS"
+merge "nfet$1_0/VSUBS" "nfet$1_0/a_n84_0#"
+merge "nfet$1_0/a_n84_0#" "nfet_0/VSUBS"
+merge "nfet_0/VSUBS" "nfet_0/a_254_0#"
+merge "nfet_0/a_254_0#" "nfet_0/a_n84_0#"
+merge "nfet_0/a_n84_0#" "nfet_1/VSUBS"
+merge "nfet_1/VSUBS" "nfet_1/a_254_0#"
+merge "nfet_1/a_254_0#" "nfet_1/a_n84_0#"
+merge "nfet_1/a_n84_0#" "nfet_2/VSUBS"
+merge "nfet_2/VSUBS" "nfet_2/a_254_0#"
+merge "nfet_2/a_254_0#" "nfet_2/a_n84_0#"
+merge "nfet_2/a_n84_0#" "nfet_3/VSUBS"
+merge "nfet_3/VSUBS" "nfet_3/a_254_0#"
+merge "nfet_3/a_254_0#" "nfet_3/a_n84_0#"
+merge "nfet_3/a_n84_0#" "nfet$1_1/VSUBS"
+merge "nfet$1_1/VSUBS" "nfet$1_1/a_574_0#"
+merge "nfet$1_1/a_574_0#" "nfet$1_1/a_414_0#"
+merge "nfet$1_1/a_414_0#" "nfet$1_1/a_254_0#"
+merge "nfet$1_1/a_254_0#" "nfet$1_1/a_94_0#"
+merge "nfet$1_1/a_94_0#" "nfet$1_1/a_n84_0#"
+merge "nfet$1_1/a_n84_0#" "nfet$1_1/a_510_n132#"
+merge "nfet$1_1/a_510_n132#" "nfet$1_1/a_350_n132#"
+merge "nfet$1_1/a_350_n132#" "nfet$1_1/a_190_n132#"
+merge "nfet$1_1/a_190_n132#" "nfet$1_1/a_30_n132#"
+merge "nfet$1_1/a_30_n132#" "vss"
+merge "pfet_8/a_508_n136#" "pfet_8/a_348_n136#" -703.638 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -46208 -2432 0 0 0 0 0 0 0 0
+merge "pfet_8/a_348_n136#" "pfet_8/a_188_n136#"
+merge "pfet_8/a_188_n136#" "pfet_8/a_28_n136#"
+merge "pfet_8/a_28_n136#" "pfet_1/a_508_n136#"
+merge "pfet_1/a_508_n136#" "pfet_1/a_348_n136#"
+merge "pfet_1/a_348_n136#" "pfet_1/a_188_n136#"
+merge "pfet_1/a_188_n136#" "pfet_1/a_28_n136#"
+merge "pfet_1/a_28_n136#" "inp"
+merge "pfet_8/a_414_0#" "pfet_8/a_94_0#" -824.147 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41344 -3344 0 0 0 0 0 0 0 0
+merge "pfet_8/a_94_0#" "pfet_1/a_414_0#"
+merge "pfet_1/a_414_0#" "pfet_1/a_94_0#"
+merge "pfet_1/a_94_0#" "nfet_0/a_190_n132#"
+merge "nfet_0/a_190_n132#" "nfet_0/a_30_n132#"
+merge "nfet_0/a_30_n132#" "nfet_1/a_94_0#"
+merge "nfet_1/a_94_0#" "nfet_1/a_190_n132#"
+merge "nfet_1/a_190_n132#" "nfet_1/a_30_n132#"
+merge "nfet_1/a_30_n132#" "nfet_2/a_94_0#"
+merge "nfet_2/a_94_0#" "nfet_2/a_190_n132#"
+merge "nfet_2/a_190_n132#" "nfet_2/a_30_n132#"
+merge "nfet_2/a_30_n132#" "nfet_3/a_190_n132#"
+merge "nfet_3/a_190_n132#" "nfet_3/a_30_n132#"
+merge "nfet_3/a_30_n132#" "m1_116_n1334#"
+merge "pfet_0/a_508_n136#" "pfet_0/a_348_n136#" -706.225 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -46208 -2432 0 0 0 0 0 0 0 0
+merge "pfet_0/a_348_n136#" "pfet_0/a_188_n136#"
+merge "pfet_0/a_188_n136#" "pfet_0/a_28_n136#"
+merge "pfet_0/a_28_n136#" "pfet_9/a_508_n136#"
+merge "pfet_9/a_508_n136#" "pfet_9/a_348_n136#"
+merge "pfet_9/a_348_n136#" "pfet_9/a_188_n136#"
+merge "pfet_9/a_188_n136#" "pfet_9/a_28_n136#"
+merge "pfet_9/a_28_n136#" "inn"
+merge "pfet_0/a_414_0#" "pfet_0/a_94_0#" -312.067 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -912 0 0 0 0 0 0 0 0
+merge "pfet_0/a_94_0#" "pfet_9/a_414_0#"
+merge "pfet_9/a_414_0#" "pfet_9/a_94_0#"
+merge "pfet_9/a_94_0#" "nfet_0/a_94_0#"
+merge "nfet_0/a_94_0#" "nfet_3/a_94_0#"
+merge "nfet_3/a_94_0#" "out"
