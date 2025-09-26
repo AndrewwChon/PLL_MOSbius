@@ -1,4 +1,4 @@
-timestamp 1587025629
+timestamp 1587460247
 version 8.3
 tech gf180mcuD
 style ngspice()
@@ -14,19 +14,19 @@ node "vdd" 0 0 224 4128 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "vss" 0 0 -102 4525 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "m1_106_2073#" 7 1879.65 106 2073 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 228720 8684 0 0 0 0 0 0 0 0
 substrate "a_n313_n429#" 0 0 -313 -429 ppd 0 0 0 0 0 0 359328 9760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 520080 9896 0 0 0 0 0 0 0 0
-cap "cap_nmos$1_3/a_88_n92#" "cap_nmos$1_3/a_0_0#" 1.03544
-cap "cap_nmos$1_3/a_0_0#" "cap_nmos$1_3/a_88_n92#" 3.10786
-cap "cap_nmos$1_3/a_0_0#" "cap_nmos$1_3/a_88_n92#" 1.13687e-13
-cap "cap_nmos$1_3/a_0_0#" "cap_nmos$1_3/a_88_n92#" 169.633
-cap "cap_nmos$1_1/a_0_0#" "cap_nmos$1_3/a_88_n92#" 169.633
-cap "cap_nmos$1_2/a_88_n92#" "cap_nmos$1_1/a_0_0#" 0.516365
+cap "cap_nmos$1_3/a_0_0#" "cap_nmos$1_3/a_88_n92#" 1.03544
+cap "cap_nmos$1_3/a_88_n92#" "cap_nmos$1_3/a_0_0#" 3.10786
+cap "cap_nmos$1_3/a_88_n92#" "cap_nmos$1_3/a_0_0#" 1.13687e-13
+cap "cap_nmos$1_3/a_88_n92#" "cap_nmos$1_3/a_0_0#" 169.633
+cap "cap_nmos$1_3/a_88_n92#" "cap_nmos$1_1/a_0_0#" 169.633
+cap "cap_nmos$1_1/a_0_0#" "cap_nmos$1_2/a_88_n92#" 0.516365
 cap "cap_nmos$1_2/a_88_n92#" "cap_nmos$1_3/a_0_0#" 0.516365
 cap "cap_nmos$1_2/a_0_0#" "cap_nmos$1_0/a_0_0#" 27.9832
 cap "vss" "vdd" -1.13687e-13
 cap "vss" "vdd" 1.03544
-cap "vss" "cap_nmos$1_0/a_88_n92#" 1.56844
-cap "vss" "vdd" 1.53943
-cap "cap_nmos$1_0/a_88_n92#" "vdd" 2.41947
+cap "vdd" "vss" 1.53943
+cap "vdd" "cap_nmos$1_0/a_88_n92#" 2.41947
+cap "cap_nmos$1_0/a_88_n92#" "vss" 1.56844
 merge "cap_nmos$1_3/VSUBS" "vss" -3789.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18684 0 0 0 0 0 0 0 0
 merge "vss" "cap_nmos$1_3/a_0_0#"
 merge "cap_nmos$1_3/a_0_0#" "cap_nmos$1_2/a_0_0#"
