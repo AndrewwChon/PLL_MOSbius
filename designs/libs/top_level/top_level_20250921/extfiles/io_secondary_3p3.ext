@@ -1,0 +1,116 @@
+timestamp 1587630068
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use diode_nd2ps$1 diode_nd2ps$1_0 1 0 16633 0 1 -7591
+use diode_nd2ps$1 diode_nd2ps$1_1 1 0 14401 0 1 -7591
+use diode_nd2ps$1 diode_nd2ps$1_2 1 0 16633 0 1 -5527
+use diode_nd2ps$1 diode_nd2ps$1_3 1 0 14401 0 1 -5527
+use ppolyf_u_resistor$8 ppolyf_u_resistor$8_0 1 0 19251 0 1 -7122
+use diode_pd2nw$1 diode_pd2nw$1_0 1 0 16633 0 1 -3210
+use diode_pd2nw$1 diode_pd2nw$1_1 1 0 14401 0 1 -3210
+use diode_pd2nw$1 diode_pd2nw$1_2 1 0 16633 0 1 -1146
+use diode_pd2nw$1 diode_pd2nw$1_3 1 0 14401 0 1 -1146
+port "to_gate" 2 19185 -1604 19185 -1604 m1
+port "ASIG3V3" 1 20413 -1890 20413 -1890 m1
+port "VDD" 3 14263 555 14263 555 m1
+port "VSS" 4 18907 -7123 18907 -7123 m1
+node "to_gate" 0 0 19185 -1604 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ASIG3V3" 0 0 20413 -1890 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_16463_n5667#" 0 129.415 16463 -5667 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16796 594 0 0 0 0 0 0 0 0
+node "m1_14231_n5667#" 0 129.415 14231 -5667 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16796 594 0 0 0 0 0 0 0 0
+node "m1_16463_n1268#" 0 113.215 16463 -1268 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14060 522 0 0 0 0 0 0 0 0
+node "m1_14231_n1268#" 0 110.922 14231 -1268 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14060 522 0 0 0 0 0 0 0 0
+node "m1_14911_n2722#" 4 22147.4 14911 -2722 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8100000 34200 23537688 27612 0 0 0 0 0 0
+node "VDD" 1607 2600.58 14263 555 m1 368046 2490 0 0 41200 1024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 383292 7358 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 18907 -7123 m1 0 0 0 0 0 0 41200 1024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 446900 11944 0 0 0 0 0 0 0 0
+cap "m1_16463_n1268#" "m1_14911_n2722#" 98.5786
+cap "m1_14231_n1268#" "m1_14911_n2722#" 3.99032
+cap "m1_16463_n5667#" "m1_14911_n2722#" 113.3
+cap "VDD" "m1_14911_n2722#" 110.346
+cap "m1_14231_n1268#" "VDD" 2.22787
+cap "m1_14231_n5667#" "m1_14911_n2722#" 4.47685
+cap "diode_nd2ps$1_3/a_0_0#" "diode_nd2ps$1_3/a_n168_0#" 235.786
+cap "diode_nd2ps$1_3/a_n168_0#" "diode_nd2ps$1_3/a_0_0#" 932.465
+cap "ppolyf_u_resistor$8_0/a_n376_0#" "diode_nd2ps$1_2/a_0_0#" 481.332
+cap "ppolyf_u_resistor$8_0/a_n132_0#" "ppolyf_u_resistor$8_0/a_n376_0#" 1.82527
+cap "ppolyf_u_resistor$8_0/a_n376_0#" "diode_nd2ps$1_2/a_0_0#" 394.636
+cap "ppolyf_u_resistor$8_0/a_1100_0#" "ppolyf_u_resistor$8_0/a_n376_0#" 0.0610077
+cap "ppolyf_u_resistor$8_0/a_n132_0#" "diode_nd2ps$1_2/a_0_0#" 11.6046
+cap "diode_nd2ps$1_3/a_0_0#" "diode_nd2ps$1_3/a_n168_0#" 17.0141
+cap "diode_nd2ps$1_3/a_0_0#" "diode_nd2ps$1_3/a_n168_0#" 668.347
+cap "ppolyf_u_resistor$8_0/a_n376_0#" "diode_nd2ps$1_2/a_0_0#" 154.89
+cap "ppolyf_u_resistor$8_0/a_n132_0#" "diode_nd2ps$1_2/a_0_0#" 23.8221
+cap "diode_nd2ps$1_2/a_0_0#" "ppolyf_u_resistor$8_0/a_n376_0#" 214.918
+cap "diode_nd2ps$1_3/a_n168_0#" "diode_pd2nw$1_1/a_0_0#" 5.94503
+cap "diode_pd2nw$1_1/w_n224_n86#" "diode_pd2nw$1_1/a_0_0#" 2.40492
+cap "diode_pd2nw$1_1/a_0_0#" "diode_nd2ps$1_3/a_n168_0#" 739.708
+cap "diode_pd2nw$1_0/a_0_0#" "diode_nd2ps$1_2/a_n168_0#" 144.691
+cap "diode_pd2nw$1_0/a_0_0#" "diode_pd2nw$1_0/w_n224_n86#" 10.0853
+cap "diode_pd2nw$1_0/w_n224_n86#" "diode_pd2nw$1_0/a_0_0#" 1.65852
+cap "diode_pd2nw$1_0/a_0_0#" "ppolyf_u_resistor$8_0/a_n132_0#" 23.1093
+cap "diode_pd2nw$1_0/a_0_0#" "diode_nd2ps$1_2/a_n168_0#" 226.5
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_pd2nw$1_1/a_0_0#" 40.7786
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_nd2ps$1_3/a_n168_0#" 10.2462
+cap "diode_nd2ps$1_3/a_n168_0#" "diode_pd2nw$1_1/a_0_0#" 0.737534
+cap "diode_pd2nw$1_1/a_0_0#" "diode_nd2ps$1_3/a_n168_0#" 50.7561
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_nd2ps$1_3/a_n168_0#" 4.17621
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_pd2nw$1_1/a_0_0#" 554.364
+cap "diode_pd2nw$1_2/w_n224_n86#" "diode_nd2ps$1_2/a_n168_0#" 6.06998
+cap "to_gate" "diode_nd2ps$1_2/a_n168_0#" 0.619044
+cap "diode_pd2nw$1_2/w_n224_n86#" "to_gate" 123.749
+cap "to_gate" "diode_nd2ps$1_2/a_n168_0#" 168.873
+cap "diode_pd2nw$1_2/w_n224_n86#" "to_gate" 45.3905
+cap "diode_pd2nw$1_2/w_n224_n86#" "diode_nd2ps$1_2/a_n168_0#" 32.2921
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_pd2nw$1_3/a_0_0#" 35.5258
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_pd2nw$1_3/a_0_0#" 711.269
+cap "diode_pd2nw$1_2/w_n224_n86#" "to_gate" 224.788
+cap "diode_pd2nw$1_2/w_n224_n86#" "to_gate" 82.3143
+cap "to_gate" "diode_nd2ps$1_2/a_n168_0#" 421.316
+cap "diode_pd2nw$1_2/w_n224_n86#" "diode_nd2ps$1_2/a_n168_0#" 39.2185
+cap "ASIG3V3" "to_gate" 2.16726
+cap "ASIG3V3" "to_gate" -0.0442501
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_pd2nw$1_3/a_0_0#" 4.73682
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_pd2nw$1_3/a_0_0#" 760.749
+cap "diode_pd2nw$1_2/w_n224_n86#" "to_gate" 247.669
+cap "diode_pd2nw$1_2/w_n224_n86#" "to_gate" 72.245
+cap "ppolyf_u_resistor$8_0/a_n376_0#" "to_gate" 367.025
+cap "ASIG3V3" "to_gate" 1.43883
+cap "diode_pd2nw$1_2/w_n224_n86#" "ppolyf_u_resistor$8_0/a_n376_0#" 33.2124
+cap "ASIG3V3" "to_gate" -0.0293774
+cap "VDD" "diode_pd2nw$1_3/a_0_0#" 146.329
+cap "diode_pd2nw$1_3/a_0_0#" "VDD" 372.241
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_pd2nw$1_3/a_0_0#" 5.05823
+cap "ppolyf_u_resistor$8_0/a_n376_0#" "diode_pd2nw$1_3/w_n224_n86#" 7.54395
+cap "diode_pd2nw$1_3/w_n224_n86#" "diode_pd2nw$1_2/a_0_0#" 9.44612
+cap "ppolyf_u_resistor$8_0/a_n376_0#" "diode_pd2nw$1_2/a_0_0#" 48.7242
+merge "diode_pd2nw$1_3/VSUBS" "diode_pd2nw$1_2/VSUBS" -2009.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25536 -1736 0 0 0 0 0 0 0 0
+merge "diode_pd2nw$1_2/VSUBS" "diode_pd2nw$1_1/VSUBS"
+merge "diode_pd2nw$1_1/VSUBS" "diode_pd2nw$1_0/VSUBS"
+merge "diode_pd2nw$1_0/VSUBS" "ppolyf_u_resistor$8_0/a_n376_0#"
+merge "ppolyf_u_resistor$8_0/a_n376_0#" "diode_nd2ps$1_3/a_n168_0#"
+merge "diode_nd2ps$1_3/a_n168_0#" "diode_nd2ps$1_2/a_n168_0#"
+merge "diode_nd2ps$1_2/a_n168_0#" "diode_nd2ps$1_1/a_n168_0#"
+merge "diode_nd2ps$1_1/a_n168_0#" "m1_14231_n5667#"
+merge "m1_14231_n5667#" "diode_nd2ps$1_0/a_n168_0#"
+merge "diode_nd2ps$1_0/a_n168_0#" "VSS"
+merge "VSS" "m1_16463_n5667#"
+merge "diode_pd2nw$1_2/a_0_0#" "diode_pd2nw$1_3/a_0_0#" -26411.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8076000 -34152 0 0 0 0 0 0 0 0
+merge "diode_pd2nw$1_3/a_0_0#" "ppolyf_u_resistor$8_0/a_n132_0#"
+merge "ppolyf_u_resistor$8_0/a_n132_0#" "to_gate"
+merge "to_gate" "diode_pd2nw$1_0/a_0_0#"
+merge "diode_pd2nw$1_0/a_0_0#" "diode_pd2nw$1_1/a_0_0#"
+merge "diode_pd2nw$1_1/a_0_0#" "diode_nd2ps$1_2/a_0_0#"
+merge "diode_nd2ps$1_2/a_0_0#" "diode_nd2ps$1_0/a_0_0#"
+merge "diode_nd2ps$1_0/a_0_0#" "diode_nd2ps$1_3/a_0_0#"
+merge "diode_nd2ps$1_3/a_0_0#" "diode_nd2ps$1_1/a_0_0#"
+merge "diode_nd2ps$1_1/a_0_0#" "m1_14911_n2722#"
+merge "diode_pd2nw$1_3/w_n224_n86#" "VDD" -5313.62 -953490 -19399 0 0 -19700 -494 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -315084 -7759 0 0 0 0 0 0 0 0
+merge "VDD" "diode_pd2nw$1_2/w_n224_n86#"
+merge "diode_pd2nw$1_2/w_n224_n86#" "diode_pd2nw$1_1/w_n224_n86#"
+merge "diode_pd2nw$1_1/w_n224_n86#" "m1_14231_n1268#"
+merge "m1_14231_n1268#" "m1_16463_n1268#"
+merge "m1_16463_n1268#" "diode_pd2nw$1_0/w_n224_n86#"
+merge "ppolyf_u_resistor$8_0/a_1100_0#" "ASIG3V3" 1.81899e-12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

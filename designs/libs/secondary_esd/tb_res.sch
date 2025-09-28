@@ -31,10 +31,10 @@ value="
 "}
 C {isource.sym} 920 -310 2 1 {name=I0 value=1}
 C {devices/gnd.sym} 920 -240 0 0 {name=l4 lab=GND}
-C {symbols/ppolyf_u.sym} 1010 -400 3 1 {name=R1
-W=1e-6
-L=27e-6
+C {devices/lab_wire.sym} 940 -400 0 0 {name=p8 sig_type=std_logic lab=res_val}
+C {symbols/ppolyf_u.sym} 1010 -400 1 0 {name=R2
+W=40e-6
+L=5.5e-6
 model=ppolyf_u
 spiceprefix=X
 m=1}
-C {devices/lab_wire.sym} 940 -400 0 0 {name=p8 sig_type=std_logic lab=res_val}
