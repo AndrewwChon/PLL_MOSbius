@@ -1,0 +1,13 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+L 4 -40 -0 40 -0 {}
+B 5 -42.5 -2.5 -37.5 2.5 {name=XXX
+dir=inout}
+B 5 37.5 -2.5 42.5 2.5 {name=XXX
+dir=inout}
+T {VSSd} 25 4 2 1 0.1 0.1 {}
+T {in} -35 4 2 1 0.1 0.1 {}
