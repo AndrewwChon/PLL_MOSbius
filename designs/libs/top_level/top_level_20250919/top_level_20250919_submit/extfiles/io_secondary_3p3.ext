@@ -26,12 +26,12 @@ node "m1_14231_n1268#" 0 110.922 14231 -1268 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "m1_14911_n2722#" 4 22147.4 14911 -2722 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8100000 34200 23537688 27612 0 0 0 0 0 0
 node "VDD" 1607 2600.58 14263 555 m1 368046 2490 0 0 41200 1024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 383292 7358 0 0 0 0 0 0 0 0
 substrate "VSS" 0 0 18907 -7123 m1 0 0 0 0 0 0 41200 1024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 446900 11944 0 0 0 0 0 0 0 0
-cap "m1_14911_n2722#" "m1_16463_n1268#" 98.5786
 cap "m1_14911_n2722#" "m1_14231_n5667#" 4.47685
 cap "m1_16463_n5667#" "m1_14911_n2722#" 113.3
 cap "m1_14911_n2722#" "VDD" 110.346
 cap "m1_14231_n1268#" "m1_14911_n2722#" 3.99032
 cap "m1_14231_n1268#" "VDD" 2.22787
+cap "m1_14911_n2722#" "m1_16463_n1268#" 98.5786
 cap "diode_nd2ps_3/a_n168_0#" "diode_nd2ps_3/a_0_0#" 235.786
 cap "diode_nd2ps_3/a_0_0#" "diode_nd2ps_3/a_n168_0#" 932.465
 cap "diode_nd2ps_2/a_0_0#" "ppolyf_u_resistor$9_0/a_n376_0#" 481.332
@@ -58,34 +58,34 @@ cap "diode_pd2nw_3/w_n224_n86#" "diode_pd2nw_1/a_0_0#" 40.7786
 cap "diode_nd2ps_3/a_n168_0#" "diode_pd2nw_1/a_0_0#" 50.7561
 cap "diode_pd2nw_3/w_n224_n86#" "diode_pd2nw_1/a_0_0#" 554.364
 cap "diode_pd2nw_3/w_n224_n86#" "diode_nd2ps_3/a_n168_0#" 4.17621
+cap "diode_nd2ps_2/a_n168_0#" "to_gate" 0.619044
 cap "diode_pd2nw_2/w_n224_n86#" "to_gate" 123.749
 cap "diode_pd2nw_2/w_n224_n86#" "diode_nd2ps_2/a_n168_0#" 6.06998
-cap "diode_nd2ps_2/a_n168_0#" "to_gate" 0.619044
 cap "diode_pd2nw_2/w_n224_n86#" "diode_nd2ps_2/a_n168_0#" 32.2921
 cap "to_gate" "diode_pd2nw_2/w_n224_n86#" 45.3905
 cap "to_gate" "diode_nd2ps_2/a_n168_0#" 168.873
 cap "diode_pd2nw_3/w_n224_n86#" "diode_pd2nw_3/a_0_0#" 35.5258
 cap "diode_pd2nw_3/w_n224_n86#" "diode_pd2nw_3/a_0_0#" 711.269
 cap "diode_pd2nw_2/w_n224_n86#" "to_gate" 224.788
-cap "diode_pd2nw_2/w_n224_n86#" "diode_nd2ps_2/a_n168_0#" 39.2185
-cap "ASIG3V3" "to_gate" 2.16726
 cap "to_gate" "diode_pd2nw_2/w_n224_n86#" 82.3143
 cap "to_gate" "diode_nd2ps_2/a_n168_0#" 421.316
+cap "diode_pd2nw_2/w_n224_n86#" "diode_nd2ps_2/a_n168_0#" 39.2185
+cap "ASIG3V3" "to_gate" 2.16726
 cap "ASIG3V3" "to_gate" -0.0442501
 cap "diode_pd2nw_3/w_n224_n86#" "diode_pd2nw_3/a_0_0#" 4.73682
 cap "diode_pd2nw_3/w_n224_n86#" "diode_pd2nw_3/a_0_0#" 760.749
 cap "diode_pd2nw_2/w_n224_n86#" "to_gate" 247.669
-cap "ppolyf_u_resistor$9_0/a_n376_0#" "diode_pd2nw_2/w_n224_n86#" 33.2124
-cap "to_gate" "ASIG3V3" 1.43883
-cap "to_gate" "diode_pd2nw_2/w_n224_n86#" 72.245
+cap "diode_pd2nw_2/w_n224_n86#" "ppolyf_u_resistor$9_0/a_n376_0#" 33.2124
+cap "diode_pd2nw_2/w_n224_n86#" "to_gate" 72.245
+cap "ASIG3V3" "to_gate" 1.43883
 cap "ppolyf_u_resistor$9_0/a_n376_0#" "to_gate" 367.025
 cap "to_gate" "ASIG3V3" -0.0293774
 cap "diode_pd2nw_3/a_0_0#" "VDD" 146.329
-cap "diode_pd2nw_3/a_0_0#" "VDD" 372.241
-cap "diode_pd2nw_3/w_n224_n86#" "diode_pd2nw_3/a_0_0#" 5.05823
+cap "VDD" "diode_pd2nw_3/a_0_0#" 372.241
+cap "diode_pd2nw_3/a_0_0#" "diode_pd2nw_3/w_n224_n86#" 5.05823
+cap "diode_pd2nw_3/w_n224_n86#" "diode_pd2nw_2/a_0_0#" 9.44612
 cap "diode_pd2nw_2/a_0_0#" "ppolyf_u_resistor$9_0/a_n376_0#" 48.7242
-cap "ppolyf_u_resistor$9_0/a_n376_0#" "diode_pd2nw_3/w_n224_n86#" 7.54395
-cap "diode_pd2nw_2/a_0_0#" "diode_pd2nw_3/w_n224_n86#" 9.44612
+cap "diode_pd2nw_3/w_n224_n86#" "ppolyf_u_resistor$9_0/a_n376_0#" 7.54395
 merge "diode_pd2nw_2/a_0_0#" "diode_pd2nw_3/a_0_0#" -26411.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8076000 -34152 0 0 0 0 0 0 0 0
 merge "diode_pd2nw_3/a_0_0#" "ppolyf_u_resistor$9_0/a_n132_0#"
 merge "ppolyf_u_resistor$9_0/a_n132_0#" "to_gate"
